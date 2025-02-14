@@ -1,0 +1,43 @@
+Movement Network Developer Mainnet Has Launched
+January 27, 2025
+Movement Network Foundation
+The Movement Network Foundation
+is excited to announce that Developer Mainnet is now live! This marks the beginning of the second phase in the Movement Network launch plan. Now, select
+developers
+can start deploying on Movement.
+New Phase: Developer Mainnet
+Today, new features are coming to Movement Network, including:
+Core infrastructure deployment
+Select teams start deploying apps
+Technical docs and dev resources release
+Developer Mainnet is slated to last until mid-February.
+Previous Phase: Mainnet Beta
+Developer Mainnet builds on the foundation that
+Movement Mainnet Beta
+began to establish following launch in early December. Mainnet Beta introduced key pieces, including:
+Follower nodes
+RPC nodes
+Indexers
+Permissioned smart contracts
+Block explorer
+Next Phase: Public Mainnet Beta
+After several weeks of Developer Mainnet, Movement Network Foundation plans to launch the third phase: Public Mainnet Beta. As of now, the plan is for Public Mainnet Beta to offer full permissionless app deployment and user onboarding.
+The Movement Continues!
+We are excited for so many talented Movement teams to start deployment.
+The full might of the Movement Network is almost here.
+Built for modularity, it uses
+Celestia
+underneath.
+To review Movement Network's
+high-level
+and
+node-level
+architectures, please
+visit our docs
+.
+For more on $MOVE, please visit our
+$MOVE revea
+l and
+MoveDrop
+posts.
+THIS IS FOR INFORMATIONAL PURPOSES ONLY AND NOT AN OFFERING TO SELL, THE SOLICITATION OF AN OFFER TO PURCHASE, OR AN ENCOURAGEMENT TO PURCHASE TOKENS. YOU SHOULD NOT RELY ON THE CONTENT HEREIN FOR ADVICE OF ANY KIND, INCLUDING LEGAL, INVESTMENT, FINANCIAL, TAX, OR OTHER PROFESSIONAL ADVICE, AND SUCH CONTENT IS NOT A SUBSTITUTE FOR ADVICE FROM A QUALIFIED PROFESSIONAL OR YOUR OWN RESEARCH. THIS DOCUMENT CONTAINS HYPOTHETICAL, FORWARD-LOOKING, AND/OR PROJECTED FIGURES, WHICH ARE APPROXIMATE, NOT GUARANTEED AND ARE SUBJECT TO CHANGE; ACTUAL NUMBERS MAY VARY. MOVEMENT NETWORK FOUNDATION AND ITS SUBSIDIARIES MAKE NO REPRESENTATION OR WARRANTY, EXPRESS OR IMPLIED, AS TO THE COMPLETENESS, RELIABILITY, VALIDITY, OR ACCURACY OF THIS INFORMATION. ANY INFORMATION CONTAINED HEREIN IS SUBJECT TO CHANGE WITHOUT NOTICE.

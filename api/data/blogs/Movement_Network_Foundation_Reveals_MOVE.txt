@@ -1,0 +1,79 @@
+Movement Network Foundation Reveals $MOVE
+November 25, 2024
+Movement Network Foundation
+With Movement Network’s Public Mainnet coming soon, Movement Network Foundation now unveils $MOVE – which will be used to achieve the long-term objectives of Movement Network.
+Movement Network Public Mainnet is the first Move blockchain that settles to Ethereum, aiming to deliver high TPS, improved security, and near-instant finality.
+Movement improves the Ethereum ecosystem by bringing Move's superior security features and biodiversity of net new developers and applications to the world's leading smart contract platform. $MOVE will be used to achieve the objectives of Movement Network Foundation.
+As we approach the $MOVE Token Generation Event (“TGE”), we now present $MOVE utility and token economics:
+$MOVE at a Glance
+Ticker
+$MOVE
+Maximum Supply
+10,000,000,000 $MOVE
+Percentage to Movement Network Community
+60%
+Token Decimals
+8
+Float
+22.5%
+Token Standard
+Ethereum Network: ERC-20
+Movement Network: Native (coming soon)
+Token Distribution
+$MOVE will have a maximum supply of 10,000,000,000 tokens, with an initial circulating supply of 22.5%. $MOVE will be available and represented on Ethereum Mainnet as an ERC-20. Following Movement Network Public Mainnet launch, $MOVE will also be available on Movement Network.
+The majority of $MOVE (60%) will be allocated to the Movement Network community – across Ecosystem & Community, Foundation, and Initial Claims tranches.
+Ecosystem + Community (40%)
+40% of $MOVE tokens are reserved for Ecosystem, including the following:
+Staking Rewards
+: Reserved for future distribution of validator rewards on Movement Network.
+Ecosystem Initiatives
+: Reserved for future distribution of grants to teams on Movement Network. Grants are awarded based on the completion of certain pre-defined milestones.
+Incentives & Liquidity Provisioning
+: Reserved for future distribution of incentives for usage of Movement Network, and to provide liquidity to bootstrap the Movement Network DeFi ecosystem.
+Initial Claims (10%)
+10% of $MOVE tokens will be distributed to the Movement Network community – through the MoveDrop and other initial claims activities.
+Foundation (10%)
+10% of $MOVE tokens are reserved to support the ongoing operations of Movement Network Foundation, as they manage the growth, development, and decentralization of Movement Network.
+Early Contributors (17.5%)
+17.5% of $MOVE tokens are reserved for Early Contributors of Movement Network – who are primarily from Movement Labs. These Early Contributors come from across Engineering, Product, Community & Marketing, Business Development, Strategy, and other workstreams.
+Early Backers (22.5%)
+22.5% of $MOVE tokens are reserved for Early Backers of Movement Network – who have provided financial, advisory, and strategic support to Movement Network.
+Token Utility
+$MOVE is the utility token of the Movement Network ecosystem, and will be used to achieve the long-term objectives of the Network. Movement Network aims to develop various utilities for $MOVE, including the following:
+Staking for Economic Security
+Movement Network aims to introduce a novel fast-finality settlement mechanism, creating an alternative to validity and optimistic rollups. Fast-finality will be enabled by a set of validators who stake $MOVE to confirm the correctness of Movement Network’s state. In exchange for providing this economic security, active validators will receive $MOVE staking rewards.
+Gas Fees
+Gas fees on Movement Network Public Mainnet L2 are denominated and paid for in $MOVE, where a portion of these fees are used to pay for rent to settle transactions on Ethereum Mainnet. In the future, as teams build L2s using the MoveStack, these L2s are also expected to use $MOVE to pay for gas fees.
+Governance & Decentralization
+Through $MOVE, we expect the community to play a critical role in the decentralization of governance of Movement Network over time. Holders will be able to propose and vote on governance proposals to change certain network parameters and participate in future community initiatives.
+Native Assets on Movement Network
+$MOVE is expected to be the native asset of Movement Network. Applications built on Movement Network can use $MOVE for:
+Asset liquidity
+Collateral
+Payment
+Roadmap
+Movement Network’s TGE strategy emphasizes the importance of launching $MOVE, the native token of the Movement Network ecosystem, which has the utilities outlined above. In doing so, we create the foundational utility that our network will rely on, and ensure that users have the necessary resources to engage with Movement Network effectively upon launch.
+As part of the $MOVE launch, we are starting to build economic security through the introduction of liquid deposit contracts. This process is integral to bootstrapping network security and is designed to be executed in a number of phases starting at TGE and continuing past the launch of the Movement Network Public Mainnet:
+Mainnet Genesis:
+Network genesis, selected node operators will be able to run follower nodes.
+Deposit Contract on Ethereum Mainnet
+: Begin building economic security by allowing users to deposit $MOVE on Ethereum Mainnet into a liquid deposit contract.
+Bridging $MOVE to Movement Network
+: Facilitate the transfer of $MOVE to Movement Network.
+Onboarding Validators
+: Select and onboard validators who will help secure the network.
+Enabling Staking
+: Open full staking functionalities for the broader user base.
+Adding Slashing Mechanisms
+: Implement penalties for malicious behavior to maintain network integrity.
+After the launch of Movement Network Public Mainnet, other roadmap items will follow:
+MoveStack
+Shared Sequencing
+MEVM
+Multi-Staking
+For more information on Movement and Movement Network, visit our whitepaper
+here
+.
+Closing Thoughts
+Movement Network represents a significant evolution in the Ethereum ecosystem, bringing Move's superior security guarantees to the world's leading smart contract platform. With 200+ teams building on Movement Testnet and a thriving ecosystem, $MOVE will play a crucial role in realizing our vision of a more secure and efficient L2 solution. By combining Move's built-in security advantages with Ethereum's network effects, Movement Network is enhancing Ethereum with next-generation smart contract capabilities.
+THIS IS FOR INFORMATIONAL PURPOSES ONLY AND NOT AN OFFERING TO SELL, THE SOLICITATION OF AN OFFER TO PURCHASE, OR AN ENCOURAGEMENT TO OFFER TOKENS. YOU SHOULD NOT RELY ON THE CONTENT HEREIN FOR ADVICE OF ANY KIND, INCLUDING LEGAL, INVESTMENT, FINANCIAL, TAX, OR OTHER PROFESSIONAL ADVICE, AND SUCH CONTENT IS NOT A SUBSTITUTE FOR ADVICE FROM A QUALIFIED PROFESSIONAL OR YOUR OWN RESEARCH. THIS DOCUMENT CONTAINS HYPOTHETICAL, FORWARD-LOOKING, AND/OR PROJECTED FIGURES, WHICH ARE APPROXIMATE, NOT GUARANTEED AND ARE SUBJECT TO CHANGE; ACTUAL NUMBERS MAY VARY. MOVEMENT NETWORK FOUNDATION AND ITS SUBSIDIARIES MAKE NO REPRESENTATION OR WARRANTY, EXPRESS OR IMPLIED, AS TO THE COMPLETENESS, RELIABILITY, VALIDITY, OR ACCURACY OF THIS INFORMATION. ANY INFORMATION CONTAINED HEREIN IS SUBJECT TO CHANGE WITHOUT NOTICE.

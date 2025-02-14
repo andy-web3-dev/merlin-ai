@@ -1,0 +1,95 @@
+Announcing: Battle of Olympus Winners!
+Announcements
+October 10, 2024
+Movement Labs
+In June, we launched our
+Battle of Olympus Hackathon
+. Hundreds of teams heeded the call, building on the
+Movement testnet
+. Participants built in AI and DeFi, NFTs and Gaming, using the speed, power, and security of Movement to power blockchain apps and infra across the vast crypto spectrum.
+Today, the battlefield dust has settled.
+From 2,100 project submissions, 85 finalists emerged.
+We proudly present 10 champions, organized by category:
+Titan (pre-existing projects)
+StakedMove
+: Premier Liquid Staking Token for Movement, enhancing network security and user yield opportunities.
+DeFi
+Gasyard
+: Cross-network gas optimization protocol, streamlining DeFi transactions and improving user experience.
+PicWe
+: Omni-chain liquidity infrastructure, facilitating seamless asset transfers across the Movement ecosystem.
+AI
+RNDM
+: AI-driven modular liquidity solution, potentially revolutionizing automated market-making in DeFi.
+SocialFi
+Podium
+: Web3 social audio platform enabling community-moderated discussions, bridging social media and blockchain.
+Movewiffrens (MWFs)
+: Decentralized social media platform, reimagining online interactions with blockchain-based identity and content ownership.
+NFTs/GameFi
+Seekers Alliance
+: Skill-based trading card game with innovative NFT mechanics, showcasing advanced smart contract capabilities on Movement.
+Simemes
+: Meme-powered social gaming platform, blending viral internet culture with blockchain gaming.
+Infrastructure
+Movide
+: Advanced online IDE for Move, accelerating development on the Movement network.
+Scaffold Move
+: Comprehensive toolkit for building dapps, lowering barriers to entry for developers in the Movement ecosystem.
+Congrats to our winners! We salute the good work they have done to better our community and further the Movement. We'll be celebrating each of the winning teams next month at
+DevCon 2024
+in Thailand.
+Battle of Olympus Prizes
+Winners get support from
+Movement Labs
+:
+Grants of up to $100,000 from the Movement Foundation
+Exclusive access to the
+Move Collective
+Introductions to Movement's network of VC firms
+Ongoing technical support, resources, and expert mentorship
+Eligibility for the MoveDrop program
+Sponsored trip to Devcon 2024 in Thailand, covering flights and accommodation, courtesy of 280 Capital, an investor in Movement Labs
+Runner-Up Projects Win Too
+That's not all. We had tons of incredible projects participate in the Battle, and so we're proud to support top runner-up projects. They win:
+MoveDrop Program eligibility
+Up to $25K in grants
+Movement support
+Check out the full list of Finalists
+here
+!
+Judging the Hackathon
+The Battle of Olympus wouldn't have been possible without another group of heroes. Our winning teams have been selected by our venerable team of judges:
+Josh Rosenthal, Partner at Polychain Capital (
+@JReedRosenthal
+)
+Nick White, COO at Celestia Labs (
+@nickwh8te
+)
+Nomatic, Partner at 4RC (
+@Nomaticcap
+)
+Mads, Maven 11 Capital (
+@0xRainandCoffee
+)
+Antony, 280 Capital (
+@0xCrabLegs
+)
+Santiago R Santos, Founder of SRS Family Office (
+@santiagoroel
+)
+Dmitriy Berenzon, Partner at Archetype (
+@dberenzon
+)
+Meltem Demirors, GP at Crucible Cap (
+@Melt_Dem
+)
+Thank you to our amazing judges for their time and attention!
+Missed the Battle but Want to Build on Movement?
+You can still build next-gen, high-performance, mind-blowing apps on Movement.
+Visit our
+developer docs
+for everything you need to begin.
+Our
+testnet
+is live. Mainnet is coming.

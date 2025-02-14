@@ -1,0 +1,1315 @@
+App name: Coral Finance 
+Landing page: https://d-app.coraldex.finance/pointHub/
+App category: Dex
+App insights: 
+only Base and Arbitrum, not on Movement yet
+App documentation: https://coral-finance.gitbook.io/coralfinance
+Welcome to Coral Finance | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+CORAL FINANCE
+Welcome to Coral Finance
+Next
+Our Philosophy
+Last updated 
+4 months ago
+Coral Finance Overview 
+Coral Finance is the premier 
+expectation
+ marketplace and 
+liquidity hub
+ for pre-market assets, where users can easily discover hidden gems and blue chips. Coral constructs a pre-listing market with substantial growth in size, filling the gap before the Token Generation Event (TGE).
+Coral’s vision is to build 
+a hub
+ where everyone can create liquidity for pre-market assets in any format and aggregate the trades. 
+Expectation is a broad concept
+Expectation embraces technical prediction and is also a gauge of market sentiment, playing a vital role in shaping market behaviors. Expectation includes, but is not limited to, the following aspects:
+Prediction of price movements for specific assets.
+The impact of pre-market performance on asset TGE.
+The potential future gains triggered by certain activities, such as participating in staking, which may lead to airdrops from particular projects. 
+Coral is built as an expectation market, where the pre-market is often the best reflection of it.
+What is Pre-Market Assets?
+Pre-market assets include 
+points, NFTs, whitelists
+ and other classes with which users can redeem tokens after TGE. They are considered as assets, just like any other cryptocurrencies stored in your wallet, because users always need to make continuous contributions to the protocols.
+Coral starts from points
+Providing a user-friendly pre-listing platform with diverse features is not only the largest challenge in the space but the largest opportunity. 
+Points that measure and prove efforts and contributions by users is a substitute for direct airdrop as a loyalty program. It has been widely used and popularized by Web2 giants and companies long before. On-chain points would be substituted by other objects in any format someday, but the essence to foster a strong sense of commitment and ownership in the development and success of the project would never change.
+Problems solved: inherent value of points
+Crypto space needs a hub that provides liquidity, trading and extended scenarios for points. Coral is the best venue.
+Point market is still in the early stage w/o standards: There is no smart protocol to fully create liquidity and enable instant trades for points. Coral introduces market dynamics into the unique mechanism, allowing points to be traded and used for different purposes. 
+Unequal way to trade between sellers and buyers: Existing markets generally use an options-alike model to execute transactions with required collaterals from traders, which puts buyers into extreme disadvantages. Coral offers DEX that aggregates liquidity and efficiently facilitates transactions between traders without collaterals.  
+Low capital efficiency: Unspecified TGE dates greatly increase user time cost and reduce capital efficiency. Coral helps you lock in profits early and offer you opportunities to gain high-yield returns.
+Lack of value propositions: Coral regards points as a popular asset and pre-listing trading as an independent market similar to tokens. Coral designs Locked to Unlock (L.t.U) mechanism which creates a value chain for points, benefiting both the projects and point holders.
+Launch Features 
+Users are currently able to:
+Claim
+ 
+corTokens.
+Deposit accepted points-earning assets to acquire corTokens converted from points. Only assets that are backed by funds, such as LST and LP tokens, are accepted and supported by Coral Finance. 
+Gain locked and tradable corTokens. 
+Swap
+ 
+corToken
+. A simple and smooth way to trade your points. 
+Add 
+corToken
+ 
+Liquidity
+. Provide liquidity for your favorite pools and earn yields. 
+Stake
+ & 
+unstake
+ 
+corToken
+ 
+LP Tokens
+. Receive Acceleration to boost unlocking speed as well as additional rewards.
+You will experience more exciting features that create a flywheel effect soon. Please keep you eyes on.
+😀
+Coral Finance Overview 
+Expectation is a broad concept
+What is Pre-Market Assets?
+Coral starts from points
+Problems solved: inherent value of points
+Launch Features 
+Defy Finite, DeFi Infinity
+Welcome to Coral Finance | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+Coral Finance Overview 
+Expectation is a broad concept
+What is Pre-Market Assets?
+Coral starts from points
+Problems solved: inherent value of points
+Launch Features 
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Next
+Our Philosophy
+Last updated 
+4 months ago
+Coral Finance Overview 
+Coral Finance is the premier 
+expectation
+ marketplace and 
+liquidity hub
+ for pre-market assets, where users can easily discover hidden gems and blue chips. Coral constructs a pre-listing market with substantial growth in size, filling the gap before the Token Generation Event (TGE).
+Coral’s vision is to build 
+a hub
+ where everyone can create liquidity for pre-market assets in any format and aggregate the trades. 
+Expectation is a broad concept
+Expectation embraces technical prediction and is also a gauge of market sentiment, playing a vital role in shaping market behaviors. Expectation includes, but is not limited to, the following aspects:
+Prediction of price movements for specific assets.
+The impact of pre-market performance on asset TGE.
+The potential future gains triggered by certain activities, such as participating in staking, which may lead to airdrops from particular projects. 
+Coral is built as an expectation market, where the pre-market is often the best reflection of it.
+What is Pre-Market Assets?
+Pre-market assets include 
+points, NFTs, whitelists
+ and other classes with which users can redeem tokens after TGE. They are considered as assets, just like any other cryptocurrencies stored in your wallet, because users always need to make continuous contributions to the protocols.
+Coral starts from points
+Providing a user-friendly pre-listing platform with diverse features is not only the largest challenge in the space but the largest opportunity. 
+Points that measure and prove efforts and contributions by users is a substitute for direct airdrop as a loyalty program. It has been widely used and popularized by Web2 giants and companies long before. On-chain points would be substituted by other objects in any format someday, but the essence to foster a strong sense of commitment and ownership in the development and success of the project would never change.
+Problems solved: inherent value of points
+Crypto space needs a hub that provides liquidity, trading and extended scenarios for points. Coral is the best venue.
+Point market is still in the early stage w/o standards: There is no smart protocol to fully create liquidity and enable instant trades for points. Coral introduces market dynamics into the unique mechanism, allowing points to be traded and used for different purposes. 
+Unequal way to trade between sellers and buyers: Existing markets generally use an options-alike model to execute transactions with required collaterals from traders, which puts buyers into extreme disadvantages. Coral offers DEX that aggregates liquidity and efficiently facilitates transactions between traders without collaterals.  
+Low capital efficiency: Unspecified TGE dates greatly increase user time cost and reduce capital efficiency. Coral helps you lock in profits early and offer you opportunities to gain high-yield returns.
+Lack of value propositions: Coral regards points as a popular asset and pre-listing trading as an independent market similar to tokens. Coral designs Locked to Unlock (L.t.U) mechanism which creates a value chain for points, benefiting both the projects and point holders.
+Launch Features 
+Users are currently able to:
+Claim
+ 
+corTokens.
+Deposit accepted points-earning assets to acquire corTokens converted from points. Only assets that are backed by funds, such as LST and LP tokens, are accepted and supported by Coral Finance. 
+Gain locked and tradable corTokens. 
+Swap
+ 
+corToken
+. A simple and smooth way to trade your points. 
+Add 
+corToken
+ 
+Liquidity
+. Provide liquidity for your favorite pools and earn yields. 
+Stake
+ & 
+unstake
+ 
+corToken
+ 
+LP Tokens
+. Receive Acceleration to boost unlocking speed as well as additional rewards.
+You will experience more exciting features that create a flywheel effect soon. Please keep you eyes on.
+Defy Finite, DeFi Infinity
+Our Philosophy | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+CORAL FINANCE
+Our Philosophy
+Defy Finite, DeFi Infinity
+While many are satisfied with the status quo, Coral Finance dares to think differently. We aspire to transcend limitations and explore infinite potentials. Society often tends to label and confine everything within fixed boundaries. However, true progress stems from breaking free from rigid mindsets and pursuing the seemingly impossible.
+We reject being bound by outdated rules and firmly believe that continuous innovation is the key to bring real transformation to the entire Web3 industry. All limitations exist to be broken. All peers, whether partners or users, who are associated with Coral Finance will become pioneers of this DeFi innovation.
+As the world evolves, rules change, and finance transforms. Imagination takes flight, leading us towards infinite possibilities. The shackles of limitations can be cast aside, and by daring to innovate, we can all be part of this movement. Whether through action or vision, you are already a participant.
+Join us in this odyssey towards infinite possibilities and let’s together steer the revolution in DeFi to usher in a new age that truly belongs to all. Think Unlimited!
+Previous
+Welcome to Coral Finance
+Next
+Overview
+Last updated 
+9 months ago
+😀
+Overview | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+🪙
+POINTS HUB
+Overview
+Coral Finance aims to establish an efficient marketplace and liquidity hub for pre-market assets to address the prevailing issues. Through innovative mechanism design and integrated functionalities, Coral Finance ensures:
+Minimizing liquidity acquisition costs for protocols
+Offering the best prices
+Mitigating credit risks associated with OTC transactions
+Capturing user attention and allowing users to track and find high-quality, and promising pre-listing assets
+Point hub is the first flagship product of Coral and more features focused on pre-market and expectation will be rolling out. 
+Our value proposition 
+Coral offers substantial benefits across the entire Web3 ecosystem,  providing value to all stakeholders. Rather than merely redistributing existing opportunities, Coral Finance expands the market, introducing new primitives, enhancing liquidity, and increasing yield opportunities.
+This strategy ensures that Coral Finance contributes to a more robust and diversified DeFi landscape, ultimately making the entire space more prosperous and dynamic.
+Stakeholders 
+Value 
+Industry
+Paradigm
+
+Effective incentive instrument, new marketplace and an innovative format of derivatives
+Ecosystem 
+Boom and prosperity 
+
+Fresh attention and net-new liquidity, and $billions in trading volume. Access to more wealth opportunities and value discoveries
+Projects & Protocols 
+Flywheel
+
+User engagement & viscosity + incentivized liquidity + trust & transparency + focus
+Users 
+Yield unlocked
+
+Early profits + Coral rewards + DeFi yield 
+Previous
+Our Philosophy
+Next
+Mint and Claim corTokens
+Last updated 
+1 month ago
+Mint and Claim corTokens | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+How Does It Work?
+Claim CorTokens
+Claim minted corToken
+Claiming unlocked corTokens
+🪙
+POINTS HUB
+Mint and Claim corTokens
+"Minting" corToken/corTokenization refers to the process of converting points into tradable corToken on Coral Finance. This process enables users to unlock the value of their accrued points through a secure and efficient mechanism.
+Earning Points: Users earn points through various interactions and contributions on different protocols.
+Each point is directly converted into an equivalent amount of corTokens, maintaining a 1:1 ratio. Upon minting, these corTokens are locked and will be unlocked based on the 
+Locked to Unlock Rule (L.t.U)
+.
+ 
+CorTokenization enhances the intrinsic value of points. Consider two scenarios: In one, no participants hold the points but want to engage in corToken liquidity pools. They must acquire these points through various means such as earning via project participation or purchasing from Coral DEX. This demand significantly boosts the liquidity of the points. In another scenario, where all users possess the points and participate in the liquidity pool, corTokenization allows users to trade their points and lock in the profits early. 
+How Does It Work?
+Coral Finance allows users to tokenize the points, converting them into tradable tokens. This process involves several steps:
+Users earn points through participation in specific activities with asset investment. Users gain receipt tokens for their contribution, such as Liquidity Staking Token (LST) and Liquidity Provider Token.  
+Note: 
+Coral at this stage only accepts points that are generated from REAL activities excluding trading, following social media, on-chain interaction without investment, etc. 
+Users stake receipt tokens on Coral Finance and gain points. 
+Once staked, Coral converts every point into an equivalent amount of corTokens at a 1:1 ratio. The corTokens are minted and credited to the user’s account. However, these corTokens are initially locked and cannot be traded or used immediately.
+Note
+: CorTokens cannot be converted back to points. However, the remaining corTokens are underlying assets that could used to claim airdrops after project TGE.
+Claim CorTokens
+The corTokens that can be claimed are mainly divided into two types: 
+minted corTokens
+ and 
+unlocked corTokens
+.
+Claim minted corToken
+Minted corTokens can be claimed only when the user's LST/LP Tokens are deposited on Coral. If a user withdraws the LST/LP Tokens, the minting process will cease until they restake the point-earning assets, even if users can still accrue the points from the protocols. The withdrawal does not affect the quantity of corTokens the user has already received on Coral. 
+Users can claim their minted corTokens at any time.
+Claiming unlocked corTokens
+The number of unlocked corTokens is primarily based on an individual's unlocking speed, which consists of 
+Base Rate
+ and 
+Acceleration
+.
+Users can claim unlocked corTokens at any time that can be used for trading, liquidity provision, staking, transfer, and other purposes.
+Previous
+Overview
+Next
+How-to Guide
+Last updated 
+4 months ago
+How-to Guide | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+🪙
+POINTS HUB
+Mint and Claim corTokens
+How-to Guide
+Previous
+Mint and Claim corTokens
+Next
+corSwap and Liquidity
+Last updated 
+5 months ago
+First, visit Coral Finance at
+ 
+https://d-app.coraldex.finance/pointHub
+ and click on '
+Points Hub'
+. Then  click Claim button navigating to the '
+Claim'
+ page. 
+Before starting to obtain the points, select your participating projects and create a personal vault. 
+Once you complete creating the vault, you can choose the LP tokens you get from the participating protocol to stake on Coral. Click '
+Approve'
+ and '
+Deposit'
+ buttons to proceed.  After you successfully stake LPs, then click '
+Claim'
+ button, you will be navigated to the dashboard of your points and corTokens.
+You will start to collect your points before you unstake the LPs on Coral. '
+Converted'
+ dashboard shows the amount of points you accumulate. When you click '
+Claim', 
+points will be automatically converted to corTokens at 1:1 ratio in the locked state. 
+Switch to '
+Unlocked'
+ dashboard, you will see detailed information of your holdings and unlocking status. Be aware of your unlocking rate that depends on 
+Base Rate
+ and 
+Acceleration
+. 
+That is! Now you have unlocked corTokens. Trade them on Coral DEX to lock in your profits; or add it to the liquidity; or hold it until TGE to get token airdrops.
+corSwap and Liquidity | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+CorSwap Liquidity 
+Transaction Fees & Rewards
+🪙
+POINTS HUB
+corSwap and Liquidity
+CorSwap, the built-in user-friendly DEX based on Uniswap V2. , facilitates seamless swaps between corTokens and pair tokens. The liquidity for each corToken is sourced from Liquidity Providers (LPs), ensuring robust market dynamics.
+Low Costs: 
+Only a trading fee is charged, with no hidden fees.
+Reliability:
+ Liquidity provided by LPs ensures a stable and reliable market for corToken transactions.
+Aggregated Liquidity: 
+CorSwap not only relies on its built-in Coral DEX but also aggregates liquidity from other DEXs, enhancing overall market liquidity and trading opportunities.
+CorSwap Liquidity 
+Anyone can become a liquidity provider (LP) on CorSwap by depositing an equivalent value of corTokens and the paired token in return for liquidity pool (LP) tokens. These tokens represent the LP’s share of the total pool reserves and can be redeemed for the underlying assets at any time. 
+Transaction Fees & Rewards
+CorSwap applies a 0.25% fee to trades, which is given back to liquidity providers. In the future, this fee and the distribution might be adjusted. 
+LPs earn rewards from transaction fees, which are distributed pro-rata according to their share of the pool. Additionally, Coral Finance offers $CORL as rewards for LPs. 
+CORL rewards for each liquidity pool are weighted and will be adjusted with more pools coming in.
+
+
+Previous
+How-to Guide
+Next
+Unlocking corTokens
+Last updated 
+4 months ago
+Unlocking corTokens | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+POINTS HUB
+Unlocking corTokens
+No matter you're a beginner or a pro, your profits can be realized
+Coral Finance has engineered an innovative 
+Locked to Unlock (L.t.U) 
+mechanism, which enables users to unlock their corTokens at a base rate, allowing for partial realization of their earnings in advance. Additionally, users have the option to accelerate the unlocking process by providing liquidity (LP).
+Base rate
+Once users obtain converted corTokens, they are granted a base unlocking rate, allowing them to secure early profits. Objectives of the L.t.U Mechanism:
+Establish Points as a Market: Enhance functionality and scalability.
+Preserve Long-term Value: Prevent point depreciation.
+Ensure Rational Circulation: Maintain balanced flow within the Coral ecosystem.
+Acceleration 
+Acceleration offers users the ability to unlock their corTokens at a faster rate compared to the Base. This feature is designed to enhance the ability to secure profits early and provide greater flexibility and benefits for users.
+Key Features of Acceleration:
+Faster Unlocking: Compared to the base rate, acceleration allows users to unlock their corTokens more quickly.
+Increased Profits: By accelerating the unlocking process, users can realize their profits earlier, effectively enhancing their investment returns.
+Multiple Options for Boosting (upcoming): Users can choose from various methods to boost their unlocking speed.
+Note: After adding liquidity, users 
+MUST
+ stake their LP tokens generated from corSwap for boosting. Without staking, the unlocking speed will not be boosted.
+Fee Structure
+A small fee (1%) is charged when corTokens are unlocked to support the treasury and contributors to Coral. The detailed allocations will be announced soon.
+
+Previous
+corSwap and Liquidity
+Next
+Two Point-Earning Schemes
+Last updated 
+6 months ago
+🪙
+Base rate
+Acceleration 
+Fee Structure
+Two Point-Earning Schemes | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+Blind Box For Points w/o Asset Deposits 
+When can you draw blind box?
+🪙
+POINTS HUB
+Unlocking corTokens
+Two Point-Earning Schemes
+A point incentive system is a rewards mechanism designed to motivate user participation and engagement. Users are expected to receive token airdrop when project's TGE takes place based on their activities (e.g., trading, staking, participating in governance, or providing liquidity, etc).  There are two primary schemes where points are generated in the market:
+With Asset Deposits: 
+Mainly associated with DeFi protocols, such as lending, stablecoins, staking/restaking; and purchasing assets).
+Without Asset Deposits: 
+Trading, listing assets, invites and other social activities. 
+Coral employs different integration methods and corTokenization processes for two types of points.
+With Asset Deposits
+Without Asset Deposits
+Integration
+Use LST/LP token/Token Receipt which users receive when stake assets or make purchase on other protocols
+Use wallet addresses with which users interact with other protocols
+Conversion Process
+Points are converted to corTokens directly 
+Users draw blind boxes to determine how much percent of points can be converted to corTokens
+Unlocking
+ 
+Base + Acceleration 
+Base + Acceleration
+Blind Box For Points w/o Asset Deposits 
+Blind boxes are only applied to points that are not generated from asset deposit or purchasing. Once the number of points that participants hold are verified, they need to draw the blind box to determine the percent of points that can be converted into locked corTokens. 
+Before the corresponding corToken liquidity pool officially releases, relevant parameters should be specified: 
+Conversion Ratio (CR):
+ Each time when a blind box is opened, a 
+x
+ percentage of the participant's total remaining points will be converted into locked corTokens.
+Probability to CR (PtCR):
+ The likelihood of x, which is 
+y
+.
+Relationship Between x and y:
+ The sum of y corresponding to x is equal to 100%.
+For example
+If Alice has 10,000 Reef Points (Coral points) and draws a blind box showing 20% (x), this means that 20% of her total Reef Points will be converted to locked corTokens, which is 10,000 * 20% = 2,000, leaving her with 8,000 Reef Points. 
+The probability to draw 20% may be 40% (y), meaning Alice has a 2 out of 5 chance of drawing a blind box with a 20% Conversion Ratio.
+When can you draw blind box?
+There are three free draws every 8 hours each day, 
+2:00 AM, 10:00 AM, and 6:00 PM (UTC)
+. Users could spend Reef Points or other specified assets to obtain additional draws for blind box. 
+Previous
+Unlocking corTokens
+Next
+Base Rate
+Last updated 
+4 months ago
+Base Rate | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+🪙
+POINTS HUB
+Unlocking corTokens
+Base Rate
+Previous
+Two Point-Earning Schemes
+Next
+Acceleration/Boosted Rate
+Last updated 
+1 month ago
+At the moment of acquiring corTokens, a user gains 
+Base Unlocking Rate
+. It starts unlocking corTokens to generate “passive income” for the user, as there are no additional costs involved during the unlocking process. The unlocked corTokens can be used in the following ways:
+Selling on Coral DEX for instant profits
+Adding liquidity
+Transferring to other users or participating in other protocols
+Algorithm of Base Unlocking Rate 
+a
+ is the constant term.
+b
+ is the volatility that determines the upper bound and lower bound of the curve. 
+K
+ is the adjustment parameter, which influenced by the specific configuration of point distributions of the project. 
+amount
+ is the total amount of cortokenized points on Coral.
+The log part indicates that the Base rate changes based on the total amount of the converted points. The log function guarantees that the rate increases with the quantity. However, as the total amount becomes sufficiently large, the growth curve gets flatter. This design balances the earnings distribution between users with large amount points and those with fewer points.
+Acceleration/Boosted Rate | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+System Acceleration (SA)
+Reward Amplifier (AMP)
+Early Adopter Amplification (EAA)
+Your Acceleration/Boosted Rate
+🪙
+POINTS HUB
+Unlocking corTokens
+Acceleration/Boosted Rate
+Previous
+Base Rate
+Next
+Yield Boosting
+Last updated 
+6 months ago
+If a user wants to increase the earnings, boosting the unlocking rate is essential. The way to achieve this is to add liquidity to the specific corToken pool and stak the LP tokens. This rate will determine how many additional corTokens you can obtain.
+System Acceleration (SA)
+The 
+System Acceleration (SA)
+ is composed of the time-dependent
+ Reward Amplifier (AMP)
+ and the 
+Early Adopter Amplification
+ 
+(EAA)
+.
+where
+ ts0
+ is the current time.
+Reward Amplifier (AMP)
+where
+ tsg
+ is the genesis time when the first corToken LP(s) is(are) staked, and 
+Wi
+ is the initial pre-set ratio that linearly decreases by the amount of Base Rate until it reaches and remains equal to 
+Wu
+, another pre-set ratio. 
+AMP is determined by the Base Rate and time. When Base Rate is small, it implies that there are only a small amount of converted points, allowing users who stake corToken liquidity to achieve higher unlocking rate. In this scenario, AMP decays slowly over time. 
+Conversely, as Base Rate increases, AMP decays faster. This approach helps maintain the supply and demand balance of corToken distribution.
+Early Adopter Amplification (EAA)
+where 
+X%
+ is the initial pre-set incentive parameter. 
+EAA can be regarded as an extra boosted rate for early adopters or participation, as it will decrease to 0 over time by the amount of Base Rate. The earlier a user participates, the more extra boost will receive. EAA varies depending on the projects. 
+Your Acceleration/Boosted Rate
+Individual Acceleration (IA)
+ is determined by the 
+System Acceleration
+ and another essential parameter: the amount of the individual LP. The algorithm for a user's acceleration is as follows:
+Where 
+TL
+ is total amount of locked corTokens, 
+LPP
+ is
+ 
+the user's liquidity percentage of specific pool, and 
+ITL
+ is the amount of locked corTokens that the user holds. 
+For example
+If SA is 30%, the total locked corTokens are 10,000, Alice's LP ratio is 5%, and the locked corTokens Alice has are 1000, then we will get Alice's acceleration equal to 15%.
+The result indicates that if all parameters maintained the same, Alice can unlock all corTokens with 15% boosted rate. 
+Yield Boosting | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+🪙
+POINTS HUB
+Yield Boosting
+This feature is coming soon, more news on our X and Telegram channel.
+Previous
+Acceleration/Boosted Rate
+Next
+Gauge Vote
+Last updated 
+7 months ago
+Gauge Vote | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+🗳️
+GOVERNANCE
+Gauge Vote
+This feature is coming soon, more news on our X and Telegram channel.
+Previous
+Yield Boosting
+Next
+Airdrop
+Last updated 
+7 months ago
+Airdrop | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+What Is Airdrop Program?
+How to Claim Rewards?
+🗳️
+GOVERNANCE
+Airdrop
+Previous
+Gauge Vote
+Next
+Understanding $CORL
+Last updated 
+4 months ago
+What Is Airdrop Program?
+Welcome to the Coral Finance Airdrop Program, an initiative designed to reward and engage our vibrant community. In this section, users can claim rewards generated from various avenues:
+Online campaigns hosted by Coral
+Participation in Coral's features
+Collaborations with other partners
+and more...
+The rewards are diverse that include $CORL and native token, NFTs and whitelists of other projects and partners. 
+How to Claim Rewards?
+When you visit Coral 
+website
+, you'll find the "Governance" section. Under this tab, the airdrop feature is located. By clicking on "Airdrop," you will be presented with all the active campaigns
+Click on "Connect Wallet" to connect your wallet.
+The wallet address you use must correspond with the one associated with the campaign in which you have engaged. Otherwise, the rewards will not be showing.
+After connecting your wallet, please select the campaign from which you wish to claim your rewards, and then click on it.
+After clicking "Claim," you will be directed to the campaign page. 
+On the left side, you will find the detailed information about the campaign. 
+On the right side, a panel appears where the first line, "Time to Claim," serves as a countdown to the deadline for claiming your rewards. Failure to claim within this allotted period may lead to forfeiture of your rewards. 
+It is noted that Tyndall PASS holders may receive additional rewards for specific campaigns if certain special requirements are met. If you do not have Tyndall PASS or meet the requirements, the part of Tyndall PASS on the panel will show NA.
+Understanding $CORL | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+🪙
+CORL TOKEN
+Understanding $CORL
+Token symbol: $CORL 
+Total supply: 500,000,000
+Blockchain:  BNB Chain 
+Token Contract: 0x12d7aCd35ee15567837930d7f81D3ABFB377CC89
+Exchanges: Not listed yet
+The currently issued CORLs are receipts. Your holdings are not the ultimate object of trade or the asset of Coral Finance. We might migrate the official Token Generation Event (TGE) to another network. If that happens, we will inform inform and allow you to exchange new CORL token with current ones.
+What Is $CORL?
+CORL is the primary native utility token of Coral Finance. CORL is expected to have the following use cases:
+Governance
+: CORL token holders can participate and vote on governance decisions.
+Liquidity Incentives
+: Users can earn CORL tokens as rewards by providing liquidity in assigned corToken pools. 
+Boosting
+: Users can earn additional CORL by locking CORL tokens. To earn CORL in this way incorporates voting escrow CORL (veCORL) for rewards accrual. This feature will launch soon. 
+Medium of Transaction: 
+It provides a convenient mode of payment and settlement between lenders and renters for Acceleration; or the quote token of a trading pair for corTokens. More will be revealed. 
+Previous
+Airdrop
+Next
+Roadmap
+Last updated 
+4 months ago
+Roadmap | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+⚙️
+CORAL PROTOCOL
+Roadmap
+Leading a paradigm shift in trading
+You can find the roadmap below. But first, we want to share with you our high-level goals for 2024, even if Coral Finance is a new player in DeFi.
+We innovate and develop in a prosperous niche. Build a whole set of quality products. Grow Coral Finance’s brand and collaborate with leading Web3.0 projects.
+Group seed users, early adopters, supporters and evangelists to build a solid community.  Will unlock user bases in different countries and areas. More communities will join. 
+We never compromise on improving user experience and asset security. Keep listening to our users and put any initiatives that protect user assets into action. More audits, more experiments and quick fixes.
+Accumulate platform TVL and exponentially boost it in a way that offers products in new verticals and creates synergies with existing products. Delicately focus on delivering a pre-market venue, resulting in the onboarding of a massive market currently untapped by DeFi incumbents. 
+Give real value to $CORL. Create a variety of scenarios where $CORL can be used and consumed, resulting in becoming a scarce asset. Make you feel proud of holding it.
+Q2  2024, Bud
+Social media preparation 
+Initial community building
+Coralantis point system 
+PC version
+mobile version
+Complete Beta product
+Airdrop function 
+Q3 2024, Genesis
+Launch on EVM compatible network and list project (1)
+Add multi-language support
+Complete audit (1)
+LP incentive initiation with $CORL
+Roll out non-staking point-earning scheme with blind box
+Q4 2024, C.O.R.L
+Close second-round investment
+Deployment on more networks
+Movement
+List and trade Reef Point (Coral's points) 
+Achieve $5M trading volume
+Previous
+Understanding $CORL
+Next
+Tyndall PASS
+Last updated 
+1 month ago
+Tyndall PASS | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+What Is Tyndall PASS?
+What Are the Benefits?
+⚙️
+CORAL PROTOCOL
+Tyndall PASS
+What Is Tyndall PASS?
+Tyndall PASSes are a programmatically generated collection that revolutionize DeFi landscape.  Tyndall PASS doubles as your Coral Finance membership card, and grants access to members-only privileges. When you have a Tyndall PASS, you are not simply holding a provably-rare piece of virtual NFT (non-fungible token), but you are gaining access to Coralian Family whose benefits and offerings will increase over time. 
+The number of Tyndall PASS originally issued and minted on BNB Chain is 1,000 pieces, all of which have been claimed by Coralians who make great efforts to Coral Finance building. As NFTs,  Tyndall PASS have a known and verifiable rarity, providing Coralians with a greater understanding of their value and scarcity.
+What Are the Benefits?
+Tyndall PASS holders can enjoy a variety of exclusive privileges which are tied to prospective benefits in the future. The privileges include, but not limited to:
+$CORL distribution: 
+A huge motivation because it is the earliest way to gain CORL. For contributors and builders only. 
+VIP event participation: 
+The access to VIP events/campaigns that are organized by Coral Finance and parters. Holders can receive the rewards of tokens or NFTs.
+Early access to specific product features:
+ Participate in particular features prior to others with first-mover advantage.
+Treasury airdrop:
+ The potential opportunity to receive revenue generated from protocol, meaning Tyndall PASS holders would be airdropped a plenty of high-quality assets. 
+Future areas and perks can be unlocked through roadmap activation.
+Previous
+Roadmap
+Next
+Audits & Security
+Last updated 
+4 months ago
+Audits & Security | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+On this page
+⚙️
+CORAL PROTOCOL
+Audits & Security
+Security
+Previous
+Tyndall PASS
+Last updated 
+6 months ago
+Coral Finance prioritizes security in its implementation. We take security very seriously and have enlisted the best auditors in the marketplace to protect your funds and ours.
+Scalebit 
+1MB
+Coral Finance Audit Report.pdf
+pdf
+Overview | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook
+Welcome to Coral Finance | Coral Finance 
+Coral Finance 
+Search
+...
+Ctrl +
+ K
+😀
+CORAL FINANCE
+Welcome to Coral Finance
+Our Philosophy
+🪙
+POINTS HUB
+Overview
+Mint and Claim corTokens
+How-to Guide
+corSwap and Liquidity
+Unlocking corTokens
+Two Point-Earning Schemes
+Base Rate
+Acceleration/Boosted Rate
+Yield Boosting
+🗳️
+GOVERNANCE
+Gauge Vote
+Airdrop
+🪙
+CORL TOKEN
+Understanding $CORL
+⚙️
+CORAL PROTOCOL
+Roadmap
+Tyndall PASS
+Audits & Security
+Powered by GitBook

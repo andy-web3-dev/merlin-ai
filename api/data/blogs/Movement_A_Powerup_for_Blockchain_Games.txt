@@ -1,0 +1,87 @@
+Movement: A Powerup for Blockchain Games
+October 30, 2024
+Movement Labs
+Movement is powering a new generation of games. Why? Game studios can
+build creatively on Movement
+. They can design vast, intricate worlds with thousands (or many more) players interacting with numerous objects every second.
+Who's leading the charge? Let's take a look.
+Here's your short guide to Movement gaming.
+Movement Gives Blockchain Games What They Need
+First, let's set the table. What makes
+Movement
+elite for onchain games?
+Speed
+. Movement's high throughput can power the most transaction-intensive games. Further,
+postconfirmations
+ensure transactions can finalize quickly. With the MoveVM's level of parallelized speed, gamers can enjoy silky gameplay.
+Low fees.
+Imagine you need to buy $2 of in-game items. But gas fees have spiked to that or higher. Movement has low fees. Games need them.
+Customization.
+Movement's rollups can be tailored to a game's needs. Developers can fine-tune their rollup, adopting modular elements to facilitate a smooth experience.
+Scaling.
+Big games clog blockchains — but not with Movement rollups. Game-specific rollups isolate a game's transactions away from apps on other Movement chains. The result: a transaction-heavy game like an MMO can thrive, offering incredible gameplay without other apps creating bottlenecks.
+Security + Efficiency.
+With Move, in-game assets are better protected
+. Game devs can rest easy knowing that the blockchain elements are more secure. From the beginning, Move lets them build efficiently and flexibly.
+Movement Games: The First Generation
+1.
+Seekers Alliance
+This multiplayer TCG (trading card game) has
+deeply considered battle mechanics
+and allows you to collect cards, assembling them into decks. You choose from three major factions in several modes, including a ladder mode with rankings. The game utilizes novel NFT mechanics and emerged as a winner in our
+Battle of Olympus
+.
+2.
+PLAYSIDE
+Playside aims to be the Pokémon GO of branded advertising. How so? Players get rewarded for completing brand-sponsored quests IRL —
+but also in games like Roblox, Minecraft, and Fortnite. This empowers brands to up their ROIs, expand loyalty offerings, and deepen analytics. All while users get rewards.
+3.
+Cryptara Conquest
+This 2D survival RPG by gaming studio IntoTheVerse will be on the SVM and MoveVM. Players forge items, fight mobs, and collect in-game purchases as they play through a PvE atmosphere. The vibe recalls great dungeon classics from the old days of gaming. You can't play just yet, but Cryptara Conquest is
+coming soon
+.
+4.
+Xenobunny
+Xenobunny is a PVP strategy trading card game, one with plenty of Movement NFTs. Innovating on the TCG model, Xenobunny weaves in DeFi and UGC, such as the ability to create custom battle cards. Players gain loot within an open economic system. The Bunny Warriors you play as can freely move across chains, a capability showcasing Movement's interop.
+5.
+Simemes
+Simemes integrates memes into EVERY aspect of gameplay. It blends meme culture (including meme education elements) and the mechanics of an idle game, a genre that lets players advance even when not actively playing. In Simemes, players collect resources and earn XP, getting promoted to meme-inspired jobs (like McDonald's intern). Social features foster interaction between players.
+6.
+Rage Mage
+In this mobile adventure game, you quest through a world of magic. As you go, your mage picks up new skills, different elements. You start as a rookie. You improve, mixing and matching equipment sets. In-game items like gems give you boosts and help you triumph in duels. Rage Mage comes from
+Salvo Games
+.
+7.
+Meme Forest
+Meme Forest is a meme-centric game developed on the Telegram platform SMURF. In the retro-style pixellated game, you train and upgrade heroes with unique attributes (metal, wood, water, fire, or earth). Then you battle powerful creatures within the Great Meme Forest. You gain resources as you battle. You then use resources to develop a community.
+8.
+Laniakea
+Movement's very first MMORPG lets you choose between 20 factions and 100+ weapons. Characters are deeply customizable, and you're nor confined to any one class (as with most MMORPGs).
+The game is open world
+. It has night and day. Weather changes. Snow falls. You can ride 60+ mounts. You can build houses, farmland, and towers, transforming your world.
+9.
+Moxy
+Moxy wants to bring esports to all using a gamification platform bridging Web2 and on-chain gaming. On Moxy, gamers can play tournaments for AAA games like Dota 2, and other popular titles, receiving on-chain tokens for wins. With added incentives, games gain new engagement drivers and gameplay gets more intense.
+10.
+Metakraft AI
+Metakraft AI provides a generative tool to spatial designers. With Metakraft, creators and studios can create (and monetize) the kinds of epic, immersive 3D experiences that can provide the setting for great games. Curious to try the tool and build a world?
+Apply for early access
+.
+11.
+Move Game Kit
+Move Game Kit equips devs to build crypto-native games based on a key Move feature: composability. It's a game kit tailormade for Move-based chains, including Movement. Move Game Kit also allows you to, for instance, easily create on-chain IDs for users. See t
+his whitepaper
+(keep Google translate close) and
+this demo
+.
+Movement is the Future of Gaming
+This cohort is truly just the beginning.
+Movement is primed to send waves through blockchain gaming.
+It goes beyond the better tech. Movement has
+a budding ecosystem with vibes
+. Yes, that seems intangible, but it makes a real difference. Within the Movement community, teams often collab. Gaming teams can network with fellow rising gaming studios. Teams can expand distribution, connect with new partners, find new infrastructure providers.
+So start the countdown to Movement gaming liftoff.
+And to build your game on Movement, start with
+our docs
+.
+GLHF.

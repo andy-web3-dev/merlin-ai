@@ -1,0 +1,140 @@
+Movement Labs Research Explains: What Is Movement?
+Research, Tech Deep Dives
+July 29, 2024
+Franck Cassez, Shashank Motepalli & Andreas Penzkofer
+In this post, we introduce the Movement Network, a network of high-throughput, fast-finality Move-based rollups secured by Ethereum. First, we explain why we chose Move and the Move Virtual Machine (MoveVM) for the execution layer (
+high throughput
+). Next, we introduce the main features of our modular, configurable stack unlocking interoperable
+Move Rollups
+. We explore two features in detail:
+interoperability
+via
+atomic cross-chain transactions
+, and
+fast finality
+provided by a
+fast-finality rollup
+mechanism.
+(For further reading, see the Movement whitepaper.)
+The Move Language Advantage
+Smart contracts
+implement the business logics of
+distributed Applications (dApps)
+. They provide an interface for end-users to use applications through
+transactions
+. Contracts are programs, and any vulnerability (bug, erroneous logic) in their code can be exploited by malicious attackers.
+First generation Web3 programming languages like Solidity and the Ethereum Virtual Machine (EVM) are not built for security.
+Re-entrancy
+(Solidity/EVM bytecode) is a feature that is regularly exploited by attackers. Some common patterns like the
+upgradability
+of contracts (Solidity/OpenZeppelin) have
+serious drawbacks
+. In 2023, according to
+Certik
+, code vulnerabilities cost $291M+; in 2024, according to
+DefiLlama
+, hacks have already cost $970M+.
+As
+Trail of Bits
+CEO Dan Guido[1] mentioned in the podcast series
+Building Better Systems
+,
+What the hell are the blockchain people doing, and why isn't it a dumpster fire?
+"Solidity seems to have re-invented all of the vulnerabilities that were wiped out of languages like Rust or Go," he said. "The Solidity language needs to go."
+In 2024, Solidity remains, but fortunately a solid and principled alternative has emerged: the
+Move language
+.
+Move proposes a new approach to Web3 development. Move introduces a
+novel programming paradigm
+known as
+resource-oriented programming
+, providing the primitives developers need to develop secure contracts. The Move language is supported by the Move Prover [2], offering
+formal verification
+, the gold standard for developing secure critical systems. Further, the Move MoveVM implements BlockSTM a state-of-the-art parallel execution engine, delivering 160K+ TPS.
+At Movement Labs, we want to build of network where the most advanced Web3 technology, incarnated by Move, meets the most crypto-economically secure chain, Ethereum.
+The Movement Network
+Application specific chains are becoming the norm. This is driven by the fact that applications in DeFi, gaming, or supply chain have different requirements for latency and throughput. Privacy or proprietary requirements may also need to isolate a chain and its dApps from others.
+The Movement Network is a set of modular and configurable
+Move Rollups
+that provide a platform for deploying interoperable, application-specific chains. Each Movement Rollup can use a custom Data Availability layer (default is Celestia), custom sequencing (default is Movement's decentralized shared sequencer, M1), a custom finality mechanism (default is our fast staked attestations), and they all share the MoveVM for powerful execution.
+By sharing a common modular architecture, the chains in Movement Network can interoperate, share the same bridge and DA layer, and use our fast-finality
+rollups
+settlement mechanism.
+Our execution engine supports both Move and EVM transactions. This feature is critical, allowing Web3 developers to onboard to the Movement network quickly. It also empowers developers to leverage existing EVM dApps and extend them, benefiting from the advanced features of the Move platform. For instance, standard EVM contracts like ERC-20 can be deployed on Movement Network, while new and secure Move dApps can interoperate with them.
+Interoperability with Atomic Cross-Chain Transactions
+The default configuration of a Move Rollup uses our
+decentralized shared sequencer
+, M1. M1 supports customizable transactions ordering, with templates from a set of approaches, such as fair transaction ordering for mitigation of front-running attacks and censorship resistance. The M1 sequencer module offers a solution where fees can be collected by the rollup rather than by an external service (marketplace), thus increasing utility of native tokens in the Movement Network.
+Shared sequencing is the ability of the sequencer module to sequence transactions on multiple chains. This is instrumental for
+interoperability between different rollups
+, such as via
+cross-chain atomic transactions
+.
+An atomic cross-chain transaction involves more than one chain and has one component per chain involved. The requirement is that all the components of the cross-chain transaction are executed successfully or none of them are executed. For instance, assume Alice and Bob will swap 1 ETH on chains A and B. This can be implemented with an atomic transaction of two components: 1) where Alice transfers 1 ETH to Bob on chain A, and 2) where Bob transfers 1 ETH to Alice on chain B. Cross-chain atomic transactions are frequently used in DeFi applications, such as for cross-chain arbitrage. For many use cases it is simpler and more secure than
+bridging
+between chains.
+Synchronous Cross-chain atomic transactions are a novel concept with interesting challenges. For instance, how do involved chains communicate efficiently about their progress? How do chains with different finality assumptions (confirmation of a transaction) interoperate? What happens if we need to rollback a cross-chain transaction?
+Implementing a secure atomic cross-chain transaction mechanism is an active area of research. Movement Labs' research team is developing an innovative and performent solution.
+Fast-Finality Rollups
+A
+fast-finality rollup
+is a rollup secured with a Proof of Stake (PoS) protocol. In a PoS protocol, validators stake some assets (in native L2 tokens) to be incentivized to attest honestly about the status of an L2 state transition. If they are dishonest (they accept incorrect state transitions or reject correct state transitions) their stakes can be slashed. Honest validators are rewarded for their activity.
+Fast-Finality Move Rollup
+A fast-finality Move Rollup can rely on a network of validators to provide
+fast-finality
+. The role of a validator is to confirm that the execution of a batch of transactions is correct. A transaction is
+final (irreversible)
+on a
+fast-finality
+Move rollup when
+enough
+validators have confirmed the correctness of a state transition. For the sake of simplicity, we assume all the validators stake the same amount and
+enough
+means more than 2/3 of the validators.
+A simple mechanism for implementing a fast-finality Move Rollup is:
+A set of validators stake some assets in a
+trusted
+L1 contract
+AttVerifK
+.
+On the Move Rollup, the validators broadcast their (signed) attestations (either approving or rejecting a state transition), and at the same time collect the
+signed attestations
+from others.
+When an honest validator has collected attestations representing more than 2/3 of the total stake, they submit them to contract
+AttVerifK
+.
+The contract
+AttVerifK
+verifies that the attestation signatures are valid, unique, and account for more than 2/3 of the stake. The state transition becomes final.
+Assuming less than 1/3 of the validators are Byzantine, there will be an honest validator who confirms the correct state transition. Due to the 2/3 majority requirement, there cannot be a malicious actor who could submit enough attestations supporting an erroneous state transition. Moreover, due to cryptographically protected signatures, they cannot forge/tamper these and craft erroneous state transitions.
+Attestations can be delivered in the order of seconds. Consequently, a fast-finality Move Rollup provides fast-finality and substantially improves user experience. In contrast, an
+optimistic rollup
+has a challenge window of 7 days before a transaction is final. A validity rollup (zk-proof) is faster than an optimistic rollup, but has a proof generation time in the order of 10-15 mins, and also requires expensive hardware configurations.
+Security of a Fast-Finality Move Rollup
+The security level of a fast-finality Move Rollup depends on the total stake of the validators. Validators stake in the (trusted) contract
+AttVerifK
+on L1. Further, the verification that the threshold of 2/3 of the validators have confirmed a state transition is performed by contract
+AttVerifK
+. As a result the verification step
+inherits Ethereum security
+. The staking/slashing/rewarding functions are also executed on L1 with the same security level.
+The overall security of the fast-finality rollup approach depends on the
+total stake of validators
+. The staking, rewarding and verification steps inherit Ethereum security.
+[1] Dan Guido – Podcast,
+Building Better Systems
+, 2021.
+What the hell are the blockchain people doing, and why isn't it a dumpster fire?
+[2] Dill, D., Grieskamp, W., Park, J., Qadeer, S., Xu, M., Zhong, E. (2022).
+Fast and Reliable Formal Verification of Smart Contracts with the Move Prover
+.
+In: Fisman, D., Rosu, G. (eds) Tools and Algorithms for the Construction and Analysis of Systems. TACAS 2022. Lecture Notes in Computer Science, vol 13243. Springer, Cham. DOI
+About Movement:
+Movement Labs is the innovative force behind the Movement Network, an ecosystem of Modular Move-Based Blockchains that enables developers to build secure, performant, and interoperable blockchain applications, bridging the gap between Move and EVM ecosystems. We are developing the first Move Virtual Machine L2 for Ethereum, alongside open-source tooling and protocols to facilitate the adoption of the Move programming language across blockchain ecosystems. With Movement, developers can launch high-performance Move VM rollups with ease. We aim to revolutionize blockchain interoperability and advance Move-based technologies in the Web3 space.
+Website
+/
+Twitter/X
+/
+Discord
+/
+Telegram

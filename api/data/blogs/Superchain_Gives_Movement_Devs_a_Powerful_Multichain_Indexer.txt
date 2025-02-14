@@ -1,0 +1,41 @@
+Superchain Gives Movement Devs a Powerful Multichain Indexer
+Partnerships
+May 21, 2024
+Movement developers already enjoy huge advantages, including the safety, efficiency, and affordability of using the Move programming language, the Movement SDK, and a tight-knit community. Now, developers will be gaining yet another powerful tool for building performant apps:
+Superchain Network
+.
+Superchain’s Novel Blockchain Data Offering
+Superchain Network is an immersive Web3 environment providing data infrastructure for projects needing usable, verifiable, and transparent data for building. Superchain Network offers next-generation data infrastructure, including indexing with much greater speed than existing solutions.
+What does this mean for Movement developers? Leveling up your indexer and gaining a better way to analyze activity and monitor contracts.
+The result: devs can build smarter and better. And users can enjoy better apps.
+Superchain Network aims to shift the blockchain data mindset, decentralizing its architecture. By decentralizing, unifying data into a consistent, granular model, and processing locally, Superchain can offer access to fast, low-latency blockchain data. Developers can customize their level of data access, optimizing for their project’s needs. Superchain also has customized data storage and streaming capabilities, accelerating the speed of data access even further. With Superchain, devs get consistent, unified data access across both EVM and the Move VMs.
+In short, Superhcain’s practical re-imagination of indexing gives Movement developers the ability to build with fast, customizable, decentralized data – opening new doors.
+Next-Gen Developer Tooling on Movement
+Superchain is yet another cog in Movement’s integrated, but modular machine. Movement strategically unites the best modular elements, yielding a highly performant network of blockchains that can provide the kind of smooth user experience needed to bring Web3 apps to a global user base.
+To learn more about building on Movement and the toolkit available to movement developers, check out our recent explainer on the
+Movement SDK
+. Dive in and learn how this comprehensive development kit designed for the M2 rollup structure incorporates game-changing features like Fractal (making Ethereum apps backward-compatible with Movement) and the MoveVM (an efficient execution engine with tightly controlled environments for smart contracts).
+Altogether, Superchain and the many cutting-edge Movement developer tools represent a blockchain paradigm shift – a movement toward faster, safer, better apps.
+What’s Next for Superchain and Movement?
+Soon, you’ll be able to use Superchain to build apps on Movement in test environments. As we approach testnet and mainnet, Movement builders will be able to join cool new programs, which offer the chance to win rewards as we build the future together. To join the Movement,
+enter our community
+.
+Want to learn more about Superchain?
+Join the Discord
+today and check out the other links below.
+About Superchain
+Superchain delivers a new class of infrastructure for the next generation of blockchains by making data usable and accessible. Founded in 2021, Superchain was inspired by the need for privacy and decentralisation in blockchain data. Superchain Network provide high-performance streams of immersive data that organise un-siloed and hard-to-get data points into real-time and historical streams. The Superchain Network platform ensures verifiability, transparency, and provenance, solving multiple use cases for dApps, chains, and protocols.
+Website:
+www.superchain.network
+Discord:
+https://discord.gg/ScwMTWZqPD
+Twitter/X:
+https://x.com/OpenSuperchain
+LinkedIn:
+https://linkedin.com/company/superchain-network
+About Movement
+Movement is a network of Move-based blockchains, designed to combine smart contract security and parallelization with the liquidity and user base of the EVM. M2, the first MEVM (Move + EVM) ZK L2 on Ethereum, powered by Celestia, seamlessly integrates MoveVM with Ethereum, setting a new standard for blockchain interoperability and performance.
+Join the Movement
+Developers, researchers, and blockchain enthusiasts are invited to join Movement Labs on this transformative journey. Engage with the devnet, explore research papers and blog posts, build with the Movement SDK, and immerse in the Move programming language.
+For more information about Movement Labs and to explore the documentation, visit
+movementlabs.xyz

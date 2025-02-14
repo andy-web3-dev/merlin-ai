@@ -1,0 +1,68 @@
+How to Get Involved with Movement's Testnet
+Announcements, Testnet
+July 30, 2024
+Movement Labs
+Movement’s
+public testnet
+is NOW LIVE.
+With the launch of our public testnet, developers and users have a live environment to use Movement’s next-gen L2. Movement offers far greater security through Move and uses the parallelized MoveVM, the first Move virtual machine L2 for Ethereum. Movement is integrated, allowing devs to choose the best modular pieces. Movement also uses Celestia for data availability, providing a high-throughput solution for posting transaction data off-chain while still settling to Ethereum.
+Six of our launch partners have their apps deployed. Many more are coming. Yes, you can use Movement today. Here’s how.
+The MoveDrop
+The
+MoveDrop
+is an incentivized testnet program. It provides a way for the community to come together to build something: Parthenon (AKA Movement mainnet).
+Anybody can join. Participants receive trophies, medals, resources, and ethos for actions. These are the foundation of MoveDrop participation and recognition.
+The MoveDrop has
+four
+primary pieces.
+MoveDrop homepage
+1. The Battle of Olympus (for Devs)
+Developers can build on the Movement testnet through our Battle of Olympus. This hackathon is for elite blockchain devs (and dev teams). More than 750 teams are already registered!
+Teams are ranked on a master leaderboard, moving up or down based on progress. Devs can build in DeFi, gaming and entertainment, social and community tools, infrastructure and dev tools, and NFTs.
+You’re still early! The battle has only just begun and it ends in September
+Olympus homepage
+Olympus registration
+2. Building the Parthenon (for Everyone)
+Building the Parthenon is an incentivized testnet program open to all. No matter your speciality, you can join this community-driven journey to mainnet. It starts TODAY, with public testnet.
+Here’s how you can start participating ASAP:
+Complete weekly guild quest lines on
+Movement’s Galxe
+Engage with partner ecosystem projects to support Movement
+Join a Movement guild (best option)
+Movement guilds provide specific tracks for you to follow based on your skills and interests. You’ll help build the Parthenon with fellow Movers. Our guilds:
+Pathfinders: network explorers
+Creators: creators + storytellers
+Explorers: test features + provide feedback
+Scholars: researchers + educators
+Spartans: on-chain testooooors
+Building the Parthenon
+Join a Movement Guild
+3. Gmove Campaign
+You can win trophies for saying “gmove” on X. Yes, really!
+4. Centurions
+We’ll also be launching a program for committed participants. More TBA.
+Developer Docs and Resources
+Movement Documentation
+Getting Started Building on Movement
+Movement Learning Resources
+Timeline
+Movement Public Testnet Live:
+today
+Battle of Olympus:
+now through September 17
+Road to Parthenon:
+now through mainnet
+Wen Mainnet:
+soon
+Go Forth and Build
+What are you waiting for? Whether you're a dev, creator, or community enthusiast, there's a place for you in the Movement. Every quest you complete boosts your standing.
+We're pumped to build with you!
+About Movement:
+Movement Labs is the innovative force behind the Movement Network, an ecosystem of Modular Move-Based Blockchains that enables developers to build secure, performant, and interoperable blockchain applications, bridging the gap between Move and EVM ecosystems. We are developing the first Move Virtual Machine L2 for Ethereum, alongside open-source tooling and protocols to facilitate the adoption of the Move programming language across blockchain ecosystems. With Movement, developers can launch high-performance Move VM rollups with ease. We aim to revolutionize blockchain interoperability and advance Move-based technologies in the Web3 space.
+Website
+/
+Twitter/X
+/
+Discord
+/
+Telegram

@@ -1,0 +1,3624 @@
+App name: Echelon
+Landing page: https://echelon.market/
+App category: Dex
+App insights: 
+Echelon is a universal lending market connecting liquidity and supercharging yields on Move.
+App documentation: https://docs.echelon.market/echelon-v1
+Echelon Hub | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Echelon Hub
+Universal lending market connecting liquidity and supercharging yields across the Move ecosystem.
+Next
+Borrow/Lend
+Last updated 
+6 months ago
+What is Echelon?
+Echelon is a decentralized financial market written in the 
+Move programming language
+. Its users can borrow and lend assets to each other indirectly via non-custodial pools to earn interest or increase one's buying power with leverage.
+
+V1 is a money market enabling permissionless borrowing and lending of assets. The protocol protects lenders from defaults and collateral volatility by requiring borrowers to over-collateralize loans, performing liquidations, and other other 
+risk management parameters
+.
+Get started now at: 
+Echelon.Market
+
+Join our community on Discord: 
+Echelon Discord
+
+Follow us on X / Twitter: 
+Echelon Twitter
+⚡
+🕵️‍♂️
+Audit Reports
+🚨
+Risks
+🖊️
+Terms of Service
+Echelon Hub | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+⚡
+Echelon Hub
+Universal lending market connecting liquidity and supercharging yields across the Move ecosystem.
+What is Echelon?
+Echelon is a decentralized financial market written in the 
+Move programming language
+. Its users can borrow and lend assets to each other indirectly via non-custodial pools to earn interest or increase one's buying power with leverage.
+
+V1 is a money market enabling permissionless borrowing and lending of assets. The protocol protects lenders from defaults and collateral volatility by requiring borrowers to over-collateralize loans, performing liquidations, and other other 
+risk management parameters
+.
+🕵️‍♂️
+Audit Reports
+🚨
+Risks
+🖊️
+Terms of Service
+Get started now at: 
+Echelon.Market
+
+Join our community on Discord: 
+Echelon Discord
+
+Follow us on X / Twitter: 
+Echelon Twitter
+Next
+Borrow/Lend
+Last updated 
+6 months ago
+Borrow/Lend | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+Borrow/Lend
+Echelon's Borrow/Lend market powers borrowing against collateral assets, leverage looping/staking, and supplying assets to earn interest. This section covers the mechanics of how these markets work:
+Previous
+Echelon Hub
+Next
+Core Concepts
+Last updated 
+1 month ago
+Echelons borrow lend market is a non custodudoial pool where users can take overcollateralized loans against their assets, or supply assets to earn a share of the pools interest. Currently the markets are available across Aptos Mainnet, Movement Testnet, and Initia Testnet.
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🤝
+Core Concepts | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+1. Pairs and Lending Mechanics
+2. Interest Rate Mechanics
+3. Loan-To-Value (LTV)
+4. Liquidations
+5. Vault Account Mechanics
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+Core mechanics of the borrow/lend market
+Previous
+Borrow/Lend
+Next
+Borrowing Assets
+Last updated 
+9 months ago
+1. 
+Pairs and Lending Mechanics
+In each isolated market, users can borrow one type of token (Asset Token) by depositing another (Collateral Token).
+Depositing Asset Tokens in a pair gives lenders a claim that is redeemable for an increasing quantity of Asset Tokens as interest accrues.
+Borrowers deposit Collateral Tokens to gain the right to borrow Asset Tokens.
+2. Interest Rate Mechanics
+Interest is accrued continuously according to the formula: Pe^rt-e 
+Interest rates are determined by a specific Rate Calculator contract for each pair. The Time-Weighted Variable Rate adjusts based on asset utilization - Rates decrease if utilization is low and increase if high.
+Read our 
+ section for more information.
+3. Loan-To-Value (LTV)
+LTV represents the ratio of borrowed assets to deposited collateral. It changes with market rates and interest accrual.
+Borrowers must maintain their LTV below a pre-set Maximum LTV to avoid their position being marked unhealthy. To correct an unhealthy LTV, borrowers can add collateral or repay part of the loan.
+The Maximum LTV is set for each individual asset pair. LTV information for the pairs supported at launch can be found under 
+.
+4. Liquidations
+If a borrower’s LTV exceeds the Maximum LTV, any user can liquidate the position by repaying some or all of the debt, receiving collateral plus a fixed liquidation fee in return. The liquidation fee, set at deployment, is usually 10%.
+5. Vault Account Mechanics
+The Vault Account is a key element in the pair's accounting system, comprising two main components: the Account Value (total tokens within the vault) and a unique representation of ownership for each lender.
+The Account Value reflects the overall holdings in the vault, including both the initial deposits and any accrued interest.
+Lenders receive an increased value, symbolizing their contribution to the Vault Account. This can be redeemed in proportion to their share of the total Account Value at a later date.
+As interest accrues within the pair, the Account Value increases, enhancing the redeemable value of each lender's token.
+Interest rate
+supported assets
+Borrowing Assets | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+💼
+Borrowing Assets
+Users can borrow asset tokens from a pair by supplying the necessary amount of collateral tokens. Interest on the borrowed amount accrues over the duration of the loan, incrementally increasing the total amount owed. To reclaim their collateral, borrowers must settle the loan in full, repaying the original loan amount plus the accrued interest. 
+Unlike other protocols which issue deposit receipt tokens (eg. Compound’s c-tokens), Echelon manages deposit receipts within the smart contract which reduces complexity and vulnerability. 
+Borrow APR indicates how much yearly interest you will have to pay on your debt.
+Previous
+Core Concepts
+Next
+Supplying Assets
+Last updated 
+9 months ago
+Supplying Assets | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+🫴
+Supplying Assets
+Lenders contribute asset tokens to the lending pool and receive a claim to a corresponding portion of the pool's assets. Accounting for a user’s lending and borrowing balances is handled within the smart contract. 
+At any time, lenders can redeem their claim for the original asset tokens, with the amount determined by the current market rate. The value of a lender's claim increases as interest accumulates in the pool, mirroring the growth in the pool's total assets. This system ensures that lenders see a balance that reflects the accruing interest.
+Supply APR indicates 
+how much yield will be earned
+ by depositing an asset
+Previous
+Borrowing Assets
+Next
+Borrow Rates
+Last updated 
+6 months ago
+Borrow Rates | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+⚖️
+Borrow Rates
+Details on how Borrow Rates are determined
+Previous
+Supplying Assets
+Next
+Supply Rates
+Last updated 
+9 months ago
+The interest rate model is designed to mitigate liquidity risk, particularly when utilization is high. The model has two parts:
+Below the optimal utilization rate (U_optimal), the rate increases gradually.
+Beyond U_optimal, the rate increases steeply to discourage high utilization.
+The interest rate 𝑅𝑡​ follows the model:
+The borrow rates rise gently with increased utilization but spikes when utilization approaches full capacity, to manage the liquidity effectively. Interest rate (IR) curves dictate supply and borrow rates based on an asset’s utilization rate. These rates are intended to maintain market equilibrium, while ensuring that lenders can access their liquidity should they wish to withdraw capital.
+Model Parameters:
+Key parameters for the variable interest rate model include:
+Optimal Utilization Rate (U_optimal)
+Base Variable Borrow Rate
+Variable Rate Slope 1 (before U_optimal)
+Variable Rate Slope 2 (after U_optimal)
+Theoretically, if the optimal Utilization rate was set to 100%, the rates would follow a linear model. 
+It's essential to differentiate between assets primarily used as collateral, which require high liquidity for liquidation purposes, and those with ample liquidity on Echelon Markets, which contribute to a stable utilization rate. Market conditions also influence borrowing costs; Echelon's rates must remain competitive to prevent arbitrage opportunities.
+In scenarios like liquidity mining, where borrow costs are influenced by external incentives, Echelon adapts its interest rates to balance the cost of borrowing with liquidity rewards. For the latest on deposit APY and borrowing costs, users should refer to the Echelon App interface for each asset.
+Interest rate slope change past U optimal
+Supply Rates | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+💹
+Supply Rates
+Details on how Supply Rates are determined
+In Echelon Markets, when users borrow assets, the interest they pay is allocated as a yield to those who supplied those assets, creating the supply rate. A portion is set aside for the ecosystem reserve, as dictated by the reserve factor. This mechanism ensures that the yield generated from borrowed assets is equitably shared among all suppliers, contributing to the liquidity of the protocol.
+The supply Annual Percentage Yield (APY) depends on several factors:
+Utilization ratio: The proportion of lent out assets to the total available supply. 
+Variable rate: The interest rate applied to loans with rates that can fluctuate based on market conditions. 
+Reserve factor: The percentage of yield redirected to the protocol's liquidity reserve.
+Supply rates may also be subsidized by other token incentives on a pool by pool basis. The most up to date information about the supply APY for each asset may be viewed on the Core Markets interface.
+Previous
+Borrow Rates
+Next
+Supported Assets
+Last updated 
+9 months ago
+Supported Assets | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+🪙
+Supported Assets
+Echelon V1 is live with the below listed assets and collateralization ratios:
+ 
+Asset
+Base LTV
+E-Mode max LTV
+zUSDT
+80%
+93%
+zUSDC
+80%
+93%
+whUSDC
+80%
+93%
+MOD
+80%
+93%
+THL
+30%
+-
+APT
+70%
+90%
+sthAPT
+70%
+90%
+lzWETH
+70%
+-
+whWETH
+70%
+-
+CAKE
+60%
+-
+stAPT
+70%
+-
+New assets will be listed in due course, and this list may become outdated as the protocol lists more assets. 
+
+Refer to the Markets page on the Echelon App to for real-time data on supported assets, collateralization ratios, and max Loan to value.
+Previous
+Supply Rates
+Next
+Oracles
+Last updated 
+9 months ago
+Oracles | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+📊
+Oracles
+Previous
+Supported Assets
+Next
+Isolated Markets
+Last updated 
+4 months ago
+Echelon’s loan origination and liquidation services rely on price feeds from external data sources, also called Oracles. To ensure proper liquidations and avoid any bad debt, Echelon relies on three major oracle sources:
+Pyth
+Switchboard
+Custom
+Echelon primarily uses 
+Pyth
+ oracle price feeds. For assets not supported by Pyth, the protocol uses 
+Switchboard
+ oracles to gather price data. In the event that these providers go down, Echelon will switch to a temporary fallback by performing a cron job that fetches prices from DEXs and CEXs to maintain system integrity.
+
+One can view the oracle providers for each market in the prices tab.
+Custom Oracles for LSTs:
+Echelon allows for looping of LSTs (Liquid Staking Tokens), enabling a higher LTV of 90% in eMode. To minimize risks, the price of LSTs is uniquely calculated through a combination of Pyth prices and on-chain staking rewards calculation. For instance, the price of sthAPT for liquidation is calculated as follows:
+sthAPT = APT price [From Pyth] * thAPT/APT exchange rate [from Thala staking rate calculation]
+The APT price comes from one of the safest and most advanced oracles, Pyth.
+sthAPT is calculated on chain as thAPT + staking rewards.
+Using the exchange rate between liquid Staked Aptos helps smooth the price during periods of low liquidity, by reflecting the true value of the position in APT after the unstaking period is complete.  Overall, this can significantly reduce the risks of liquidation from LST depegs, while also mitigating any risks of protocol bad debt associated with large liquidations.
+
+Isolated Markets | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🤝
+Borrow/Lend
+🏝️
+Isolated Markets
+Echelon also offers Isolated Markets with Assets that are separated from the global collateral pool. 
+For example, in the global collateral pool (subject to LTV and supply caps), all assets can be borrowed and lent against - whereas in isolated pools only specific tokens are available and borrowing and lending are constrained by the availability of those tokens in the 'pool.' 
+Isolated Markets allow for:
+Listings of longer tail assets without significant protocol risk
+Ability to support more aggressive parameters in isolation
+Configurable debt cieling for isolated assets
+Currently both Pyth and Switchboard Oracles are supported for these markets. 
+Previous
+Oracles
+Next
+Swap
+Last updated 
+4 months ago
+Swap | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+Swap
+Previous
+Isolated Markets
+Next
+Cross Chain Deposits
+Last updated 
+4 months ago
+The Swap and Trade pages serve as an interface to other decentralized exchanges (DEXs) in the ecosystem, allowing users to trade asset for another. 
+Echelon Swap currently leverages two external exhange integrations to facilitate swaps.
+Thalaswap
+: This Automated Market Maker (AMM) incentivizes users to provide liquidity by offering them a share of the fees accumulated in the pool. This facilitates efficient and quick exchanges. Users set a desired slippage tolerance and select assets to swap between.
+
+Econia
+: A high-performance on-chain order book built on Aptos. This allows for more precise and customizable swapping options, complementing the liquidity provided by Thalaswap.
+
+💱
+Cross Chain Deposits | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+🛬
+Cross Chain Deposits
+Powered by LayerZero, Echelon facilitates deposits from multiple source chain to its lending vaults.
+Coming soon
+Select cross chain asset flows have already been started, including assets xamples:
+Omnichain RWA deposits
+ 
+Stakestone STONE & BTC deposits 
+Previous
+Swap
+Next
+Bridges
+Last updated 
+1 month ago
+Bridges | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+Cross Chain Deposits
+Bridges
+Previous
+Cross Chain Deposits
+Next
+Echelon Chain
+Last updated 
+5 months ago
+Echelons smart contracts are currently running on Aptos. To interact with the protocol, users must bridge over assets over from other chains. The bridge page assists users in this via integrations with two of the largest cross chain bridging providers. 
+Layerzero Bridge
+The LayerZero bridge is the recommended for bridging between Aptos and other chains such as Ethereum, Solana, Polygon, Arbitrum, Avalanche, and Optimism. This bridge requires you to have destination gas in order for the transaction to go through.
+Wormhole Bridge
+The Wormhole bridge is recommended for bridging between Aptos and Sui. This bridge requires the payment of gas fees to process transactions. 
+
+🛬
+🌉
+Echelon Chain | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+⛓️
+Echelon Chain
+The Upper Echelon - a custom debt and defi focused appchain built with the Initia MoveVM stack
+Echelon Chain is a purpose built debt and lending focused Move appchain built on 
+Initia's
+ Interwoven Stack with Celestia Data Availability underneath, designed to be the debt engine of the interwoven modular economy. A few Key features include:
+asset onboarding from anywhere w/ LayerZero and IBC
+scalable DA and access to Celestia-native assets 
+native USDC and CCTP 
+enshrined Oracles 
+a full product suite (wallet, explorers, usernames, etc)
+With near-atomic cross-chain composability with the Initia L1 and native liquidity hub for liquidations and a suite of interactions with assets native to other appchains and ecosystems.
+Echelon Chain will be engrained into the interwoven economy and harness Initia VIP rewards to bring rewards to Echelon users.
+Echelon's testnet will release later this year with mainnet rolling out Day 1 of Initia's launch in Q1 2025. More technical documentation will be released here closer to launch.
+Previous
+Bridges
+Next
+Echelon Earn
+Last updated 
+1 month ago
+Echelon Earn | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+PRODUCTS
+📲
+Echelon Earn
+A yield interface for different yields sources from on chain strategies and RWA cash flows. Available on web or via native mobile application for global access to USD yields.
+Echelon earn is an interfaced designed to make various yield strategies more accessible
+Looping of yield bearings assets such as sUSDe 
+Supplying stablecoin to earn interest
+Borrowing against your holdings
+Purchasing various RWAs
+Launching in Q1 2025
+Previous
+Echelon Chain
+Next
+Overview
+Last updated 
+1 month ago
+Overview | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+ECHELON POINTS
+🎁
+Overview
+Echelon has implemented a points system to track usage of the protocol and monitor and reward its top users and stakeholders. Points will be issued according to the following schedule:
+Base points
+: main source from protocol usage
+1 Point per dollar of assets lent per day
+3 Points per dollar of assets borrowed per day
+Referrals: 10% of all referee’s points (coming soon)
+Boosters
+: custom actions that can be done for a % boost to base points issuance
+Holding a certain token or asset (coming soon)
+Supplying TVL to a specific pool or strategy (coming soon)
++ more 
+Referrals
+:
+ 
+a unique referral code is be generated on 
+app.echelon.market/points
+. Users can share this code allows users to earn an extra:
+10% of all referee’s points when you share your link with other user(s).
+5% boost on all lifetime points earned if your account is referred by another user.
+Previous
+Echelon Earn
+Next
+Risks
+Last updated 
+1 month ago
+Risks | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🚨
+Risks
+Many of the standard risks of DeFi protocols have been considered during protocol design which Echelon has attempted to minimize. However, users may still be exposed to potential risks when using Echelon, a few of which are outlined below:
+Previous
+Overview
+Next
+Smart Contract Risk
+Last updated 
+9 months ago
+Smart Contract Risk | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🚨
+Risks
+Smart Contract Risk
+While Echeolon has been audited, vulnerabilities may be missed by its developers and core contributors in its smart contracts (developed in the Aptos-Move language) that facilitate user to platform interaction. Echelon's smart contracts  are undergoing an audit with Ottersec. Please note, there is a possibility of a missed attack vector or bug which may be critical to the health of the protocol. 
+In realizing this, bug bounties are available to the community, however it is possible that such risks exist in the protocol arising from smart contract errors such as:
+Theft of protocol funds
+Theft of user funds 
+Theft of unrealized yield 
+Attacks on protocol parameters through governance 
+Bounties will be determined by the degree of the reported vulnerability with reported critical vulnerabilities being rewarded with the highest bounties. 
+Previous
+Risks
+Next
+Oracle Risk
+Last updated 
+5 months ago
+Oracle Risk | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🚨
+Risks
+Oracle Risk
+As Echelon's products rely heavily on price feeds from partnered oracles, inaccuracies in price feeds may result in unexpected liquidations for borrowers or lenders.  As such, Echelon attempts to follow an 
+Asset Listing
+ process and continued monitoring of available collateral assets and their oracle price feeds. In the event of an oracle exploit determined by pre-established conditions, Echelon will switch to a backup oracle as explained here. 
+Note that given the variety of oracles used and assets listed, it's up to users depositing in each market to note which oracle is being used and properly assess their own risk tolerance. For example, some oracles depend on pool prices which are subject to quick change in volatile market conditions, while others are custom based on asset exchange rates, and others rely on third parties like Pyth and Switchboard. 
+Previous
+Smart Contract Risk
+Next
+Bad Debt Risk
+Last updated 
+5 months ago
+Bad Debt Risk | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+Risks
+Bad Debt Risk
+The primary risk for both the protocol and lenders is that the value of the borrowers’ collateral decreases to below the debt value or the debt increases too rapidly. In either scenario, the borrower lacks a financial incentive to repay their loan, as it would result in a loss, leading to bad debt.
+
+While Echelon/s liquidation framework aims to effectively repay vault loans in an effective manner, issues may arise during the liquidation process (high market volatility, slippage, gas costs, illiquidity, etc.) which may prevent the deposited collateral from being sold in a timely manner to make up for the borrowed amount, resulting in the protocol accruing bad debt. 
+
+So bad debt may be realized in "black swan" events. And possibly, an inability to repay user loans may arise due to insufficient liquidity caused by adverse market conditions. Accrued bad debt will be socialized among all lenders to the pool.
+Previous
+Oracle Risk
+Next
+Risk Management
+Last updated 
+3 months ago
+🚨
+Risk Management | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🔒
+Risk Management
+Echelon Markets was designed in accordance with a commitment to protocol stability and follows best practices adopted by other lending markets. In this section, an overview of the specific protocol features designed to mitigate risk is outlined.  
+Risk Parameters 
+Each asset in the Echelon protocol has specific risk values that affect how they're used for lending and borrowing. V1 includes parameters focusing on security, governance, and managing market dynamics.
+Understanding the risks associated with each asset is crucial, including smart contract security, centralization risks, and market dynamics. Assets bring their inherent risks into the Echelon Markets ecosystem. V1 introduces risk parameters that facilitate the onboarding of high-risk assets with defined limits.
+Assets in Echelon Markets are added through governance proposals or by Asset Listing Admins appointed by governance.
+Risk parameters in Echelon Markets mitigate market risks. In V1, each loan requires over-collateralization with assets subject to market volatility. Adequate margins and incentives are vital to maintain collateralization during adverse market conditions. If collateral value falls below a set threshold, a portion is liquidated to repay debt and maintain collateralization.
+Liquidation Threshold
+Echelon determines the risk of a loan through the Liquidation Threshold, which is calculated by the weighted average of each collateral type against the total collateral. 
+Liquidation Threshold: 
+When the loan's value relative to the collateral exceeds this threshold, the loan is at risk of being liquidated to protect lenders and the protocol.
+
+
+Liquidation Penalty and Factor
+A Liquidation Penalty is incurred on the collateral's value during liquidation, serving as a fee for the liquidation process. The Liquidation Factor decides how much of this penalty is directed to the ecosystem's treasury, ensuring a balance between user protection and protocol sustainability. 
+
+Health Factor
+The Health Factor is a critical gauge of an account's risk, reflecting the proportion of collateral to borrowed assets. It accounts for market fluctuations and collateral performance. 
+The health factor is calculated as: 
+A Health Factor below 1 indicates that the account is under-collateralized, prompting potential liquidation to preserve the protocol's solvency.
+
+
+Reserve Factor
+Allocates a portion of protocol interest to the ecosystem treasury, calibrated based on asset risk.
+Collateral Usage
+Certain assets, like USDT and sUSD, are limited to Isolation Mode due to high centralization risks. In contrast, certain assets may, despite being decentralized, not be used as collateral due to limited testing and liquidity. Up to date information for a specific pool’s allowed criteria can be found on the Borrow page of the Echelon App.
+Market risks directly influence risk parameters, with liquidity and volatility playing key roles. The most volatile assets have lower LTV and higher liquidation thresholds, while more stable assets like stablecoins, APT, and Liquid Staked APT have higher LTV limits.
+Max LTV, liquidation threshold, liquidation bonuses and reserve factors are set per market.
+
+Echelon Markets designs these parameters to be dynamic, reflecting real-time market conditions and maintaining a stable lending environment.
+Previous
+Bad Debt Risk
+Next
+Asset-level Risk Parameters
+Last updated 
+4 months ago
+Asset-level Risk Parameters | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+Risk Management
+Asset-level Risk Parameters
+Each asset in the Echelon Markets protocol has specific risk values that affect how they're used for lending and borrowing. V1 enhances risk mitigation with additional parameters focusing on security, governance, and market dynamics.
+Understanding the risks associated with each asset is crucial, including smart contract security, centralization risks, and market dynamics. Assets bring their inherent risks into the Echelon Markets ecosystem. V1 introduces advanced risk parameters, facilitating the onboarding of high-risk assets with defined limits.
+The main collateral market and isolsted markets have different requirements and functions. When assets being considered for listing, their usage, distribution, liquidity, and overall quality are assess to determine LTVs, supply + borrow caps, and interest rate models. 
+Assets in Echelon Markets are added through governance proposals or by Asset Listing Admins appointed by governance. 
+Risk parameters in Echelon Markets mitigate market risks. In V1, each loan requires over-collateralization with assets subject to market volatility. Adequate margins and incentives are vital to maintain collateralization during adverse market conditions. If collateral value falls below a set threshold, a portion is liquidated to repay debt and maintain collateralization.
+These parameters, including collateralization and liquidation rules, are asset-specific.
+V1 introduces tried and true risk parameters from various lending markets.
+Supply Caps
+: Limit the maximum supply of an asset to the protocol, based on on-chain liquidity and total collateral volume.
+Borrow Caps
+: Set a maximum borrow limit for an asset to prevent price exploits, large liquidations and insolvency risks. 
+Maximum Loan-to-Value (LTV): 
+The maximum borrowing power of a given collateral asset.
+Liquidation Thresholds (LT): 
+The point at where collateral can be liquidated to repay lenders.
+Liquidation Incentives: 
+Portion of repaid collateral that is given to liquidators.
+Efficiency Mode (eMode)
+: Special configuration for correlated assets. Higher LTV ratios for capital efficiency, lower Liquidation Incentives to decrease chance of bad debt on leveraged positions. 
+Previous
+Risk Management
+Next
+Account-level Risk Parameters
+Last updated 
+4 months ago
+🔒
+🪙
+Account-level Risk Parameters | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+1. Liquidation Threshold
+2. Liquidation Penalty and Factor
+3. Health Factor
+4. Reserve Factor
+5. Collateral Usage
+Security
+🔒
+Risk Management
+🦙
+Account-level Risk Parameters
+Previous
+Asset-level Risk Parameters
+Next
+Liquidations
+Last updated 
+4 months ago
+1. 
+Liquidation Threshold
+Echelon determines the risk of a loan through the Liquidation Threshold, which is calculated by the weighted average of each collateral type against the total collateral. 
+When the loan's value relative to the collateral exceeds this threshold, the loan is at risk of being liquidated to protect the protocol's financial health.
+2. Liquidation Penalty and Factor
+A Liquidation Penalty is incurred on the collateral's value during liquidation, serving as a fee for the liquidation process. The Liquidation Factor decides how much of this penalty is directed to the ecosystem's treasury, ensuring a balance between user protection and protocol sustainability.
+
+3. Health Factor
+The Health Factor is a critical gauge of an account's risk, reflecting the proportion of collateral to borrowed assets. It accounts for market fluctuations and collateral performance. 
+A Health Factor below 1 indicates that the account is under-collateralized, prompting potential liquidation to preserve the protocol's solvency.
+4. Reserve Factor
+Allocates a portion of protocol interest to the ecosystem treasury, calibrated based on asset risk.
+5. Collateral Usage
+Certain assets are limited to Isolation Mode due to high centralization risks. In contrast, certain assets may, despite being decentralized, not be used as collateral due to limited testing and liquidity. Certain assets will be listed as isolated market pairs, while others may be included in the main market. Up to date information for a specific pool’s allowed criteria can be found on the Markets page of the Echelon App.
+Market risks directly influence risk parameters, with liquidity and volatility playing key roles. The most volatile assets have lower LTV and higher liquidation thresholds, while more stable assets like stablecoins, APT, and Liquid Staked APT have higher LTV limits.
+
+Max LTV, liquidation threshold, liquidation bonuses and reserve factors are set per market.
+
+Echelon designs these market parameters to be dynamic, reflecting real-time market conditions and maintaining a stable lending environment.
+Liquidations | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+Risk Management
+Liquidations
+A critical process in protecting pool lenders, which is triggered when a borrower's health factor falls below 100% due to their collateral value not adequately covering their loan or debt value.
+This might happen when the collateral decreases in value, or the borrowed debt increases in value relative to each other. This collateral-to-loan value ratio is reflected in the health factor, based on the account's margin determined by the liquidation threshold (LT) of each collateral asset.
+Liquidations are triggered by Oracle price feeds and managed by liquidator bots ran internally and by third parties. A liquidation penalty is applied to the value of the collateral during liquidation, serving as an incentive to execute the liquidation. A portion of the seized collateral goes to liquidator incentives.
+If during a liquidation the quoted value of borrowers collateral is unable to fully be recovered, bad debt may accrue. This may be due to insufficient liquidity. Accrued bad debt will be socialized among all lenders to the pool.
+Liquidations are open source and permissionless. Visit 
+Running a Liquidator Bot
+ to learn more.
+Previous
+Account-level Risk Parameters
+Next
+Asset Listing
+Last updated 
+3 months ago
+🔒
+🌊
+Asset Listing | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🔒
+Risk Management
+📓
+Asset Listing
+Echelon core protocol facilitates the supply and borrowing of digital assets through liquidity pools. When users supply assets, they receive protocol-issued tokens that represent both the supplied assets and the accumulated yield. Collateral secures each loan, serving as a safeguard against default. While Echelon is not directly responsible for the activity/liquidity of any specific pool, many considerations must  be addressed by it's core contributors before creating new markets
+For V1, the following considerations apply to listed assets:
+Each new token adds a permanent, slight increase to transaction gas costs due to the added complexity in the smart contracts.
+Introducing a new token as collateral elevates the protocol's insolvency risk. Tokens used as collateral are effectively the protocol's assets, and borrowed tokens represent its liabilities. Since borrows are primarily stablecoins and collateral is often in volatile assets, the following principles are key:
+Only assets with strong risk profiles should be supported as collateral in the main market.
+Assets with lower liquidity or risk profiles may be supported in isolated lending only. 
+
+
+V1's is designed to mitigate the insolvency risk when listing new, riskier tokens.
+Centralized assets as collateral introduce a centralization risk due to single points of failure that affect the Echelon protocol.
+Assets with potential oracle manipulation risks are restricted to single-asset borrowing to prevent multi-asset exposure.
+Long tail collateral assets are limited to isolated pool listings to minimize risk to main pool lenders.
+
+Tokens that are enabled solely for supply and borrowing, not collateralization, present a lower risk. These tokens must always be significantly overcollateralized to ensure protocol solvency. For example, a user may supply MOD as collateral and borrow MOD backed by this collateral; however, assets not permitted as collateral must always be borrowed against less risky assets.
+Diverse liquidity sources mitigate risk through diversification.
+When onboarding a new token, it's crucial that the Echelon community conducts thorough analysis to ensure the asset introduces more value than risk. Only tokens with a substantial backing and a significant community presence should be considered. Our asset risk methodology provides a framework to evaluate tokens' risks to the protocol and calibrate parameters accordingly to manage those risks.
+
+Management of New Market Listings
+The introduction of new tokens into the Echelon ecosystem will initially be overseen by the Echelon core team. In the future, this responsibility will transition to the Asset Listing Governance Team, which will operate under the guidance and decisions of Echelon token holders. Further details on this process will be shared in due course.
+Previous
+Liquidations
+Next
+Operational Security
+Last updated 
+1 month ago
+Operational Security | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+Risk Management
+Operational Security
+Multisig
+Every code upgrade and treasury transaction must be approved by 3/4 multisig. This is enforced through a multisignature contract which only allows code upgrades when 3 out of 4 signers have signed the upgrade with their cold storage wallet. 
+
+2FA
+All accounts managed by contributors are secured by two factor authentication using an authenticator app, reducing the likelihood of access being granted to a malicious actor via methods such as 
+sim-swapping
+. 
+Audits
+Our auditors have also checked for centralization risks when auditing . This means that potential backdoors, deliberate exploit opportunities and other risks are reported by the auditor with or without the contributor's approval.
+For more information on audits and to find the full list of audits performed on the Echelon codebase see the next page.
+Previous
+Asset Listing
+Next
+Audit Reports
+Last updated 
+5 months ago
+🔒
+🧑‍💻
+Audit Reports | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🕵️‍♂️
+Audit Reports
+Last updated Mar 21, 2024
+Previous
+Operational Security
+Next
+Disclaimer
+Last updated 
+14 days ago
+Echelon V1 has been formally audited 5+ times by 
+Ottersec
+, 
+Zellic
+ , 
+Code4rena
+, and 
+Quantstamp
+.
+Audit Reports
+Echelon V1 Core Audit
+
+
+Date:
+ March 21, 2024 
+
+Scope:
+ Lending Core, E Mode
+
+Firm: 
+Ottersec
+Isolated Lending
+
+
+Date:
+ July 1, 2024
+
+Scope:
+ Isolated Lending Pairs
+
+Firm: 
+Zellic
+Echelon Upgrades and Maintenance; Comprehensive Audit
+
+
+Scope:
+ Lending core, liquidation thresholds, leveraged lending, Isolated lending, Movement deployment 
+
+Date:
+ Ongoing review since March 2024, re-review from December 2024 - January 2025
+
+Firm:
+ 
+Ottersec
+Report will be available shortly
+Echelon Comprehensive Audit
+Date:  
+December 18 - January 12, 2025
+
+Scope: 
+Lending core, Isolated lending, ve token, boosted farming 
+
+Firm: 
+Code4rena
+ (Zenith)
+Echelon Initia Appchain; Movement Royco deployment; Re Review
+Date:  
+January 3 - 13 2025
+
+Scope: 
+Initia deployment configuration, cross chain deposit Royco adaptation, lending core
+
+Firm: 
+Zellic
+Echelon Comprehensive Audit
+Date:  
+starting in January
+
+Scope: 
+Lending core, Isolated lending, ve token, boosted farming 
+
+Firm: 
+Quantstamp
+1000KB
+echelon_v1_modules_audit_final.pdf
+pdf
+737KB
+Echelon - Zellic Audit Report.pdf
+pdf
+1MB
+Zenith Audit Report- Echelon (2).pdf
+pdf
+769KB
+Echelon - Zellic Audit Report Jan 2025.pdf
+pdf
+Disclaimer | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+❕
+Disclaimer
+Last updated Jan 19, 2024
+This documentation by Echelon Labs and/or its affiliates (“we”, “us” and “our”) is for information purposes only. We do not provide tax, legal, insurance or investment advice, and nothing in this article should be construed as an offer to sell, a solicitation of an offer to buy, sell or issue or subscribe for, or a recommendation for any security, investment, cryptocurrency, token or other services, product or commodity by us or any third party. You alone are solely responsible for determining whether any purchase, sale, investment, security or strategy, or any other product or service, is appropriate or suitable for you based on your personal objectives and personal and financial situation and for evaluating the merits and risks associated with the use of the information in this article before making any decisions based on such information or other content. You should consult a lawyer and/or tax professional regarding your specific legal and/or tax situation. Past performance is no guarantee of future results. Therefore, you should not assume that the future performance of any specific investment, cryptocurrency, token, commodity or strategy will be profitable or equal to corresponding past performance levels. Inherent in any such transaction is the potential for loss. No recommendation or advice is being given as to whether any transaction is suitable for a particular person. By accessing this article, you acknowledge and agree to all of the foregoing and that you bear responsibility for your own research, due diligence and transaction decisions. You also agree that we, our affiliates and our respective directors, officers, employees, consultants, shareholders, members, representatives, advisors and agents will not be liable for any decision made or action taken by you and others based on this article, news, information, opinion, or any other material published, discussed or disseminated by us.
+This article contains forward-looking statements or forward-looking information (referred to collectively as “forward-looking statements”). Forward-looking statements can be identified by words such as: “anticipate”, “intend”, “plan”, “goal”, “seek”, “believe”, “predict”, “project”, “estimate”, “expect”, “strategy”, “future”, “likely”, “may”, “should”, ”would”, “will”, and similar terms and phrases and the negatives of such expressions, including references to assumptions. Examples of forward-looking statements in this article include, among others, statements we make regarding our future plans, expectations and objectives.
+Forward-looking statements are neither historical facts nor assurances of future performance. Instead, they are based only on our current beliefs, expectations and assumptions regarding the future of our business, future plans and strategies, projections, anticipated events and trends, the economy and other future conditions. Because forward-looking statements relate to the future, they are subject to inherent uncertainties, risks and changes in circumstances that are difficult to predict and many of which are outside of our control. Our actual results and financial condition may differ materially from those indicated in the forward-looking statements. Therefore, you should not rely on any of these forward-looking statements. Important factors that could cause our actual results and financial condition to differ materially from those indicated in the forward-looking statements include, among others, the following: reliance on blockchain technology and blockchain technology service providers; digital asset transactions being irrevocable and losses occurring from such transactions; our use and reliance on proprietary data and intellectual property in its business; potential misuses of digital assets and malicious actors in the digital asset industry; digital assets potentially being subject to hold periods; developments and changes in laws and regulations; and disruptions to our technology network including computer systems, software and cloud data, or other disruptions of our operating systems, structures or equipment. Readers are cautioned that the foregoing list is not exhaustive.
+Any forward-looking statement made by us in this article is based only on information currently available to us and speaks only as of the date on which it is made. Except as required by applicable securities laws, we undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.
+Previous
+Audit Reports
+Next
+Terms of Service
+Last updated 
+9 months ago
+Terms of Service | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+🖊️
+Terms of Service
+Last updated Jan 19, 2024
+This page explains the terms by which you may use the websites, including without limitation www.echelon.market, docs.echelon.market, app.echelon.market and any other sites associated with the echelon.market domain (collectively, the “Site”), Company Content (as defined below) and the Services (as defined below) of Echelon Labs (“we”, “our” and “us”). By accessing or using the Site or the Services, you signify on your behalf and any person or entity that you represent that you have read, understood, and agree to be bound by these Terms of Service (the “Agreement”), whether or not you are a registered user of our Site or the Services. We reserve the right to make unilateral modifications to these terms and will provide notice of these changes as described below. This Agreement applies to all visitors, users, and others who access the Site or the Services (“you” and “your”). 
+Please read this Agreement carefully to ensure that you understand each provision.  Note that by agreeing to these Terms of Service, you confirm that you are not a United States user, or a user from any other restricted country listed herein.
+NONE OF THE SITE OR THE SERVICES ARE OFFERED TO PERSONS OR ENTITIES WHO ARE RESTRICTED PERSONS (AS DEFINED BELOW).
+1.              Our Site and Services.
+(a)            As part of the Site, we provide a user interface (the “Platform”) to access the smart contracts, decentralized applications, APIs and all other software that we have developed for transaction with cryptocurrencies, digital tokens or coins and other blockchain-based assets (collectively, “Digital Assets”) in a decentralized, peer-to-peer manner (the “Protocol”). This Agreement governs your use of our Site, the Platform, the Protocol, and all related tools, applications, data, software and other services provided by us (collectively, the “Services”).
+(b)           By accessing or using the Site or the Services, you agree that we do not provide execution, settlement, or clearing services of any kind and are not responsible for the execution, settlement, or clearing of transactions automated through the Services.
+2.              Use of Our Site and Services.
+(a)            Eligibility
+(i)             This is a contract between you and us. You must read and agree to the terms of this Agreement before using the Site and the Services. If you do not agree, you may not use the Site and the Services. You may use the Site and the Services only if you can form a binding contract with us, and only in compliance with this Agreement and all applicable:
+(A)           laws, constitutions, treaties, statutes, codes, ordinances, principles of common and civil law and equity, orders, decrees, rules, regulations and municipal by-laws, whether domestic, foreign or international;
+(B)           judicial, arbitral, administrative, ministerial, departmental and regulatory judgments, orders, writs, injunctions, decisions, rulings, decrees and awards of any: (1) multinational or supranational body or organization, nation, government, state, province, country, territory, municipality, quasi-government, administrative, judicial or regulatory authority, agency, board, body, bureau, commission, instrumentality, court or tribunal or any political subdivision thereof, or any central bank (or similar monetary or regulatory authority) thereof, any taxing authority, any ministry or department or agency of any of the foregoing; (2) self-regulatory organization or stock exchange; (3) entity exercising executive, legislative, judicial, regulatory or administrative functions of or pertaining to government; and (4) corporation or other entity owned or controlled, through stock or capital ownership or otherwise, by any of such entities or other bodies pursuant to the foregoing (“Governmental Authority”); and
+(C)           policies, practices and guidelines of, or contracts with, any Governmental Authority, which, although not actually having the force of law, are considered by such Governmental Authority as requiring compliance as if having the force of law, as the same may be amended from time to time and any successor thereto and in each case binding on or affecting the person or entity, or the assets of the person or entity, referred to in the context in which such word is used; (collectively, “Applicable Laws”).
+(ii)            If you are under the age of majority in your jurisdiction of residence, you may use the Site or the Services only with the consent of or under the supervision of your parent or legal guardian. The Site and the Services are not available to any person previously removed from the Site or the Services by us.
+(iii)          By entering or using this Site or the Services you represent that you:
+(A)           have the right, authority and capacity to enter into this Agreement on behalf of yourself and the person or entity that you represent (if applicable);
+(B)           are not prohibited from entering or using this Site or the Services or transacting with the Protocol under any Applicable Laws;
+(C)           understand the risks associated with using our Site and the Services, including using the Protocol;
+(D)           understand that you will be dealing with third parties and we have not verified and will not be in a position to verify any transaction you make using the Protocol;
+(E)            are not a Restricted Person or acting on behalf or under the authority, instruction or employment of a Restricted Person;
+(F)            do not intend to transact with any Restricted Person; or
+(G)           do not, and will not, use a VPN or any other privacy or anonymization tools or techniques to circumvent, or attempt to circumvent, any restrictions that apply to the Services.
+(b)           User Responsibilities; Wallet
+(i)             In order to use certain features of the Site and Services, you may be required to connect to your digital asset wallet or address (“Wallet”) to the Platform.  You acknowledge that we are not responsible for transferring, safeguarding, or maintaining your private keys or any assets associated with your Wallet.  If you lose, mishandle or have stolen your Wallet private keys, you acknowledge that you may not be able to recover associated assets and that we are not responsible for such loss.
+(ii)            You acknowledge that you may disconnect your Wallet from the Platform at any time.
+(iii)          You agree to notify us immediately if you suspect your linked Wallet has been compromised or otherwise suspect any security issues related to your use of the Services.
+(iv)           You agree that you will not use the Services to transact with any Digital Asset that may be considered a security under Applicable Laws.
+(v)            You acknowledge and agree that we may restrict, suspend or close your Wallet and access to the Platform for any reason or no reason, including if we reasonably believe that you have breached any of the terms of this Agreement.
+(vi)           Digital Assets that you purchase or use in relation to the Services may be held in one or more Wallets of yours. We do not operate, maintain, control or have custody over any contents of your Wallet. We accept no responsibility for, or liability to, you in connection with your Wallet and make no representations or warranties regarding how the Platform or the Services will operate with any specific Wallet. Any issues relating to your Wallet should be addressed to your Wallet provider.
+(vii)         You must provide all equipment, connectivity, and software necessary to connect to the Service. You are solely responsible for any costs and expenses, including Internet connection or mobile fees, which you incur when accessing the Services.
+(viii)        You acknowledge that we are not responsible for, and you agree to indemnify us for, any loss or damage arising from your failure to comply with the requirements hereunder.
+(c)            Access and Use of the Site and Services
+(i)             Subject to the terms and conditions of this Agreement, you are hereby granted a non-exclusive, limited, non-transferable, non-sublicensable and freely revocable right to use the Site and the Services. We reserve all rights not expressly granted herein in the Site, the Services and the Company Content (as defined below). We may terminate this right of use, in whole or in part, at any time for any reason or no reason.
+(ii)            You agree that rights granted to you in this Agreement are subject to, and you covenant to abide with, the following restrictions:
+(A)           you shall not license, sell, rent, lease, transfer, assign, distribute, host, or otherwise commercially exploit the Site or the Services, whether in whole or in part, or any content displayed on the Site or the Services;
+(B)           you shall not modify, make derivative works of, disassemble, reverse compile or reverse engineer any part of the Site or the Services;
+(C)           you shall not access the Site or the Services in order to build a similar or competitive websites, product, or service;
+(D)           except as expressly stated herein, no part of the Site or the Services may be copied, reproduced, distributed, republished, downloaded, displayed, posted or transmitted in any form or by any means;
+(E)            in connection with using the Services, you only will transfer legally-obtained Digital Assets that belong to you; and
+(F)            you shall not use the Site or the Services other than as permitted hereunder.  
+(iii)          Unless otherwise indicated, any future release, update, or other addition to the functionality of the Site and Services shall be subject to this Agreement. All copyright and other proprietary notices on the Site (or on any content displayed on the Site) must be retained on all copies thereof.
+(iv)           You acknowledge and agree that:
+(A)           we have no obligation to provide you with any support or maintenance in connection with the Site and the Services;
+(B)           the pricing information and other data provided on the Site or the Platform does not represent (1) an offer, a solicitation of an offer, or recommendation to enter into, a transaction with us or (2) any advice regarding a transaction entered into using the Site, the Platform and the Services;
+(C)           we do not act as an agent for you or any other user of the Site, the Platform or the Services;
+(D)           you are solely responsible for your use of the Services, including all of your transfers of Digital Assets;
+(E)            to the fullest extent not prohibited by Applicable Law, we owe no fiduciary duties or liabilities to you or any other party, and that to the extent any such duties or liabilities may exist at law or in equity, you hereby irrevocably disclaim, waive, and eliminate those duties and liabilities;
+(F)            you are solely responsible for reporting and paying any taxes applicable to your use of the Services; and
+(G)           we have no control over, or liability for, the delivery, quality, safety, legality, or any other aspect of any Digital Assets that you may transfer to or from a third party, and we are not responsible for ensuring that an entity with whom you transact completes the transaction or is authorized to do so, and if you experience a problem with any transactions in Digital Assets using the Services, then you bear the entire risk.
+(v)            You acknowledge and agree that the Services are non-custodial. When you deposit Digital Assets into any smart contract, you retain control over those Digital Assets at all times. The private key associated with the Wallet from which you transfer Digital Assets is the only private key that can control the Digital Assets you transfer into the smart contracts. In some cases, you may withdraw Digital Assets from any smart contract only to the Wallet from which you deposited the Digital Assets.
+(d)           Acceptable Use
+(i)             You agree not to engage in any of the following prohibited activities:
+(A)           copying, distributing, or disclosing any part of the Site or the Services in any medium, including without limitation by any automated or non-automated “scraping”;
+(B)           using any automated system, including without limitation “robots”, “spiders” and “offline readers” to access the Site or the Services in a manner that sends more request messages to our servers than a human can reasonably produce in the same period of time by using a conventional on-line web browser (except that we grant the operators of public search engines revocable permission to use spiders to copy publicly available materials from the Site for the sole purpose of and solely to the extent necessary for creating publicly available searchable indices of the materials, but not caches or archives of such materials);
+(C)           transmitting spam, chain letters, or other unsolicited email or messages through the Site or the Services;
+(D)           attempting to interfere with, compromise the system integrity or security of or decipher any transmissions to or from the servers running the Site or the Services;
+(E)            taking any action that imposes, or may impose at our sole discretion an unreasonable or disproportionately large load on our infrastructure;
+(F)            uploading invalid data, viruses, worms, or other software agents through the Site or the Services;
+(G)           collecting or harvesting any personally identifiable information, including account names, from the Site or the Services;
+(H)           using the Site or the Services for any commercial solicitation purposes;
+(I)             impersonating another person or otherwise misrepresenting your affiliation with a person or entity, conducting fraud, hiding or attempting to hide your identity;
+(J)             interfering with the proper working of the Site or the Services;
+(K)           accessing any content on the Site or the Services through any technology or means other than those provided or authorized by the Site or the Services;
+(L)            bypassing the measures we may use to prevent or restrict access to the Site or the Services, including without limitation features that prevent or restrict use or copying of any content or enforce limitations on use of the Site or the content therein;
+(M)         using the Site or the Services for any purpose prohibited or regulated by Applicable Laws;
+(N)           using the Site or the Services to collect, upload, transmit, display, or distribute any content: (1) that violates any third-party right, including any copyright, trademark, patent, trade secret, moral right, privacy right, right of publicity, or any other intellectual property or proprietary right; (2) that is unlawful, harassing, abusive, tortious, threatening, harmful, invasive of another’s privacy, vulgar, defamatory, false, intentionally misleading, trade libelous, pornographic, obscene, patently offensive, promotes racism, bigotry, hatred, or physical harm of any kind against any group or individual or is otherwise objectionable; or (3) that is harmful to minors in any way;
+(O)           engage in improper or abusive trading practices, including (1) any fraudulent act or scheme to defraud, deceive, trick or mislead; (2) trading ahead of another user of the Services or front-running; (3) fraudulent trading; (4) accommodation trading; (5) fictitious transactions; (6) pre-arranged or non-competitive transactions; (7) violations of bids or offers; (8) spoofing; (9) manipulation; (10) knowingly making any bid or offer for the purpose of making a market price that does not reflect the true state of the market; or (11) entering orders for the purpose of entering into transactions without a net change in either party’s open positions but a resulting profit to one party and a loss to the other party, commonly known as a “money pass”;
+(P)           use or access the Site or the Services to transmit or exchange Digital Assets that are the direct or indirect proceeds of any criminal or fraudulent activity, including terrorism or tax evasion; or
+(Q)           using the Site or the Platform for any purposes other than using our Services.
+(ii)            We may, without prior notice, change the Site or the Services; stop providing the Site or the Services or features of the Site or the Services to you or to users generally; or create usage limits for the Site or the Services. We may permanently or temporarily terminate or suspend your access to the Site or the Services without notice and liability for any reason, including if in our sole determination you violate any provision of this Agreement, or for no reason. Upon termination for any reason or no reason, you continue to be bound by this Agreement. You agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Site or the Services or any part thereof.
+(iii)          You are solely responsible for your interactions with other users of the Site and the Services. We reserve the right, but have no obligation, to monitor disputes between you and other users. We shall have no liability for your interactions with other users, or for any user’s action or inaction.
+(e)            Restrictions on Use
+(i)             We make no representations that the Site or the Services are appropriate or available for use in any location. Those who access or use the Site or the Services do so at their own volition and are entirely responsible for compliance with all Applicable Laws, including but not limited to export and import regulations.
+(ii)            You may not use the Site or the Services if you are a person or entity resident in, a citizen of, located in, incorporated, formed or organized in or have a registered office in: [JI1] 
+(A)           a country embargoed by the government of Canada, the United States, the United Kingdom or the European Union or are a foreign person or entity blocked or denied by the Canadian, United States, the United Kingdom or any European Union government or
+(B)           a country which has been sanctioned by the United Nations, North Atlantic Treaty Organisation, Organisation for Economic Cooperation and Development, Financial Action Task Force, or any other relevant governmental or non-governmental entity or agency,
+(any such person or entity being a “Restricted Person”).
+3.              Our Proprietary Rights.
+(i)             The Site, the Platform and the Services and all materials therein or transferred thereby, including, without limitation, software, images, text, graphics, illustrations, logos, patents, trademarks, service marks, copyrights, photographs, audio, videos and music and all intellectual property rights related thereto (the “Company Content”) but excluding all material, content or information posted or upload by you or other users to the Site, the Platform or the Services (“User Content”), are the exclusive property of us and our licensors. Except as explicitly provided herein, nothing in this Agreement shall be deemed to create a license in or under any such Company Content or intellectual property rights, and you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit or create derivative works from any Company Content. Use of the Company Content for any purpose not expressly permitted by this Agreement is strictly prohibited. Company Content is made available solely for your personal, non-commercial use and may not be copied, reproduced, published, republished, modified, mirrored, uploaded, posted, transmitted, displayed, encoded, translated or distributed in any form or in way, including by e-mail or other electronic means, or stored in any retrieval system of any nature in any way, without the express prior written consent of us or such third party that may own such Company Content in each instance. You agree to abide by all copyright and other proprietary notices, information and restrictions contained in the Company Content and any other material accessed through the Site.
+(ii)            You may choose to, or we may invite you to submit comments, feedback, or ideas about the Site and the Services, including without limitation about how to improve the Site or our Services (“Feedback”). By submitting any Feedback, you agree that (A) your disclosure is non-confidential, gratuitous, unsolicited and without restriction and will not place us under any fiduciary or other obligation, (B) you grant to us a perpetual, worldwide, royalty-free, irrevocable, transferable, sublicensable, non-exclusive and fully paid-up right to copy, use, reproduce, modify, adapt, publish, create derivative works from, translate, transmit, display, distribute, market, promote, sell or offer for sale, rent or lease such information or materials or any portions thereof (including any ideas for new products or Services or modifications to existing products or Services) and/or products or Services which practice or embody, or are configured for use in practicing, such information or materials or any portion thereof, in any form or medium known or later developed, in furtherance of the terms of the Agreement and the actions and transactions contemplated hereby, including the right to bring an action for infringement of these rights, (C)  we are free to use the Feedback without any additional compensation to you, and/or to disclose the Feedback on a non-confidential basis or otherwise to anyone and (D) you will have no claim against for any actual or alleged infringement of any proprietary rights, rights of privacy or publicity, moral rights or rights of attribution in connection with our use of any Feedback you provide. You further acknowledge that, by acceptance of your submission, we do not waive any rights to use similar or related comments, feedback and ideas previously known to us, or developed by our employees, or obtained from sources other than you.
+4.              Fees and Price Estimates
+In connection with your use of the Services you are required to pay all fees necessary for interacting with the applicable blockchain, including “gas” costs, as well as all other fees reflected on the Site or the Platform at the time of your use of the Services. Although we attempt to provide accurate fee information, this information reflects an estimate of fees, which may vary from the actual fees paid to use the Services and interact with the applicable blockchain.
+5.              No Professional Advice
+All information on the Site and the Services is for informational purposes only and should not be construed as professional advice. You should contact your own legal, financial, tax or other professional advisors. Neither the Site, the Services nor we provide any legal, financial, taxation or any other professional advice. No action should be taken based upon any information contained in the Site or the Services. You should seek independent professional advice from a person who is licensed and/or qualified in the applicable area.
+6.              Privacy
+We care about the privacy of our users. You understand that by using the Site you consent to the collection, use and disclosure of personally identifiable information and aggregate data, and to have your personally identifiable information collected, used, transferred to and processed in accordance with our Privacy Policy, a copy of which can be found here: [Note: Insert link to privacy policy]. Our Privacy Policy is hereby incorporated into and forms part of this Agreement.
+7.              Cautionary Note on Forward-looking Statements.
+All statements contained in the Company Content, the Services, the Site, statements made in press releases or in any place accessible by the public and oral statements that may be made Company Parties (as defined below) may constitute forward-looking statements (including statements regarding the intent, belief or current expectations with respect to market conditions, business strategy and plans, financial condition, specific provisions and risk management practices). You are cautioned not to place undue reliance on these forward-looking statements given that these statements involve known and unknown risks, uncertainties and other factors that may cause the actual future results to be materially different from that described by such forward-looking statements, and no independent third party has reviewed the reasonableness of any such statements or assumptions. These forward-looking statements are applicable only as of the date indicated therein and the Company Parties disclaim any responsibility (whether express or implied) to release any revisions to these forward-looking statements to reflect events after such date.
+8.              Security
+(a)            We are an early stage platform. You acknowledge that applications are code that are subject to flaws and acknowledge that you are solely responsible for evaluating any available code provided by the Services. You further expressly acknowledge and represent that applications can be written maliciously or negligently, and that we cannot be held liable for your interaction with such applications. These warnings and others later provided by us in no way evidence or represent an ongoing duty to alert you to all the potential risks of utilizing the Site and Services.
+(b)           We use commercially reasonable physical, managerial, and technical safeguards to preserve the integrity and security of your personal information and implement your privacy settings. However, we cannot guarantee that unauthorized third parties will never be able to defeat our security measures or use your personal information for improper purposes. You acknowledge that you provide your personal information at your own risk.
+9.              Third-Party Links and Information
+The Site or the Services may contain links to third-party materials that are not owned or controlled by us. we do not endorse or assume any responsibility for any such third-party websites, information, materials, products, or services. If you access a third-party website or service from the Site or the Services on or through any third-party website or service, you do so at your own risk, and you understand that this Agreement and our Privacy Policy do not apply to your use of such websites. You expressly relieve us from any and all liability arising from your use of any third-party website, service, or content. Additionally, your dealings with or participation in promotions of advertisers found on the Site or the Services, including payment and delivery of goods, and any other terms (such as warranties) are solely between you and such advertisers. You agree that we shall not be responsible for any loss or damage of any sort relating to your dealings with such advertisers.
+10.           Indemnity
+You agree to defend, indemnify and hold harmless us and our suppliers, partners, licensors, dealers, representatives, associates or affiliates, and each of their respective employees, contractors, agents, representatives, shareholders, officers and directors (collectively, the “Company Parties”), from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to lawyer’s fees and disbursements) arising from: (a) your use of and access to the Site, the Platform, Company Content and the Services, including any act or omission by you or users of your account or any data or content transmitted or received by you; (b) your violation of any term of this Agreement, including without limitation your breach of any of the representations and warranties above; (c) your violation of any third-party right, including without limitation any right of privacy or intellectual property rights; (d) your violation of any Applicable Laws; (e) any User Content that you submit to the Site or the Services including without limitation misleading, false, or inaccurate information; (f) your willful misconduct; or (g) any other party’s access and use of the Site, the Platform, Company Content or the Services with your unique username, password or other appropriate security code. You will co-operate as fully as reasonably required in the defense of any claim.
+11.           No Warranty
+(a)            The Site and the Services are provided on an “as is” and “as available” basis. Use of the Site, the Platform, Company Content and the Services is at your own risk. To the maximum extent permitted by applicable law, the Site, the Platform, Company Content and the Services are provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, or non-infringement. No advice or information, whether oral or written, obtained by you from a Company Party or through the Site or the Services will create any warranty not expressly stated herein. Without limiting the foregoing, the Company Parties do not warrant that the Company Content is accurate, reliable or correct; that the Site, the Platform, Company Content and the Services will meet your requirements; that the Site, the Platform, Company Content and the Services will be available at any particular time or location, uninterrupted or secure; that any defects or errors will be corrected; or that the Site, the Platform, Company Content and the Services are free of viruses or other harmful components. Any content downloaded or otherwise obtained through the use of the Site or the Services is downloaded at your own risk and you will be solely responsible for any damage to your computer system or mobile device or loss of data that results from such download or your use of the Site, the Platform, Company Content or the Services.
+(b)           You acknowledge and agree that: (i) we are a developer of software; (ii) we do not operate a Digital Asset or derivatives exchange platform or offer trade execution or clearing services and have no oversight, involvement, or control concerning your transactions using the Services; and (iii) all transactions between users are executed peer-to-peer directly between the users’ digital wallet addresses through a smart contract.
+(c)            You understand and agree that we are not registered or licensed by any regulatory agency or authority. No such agency or authority has reviewed or approved the use of the Site, the Platform or the Services.
+(d)           We do not warrant, endorse, guarantee, or assume responsibility for any product or websites advertised or offered by a third party through the Site or the Services or any hyperlinked websites, and we will not be a party to or in any way monitor any transaction between you and third-party providers of products or services.
+12.           Disclaimers
+None of the Company Parties will have any responsibilities or liability with respect to the following: (a) the Services could be impacted by one or more regulatory inquiries or actions, which could prevent or limit our ability to continue to develop or provide the Services, or for you and your users to use the Services, (b) we have no obligation to update the Services or its underlying platforms and networks to address, mitigate, or remediate any security or other vulnerabilities in the Services, or such platforms or networks and (c) portions of the Services or any other underlying networks and platforms may rest on open-source software, and there is a risk that weaknesses or bugs that may be introduced in the infrastructural elements of the Services or any other underlying networks and platforms, which may result in security vulnerabilities, data loss, damage, destructions, disclosure, or other compromises.
+13.           Assumption of Risk
+You acknowledge that the Site and the Services, and your use of the Site and the Services contain certain risks, including without limitation the risks below, and accordingly, you expressly agree that you assume all risk in connection with your access and use of the Site and Services:
+(a)            by utilizing the Services or interacting with the Site or the Platform in any way, you understand and agree to the inherent risks associated with: (i) cryptographic systems and blockchain-based networks; (ii) Digital Assets, including without limitation the usage and intricacies of native Digital Assets; (iii) smart contract-based Digital Assets, including fungible and non-fungible tokens; and (iv) systems that interact with blockchain-based networks. We do not own or control any of the underlying software through which blockchain networks are formed. In general, the software underlying blockchain networks, including the Aptos blockchain, is open source, such that anyone can use, copy, modify, and distribute it. By using the Services, you acknowledge and agree that (A) we are not responsible for the operation of the blockchain-based software and networks underlying the Services, (B) there exists no guarantee of the functionality, security, or availability of that software and networks, and (C) the underlying blockchain-based networks are subject to sudden changes in operating rules, such as those commonly referred to as “forks,” which may materially affect the Services;
+(b)           blockchain networks use public and private key cryptography. You alone are responsible for securing your private key(s). We do not have access to your private key(s). Losing control of your private key(s) will permanently and irreversibly deny you access to Digital Assets on the Aptos blockchain or other blockchain-based network. Neither we nor any other person or entity will be able to retrieve or protect your Digital Assets. If your private key(s) are lost, then you will not be able to transfer your Digital Assets to any other blockchain address or wallet. If this occurs, then you will not be able to realize any value or utility from the Digital Assets that you may hold;
+(c)            the Services and your Digital Assets could be impacted by one or more regulatory inquiries or regulatory actions, which could impede or limit our ability to continue to make available our proprietary software and could impede or limit your ability to access or use the Services;
+(d)           cryptography is a progressing field. Advances in code cracking or technical advances such as the development of quantum computers may present risks to cryptographic systems and the Services, which could result in the theft or loss of your assets. To the extent possible, we intend to update or propose updates to the code underlying the Services to account for any advances in cryptography and to incorporate additional security measures but does not guarantee or otherwise represent full security of the system. By using the Services, you acknowledge these inherent risks;
+(e)            the Aptos blockchain and any other applicable blockchain remains under development, which creates technological and security risks when using the Services in addition to uncertainty relating to Digital Assets and transactions therein. You acknowledge that the cost of transacting on an applicable blockchain is variable and may increase at any time causing impact to any activities taking place on the such blockchain, which may result in price fluctuations or increased costs when using the Services;
+(f)             the Services are subject to flaws and that you are solely responsible for evaluating any code provided by the Services, the Site or the Platform. This warning and other warnings that we provide in this Agreement are in no way evidence or represent an on-going duty to alert you to all of the potential risks of utilizing the Services or accessing the Site or the Platform;
+(g)            although we intend to provide accurate and timely information and data on the Site and the Platform during your use of the Services, the Site, the Platform and other information available when using the Services may not always be entirely accurate, complete, or current and may also include technical inaccuracies or typographical errors. To continue to provide you with as complete and accurate information as possible, information may be changed or updated from time to time without notice, including information regarding our policies. Accordingly, you should verify all information before relying on it, and all decisions based on information contained on the Site, the Platform or as part of the Services are your sole responsibility. No representation is made as to the accuracy, completeness, or appropriateness for any particular purpose of any pricing information distributed via the Site or the Platform or otherwise when using the Services. Prices and pricing information may be higher or lower than prices available on platforms providing similar services;
+(h)           any use or interaction with the Services requires a comprehensive understanding of applied cryptography and computer science to appreciate the inherent risks, including those listed above. You represent and warrant that you possess relevant knowledge and skills. Any reference to a type of Digital Asset on the Site, the Platform or otherwise during the use of the Services does not indicate our approval or disapproval of the technology on which the Digital Asset relies, and should not be used as a substitute for your understanding of the risks specific to each type of Digital Asset;
+(i)             use of the Services, in particular for trading Digital Assets, may carry financial risk. Digital Assets are, by their nature, highly experimental, risky, and volatile. Transactions entered into in connection with the Services are irreversible, final and there are no refunds. You acknowledge and agree that you will access and use the Site, the Platform and the Services at your own risk. The risk of loss in trading or transferring Digital Assets can be substantial. You should, therefore, carefully consider whether such trading or transfer is suitable for you in light of your circumstances and financial resources. By using the Services, you represent and warrant that you have been, are, and will be solely responsible for making your independent appraisal and investigations into the risks of a given transaction and the underlying Digital Assets. You represent that you have sufficient knowledge, market sophistication, professional advice, and experience to make your evaluation of the merits and risks of any transaction conducted in connection with the Services or any Digital Asset. You accept all consequences of using the Services, including the risk that you may lose access to your Digital Assets indefinitely. All transaction decisions are made solely by you. Notwithstanding anything in these Terms, we accept no responsibility whatsoever for, and will in no circumstances be liable to you in connection with, your use of the Services for performing Digital Asset transactions;
+(j)             we must comply with Applicable Laws, which may require us to, upon request by government agencies, take certain actions or provide information, which may not be in your best interests;
+(k)            you are responsible for all trades you place, including any erroneous orders that may be filled. We do not take any action to resolve erroneous trades that result from your errors;
+(l)             Any Services you interact with are entirely your own responsibility and liability, and we are not a party to the Protocol;
+(m)          At any time, your access to your Digital Assets may be suspended or terminated or there may be a delay in your access or use of your Digital Assets which may result in the Digital Assets diminishing in value;
+(n)           the Services may be suspended or terminated for any or no reason, which may limit your access to your Digital Assets; and 
+(o)           we will have no responsibility or liability for the risks set forth in this Section 13. You hereby irrevocably waive, release and discharge all claims, whether known or unknown to you, against the Company Parties related to any of the risks set forth in this Section 13.
+14.           Limitation of Liability
+(i)             You agree that to the maximum extent permitted by Applicable Laws, in no event shall any Company Party be liable for any indirect, punitive, incidental, special, consequential or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data or other intangible losses, arising out of or relating to the use of, or inability to use, the Site, the Platform, Company Content or the Services. Under no circumstances will any Company Party be responsible for any damage, loss or injury resulting from hacking, tampering or other unauthorized access or use of the Site, the Platform, the Services or the Company Content and other information contained therein. To the maximum extent permitted by Applicable Laws, we assume no liability or responsibility for any (a) errors, mistakes, or inaccuracies of content; (b) personal injury or property damage, of any nature whatsoever, resulting from your access to or use of our Site, the Platform, Company Content or the Services; (c) any unauthorized access to or use of our secure servers and/or any and all personal information stored therein; (d) any interruption or cessation of transmission to or from the Site, the Platform or the Services; (e) any bugs, viruses, trojan horses, or the like that may be transmitted to or through our Site, the Platform, Company Content or the Services by any third party; (f) any errors or omissions in any content or for any loss or damage incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available through the Site, the Platform or the Services; and/or (g) User Content or the defamatory, offensive, or illegal conduct of any third party. You agree that if, notwithstanding the other provisions of this Agreement, a Company Party is found to be liable for any claims, proceedings, liabilities, obligations, damages, losses or costs, such Company Party’s liability shall in no event exceed the amount you paid to us hereunder during the 6-month period prior to the date on which such claim arose, if any.
+(ii)            This limitation of liability section applies whether the alleged liability is based on contract, tort, negligence, strict liability, or any other basis, even if we have been advised of the possibility of such damage. The foregoing limitation of liability shall apply to the fullest extent permitted by Applicable Laws.
+15.           Limitations as Allowed by Law
+Some states, provinces and other jurisdictions do not allow the exclusion and limitations of certain implied warranties, or the exclusion or limitation of incidental or consequential damages, so the above limitations or exclusions may not apply to you. This Agreement gives you specific legal rights, and you may also have other rights which vary from jurisdiction to jurisdiction. The disclaimers, exclusions, and limitations of liability under this agreement will not apply to the extent prohibited by Applicable Laws.
+16.           Force Majeure
+We will have no responsibility or liability for any failure or delay in performance of the Site, the Platform or any of the Services, or any loss or damage that you may incur, due to any circumstance or event beyond our control, including any (a) flood, extraordinary weather conditions, earthquake, or other act of God, (b) fire, (c) war, (d) insurrection, (e) riot, (f) labour dispute, (g) accident, (h) epidemic or pandemic, (i) action of government, (j) new laws or regulations or change in existing laws or regulations or the interpretation or enforcement of any of the foregoing, (k) communications, (l) power failure, (m) equipment or software unavailability, disruption or malfunction, (n) hacking or other attack on the Site, the Platform or the Services, (o) the unavailability, disruption or malfunction of any network or blockchains or (p) the unavailability, disruption or malfunction of the Internet.
+17.           Non-Waiver
+Our failure or delay in insisting upon or enforcing strict performance of any provision of this Agreement shall not be construed as a waiver of any provision or rights. No waiver of any provision of this Agreement shall constitute a waiver of any other provision, nor shall any waiver of any provision of this Agreement constitute a continuing waiver unless expressly made in writing by us.
+18.           Severability
+In the event that any of the provisions of this Agreement are held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary so that these terms and conditions shall otherwise remain in full force and effect.
+19.           Governing Law and Jurisdiction
+This Agreement is entered into in the British Virgin Islands and shall be governed by, and construed in accordance with, the laws of the British Virgin Islands. You agree to submit to the exclusive jurisdiction of the courts of the British Virgin Islands or any other judicial district or jurisdiction as we may determine in any and all actions, disputes or controversies relating hereto. You further agree as follows: (a) any claim brought to enforce these terms and conditions must be commenced within 6 months of the cause of action accruing; (b) no recovery may be sought or received for damages other than out-of-pocket expenses, except that the prevailing party will be entitled to costs and legal fees; and (c) any claim must be brought individually and not consolidated as part of a group or class action complaint.
+20.           Amendments
+We reserve the right, in our sole discretion, to modify the terms of this Agreement from time to time. If we make changes, we will provide you with notice of such changes, such as by providing notice through the Site, the Services or updating the “Last Updated” date at the top of this Agreement. Unless we state otherwise in our notice, all such modifications are effective immediately, and your continued use of the Site and the Services after we provide that notice will confirm your acceptance of the changes. If you do not agree to the amended terms of this Agreement, then your only recourse is to terminate this Agreement by providing written notice to us and must stop using the Site and the Services.
+21.           Language
+This Agreement, including all other documents incorporated by reference herein, are binding and constitute the entire agreement between us and you with respect to your use of the Site and the Services. The parties agree that the English language will be the language of the Agreement and all documents in connection thereto, and each party waives any right (whether statutory or otherwise) to use and rely upon any other language, or translations. 
+ Il est de la volonté expresse des parties que tous les documents qui s'y rattachent soient rédigés en langue anglaise.
+Previous
+Disclaimer
+Next
+Restricted Users and Geolocations
+Last updated 
+6 months ago
+Restricted Users and Geolocations | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Security
+Restricted Users and Geolocations
+Echelon has always taken extensive measures to prevent persons from the following countries from using the smart contracts through the frontend hosted at app.echelon.market. These measures include geoblocking ranges of IP addresses from prohibted countries including: USA, Canada, BVI, China, Cuba, Congo, Iran, Iraq, Libya, Myamnar, North Korea, Russia, Sudan, Syria, Zimbabwe, Central African Republic, Ethiopia, Venezuela, Yemen, Lebanon. Over time, this list may be expanded to include any country or geolocation.
+Echelon also attempts to VPN block known VPNs from the above countries. When agreeing to the terms of service, users also attest that they are not in the above countries in order to interact with the frontend.
+Previous
+Terms of Service
+Next
+SDKs and Contract Address
+Last updated 
+6 months ago
+SDKs and Contract Address | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Build on Echelon
+📜
+SDKs and Contract Address
+Last updated: May 12, 2024
+SDK: 
+https://github.com/EchelonMarket/echelon-sdk
+Mainnet address: 0xc6bc659f1649553c1a3fa05d9727433dc03843baac29473c817d06d39e7621ba
+Previous
+Restricted Users and Geolocations
+Next
+Developer Documentation
+Last updated 
+6 months ago
+Developer Documentation | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Build on Echelon
+👨‍💻
+Developer Documentation
+Below are guides and required packages for how to integrate with Echelon on Testnet. 
+Please reach out to our team on 
+Discord
+ if you have any questions when integrating.
+Aptos:
+Aptos testnet integration guide
+Aptos testnet address and packages
+Previous
+SDKs and Contract Address
+Next
+Running a Liquidator Bot
+Last updated 
+3 months ago
+Running a Liquidator Bot | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook
+On this page
+Background & Reference
+How Liquidations work on Echelon
+Parameters and Data
+Build on Echelon
+🤖
+Running a Liquidator Bot
+Guide on setting up a liquidator bot to participate in the open-source liquidation process
+Background & Reference
+Echelons liquidation accounting is inspired by Compound V2, so most Compound V2 concepts apply.
+How Liquidations work on Echelon
+A vault is composed of collaterals and liabilities.
+A vault becomes liquidatable when:
+- 100% > health factor = account margin / liability value.
+- account margin = sum(collateral value * Liquidation Threshold).
+- let's say the vault has $10,000 worth of APT and $20,000 worth of USDC. APT liquidation threshold = 74% while USDC liquidation threshold = 82%. The account's margin = 10k * 74% + 20k * 82% = $23,800.
+- All asset price are quoted from 
+Oracles
+
+Liquidators are encouraged to call 
+liquidate
+ to repay part of the liability and seize collateral at discount (
+close_factor
+ determines the max one can repay, and 
+liquidation_incentives
+ determines the discount). 
+Given a vault could have M collateral assets and N liability assets, it is up to liquidators to decide what asset to repay and what asset to seize (M*N combinations). Hence the interface:
+Copy
+public fun liquidate<CoinType>
+
+
+    liquidator: &signer,
+
+
+    borrower_addr: address,
+
+
+    borrow_market_obj: Object<Market>,
+
+
+    collateral_market_obj: Object<Market>,
+
+
+    repay_asset: Coin<CoinType>,
+
+
+    min_shares_out: u64) { ... }
+
+Note that 
+min_shares_out
+ is a liquidator-friendly check that guarantees the minimal shares to seize, which otherwise aborts the liqudation transaction.
+Parameters and Data
+Protocol parameters
+- close factor: 50%
+- liquidation incentives: 107%
+- liquidation fee: 2.5%
+Market addresses
+- zUSDT: 
+0x447b3b516546f28e8c4f6825a6287b09161659e7c500c599c29c28a8492844b8
+- zUSDC: 
+0xa9c51ca3bcd93978d0c4aada7c4cf47c0791caced3cdc4e15f2c8e0797d1f93c
+- MOD:  
+0xef2ae89796725d0eb363326ecb7df159feb949f6d1f400f76deeeebccbac00f1
+- THL:  
+0x127ea5b4c450be695e488da1c3bc013e2e93d8cf00270ef90385189844bc9755
+- APT:  
+0x761a97787fa8b3ae0cef91ebc2d96e56cc539df5bc88dadabee98ae00363a831
+- sthAPT: 
+0xed6bf9fe7e3f42c6831ffac91824a545c4b8bfcb40a59b3f4ccfe203cafb7f42
+- whUSDC:
+0xa76ebfb432982c864783fdb33cdf5a9edb18ac1b950deb8037f5cf8c984da3d2
+- zWETH: 
+0x548cf587bd918a0005b3372a1d23e64b18ace3c61962f087a21eac52cf228504
+- whWETH:
+0x114ee519ffa1e8697784bd1a350822cb37601a1476289051b8295165597a4538
+- CAKE:  
+0x41b039e5518b1a3786ee798d895e0ddf3141fbbc20009284323fa51ea279c819
+- stAPT: 
+0xc3c9cc885a52004e0490f6a8291b3bc5854f0e42d931fb124736bd189c9f0f45
+- aBTC: 
+0xacb7262b33a147b47b950a3a26d7699e1a58bcaa475ef636cb0fea53fa0eb872
+- SBTC: 
+0x754114c656e26498a8c0b20fa24af663fed5e4b24acb471c103daea0f7006b40
+- STONE: 
+0x75c39f18c7bc00ac0f81a0f9ab7e319e23790d7d8c3df968d84a23699584bd9
+Market parameters
+You can check market-level parameters in the above address by looking into a Market resource. For example: 
+APT market parameters
+
+
+Vault addresses
+Index 
+SupplyEvent
+ and 
+account_addr
+ is the vault address.
+Previous
+Developer Documentation
+Last updated 
+1 month ago
+Borrow/Lend | Echelon V1
+Echelon V1
+Search
+...
+Ctrl +
+ K
+⚡
+Echelon Hub
+PRODUCTS
+🤝
+Borrow/Lend
+💡
+Core Concepts
+💼
+Borrowing Assets
+🫴
+Supplying Assets
+⚖️
+Borrow Rates
+💹
+Supply Rates
+🪙
+Supported Assets
+📊
+Oracles
+🏝️
+Isolated Markets
+💱
+Swap
+🛬
+Cross Chain Deposits
+🌉
+Bridges
+⛓️
+Echelon Chain
+📲
+Echelon Earn
+ECHELON POINTS
+🎁
+Overview
+Security
+🚨
+Risks
+Smart Contract Risk
+Oracle Risk
+Bad Debt Risk
+🔒
+Risk Management
+🪙
+Asset-level Risk Parameters
+🦙
+Account-level Risk Parameters
+🌊
+Liquidations
+📓
+Asset Listing
+🧑‍💻
+Operational Security
+🕵️‍♂️
+Audit Reports
+❕
+Disclaimer
+🖊️
+Terms of Service
+Restricted Users and Geolocations
+Build on Echelon
+📜
+SDKs and Contract Address
+👨‍💻
+Developer Documentation
+🤖
+Running a Liquidator Bot
+Powered by GitBook

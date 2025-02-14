@@ -1,0 +1,35 @@
+VCRED Unites AI and Liquidity Management on Movement
+Partnerships
+May 23, 2024
+VCRED
+, a liquidity-as-a-service provider augmented with artificial intelligence, has announced plans to launch on Movement. VCRED sits atop perpetual futures exchanges. LPs deposit tokens into VCRED vaults, which have been optimized to provide users highly efficient single-sided staking. Since powering its vaults using a disruptive AI engine, VCRED has improved its complex market-making strategies and achieved a 160x increase in capital efficiency.
+Liquidy is the lifeblood of a healthy DeFi ecosystem. VCRED’s potential to bring much greater capital efficiency to liquidity management would be a boon to LPs, traders, and Movement’s broader DeFi ecosystem. Recent AI breakthroughs make it all possible.
+The Intersection of AI and DeFI
+How does VCRED increase efficiency? By training its AI on granular DeFi data.
+And next, by using AI agents to give users optimal single-sided staking strategies.
+VCRED’s AI engine is fine-tuned using data collected from various central limit order books (CLOBs) and concentrated liquidity market makers (CLMMs). AI agents then make recommendations to LPs who have deposited into vaults. Harnessing the power of machine learning and AI, VCRED provides more potential value to both LPS and the users of decentralized perp exchanges. The outward ripple effects of greater capital efficiency include smoother transactions, and a more robust DeFi ecosystem.
+The Advantages of Launching on Movement
+By Launching on Movement, VCRED gains all the security, speed, and performance features it needs for an optimal user experience – and no longer has to pursue deploying its own separate chain.
+Further, by expanding to Movement, VCRED can access non-EVM DEXes for the first time. This means VCRED can access more users and liquidity. By plugging into both Ethereum and Move liquidity, VCRED can tap into Movement’s unique deep liquidity hub.
+And this greater liquidity comes with the unparalleled security benefits of the Move programming language, developed by Facebook for secure, scalable use in Web3.
+The expansion from EVM to Move VMs is easy. Using Movement’s Fractal EVM Interpreter, VCRED can easily deploy on Movement despite being written in Solidity. With Fractal, there’s no need to manually convert Solidity to Move. Fractal allows VCRED to launch on Movement with minimal additional work, bringing the Move programming language’s benefits and extending VCRED to Move VMs.
+The Advantages of Adopting VCRED
+VCRED’s 160x increase in capital efficiency means the platform can do more with less starting capital, which potentially translates to faster scaling, tighter slippage tolerances, and greater depth.
+VCRED’s powerful capital efficiency means their APYs are high, which makes them an obvious choice for LPs looking to put their digital value to work.
+What’s Next for VCRED and Movement?
+VCRED will be launching in a Movement test environment in the coming months. For more info on this partnership and the integrated, modular blockchain revolution,
+follow Movement Labs on X
+.
+Want to learn more about or try VCRED?
+Get started today
+.
+About VCRED
+VCRED aims to be an AI liquidity layer for all Perp and Spot dexes. Our agents provide access to complex market-making strategies to augment traditional quant strategies. Leveraging the team’s expertise in DeFi, AI VCRED protocol provides an alternative by focussing on orderbooks vs AMMs & CLMMs. Partnerships with decentralized AI platforms such as Ritual, and exchanges such as BSX demonstrate the growth and traction. For more information follow on
+https://x.com/cred_v
+.
+About Movement:
+Movement is a network of Move-based blockchains, designed to combine smart contract security and parallelization with the liquidity and user base of the EVM. M2, the first MEVM (Move + EVM) ZK L2 on Ethereum, powered by Celestia, seamlessly integrates MoveVM with Ethereum, setting a new standard for blockchain interoperability and performance.
+Join the Movement
+Developers, researchers, and blockchain enthusiasts are invited to join Movement Labs on this transformative journey. Engage with the devnet, explore research papers and blog posts, build with the Movement SDK, and immerse in the Move programming language.
+For more information about Movement Labs and to explore the documentation, visit
+movementlabs.xyz

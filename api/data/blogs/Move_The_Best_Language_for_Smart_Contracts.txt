@@ -1,0 +1,336 @@
+Move: The Best Language for Smart Contracts
+Research
+October 29, 2024
+Franck Cassez
+Blockchain technology, much like critical systems in avionics and nuclear industries, underpins applications where security, reliability, efficiency, and correctness are paramount. Just as avionics software should ensure the safe operation of an aircraft and nuclear control systems should safeguard against catastrophic failures, blockchain software should
+safely
+manage digital assets and protect against failures.
+Users usually interact with a blockchain via distributed applications, dApps. The business logics of dApps that manage the transfer of assets are implemented in programs called
+smart contracts
+. Smart contracts are arguably the most critical components of the blockchain software stack.
+When we refer to blockchains technology as
+trustless
+because users do not rely on a trusted third-party, we should know that the reality is somewhat different: we rely and put
+all
+our trust in computers and smart contracts.
+The consequences of vulnerabilities or bugs in smart contracts are extremely serious, resulting in huge financial losses. In 2024, according to
+DefiLlama
+, hacks (excluding bridges) have already cost $1.1B+ (as of 25/10/2024). Hacks and exploits erode trust in blockchain, hindering wider adoption and raising concerns among financial regulators.
+We need
+better tools and practices
+to develop
+trustworthy smart contracts
+. This begins with adopting
+suitable programming languages
+that enable programmers to develop secure and reliable contracts.
+At Movement Labs, we are fostering next generation techniques in blockchain technology to develop a network of Move-based chains.
+Move was originally designed [4] in the Diem/Libra project at Meta. In this post, I'll highlight the
+unique features
+of the Move programming language [4], now represented by
+Move on Aptos
+and
+Move Sui
+.
+In code examples below, I use the
+Move on Aptos V2
+tool suite (compiler, prover).
+Do We Need a New Blockchain Programming Language?
+Ethereum proponents may argue that the most widely adopted language,
+Solidity
+, is fit for developing secure contracts. In 2021, Dan Guido, the CEO of a leading and reputable smart contracts' code auditing organization,
+Trail of Bits
+, spoke to this notion [5] in a
+podcast
+(see
+Clip 1
+and
+Clip 2
+):
+Solidity seems to have
+re-invented all of the vulnerabilities
+that were wiped out of languages like Rust or Go. […] The
+Solidity language needs to go away
+. There is no reason that people should write in a language […] that makes it impossible to do software engineering correctly.
+In the Ethereum ecosystem, there are a few alternatives to Solidity. There's
+Vyper
+, but Vyper's adoption was hindered by serious issues with initial versions of the compiler. Vyper is based on Python and has the same weaknesses as Solidity.
+As Sam Blackshear, the creator of Move, summarized it in
+Origins of Move
+:
+We looked at other [languages] options. The decision to create a new language came from the fact that we did not think any of these options were quite appropriate.
+So why are the other options, Solidity and Vyper, not appropriate? They are variants of mainstream programming languages, Java/Javascript or Python, but they are not
+domain-specific
+languages (DSL). By domain specific, we mean a programming language tailored to a particular application domain. A DSL is often less complex than a general-purpose language and uses the
+concepts
+of the domain, making it easier and safer for programmer to design domain-specific applications.
+What is specific to blockchain, what are the main concepts? Assets and transfers of assets. In Solidity (or Vyper), an asset is an integer (or a record) and can be manipulated as such. You can increase, decrease, copy, delete Solidity assets, because nothing distinguishes them from other types like integers or records. In Move, assets are first-class citizens: they are
+resources
+, and operations on resources are restricted. The core operations on resources is to
+MOVE
+them from one account to another, hence the name of the language.
+Move introduces a
+novel programming paradigm
+known as
+resource-oriented programming
+, providing the blockchain domain-specific primitives developers need to develop secure contracts. On top of that, the Move language is supported by the Move Prover [2, 3], offering
+formal verification capabilities
+, the gold standard for developing trustworthy critical systems.
+We now delve into a few outstanding features of Move, exploring its unique capabilities and advantages for secure and efficient smart contract development.
+Resources: Helping Developers Write Safer Code
+In Move, assets have a specific type: Resources. And resources may not be copied (duplicated), or dropped (lost). Another specific feature of resources is
+ownership
+. Ownership assigns an owner to assets, and only the owner can perform privileged operations (e.g. transfers). These capabilities and ownership features empower the Move programmer with abstractions to write safe code that manages resources.
+Here is a simple example:
+module 0x02::NonCopyableExample {
+
+  // A `Token` resource, cannot be copied (duplicated) nor dropped (lost)
+  struct Token has key, store {
+    value: u64,
+  }
+
+  // Function to transfer a Token (resource) from one account to another
+  public fun transfer_token(recipient: &signer, t: Token) {
+    // move resource t to recipient
+    move_to(recipient, t);
+    // try to double spend: move t again
+    move_to(recipient, t); // error: invalid usage of previsouly moved value
+    // try to make a copy and move it
+    move_to(recipient, copy t);  // error: invalid usage of copy
+  }
+}
+Compiling this program results in an error (line 13): the token
+t
+cannot be moved twice, because there is one instance of it. Ownership of
+t
+in transferred to the recipient by
+move_to
+(line 11). If we try to copy
+t
+(line 15), the compiler also issues an error: the resource cannot be copied. There is no equivalent mechanism (even using modifiers) in Solidity, and several bugs exploited the ability to create resources out of thin air.
+To learn more about resources and capabilities/ownership, you can read the following sections:
+Structs and Resources
+and
+Type Abilities
+in the
+Move Book
+.
+Move Programming Language Modules & Scripts
+Move offers organization units in the form of
+modules
+. Modules are libraries and can define resources and operations on resources. Move provides a
+standard library
+within modules exposing common functionalities and types (cryptography, math, strings). The standard libraries have been formally verified with the Move Prover [1, 2, 3].
+A transaction in Move is defined by a
+script
+that can combine the execution of several functions from different modules. This is also a major difference with Solidity: entry points in Solidity are (public) functions in the code. You have to craft Solidity contracts anticipating all the possible functionalities that you need by combining the different functions.
+Solidity does not have standard libraries. Standard functionalities are provided via other library contracts. A library contract is a contract with no state variables and only
+pure functions
+. You can use a library by
+calling
+the library contract. This design has led to some serious flaws, for instance,
+re-entrancy
+. Indeed, the contract call mechanism is not restricted to library contracts but available to any other contracts (and there are several flavors of
+calls
+, static, delegate, etc.). As a result, when you, the caller, call a contract, you don't know what the callee is going to do. It could happen that the callee calls the caller back and exploits a vulnerability, draining assets worth millions. A famous example is the
+DAO re-entrancy attack
+, where an attacker managed to take more than $150m worth of $ETH.
+Re-entrancy attacks cannot happen in Move. Calls to modules use static
+dispatch
+: the callee is known at compile-time. Note that some form of
+dynamic dispatch for fungible assets
+will be available in the next version of Move, Move 2, but with restrictions to preserve safety.
+More Productive Programming: Generics & Pattern Matching
+Modern programming languages offer abstract constructs including generics and pattern matching. They enable the programmer to be more productive and write re-usable clean code, and the compiler to optimize code.
+What are generics used for? A common example is managing lists (appending, removing elements), where the functions to append, remove, and so forth do not depend on the
+type of the elements
+in the list. Move supports generic (parametric) types and functions. Here is an example of a type for
+Pair
+of elements and some parametric functions:
+/// A pair of elements of type U and V
+struct Pair<U: drop + copy, V: drop + copy> has drop, copy {
+  first: U,
+  second: V,
+}
+fun first<U: drop + copy, V: drop + copy>(x: Pair<U, V>): U {
+  x.first
+}
+fun second<U: drop + copy, V: drop + copy>(x: Pair<U, V>): V {
+  x.second
+}
+The example above demonstrates how to combine generics and capabilities' constraints to write safe code.
+Solidity does not support generics and may add this features as
+experimental
+in the future.
+The production-ready (but not yet default version)
+Move 2
+also supports
+pattern matching
+for enums
+(enabling the new version is done by adding
+--move-2
+at the end of move
+<command>
+, with command=test,compile, prove). Pattern-matching is a powerful language construct, and in
+Move 2
+it can be combined with conditions as follows (this example is taken from the section
+Move 2/Enum types
+):
+let r : Result<Result<u64>> = ... ;
+let v = match (r)) {
+  Ok(Err(c)) if c < 42  => 0,
+  Ok(Err(c)) if c >= 42 => 1,
+  Ok(_)                 => 2,
+  _                     => 3
+};
+This results in cleaner code, compared to an equivalent list of if statements (this does not compile in Move but is just an example):
+if (OK(err) && c < 42) then 0
+else if (OK(err) && c < 42) then 1
+else if r.OK? then 2
+else 3
+Solidity does not support pattern-matching, and it is unclear whether it will
+anytime soon
+.
+Move's Specifications & Formal Verification
+Some of Move domain-specific features (ownership) are inspired by Rust (but Move is not subset of Rust, nor Rust a subset of Move). This is also true for the testing framework. Testing is important, and Move supports testing ala Rust. Move 2 supports
+testing from specifications
+. The testing framework in Move is powerful, but Move goes beyond testing with the Move Prover [1, 2, 3]. Why is it important?
+Because testing is intrinsically limited:
+“Program testing can be used to show the presence of bugs, but never to show their absence!” –
+Edsger W. Dijkstra
+, 1970,
+Notes On Structured Programming
+.
+It is also true for testing techniques like
+fuzzing
+. So how can we go beyond testing?
+The answer is
+formal verification
+. Formal verification is part of the arsenal of formal methods (model-checking, theorem-proving…) and entails using rigorous reasoning techniques to
+reason
+about program code and provide security guarantees. What is unique to formal verification techniques is that you can 1)
+prove
+(with logics and mechanical reasoning) that a program satisfies some properties—e.g. absence of division-by-zero—and 2) the proof is valid for
+all
+possible inputs.
+Compared to testing that may reveal bugs, formal verification techniques can prove the
+absence
+of bugs.
+Move supports formal verification with the Move Prover, using the
+Hoare logic style
+and pre- and post-conditions. Hoare logic distinguishes between an
+implementation
+(how the result is computed) and the
+specification
+(what is expected from the computation).
+Below is a simple example: the specification part (lines 13–19) captures two expected properties of
+increment_counter
+(line 7): 1)
+aborts_if false
+(line 15), it should never abort, and 2)
+ensures ...
+(line 17–18), a post-condition stating that (when it does not abort) the value at the end of the computation (after line 9) is equal to the value at the beginning incremented by 1.
+/// Define a resource `Counter`
+struct Counter has key {
+    value: u64,
+}
+
+/// Increment the value in resource Counter 
+public fun increment_counter(account: &signer) acquires Counter {
+    let counter = borrow_global_mut<Counter>(signer::address_of(account));
+    counter.value = counter.value + 1;
+}
+
+/// Expected properties of increment_counter
+spec increment_counter {
+    // Never aborts
+    aborts_if false;      
+    // Postcondition (when does not abort). New value for counter is old + 1
+    ensures borrow_global<Counter>(signer::address_of(account)).value 
+            == old(global<Counter>(signer::address_of(account)).value) + 1;
+}
+The Mover Prover [1, 2, 3] reports an error on this program:
+error: abort not covered by any of the `aborts_if` clauses
+Indeed, the
+aborts_if
+states that
+increment_counter
+never aborts. This is not true. To capture all cases of
+aborts
+, we must strengthen the specification into:
+spec increment_counter {
+    aborts_if borrow_global<Counter>(signer::address_of(account)).value 
+        == MAX_U64;
+    aborts_if !exists<Counter>(signer::address_of(account));
+    // Postcondition: The value of the counter is incremented by 1
+    ensures borrow_global<Counter>(signer::address_of(account)).value 
+            == old(global<Counter>(signer::address_of(account)).value) + 1;
+}
+Now if we run the
+move prove
+command on this code, we get a
+Success
+output. What the prover establishes (in a fraction of a second) is that
+for all possible inputs
+account
+of type
+&signer
+(line 7), the post-condition (
+ensures
+) is satisfied. In this example, using a specification and verification is much easier than writing a test, and the conclusion is much stronger.
+Solidity's SMTChecker does not provide an equivalent to the Move Prover. First, SMTChecker does not support quantifiers. Second, it uses the Solidity
+requires
+and
+asserts
+constructs as specifications. In Move, the specification is separate from the implementation, so even if the programmer modifies the implementation, the specification remains the same. With SMTChecker, the programmer may just remove
+requires
+and
+asserts
+and by doing so remove all the checks.
+Move and the Move Prover support rich specifications using quantifiers. The Move prover allows you to prove that functions (or even modules) satisfy some properties for all inputs. This is not doable with testing which would require ranging over the set all of inputs, and there are far too many (for the example above, we would need 2
+64
+tests to cover all the cases).
+The
+Move Prover
+is an impressive feature of Move tooling.
+The Move standard library has been specified and verified with the Move Prover. I strongly encourage programmers to try the Move Prover and write specifications. Writing specifications in itself is a good exercise to design tests, and greatly simplifies the audit process. There is of course a potential problem: what if the specification is wrong? This is a valid concern and writing good specifications is hard. Move 2 supports
+specification testing
+to help find issues in specifications.
+Move Bytecode Verification
+Another interesting feature of Move is that Move bytecode is checked before publication on-chain. The Move bytecode is
+typed
+which allows for verification that the bytecode satisfies some well-formedness properties. The bytecode verifier checks that bytecode submitted for publication on-chain is safe, and satisfies the resource capabilities' constraints, and some memory safety constraints. The bytecode verifier does not check properties like
+aborts_if
+, but focusses on capabilities and memory safety. What guarantees does it provide? First, users could submit Move bytecode without using a compiler. So we cannot assume that all submitted bytecode has been generated by a Move compiler. The bytecode verifier prevents malicious hand-crafted bytecode to be published. Second, it protects against some compiler bugs. If the compiler is buggy, non well-formed bytecode could be produced. The bytecode verifier ensures that safety properties (capabilities, ownership) are satisfied and would reject non well-formed bytecode. In other words, in the Move tool chain, you don't need to trust the compiler.
+If you are skeptical about the need for bytecode verification,  read this post, the
+Vyper Hack Bug
+, explaining how a bug in the Vyper compiler led to an exploit (re-entrancy) where the attacker netted $52m.
+It is important to note that the Move bytecode verifier does something very different from the bytecode verification step on Ethereum. On Ethereum,
+bytecode verification
+may be triggered when deploying a contract. The contract to be deployed must provide some metadata on top of the bytecode to be published on-chain, and the metadata must include some source (Solidity) code. The (Ethereum) bytecode verification simply checks that compiling the source code of the contract with the (Solidity) compiler generates the bytecode submitted for publication. This process does not enforce any safety guarantees. If no source code is available, there is no bytecode verification.
+Conclusion: Move is the Best Language for Smart Contracts
+Move is getting a lot of traction, and for a good reason. It is the most advanced programming language for developing smart contracts.
+Move programmers can take advantage of the powerful abstract concepts of Move (resources, ownership, generics, pattern-matching, testing, and formal verification) to design readable, safe, efficient contracts. They don't need to use Solidity
+tricks, wizardry,
+or
+optimizations
+to implement the business logics of their dApps.
+Some Move features (ownership/memory safety, syntax) are inspired by Rust, and a Rust programmer should feel comfortable writing Move code. Move was designed with formal verification in mind from the beginning, and the early versions of the Move standard libraries were already formally verified [2,3]. The Move prover and the Move Specification Language offer a fantastic opportunity to programmers to automatically and formally verify their code, using cutting-edge automated reasoning technology.
+Move is the language for Web3 offering unparalleled productivity for programmers, and an unmatched level of security for users.
+References
+[1] Junkil Park, Teng Zhang, Wolfgang Grieskamp, Meng Xu, Gerardo Di Giacomo, Kundu Chen, Yi Lu, Robert Chen:
+Securing Aptos Framework with Formal Verification
+. FMBC@CAV 2024: 9:1-9:16
+[2] David L. Dill, Wolfgang Grieskamp, Junkil Park, Shaz Qadeer, Meng Xu, Jingyi Emma Zhong:
+Fast and Reliable Formal Verification of Smart Contracts with the Move Prover
+. TACAS (1) 2022: 183-200
+[3] Jingyi Emma Zhong, Kevin Cheang, Shaz Qadeer, Wolfgang Grieskamp, Sam Blackshear, Junkil Park, Yoni Zohar, Clark W. Barrett, David L. Dill:
+The Move Prover
+. CAV (1) 2020: 137-150
+[4] Blackshear, Sam, Evan Cheng, David L Dill, Victor Gao, Ben Maurer, Todd Nowacki, Alistair Pott, et al.
+Move: A Language With Programmable Resources
+. Diem, 2019. PDF available
+here
+.
+[5]
+What the hell are the blockchain people doing, and why isn't it a dumpster fire?
+Dan Guido. Podcast series Building Better Systems

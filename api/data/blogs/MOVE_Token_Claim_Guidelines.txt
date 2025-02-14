@@ -1,0 +1,48 @@
+$MOVE Token Claim Guidelines
+December 4, 2024
+Movement Network Foundation
+Intro
+The $MOVE Token Generation Event (TGE) is coming soon, and we’re excited to unveil new token registration and claim details as we embark on Movement's next chapter!
+If using an OKX exchange account, you can register for MoveDrop from Dec 4 at 6AM UTC  -  Dec 6 at 6AM UTC on
+the OKX claims registration website
+. MoveDrop participants who elect this method will automatically receive their $MOVE in their OKX account.
+Eligible wallets can claim $MOVE upon Token Generation Event (TGE).
+After TGE, you can check your claimable $MOVE on
+the claims website
+.
+Initial $MOVE claims (including OKX claims) will occur on Ethereum Mainnet.
+Choosing to register to claim $MOVE in your OKX account is choosing to claim $MOVE on Ethereum Mainnet and missing eligibility for future multipliers.
+Overview
+1. OKX Account Registration Phase
+If you’re an OKX user, you can now register to receive your $MOVE on OKX. After registration, you do not have to actively claim your $MOVE. Rather, you will automatically receive your $MOVE in your OKX exchange account. To register to receive $MOVE in your OKX account, please provide your
+exchange UID
+and
+MOVE Deposit Address
+(ERC20) on the $MOVE claim page. (See tutorial below.)
+Registration Period:
+Dec 4 at 6AM UTC  -  Dec 6 at 6AM UTC
+Deposit Time:
+Shortly before OKX Exchange Listing
+2. General Claim Phase
+This claim phase will be opened to all users. OKX users who missed the initial claim phase or provided invalid OKX account information can also claim in this phase.
+MoveDrop Claim
+:
+Shortly before Major Exchange Listings
+OKX Claim Tutorial
+To view your OKX account information, open OKX APP and go to [Exchange] and log in/sign up.
+OKX UID:
+1. Click on the button on the top left of the front page.
+2. Click on your personal profile.
+3. Copy your UID.
+OKX $MOVE Deposit Address:
+1. Click [Deposit] on the front page.
+2. Click on the search bar and type [MOVE], select [MOVE] and then [MOVE-ETH].
+3. Copy the deposit address.
+To find out which actions create MoveDrop eligibility, visit
+our MoveDrop post
+. To learn more about $MOVE, its purpose, and its distribution, read
+our $MOVE reveal
+.
+We look forward to our community members claiming and using $MOVE!
+U.S. CITIZENS AND/OR RESIDENTS AND THE CITIZENS AND/OR RESIDENTS OF CERTAIN OTHER RESTRICTED COUNTRIES ARE NOT ELIGIBLE TO PARTICIPATE IN THE MOVEDROP PROGRAM. ELIGIBILITY FOR AND PARTICIPATION IN THE MOVEDROP PROGRAM IS SUBJECT TO APPLICABLE TERMS AND CONDITIONS, LAWS, AND REGULATIONS AND IS NOT GUARANTEED. NOTHING HEREIN ENTITLES YOU TO ELIGIBILITY FOR OR PARTICIPATION IN THE MOVEDROP PROGRAM. TOKENS BEING MADE AVAILABLE AS PART OF THE MOVEDROP PROGRAM ARE A GIFT PROVIDED FOR NO CONSIDERATION
+THE MOVEDROP PROGRAM IS NOT AN OFFERING TO SELL, THE SOLICITATION OF AN OFFER TO PURCHASE, OR AN ENCOURAGEMENT TO PURCHASE TOKENS. YOU SHOULD NOT RELY ON THE MOVEDROP PROGRAM OR THE CONTENT HEREIN FOR ADVICE OF ANY KIND, INCLUDING LEGAL, INVESTMENT, FINANCIAL, TAX, OR OTHER PROFESSIONAL ADVICE. INFORMATION ABOUT THE MOVEDROP PROGRAM IS NOT A SUBSTITUTE FOR ADVICE FROM A QUALIFIED PROFESSIONAL OR YOUR OWN RESEARCH. THIS DOCUMENT CONTAINS HYPOTHETICAL, FORWARD-LOOKING, AND/OR PROJECTED FIGURES, WHICH ARE APPROXIMATE, NOT GUARANTEED AND ARE SUBJECT TO CHANGE; ACTUAL NUMBERS MAY VARY. THE MOVEMENT NETWORK FOUNDATION AND ITS SUBSIDIARIES MAKE NO REPRESENTATION OR WARRANTY, EXPRESS OR IMPLIED, AS TO THE COMPLETENESS, RELIABILITY, VALIDITY, OR ACCURACY OF THIS INFORMATION. ANY INFORMATION CONTAINED HEREIN IS SUBJECT TO CHANGE WITHOUT NOTICE.

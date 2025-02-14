@@ -1,0 +1,29 @@
+Community vs Insiders: Can They Both Win?
+May 26, 2024
+Rushi Manche
+Over the past few weeks, CT has been discussing the high fully diluted value (FDV) and low float of many projects. There’s a growing concern that insiders, such as investors, team members, and influencers are reaping the early benefits while the community – the very people who invest their time, energy, and love into the protocol – have little to no say in its direction.
+I’ve spent the last three weeks speaking with community members, investors, influencers, etc to find a solution to this issue. To better understand the problem, let’s first examine the interests of each stakeholder:
+Investors
+: These early backers provide capital and reputational support to protocols for years. They are often motivated to minimize sell pressure in the first few months after launch to ensure a healthy price chart.
+Team
+: Like investors, the team also wants to see healthy and sustainable price action. However, the team also needs to balance the needs and interests of various parties in order to gain mindshare, exposure, and business development opportunities, especially before launch.
+Content Curators
+: These individuals aim to minimize their risk while maximizing their upside. They prefer to create organic content rather than being forced to post on an unnatural schedule.
+Community
+: (The most crucial stakeholder) Comprised of the people for whom the teams build their products. They want to be involved in the upside as early as possible and contribute to the pre-token generation event (TGE) phase of the project.
+Previous attempts to address this dilemma have included short vesting schedules, lower valuations, and airdrop strategies. However, these solutions often lead to conflicts of interest, price instability, and regulatory concerns.
+BUT… what if there was a way to maintain consistent tokenomics across all shareholders, minimize downside risk for content creators, and involve the community in the decision-making process? I believe I have an idea that could work.
+INTRODUCING “The Forum”:
+A limited number of content curators (or KOLs, even though I hate the word) are given allocation at a defined valuation with the same vesting terms as private investors.
+Top community members (based on Discord activity, engagement, and project development) are also given the same opportunity to invest as curators.
+Both parties have the opportunity to receive their premium as a marketing grant for contributing to the network (ecosystem grants, tutorial videos, event organizing, etc.).
+Both curators and community members must undergo accredited investor review via KYC to maintain compliance.
+Community members (especially those who do not want to go through KYC) will eventually be part of the “Senate” – a governance body that can vote on which curators they want to see rewarded and vote out unproductive curators. They earn points for their active contribution to the network, which can be redeemed for rewards at launch. This way, the community has two avenues to be involved which is advantageous especially for those without liquidity to deploy in early stage protocols. The Senate is compromised of 100 of the most active members in a given discord – votes are manually tracked within Discord or using Jokerace where each representative submits a contest and a whitelisted group (The Senate) is able to vote. Post launch, governance proposals can coordinate election.
+This structure enables community members to get involved in earlier financing rounds while still mitigating risk and ensuring compliance for the protocol. Teams and investors also benefit, as they can get their protocol in the hands of more power users and influencers who can bring mindshare to their network.
+I’ve conducted some initial beta testing, and the feedback has been encouraging – curators get a fair deal, teams and investors avoid excessive sell pressure and maintain compliance, and the community is directly involved from the early stages.
+In the spirit of transparency, I welcome any constructive criticism and honest feedback. Many founders, including myself, are searching for ways to keep the community engaged while growing their protocols, and it would be cool to develop a system designed by and for community participants. Note: this is purely field testing for feedback from the community out of personal interest for the future of protocol launches.
+NEXT STEPS:
+Please share your comments, ideas, and concerns in the comments below.
+I’ll host a community Town Hall on Movement Spaces with leading founders, investors, and community members post-Consensus to open the floor for discussion. A Google Form will be released soon to collect questions in advance.
+Short Disclaimer:
+This article covers content for general informational purposes only, no responsibility or liability is accepted for any errors of fact or omission expressed herein. It represents the personal views of the author(s) and it does not represent the views of Movement Labs.

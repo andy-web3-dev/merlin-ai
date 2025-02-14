@@ -1,0 +1,1138 @@
+App name: Meridian 
+Landing page: https://www.meridian.money/
+App category: Dex
+App insights: 
+Meridian is building the financial primitives to power the Movement Labs ecosystem.
+App documentation: https://docs.meridian.money/meridian-protocol-documentation
+Meridian | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+Meridian
+What is Meridian?
+Meridian is building the key financial primitives to power the Movement Labs ecosystem, serving as the central liquidity and yield hub of the Move ecosystem. The protocol's initial products revolve around a composable, capital efficient DEX and a novel LST protocol, natively built on Movement.
+Protocol Links
+All official links to Meridian webpages and social media are linked below:
+Website: 
+https://www.meridian.money/
+
+X: 
+https://x.com/meridian_money
+  
+Discord: 
+https://discord.com/invite/meridian-money
+Next
+Pool Types
+Last updated 
+4 months ago
+Meridian | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+Meridian
+What is Meridian?
+Meridian is building the key financial primitives to power the Movement Labs ecosystem, serving as the central liquidity and yield hub of the Move ecosystem. The protocol's initial products revolve around a composable, capital efficient DEX and a novel LST protocol, natively built on Movement.
+Protocol Links
+All official links to Meridian webpages and social media are linked below:
+Website: 
+https://www.meridian.money/
+
+X: 
+https://x.com/meridian_money
+  
+Discord: 
+https://discord.com/invite/meridian-money
+Next
+Pool Types
+Last updated 
+4 months ago
+Pool Types | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Previous
+Meridian
+Next
+Weighted Pools
+Weighted Pools | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+AMM
+Pool Types
+Weighted Pools
+What are Weighted Pools?
+Meridian's Weighted Pools operate by enforcing a Constant Weighted Product invariant for token swaps. A subset of these, known as liquidity bootstrapping pools, caters to auction-like mechanisms. These pools employ Weighted Math, making them versatile for a wide array of applications, including asset pairings without price correlation (e.g., ETH-USDC). 
+Property
+Weighted
+Max Tokens in Pool
+4
+Default Swap Fee
+0.15%
+Oracle Usage
+None
+Unlike conventional x*y=k pools which are limited to 2 tokens of equivalent weights (50/50) , Meridian's weighted pools offer flexibility in token counts and proportions. Users can create pools with different weightings such as 80/20 or 60/20/20, among others. Available pairs are dictated by the standard combination formula below:
+Meridian supports weighted pools with up to 4 total assets. As each asset within a pool can be traded against any other, the number of available swaps grows exponentially - reaching up to * pairs for pools with the maximum number of _ tokens. This proliferation of swap pairs naturally encourages increased trading activity, thereby boosting fee collection and distribution to liquidity providers.
+Impermanent Loss
+Weighted pools offer flexibility in how assets are weighted against each other, allowing liquidity providers to adjust the proportion of each token in the pool. As the token weight increases in favor of one asset, it significantly reduces the unrealized impermanent loss. For example, Impermanent loss decreases in a two-token pool as the asset weight changes, relative to price fluctuations between the tokens.
+However, while weighted pools help minimize impermanent loss, they also introduce trade-offs in terms of price slippage. In pools where one token is heavily weighted, swaps experience higher slippage due to the reduced liquidity of the less weighted asset. To balance the reduction in impermanent loss with adequate liquidity, an 80/20 weighting ratio is commonly recommended. 
+Previous
+Pool Types
+Next
+Stable Pools
+Last updated 
+4 months ago
+Stable Pools | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+AMM
+Pool Types
+Stable Pools
+Stable Pools are tailored for tokens pegged to specific values, synthetics like liquid-staking derivatives, or assets correlated with others. This category encompasses stablecoins, synthetic or wrapped assets, and staked derivatives (e.g., staked Aptos and Aptos). These pools facilitate low-impact, low-fee exchanges between assets converging on a relative value of "1".
+Property
+Weighted
+Max Tokens in Pool
+2
+Default Swap Fee
+0.05%
+Oracle Usage
+None
+Stable Pool Math
+ 
+To accommodate swaps between similar assets, Stable Pools utilize a distinct equation. Meridian employs a Stable Pool invariant (originally developed by Curve), which is as following: 
+A
+∗
+n
+n
+∗
+∑
+x
+i
++
+D
+=
+A
+∗
+D
+∗
+n
+n
++
+D
+n
++
+1
+n
+n
+∗
+∏
+x
+i
+A*n^n*\sum xᵢ+D=A*D*n^n+ \dfrac{D^{n+1}}{n^n*\prod xᵢ}
+A
+∗
+n
+n
+∗
+∑
+x
+i
+​
++
+D
+=
+A
+∗
+D
+∗
+n
+n
++
+n
+n
+∗
+∏
+x
+i
+​
+D
+n
++
+1
+​
+Amplification Factor
+ 
+Stable pools can be fine-tuned using an "amplification factor" (A), which influences trade price impact. This factor determines how closely the pool's trading curve aligns with either the constant product or constant sum curve. A low amplification factor makes the pool's assets more susceptible to deviating from their peg, while a high factor requires significant trade volumes to shift relative asset values. It's worth noting that maximizing this factor isn't always optimal, as it can affect fee accumulation in the presence of alternative markets for similar assets.
+Low Amplification Factor
+: In a pool with a low amplification factor, even small trades can cause noticeable deviations from the peg, making the pool less stable. Low A-factor is more suited for asset pairs that are less tightly correlated.
+High Amplification Factor
+: A high amplification factor makes the pool more resistant to price deviations. For example, swapping between dollar-pegged stablecoins in a pool with a high amplification factor would result in minimal price impact, even for larger trade sizes. 
+Pool Parameters
+ 
+The pool creator initially sets the amplification factor, which can only be modified subsequently through protocol governance. Any intended changes to this factor over time require the submission of a governance proposal.
+Previous
+Weighted Pools
+Next
+Concentrated Liquidity
+Last updated 
+4 months ago
+Concentrated Liquidity | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+AMM
+Pool Types
+Concentrated Liquidity
+More information coming soon. 
+Previous
+Stable Pools
+Next
+Swap Fees
+Last updated 
+6 months ago
+Swap Fees | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+AMM
+Swap Fees
+Swap Fees
+In line with standard capital market practices, liquidity providers on the Meridian platform earn fees when users trade against their supplied liquidity. Fees are collected in the swapped token. For instance, in a pool of Meridian's governance token (MDN) and Move Dollar (MOD), a user swapping MOD for MDN results in liquidity providers receiving a portion of the input token, MOD. Meridian LP tokens automatically accrue these fees, representing fractional ownership of the pool.
+The fee structure is set by the pool creator and customizable across different asset pool types. The default swap fees are as following:
+Weighted Pools: 0.15%
+Concentrated Liquidity Pools: 0.03% 
+Stable Pools: 0.05% 
+Protocol fees are set at 50%, with the other 50% directly accruing to liquidity providers. For example, a 1.00% fee pool would effectively allocate 0.50% of swap volume to liquidity providers and the protocol treasury, respectively
+Previous
+Concentrated Liquidity
+Next
+Flashloans
+Last updated 
+4 months ago
+Flashloans | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+What is a Flash Loan?
+How do we support Flash Loans?
+Flash Loan fee
+Utilizing Flash Loans
+Export as PDF
+AMM
+Flashloans
+What is a Flash Loan?
+Flash Loans allow you to borrow any available amount of assets without putting up any collateral, as long as the liquidity is returned to the protocol within the same transaction. To do a Flash Loan, you must build a contract requesting a Flash Loan. The contract will then need to execute the instructed steps and pay back the loan + fees all within the same transaction.
+How do we support Flash Loans?
+With Move, we implement flash loans using the 
+hot-potato pattern
+. Let's go through the code to better understand it.
+First, we define a 
+Flashloan
+ struct without any 
+abilities
+.
+Copy
+struct Flashloan<phantom Asset0, phantom Asset1, phantom Asset2, phantom Asset3> {
+
+
+  amount_0: u64,
+
+
+  amount_1: u64,
+
+
+  amount_2: u64,
+
+
+  amount_3: u64,
+
+
+}
+The struct records the number of 
+Coin<T>
+'s that were borrowed. Because this struct does not have the 
+key
+ or 
+store
+ ability, it cannot be transferred or otherwise placed in persistent storage. Because it does not have the 
+drop
+ ability, it cannot be discarded. Thus, the only way to get rid of this struct is to call 
+repay
+ sometime during the transaction that created it, which is exactly what we want from a flash loan. Otherwise, your code won't even compile.
+Flash Loan fee
+Meridian charges a fixed 1bps flash loan fee.
+Utilizing Flash Loans
+Call 
+flashloan
+ and 
+pay_flashloan
+ in the same transaction. Here's a complete example:
+Copy
+script {
+
+
+    use bridge::asset::USDC;
+
+
+    use bridge::asset::USDT;
+
+
+
+
+    use aptos_std::math64;
+
+
+    use aptos_framework::coin;
+
+
+
+
+    use thalaswap::base_pool::Null;
+
+
+    use thalaswap::stable_pool;
+
+
+    use thalaswap::weighted_pool::{Self, Weight_50};
+
+
+
+
+    const FLASHLOAN_AMOUNT: u64 = 10000;
+
+
+    const FLASHLOAN_FEE_BPS: u64 = 1;
+
+
+    const BPS_BASE: u64 = 10000;
+
+
+
+
+    fun main(account: &signer) {
+
+
+        // stable pool example
+
+
+        // 1. acquire flashloan
+
+
+        let (coin_0, coin_1, coin_2, coin_3, flashloan) = stable_pool::flashloan<USDC, USDT, Null, Null>(FLASHLOAN_AMOUNT, 0, 0, 0);
+
+
+
+
+        // 2. do something with the coins
+
+
+
+
+        // 3. calculate fee amount
+
+
+        let fee_amount = math64::mul_div(FLASHLOAN_AMOUNT, FLASHLOAN_FEE_BPS, BPS_BASE);
+
+
+        // alternatively, you can use `flashloan_fee_bps` view function to get the fee bps
+
+
+        // let fee_amount = math64::mul_div(FLASHLOAN_AMOUNT, stable_pool::flashloan_fee_bps<USDC, USDT, Null, Null>(), BPS_BASE);
+
+
+
+
+        // 4. repay flashloan
+
+
+        let fee = coin::withdraw<USDC>(account, fee_amount);
+
+
+        coin::merge(&mut coin_0, fee);
+
+
+        stable_pool::pay_flashloan<USDC, USDT, Null, Null>(coin_0, coin_1, coin_2, coin_3, flashloan);
+
+
+        
+
+
+        // weighted pool example
+
+
+        // 1. acquire flashloan
+
+
+        let (coin_0, coin_1, coin_2, coin_3, flashloan) = weighted_pool::flashloan<USDC, USDT, Null, Null, Weight_50, Weight_50, Null, Null>(FLASHLOAN_AMOUNT, 0, 0, 0);
+
+
+
+
+        // 2. do something with the coins
+
+
+
+
+        // 3. calculate fee amount
+
+
+        let fee_amount = math64::mul_div(FLASHLOAN_AMOUNT, FLASHLOAN_FEE_BPS, BPS_BASE);
+
+
+        // alternatively, you can use `flashloan_fee_bps` view function to get the fee bps
+
+
+        // let fee_amount = math64::mul_div(FLASHLOAN_AMOUNT, weighted_pool::flashloan_fee_bps<USDC, USDT, Null, Null, Weight_50, Weight_50, Null, Null>(), BPS_BASE);
+
+
+
+
+        // 4. repay flashloan
+
+
+        let fee = coin::withdraw<USDC>(account, fee_amount);
+
+
+        coin::merge(&mut coin_0, fee);
+
+
+        weighted_pool::pay_flashloan<USDC, USDT, Null, Null, Weight_50, Weight_50, Null, Null>(coin_0, coin_1, coin_2, coin_3, flashloan);
+
+
+    }
+
+
+}
+
+
+Previous
+Swap Fees
+Next
+Meridian LST
+Last updated 
+4 months ago
+Meridian LST | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+Liquid Staking
+Meridian LST
+More information coming soon.
+Previous
+Flashloans
+Next
+Contracts
+Last updated 
+5 months ago
+Contracts | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+PROTOCOL OPERATIONS
+Contracts
+More information coming soon. 
+Previous
+Meridian LST
+Next
+Terms of Service
+Last updated 
+4 months ago
+Terms of Service | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+PROTOCOL OPERATIONS
+Terms of Service
+This page explains the terms by which you may use the websites, including without limitation meridian.money (collectively, the “Site”), Company Content (as defined below) and the Services (as defined below) of Meridian (“we”, “our” and “us”). By accessing or using the Site or the Services, you signify on your behalf and any person or entity that you represent that you have read, understood, and agree to be bound by these Terms of Service (the “Agreement”), whether or not you are a registered user of our Site or the Services. We reserve the right to make unilateral modifications to these terms and will provide notice of these changes as described below. This Agreement applies to all visitors, users, and others who access the Site or the Services (“you” and “your”).
+Please read this Agreement carefully to ensure that you understand each provision. Note that by agreeing to these Terms of Services, you confirm that you are not a United States user, or any other restricted person.
+NONE OF THE SITE OR THE SERVICES ARE OFFERED TO PERSONS OR ENTITIES WHO ARE RESTRICTED PERSONS (AS DEFINED BELOW).
+1. Our Site and Services.
+(a) As part of the Site, we provide a user interface (the “Platform”) to access the smart contracts, decentralized applications, APIs and all other software that we have developed for transaction with cryptocurrencies, digital tokens or coins and other blockchain-based assets (collectively, “Digital Assets”) in a decentralized, peer-to-peer manner (the “Protocol”). This Agreement governs your use of our Site, the Platform, the Protocol, and all related tools, applications, data, software and other services provided by us (collectively, the “Services”).
+(b) By accessing or using the Site or the Services, you agree that we do not provide execution, settlement, or clearing services of any kind and are not responsible for the execution, settlement, or clearing of transactions automated through the Services.
+2. Use of Our Site and Services.
+(a) Eligibility
+(i) This is a contract between you and us. You must read and agree to the terms of this Agreement before using the Site and the Services. If you do not agree, you may not use the Site and the Services. You may use the Site and the Services only if you can form a binding contract with us, and only in compliance with this Agreement and all applicable:
+(A) laws, constitutions, treaties, statutes, codes, ordinances, principles of common and civil law and equity, orders, decrees, rules, regulations and municipal by-laws, whether domestic, foreign or international;
+(B) judicial, arbitral, administrative, ministerial, departmental and regulatory judgments, orders, writs, injunctions, decisions, rulings, decrees and awards of any: (1) multinational or supranational body or organization, nation, government, state, province, country, territory, municipality, quasi-government, administrative, judicial or regulatory authority, agency, board, body, bureau, commission, instrumentality, court or tribunal or any political subdivision thereof, or any central bank (or similar monetary or regulatory authority) thereof, any taxing authority, any ministry or department or agency of any of the foregoing; (2) self-regulatory organization or stock exchange; (3) entity exercising executive, legislative, judicial, regulatory or administrative functions of or pertaining to government; and (4) corporation or other entity owned or controlled, through stock or capital ownership or otherwise, by any of such entities or other bodies pursuant to the foregoing (“Governmental Authority”); and
+(C) policies, practices and guidelines of, or contracts with, any Governmental Authority, which, although not actually having the force of law, are considered by such Governmental Authority as requiring compliance as if having the force of law, as the same may be amended from time to time and any successor thereto and in each case binding on or affecting the person or entity, or the assets of the person or entity, referred to in the context in which such word is used; (collectively, “Applicable Laws”).
+(ii) If you are under the age of majority in your jurisdiction of residence, you may use the Site or the Services only with the consent of or under the supervision of your parent or legal guardian. The Site and the Services are not available to any person previously removed from the Site or the Services by us.
+(iii) By entering or using this Site or the Services you represent that you:
+(A) have the right, authority and capacity to enter into this Agreement on behalf of yourself and the person or entity that you represent (if applicable);
+(B) are not prohibited from entering or using this Site or the Services or transacting with the Protocol under any Applicable Laws;
+(C) understand the risks associated with using our Site and the Services, including using the Protocol;
+(D) understand that you will be dealing with third parties and we have not verified and will not be in a position to verify any transaction you make using the Protocol;
+(E) are not a Restricted Person or acting on behalf or under the authority, instruction or employment of a Restricted Person;
+(F) do not intend to transact with any Restricted Person; or
+(G) do not, and will not, use a VPN or any other privacy or anonymization tools or techniques to circumvent, or attempt to circumvent, any restrictions that apply to the Services.
+(b) User Responsibilities; Wallet
+(i) In order to use certain features of the Site and Services, you may be required to connect to your digital asset wallet or address (“Wallet”) to the Platform. You acknowledge that we are not responsible for transferring, safeguarding, or maintaining your private keys or any assets associated with your Wallet. If you lose, mishandle or have stolen your Wallet private keys, you acknowledge that you may not be able to recover associated assets and that we are not responsible for such loss.
+(ii) You acknowledge that you may disconnect your Wallet from the Platform at any time.
+(iii) You agree to notify us immediately if you suspect your linked Wallet has been compromised or otherwise suspect any security issues related to your use of the Services.
+(iv) You agree that you will not use the Services to transact with any Digital Asset that may be considered a security under Applicable Laws.
+(v) You acknowledge and agree that we may restrict, suspend or close your Wallet and access to the Platform for any reason or no reason, including if we reasonably believe that you have breached any of the terms of this Agreement.
+(vi) Digital Assets that you purchase or use in relation to the Services may be held in one or more Wallets of yours. We do not operate, maintain, control or have custody over any contents of your Wallet. We accept no responsibility for, or liability to, you in connection with your Wallet and make no representations or warranties regarding how the Platform or the Services will operate with any specific Wallet. Any issues relating to your Wallet should be addressed to your Wallet provider.
+(vii) You must provide all equipment, connectivity, and software necessary to connect to the Service. You are solely responsible for any costs and expenses, including Internet connection or mobile fees, which you incur when accessing the Services.
+(viii) You acknowledge that we are not responsible for, and you agree to indemnify us for, any loss or damage arising from your failure to comply with the requirements hereunder.
+(c) Access and Use of the Site and Services
+(i) Subject to the terms and conditions of this Agreement, you are hereby granted a non-exclusive, limited, non-transferable, non-sublicensable and freely revocable right to use the Site and the Services. We reserve all rights not expressly granted herein in the Site, the Services and the Company Content (as defined below). We may terminate this right of use, in whole or in part, at any time for any reason or no reason.
+(ii) You agree that rights granted to you in this Agreement are subject to, and you covenant to abide with, the following restrictions:
+(A) you shall not license, sell, rent, lease, transfer, assign, distribute, host, or otherwise commercially exploit the Site or the Services, whether in whole or in part, or any content displayed on the Site or the Services;
+(B) you shall not modify, make derivative works of, disassemble, reverse compile or reverse engineer any part of the Site or the Services;
+(C) you shall not access the Site or the Services in order to build a similar or competitive websites, product, or service;
+(D) except as expressly stated herein, no part of the Site or the Services may be copied, reproduced, distributed, republished, downloaded, displayed, posted or transmitted in any form or by any means;
+(E) in connection with using the Services, you only will transfer legally-obtained Digital Assets that belong to you; and
+(F) you shall not use the Site or the Services other than as permitted hereunder.
+(iii) Unless otherwise indicated, any future release, update, or other addition to the functionality of the Site and Services shall be subject to this Agreement. All copyright and other proprietary notices on the Site (or on any content displayed on the Site) must be retained on all copies thereof.
+(iv) You acknowledge and agree that:
+(A) we have no obligation to provide you with any support or maintenance in connection with the Site and the Services;
+(B) the pricing information and other data provided on the Site or the Platform does not represent (1) an offer, a solicitation of an offer, or recommendation to enter into, a transaction with us or (2) any advice regarding a transaction entered into using the Site, the Platform and the Services;
+(C) we do not act as an agent for you or any other user of the Site, the Platform or the Services;
+(D) you are solely responsible for your use of the Services, including all of your transfers of Digital Assets;
+(E) to the fullest extent not prohibited by Applicable Law, we owe no fiduciary duties or liabilities to you or any other party, and that to the extent any such duties or liabilities may exist at law or in equity, you hereby irrevocably disclaim, waive, and eliminate those duties and liabilities;
+(F) you are solely responsible for reporting and paying any taxes applicable to your use of the Services; and
+(G) we have no control over, or liability for, the delivery, quality, safety, legality, or any other aspect of any Digital Assets that you may transfer to or from a third party, and we are not responsible for ensuring that an entity with whom you transact completes the transaction or is authorized to do so, and if you experience a problem with any transactions in Digital Assets using the Services, then you bear the entire risk.
+(v) You acknowledge and agree that the Services are non-custodial. When you deposit Digital Assets into any smart contract, you retain control over those Digital Assets at all times. The private key associated with the Wallet from which you transfer Digital Assets is the only private key that can control the Digital Assets you transfer into the smart contracts. In some cases, you may withdraw Digital Assets from any smart contract only to the Wallet from which you deposited the Digital Assets.
+(d) Acceptable Use
+(i) You agree not to engage in any of the following prohibited activities:
+(A) copying, distributing, or disclosing any part of the Site or the Services in any medium, including without limitation by any automated or non-automated “scraping”;
+(B) using any automated system, including without limitation “robots”, “spiders” and “offline readers” to access the Site or the Services in a manner that sends more request messages to our servers than a human can reasonably produce in the same period of time by using a conventional on-line web browser (except that we grant the operators of public search engines revocable permission to use spiders to copy publicly available materials from the Site for the sole purpose of and solely to the extent necessary for creating publicly available searchable indices of the materials, but not caches or archives of such materials);
+(C) transmitting spam, chain letters, or other unsolicited email or messages through the Site or the Services;
+(D) attempting to interfere with, compromise the system integrity or security of or decipher any transmissions to or from the servers running the Site or the Services;
+(E) taking any action that imposes, or may impose at our sole discretion an unreasonable or disproportionately large load on our infrastructure;
+(F) uploading invalid data, viruses, worms, or other software agents through the Site or the Services;
+(G) collecting or harvesting any personally identifiable information, including account names, from the Site or the Services;
+(H) using the Site or the Services for any commercial solicitation purposes;
+(I) impersonating another person or otherwise misrepresenting your affiliation with a person or entity, conducting fraud, hiding or attempting to hide your identity;
+(J) interfering with the proper working of the Site or the Services;
+(K) accessing any content on the Site or the Services through any technology or means other than those provided or authorized by the Site or the Services;
+(L) bypassing the measures we may use to prevent or restrict access to the Site or the Services, including without limitation features that prevent or restrict use or copying of any content or enforce limitations on use of the Site or the content therein;
+(M) using the Site or the Services for any purpose prohibited or regulated by Applicable Laws;
+(N) using the Site or the Services to collect, upload, transmit, display, or distribute any content: (1) that violates any third-party right, including any copyright, trademark, patent, trade secret, moral right, privacy right, right of publicity, or any other intellectual property or proprietary right; (2) that is unlawful, harassing, abusive, tortious, threatening, harmful, invasive of another’s privacy, vulgar, defamatory, false, intentionally misleading, trade libelous, pornographic, obscene, patently offensive, promotes racism, bigotry, hatred, or physical harm of any kind against any group or individual or is otherwise objectionable; or (3) that is harmful to minors in any way;
+(O) engage in improper or abusive trading practices, including (1) any fraudulent act or scheme to defraud, deceive, trick or mislead; (2) trading ahead of another user of the Services or front-running; (3) fraudulent trading; (4) accommodation trading; (5) fictitious transactions; (6) pre-arranged or non-competitive transactions; (7) violations of bids or offers; (8) spoofing; (9) manipulation; (10) knowingly making any bid or offer for the purpose of making a market price that does not reflect the true state of the market; or (11) entering orders for the purpose of entering into transactions without a net change in either party’s open positions but a resulting profit to one party and a loss to the other party, commonly known as a “money pass”;
+(P) use or access the Site or the Services to transmit or exchange Digital Assets that are the direct or indirect proceeds of any criminal or fraudulent activity, including terrorism or tax evasion; or
+(Q) using the Site or the Platform for any purposes other than using our Services.
+(ii) We may, without prior notice, change the Site or the Services; stop providing the Site or the Services or features of the Site or the Services to you or to users generally; or create usage limits for the Site or the Services. We may permanently or temporarily terminate or suspend your access to the Site or the Services without notice and liability for any reason, including if in our sole determination you violate any provision of this Agreement, or for no reason. Upon termination for any reason or no reason, you continue to be bound by this Agreement. You agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Site or the Services or any part thereof.
+(iii) You are solely responsible for your interactions with other users of the Site and the Services. We reserve the right, but have no obligation, to monitor disputes between you and other users. We shall have no liability for your interactions with other users, or for any user’s action or inaction.
+(e) Restrictions on Use
+(i) We make no representations that the Site or the Services are appropriate or available for use in any location. Those who access or use the Site or the Services do so at their own volition and are entirely responsible for compliance with all Applicable Laws, including but not limited to export and import regulations.
+(ii) You may not use the Site or the Services if you are a person or entity resident in, a citizen of, located in, incorporated, formed or organized in or have a registered office in: [JI1]
+(A) a country embargoed by the government of Canada, the United States, the United Kingdom or the European Union or are a foreign person or entity blocked or denied by the Canadian, United States, the United Kingdom or any European Union government or
+(B) a country which has been sanctioned by the United Nations, North Atlantic Treaty Organisation, Organisation for Economic Cooperation and Development, Financial Action Task Force, or any other relevant governmental or non-governmental entity or agency,
+(any such person or entity being a “Restricted Person”).
+3. Our Proprietary Rights.
+(i) The Site, the Platform and the Services and all materials therein or transferred thereby, including, without limitation, software, images, text, graphics, illustrations, logos, patents, trademarks, service marks, copyrights, photographs, audio, videos and music and all intellectual property rights related thereto (the “Company Content”) but excluding all material, content or information posted or upload by you or other users to the Site, the Platform or the Services (“User Content”), are the exclusive property of us and our licensors. Except as explicitly provided herein, nothing in this Agreement shall be deemed to create a license in or under any such Company Content or intellectual property rights, and you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit or create derivative works from any Company Content. Use of the Company Content for any purpose not expressly permitted by this Agreement is strictly prohibited. Company Content is made available solely for your personal, non-commercial use and may not be copied, reproduced, published, republished, modified, mirrored, uploaded, posted, transmitted, displayed, encoded, translated or distributed in any form or in way, including by e-mail or other electronic means, or stored in any retrieval system of any nature in any way, without the express prior written consent of us or such third party that may own such Company Content in each instance. You agree to abide by all copyright and other proprietary notices, information and restrictions contained in the Company Content and any other material accessed through the Site.
+(ii) You may choose to, or we may invite you to submit comments, feedback, or ideas about the Site and the Services, including without limitation about how to improve the Site or our Services (“Feedback”). By submitting any Feedback, you agree that (A) your disclosure is non-confidential, gratuitous, unsolicited and without restriction and will not place us under any fiduciary or other obligation, (B) you grant to us a perpetual, worldwide, royalty-free, irrevocable, transferable, sublicensable, non-exclusive and fully paid-up right to copy, use, reproduce, modify, adapt, publish, create derivative works from, translate, transmit, display, distribute, market, promote, sell or offer for sale, rent or lease such information or materials or any portions thereof (including any ideas for new products or Services or modifications to existing products or Services) and/or products or Services which practice or embody, or are configured for use in practicing, such information or materials or any portion thereof, in any form or medium known or later developed, in furtherance of the terms of the Agreement and the actions and transactions contemplated hereby, including the right to bring an action for infringement of these rights, (C) we are free to use the Feedback without any additional compensation to you, and/or to disclose the Feedback on a non-confidential basis or otherwise to anyone and (D) you will have no claim against for any actual or alleged infringement of any proprietary rights, rights of privacy or publicity, moral rights or rights of attribution in connection with our use of any Feedback you provide. You further acknowledge that, by acceptance of your submission, we do not waive any rights to use similar or related comments, feedback and ideas previously known to us, or developed by our employees, or obtained from sources other than you.
+4. Fees and Price Estimates
+In connection with your use of the Services you are required to pay all fees necessary for interacting with the applicable blockchain, including “gas” costs, as well as all other fees reflected on the Site or the Platform at the time of your use of the Services. Although we attempt to provide accurate fee information, this information reflects an estimate of fees, which may vary from the actual fees paid to use the Services and interact with the applicable blockchain.
+5. No Professional Advice
+All information on the Site and the Services is for informational purposes only and should not be construed as professional advice. You should contact your own legal, financial, tax or other professional advisors. Neither the Site, the Services nor we provide any legal, financial, taxation or any other professional advice. No action should be taken based upon any information contained in the Site or the Services. You should seek independent professional advice from a person who is licensed and/or qualified in the applicable area.
+6. Privacy
+We care about the privacy of our users. You understand that by using the Site you consent to the collection, use and disclosure of personally identifiable information and aggregate data, and to have your personally identifiable information collected, used, transferred to and processed in accordance with our Privacy Policy, a copy of which can be found here: [Note: Insert link to privacy policy]. Our Privacy Policy is hereby incorporated into and forms part of this Agreement.
+7. Cautionary Note on Forward-looking Statements.
+All statements contained in the Company Content, the Services, the Site, statements made in press releases or in any place accessible by the public and oral statements that may be made Company Parties (as defined below) may constitute forward-looking statements (including statements regarding the intent, belief or current expectations with respect to market conditions, business strategy and plans, financial condition, specific provisions and risk management practices). You are cautioned not to place undue reliance on these forward-looking statements given that these statements involve known and unknown risks, uncertainties and other factors that may cause the actual future results to be materially different from that described by such forward-looking statements, and no independent third party has reviewed the reasonableness of any such statements or assumptions. These forward-looking statements are applicable only as of the date indicated therein and the Company Parties disclaim any responsibility (whether express or implied) to release any revisions to these forward-looking statements to reflect events after such date.
+8. Security
+(a) We are an early stage platform. You acknowledge that applications are code that are subject to flaws and acknowledge that you are solely responsible for evaluating any available code provided by the Services. You further expressly acknowledge and represent that applications can be written maliciously or negligently, and that we cannot be held liable for your interaction with such applications. These warnings and others later provided by us in no way evidence or represent an ongoing duty to alert you to all the potential risks of utilizing the Site and Services.
+(b) We use commercially reasonable physical, managerial, and technical safeguards to preserve the integrity and security of your personal information and implement your privacy settings. However, we cannot guarantee that unauthorized third parties will never be able to defeat our security measures or use your personal information for improper purposes. You acknowledge that you provide your personal information at your own risk.
+9. Third-Party Links and Information
+The Site or the Services may contain links to third-party materials that are not owned or controlled by us. we do not endorse or assume any responsibility for any such third-party websites, information, materials, products, or services. If you access a third-party website or service from the Site or the Services on or through any third-party website or service, you do so at your own risk, and you understand that this Agreement and our Privacy Policy do not apply to your use of such websites. You expressly relieve us from any and all liability arising from your use of any third-party website, service, or content. Additionally, your dealings with or participation in promotions of advertisers found on the Site or the Services, including payment and delivery of goods, and any other terms (such as warranties) are solely between you and such advertisers. You agree that we shall not be responsible for any loss or damage of any sort relating to your dealings with such advertisers.
+10. Indemnity
+You agree to defend, indemnify and hold harmless us and our suppliers, partners, licensors, dealers, representatives, associates or affiliates, and each of their respective employees, contractors, agents, representatives, shareholders, officers and directors (collectively, the “Company Parties”), from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to lawyer’s fees and disbursements) arising from: (a) your use of and access to the Site, the Platform, Company Content and the Services, including any act or omission by you or users of your account or any data or content transmitted or received by you; (b) your violation of any term of this Agreement, including without limitation your breach of any of the representations and warranties above; (c) your violation of any third-party right, including without limitation any right of privacy or intellectual property rights; (d) your violation of any Applicable Laws; (e) any User Content that you submit to the Site or the Services including without limitation misleading, false, or inaccurate information; (f) your willful misconduct; or (g) any other party’s access and use of the Site, the Platform, Company Content or the Services with your unique username, password or other appropriate security code. You will co-operate as fully as reasonably required in the defense of any claim.
+11. No Warranty
+(a) The Site and the Services are provided on an “as is” and “as available” basis. Use of the Site, the Platform, Company Content and the Services is at your own risk. To the maximum extent permitted by applicable law, the Site, the Platform, Company Content and the Services are provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, or non-infringement. No advice or information, whether oral or written, obtained by you from a Company Party or through the Site or the Services will create any warranty not expressly stated herein. Without limiting the foregoing, the Company Parties do not warrant that the Company Content is accurate, reliable or correct; that the Site, the Platform, Company Content and the Services will meet your requirements; that the Site, the Platform, Company Content and the Services will be available at any particular time or location, uninterrupted or secure; that any defects or errors will be corrected; or that the Site, the Platform, Company Content and the Services are free of viruses or other harmful components. Any content downloaded or otherwise obtained through the use of the Site or the Services is downloaded at your own risk and you will be solely responsible for any damage to your computer system or mobile device or loss of data that results from such download or your use of the Site, the Platform, Company Content or the Services.
+(b) You acknowledge and agree that: (i) we are a developer of software; (ii) we do not operate a Digital Asset or derivatives exchange platform or offer trade execution or clearing services and have no oversight, involvement, or control concerning your transactions using the Services; and (iii) all transactions between users are executed peer-to-peer directly between the users’ digital wallet addresses through a smart contract.
+(c) You understand and agree that we are not registered or licensed by any regulatory agency or authority. No such agency or authority has reviewed or approved the use of the Site, the Platform or the Services.
+(d) We do not warrant, endorse, guarantee, or assume responsibility for any product or websites advertised or offered by a third party through the Site or the Services or any hyperlinked websites, and we will not be a party to or in any way monitor any transaction between you and third-party providers of products or services.
+12. Disclaimers
+None of the Company Parties will have any responsibilities or liability with respect to the following: (a) the Services could be impacted by one or more regulatory inquiries or actions, which could prevent or limit our ability to continue to develop or provide the Services, or for you and your users to use the Services, (b) we have no obligation to update the Services or its underlying platforms and networks to address, mitigate, or remediate any security or other vulnerabilities in the Services, or such platforms or networks and (c) portions of the Services or any other underlying networks and platforms may rest on open-source software, and there is a risk that weaknesses or bugs that may be introduced in the infrastructural elements of the Services or any other underlying networks and platforms, which may result in security vulnerabilities, data loss, damage, destructions, disclosure, or other compromises.
+13. Assumption of Risk
+You acknowledge that the Site and the Services, and your use of the Site and the Services contain certain risks, including without limitation the risks below, and accordingly, you expressly agree that you assume all risk in connection with your access and use of the Site and Services:
+(a) by utilizing the Services or interacting with the Site or the Platform in any way, you understand and agree to the inherent risks associated with: (i) cryptographic systems and blockchain-based networks; (ii) Digital Assets, including without limitation the usage and intricacies of native Digital Assets; (iii) smart contract-based Digital Assets, including fungible and non-fungible tokens; and (iv) systems that interact with blockchain-based networks. We do not own or control any of the underlying software through which blockchain networks are formed. In general, the software underlying blockchain networks, including the Aptos blockchain, is open source, such that anyone can use, copy, modify, and distribute it. By using the Services, you acknowledge and agree that (A) we are not responsible for the operation of the blockchain-based software and networks underlying the Services, (B) there exists no guarantee of the functionality, security, or availability of that software and networks, and (C) the underlying blockchain-based networks are subject to sudden changes in operating rules, such as those commonly referred to as “forks,” which may materially affect the Services;
+(b) blockchain networks use public and private key cryptography. You alone are responsible for securing your private key(s). We do not have access to your private key(s). Losing control of your private key(s) will permanently and irreversibly deny you access to Digital Assets on the Aptos blockchain or other blockchain-based network. Neither we nor any other person or entity will be able to retrieve or protect your Digital Assets. If your private key(s) are lost, then you will not be able to transfer your Digital Assets to any other blockchain address or wallet. If this occurs, then you will not be able to realize any value or utility from the Digital Assets that you may hold;
+(c) the Services and your Digital Assets could be impacted by one or more regulatory inquiries or regulatory actions, which could impede or limit our ability to continue to make available our proprietary software and could impede or limit your ability to access or use the Services;
+(d) cryptography is a progressing field. Advances in code cracking or technical advances such as the development of quantum computers may present risks to cryptographic systems and the Services, which could result in the theft or loss of your assets. To the extent possible, we intend to update or propose updates to the code underlying the Services to account for any advances in cryptography and to incorporate additional security measures but does not guarantee or otherwise represent full security of the system. By using the Services, you acknowledge these inherent risks;
+(e) the Aptos blockchain and any other applicable blockchain remains under development, which creates technological and security risks when using the Services in addition to uncertainty relating to Digital Assets and transactions therein. You acknowledge that the cost of transacting on an applicable blockchain is variable and may increase at any time causing impact to any activities taking place on the such blockchain, which may result in price fluctuations or increased costs when using the Services;
+(f) the Services are subject to flaws and that you are solely responsible for evaluating any code provided by the Services, the Site or the Platform. This warning and other warnings that we provide in this Agreement are in no way evidence or represent an on-going duty to alert you to all of the potential risks of utilizing the Services or accessing the Site or the Platform;
+(g) although we intend to provide accurate and timely information and data on the Site and the Platform during your use of the Services, the Site, the Platform and other information available when using the Services may not always be entirely accurate, complete, or current and may also include technical inaccuracies or typographical errors. To continue to provide you with as complete and accurate information as possible, information may be changed or updated from time to time without notice, including information regarding our policies. Accordingly, you should verify all information before relying on it, and all decisions based on information contained on the Site, the Platform or as part of the Services are your sole responsibility. No representation is made as to the accuracy, completeness, or appropriateness for any particular purpose of any pricing information distributed via the Site or the Platform or otherwise when using the Services. Prices and pricing information may be higher or lower than prices available on platforms providing similar services;
+(h) any use or interaction with the Services requires a comprehensive understanding of applied cryptography and computer science to appreciate the inherent risks, including those listed above. You represent and warrant that you possess relevant knowledge and skills. Any reference to a type of Digital Asset on the Site, the Platform or otherwise during the use of the Services does not indicate our approval or disapproval of the technology on which the Digital Asset relies, and should not be used as a substitute for your understanding of the risks specific to each type of Digital Asset;
+(i) use of the Services, in particular for trading Digital Assets, may carry financial risk. Digital Assets are, by their nature, highly experimental, risky, and volatile. Transactions entered into in connection with the Services are irreversible, final and there are no refunds. You acknowledge and agree that you will access and use the Site, the Platform and the Services at your own risk. The risk of loss in trading or transferring Digital Assets can be substantial. You should, therefore, carefully consider whether such trading or transfer is suitable for you in light of your circumstances and financial resources. By using the Services, you represent and warrant that you have been, are, and will be solely responsible for making your independent appraisal and investigations into the risks of a given transaction and the underlying Digital Assets. You represent that you have sufficient knowledge, market sophistication, professional advice, and experience to make your evaluation of the merits and risks of any transaction conducted in connection with the Services or any Digital Asset. You accept all consequences of using the Services, including the risk that you may lose access to your Digital Assets indefinitely. All transaction decisions are made solely by you. Notwithstanding anything in these Terms, we accept no responsibility whatsoever for, and will in no circumstances be liable to you in connection with, your use of the Services for performing Digital Asset transactions;
+(j) we must comply with Applicable Laws, which may require us to, upon request by government agencies, take certain actions or provide information, which may not be in your best interests;
+(k) you are responsible for all trades you place, including any erroneous orders that may be filled. We do not take any action to resolve erroneous trades that result from your errors;
+(l) Any Services you interact with are entirely your own responsibility and liability, and we are not a party to the Protocol;
+(m) At any time, your access to your Digital Assets may be suspended or terminated or there may be a delay in your access or use of your Digital Assets which may result in the Digital Assets diminishing in value;
+(n) the Services may be suspended or terminated for any or no reason, which may limit your access to your Digital Assets; and
+(o) we will have no responsibility or liability for the risks set forth in this Section 13. You hereby irrevocably waive, release and discharge all claims, whether known or unknown to you, against the Company Parties related to any of the risks set forth in this Section 13.
+14. Limitation of Liability
+(i) You agree that to the maximum extent permitted by Applicable Laws, in no event shall any Company Party be liable for any indirect, punitive, incidental, special, consequential or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data or other intangible losses, arising out of or relating to the use of, or inability to use, the Site, the Platform, Company Content or the Services. Under no circumstances will any Company Party be responsible for any damage, loss or injury resulting from hacking, tampering or other unauthorized access or use of the Site, the Platform, the Services or the Company Content and other information contained therein. To the maximum extent permitted by Applicable Laws, we assume no liability or responsibility for any (a) errors, mistakes, or inaccuracies of content; (b) personal injury or property damage, of any nature whatsoever, resulting from your access to or use of our Site, the Platform, Company Content or the Services; (c) any unauthorized access to or use of our secure servers and/or any and all personal information stored therein; (d) any interruption or cessation of transmission to or from the Site, the Platform or the Services; (e) any bugs, viruses, trojan horses, or the like that may be transmitted to or through our Site, the Platform, Company Content or the Services by any third party; (f) any errors or omissions in any content or for any loss or damage incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available through the Site, the Platform or the Services; and/or (g) User Content or the defamatory, offensive, or illegal conduct of any third party. You agree that if, notwithstanding the other provisions of this Agreement, a Company Party is found to be liable for any claims, proceedings, liabilities, obligations, damages, losses or costs, such Company Party’s liability shall in no event exceed the amount you paid to us hereunder during the 6-month period prior to the date on which such claim arose, if any.
+(ii) This limitation of liability section applies whether the alleged liability is based on contract, tort, negligence, strict liability, or any other basis, even if we have been advised of the possibility of such damage. The foregoing limitation of liability shall apply to the fullest extent permitted by Applicable Laws.
+15. Limitations as Allowed by Law
+Some states, provinces and other jurisdictions do not allow the exclusion and limitations of certain implied warranties, or the exclusion or limitation of incidental or consequential damages, so the above limitations or exclusions may not apply to you. This Agreement gives you specific legal rights, and you may also have other rights which vary from jurisdiction to jurisdiction. The disclaimers, exclusions, and limitations of liability under this agreement will not apply to the extent prohibited by Applicable Laws.
+16. Force Majeure
+We will have no responsibility or liability for any failure or delay in performance of the Site, the Platform or any of the Services, or any loss or damage that you may incur, due to any circumstance or event beyond our control, including any (a) flood, extraordinary weather conditions, earthquake, or other act of God, (b) fire, (c) war, (d) insurrection, (e) riot, (f) labour dispute, (g) accident, (h) epidemic or pandemic, (i) action of government, (j) new laws or regulations or change in existing laws or regulations or the interpretation or enforcement of any of the foregoing, (k) communications, (l) power failure, (m) equipment or software unavailability, disruption or malfunction, (n) hacking or other attack on the Site, the Platform or the Services, (o) the unavailability, disruption or malfunction of any network or blockchains or (p) the unavailability, disruption or malfunction of the Internet.
+17. Non-Waiver
+Our failure or delay in insisting upon or enforcing strict performance of any provision of this Agreement shall not be construed as a waiver of any provision or rights. No waiver of any provision of this Agreement shall constitute a waiver of any other provision, nor shall any waiver of any provision of this Agreement constitute a continuing waiver unless expressly made in writing by us.
+18. Severability
+In the event that any of the provisions of this Agreement are held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary so that these terms and conditions shall otherwise remain in full force and effect.
+19. Governing Law and Jurisdiction
+This Agreement is entered into in the British Virgin Islands and shall be governed by, and construed in accordance with, the laws of the British Virgin Islands. You agree to submit to the exclusive jurisdiction of the courts of the British Virgin Islands or any other judicial district or jurisdiction as we may determine in any and all actions, disputes or controversies relating hereto. You further agree as follows: (a) any claim brought to enforce these terms and conditions must be commenced within 6 months of the cause of action accruing; (b) no recovery may be sought or received for damages other than out-of-pocket expenses, except that the prevailing party will be entitled to costs and legal fees; and (c) any claim must be brought individually and not consolidated as part of a group or class action complaint.
+20. Amendments
+We reserve the right, in our sole discretion, to modify the terms of this Agreement from time to time. If we make changes, we will provide you with notice of such changes, such as by providing notice through the Site, the Services or updating the “Last Updated” date at the top of this Agreement. Unless we state otherwise in our notice, all such modifications are effective immediately, and your continued use of the Site and the Services after we provide that notice will confirm your acceptance of the changes. If you do not agree to the amended terms of this Agreement, then your only recourse is to terminate this Agreement by providing written notice to us and must stop using the Site and the Services.
+21. Language
+This Agreement, including all other documents incorporated by reference herein, are binding and constitute the entire agreement between us and you with respect to your use of the Site and the Services. The parties agree that the English language will be the language of the Agreement and all documents in connection thereto, and each party waives any right (whether statutory or otherwise) to use and rely upon any other language, or translations. 
+Il est de la volonté expresse des parties que tous les documents qui s'y rattachent soient rédigés en langue anglaise.
+Previous
+Contracts
+Next
+Privacy Policy
+Last updated 
+4 months ago
+Privacy Policy | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+PROTOCOL OPERATIONS
+Privacy Policy
+This privacy policy (the “Privacy Policy”) explains how Meriidan (“we”, “our” and “us”) collects, uses, stores and discloses information about users (“users”, “you” and “your”) through our websites, forums and blogs (collectively the “Sites”) and our web applications and other online products and services (collectively, the “Services”) or when you otherwise interact with us.
+By using the Sites or the Services, you accept the terms of this Privacy Policy and our terms of service (the “Terms of Service”), and consent to our collection, use, disclosure, processing and retention of Personal Information (as defined below) and other information (or the Personal Information or other information of any individual you provide) as described in this Privacy Policy.  If you have not done so already, please also review our Terms of Service. The Terms of Service contain provisions that limit our liability to you and require you to resolve any dispute with us on an individual basis and not as part of any class or representative action. If you do not agree with any part of this Privacy Policy or our Terms of Service, then please do not use the Sites or any of the Services.
+If you submit Personal Information relating to other people to us or to our service providers in connection with the Services, you warrant that you have obtained the necessary consents from such individual and have authority to disclose their Personal Information to us, as well as their consent to our collection, use and disclosure of such personal data, for the purposes set forth in this Privacy Policy.
+For purposes of this Privacy Policy, “Personal Information” means any information, recorded or unrecorded, which, either on its own or in combination with other information, could be used to identify, contact, or locate a specific individual. Personal Information includes, but is not limited to, an individual’s name, residential address, age, income, date of birth, gender, ethnic origin, credit history, employment information, social insurance number (SIN), where applicable, payment records, credit card number, financial information, device geolocation (geographical location), unique identifiers such as user name, account number or password or any other identifying number assigned to the individual, and product or service preferences.
+1.              Collection of Information
+(a)            Information You Provide To Us
+We collect Personal Information and other information you provide directly to us. This may include:
+(i)             contact information, such as individual name, organization name, email address, physical address, country information and email address;
+(ii)            phone number and details of the device you use (for example, your phone, computer or tablet, including the hardware model, operating system and version, unique device identifiers, and mobile network information);
+(iii)          feedback and correspondence, such as information you provide in your responses to surveys, when you participate in market research activities, report a problem with the Services, receive customer support or otherwise correspond with us;
+(iv)           your blockchain protocol network address, cryptocurrency wallet information, transaction history, trading data and associated fees paid in connection with the Services;
+(v)            transaction Information, which may include information about the transactions you make using the Services, such as the type of transaction, transaction amount and timestamp;
+(vi)           usage information, such as information about how you use the Services and interact with us, user preferences, crash log and other data collected via cookies and similar technologies;
+(vii)         identifier and log information about your use of the Services, including username, geolocation or tracking details, the type of browser you use, access times, pages viewed, your IP address, and the page you visited before navigating to our Services; and
+(viii)        marketing information, such as your preferences for receiving marketing communications and details about how you engage with them.
+(b)           How we Obtain Personal Information
+Most of the information we collect is received from you directly, including when you:
+(i)             fill in any forms;
+(ii)            correspond with us;
+(iii)          register to use our Services;
+(iv)           open an account or use any of our Services;
+(v)            take part in online discussions, surveys or promotions;
+(vi)           enter a promotion; or
+(vii)         contact us for other reasons.
+We may obtain information from other sources, including third parties, and combine that with information we collect through our Services.
+The decision to provide us with Personal Information always rests with you. We may however be limited in our ability to provide you with certain Services if you decline to provide us with information essential to fulfill your request.
+(c)            Automatically Collected Information
+When you access or use the Sites or our Services, we automatically collect information about you, which may include:
+(i)             Log Information: We may collect log information about your use of the Sites and the Services, including the type of browser you use, access times, pages viewed, your IP address and the page you visited before navigating to the Sites or our Services.
+(ii)            Device Information: We may collect information about the computer or mobile device you use to access the Sites and our Services, including the hardware model, operating system and version, unique device identifiers, and mobile network information.
+(iii)          Information Collected by Cookies and Other Tracking Technologies: We may use various technologies to collect information, including cookies and web beacons. Cookies are small data files stored on your hard drive or in device memory that help us improve the Sites, our Services and your experience, see which areas and features of the Sites and our Services are popular and count visits. Web beacons are electronic images that may be used in the Sites and our Services or emails and help deliver cookies, count visits and understand usage and campaign effectiveness. For more information about cookies and how to disable them, please see “Your Choices” below.
+(iv)           Information Store on Your Device. Whenever you use our Sites or Services, we collect information stored on your device, including if you give us access to contact information from your address book, log-in information, photos, videos or other digital content and check-ins (sometimes we call this content information). The Services will regularly collect this information in order to stay up to date.
+(v)            We may also use Google Analytics to help us offer you an optimized user experience.  You can find more information about Google Analytics’ use of your personal data here: 
+https://policies.google.com/privacy?hl=en
+ 
+(d)           Information We Collect from Other Sources
+We may obtain information from other sources, including third parties, and combine that with information we collect through the Sites and our Services.
+(e)            Information We Will Never Collect
+We will never ask you to share your private keys or wallet seed. Never trust anyone or any site that asks you to enter your private keys or wallet seed.
+
+
+Previous
+Terms of Service
+Next
+Legal Disclaimer
+Last updated 
+4 months ago
+Legal Disclaimer | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+PROTOCOL OPERATIONS
+Legal Disclaimer
+This article by Meridian and/or its affiliates (“we”, “us” and “our”) is for information purposes only. We do not provide tax, legal, insurance or investment advice, and nothing in this article should be construed as an offer to sell, a solicitation of an offer to buy, sell or issue or subscribe for, or a recommendation for any security, investment, cryptocurrency, token or other services, product or commodity by us or any third party. You alone are solely responsible for determining whether any purchase, sale, investment, security or strategy, or any other product or service, is appropriate or suitable for you based on your personal objectives and personal and financial situation and for evaluating the merits and risks associated with the use of the information in this article before making any decisions based on such information or other content. You should consult a lawyer and/or tax professional regarding your specific legal and/or tax situation. Past performance is no guarantee of future results. Therefore, you should not assume that the future performance of any specific investment, cryptocurrency, token, commodity or strategy will be profitable or equal to corresponding past performance levels. Inherent in any such transaction is the potential for loss. No recommendation or advice is being given as to whether any transaction is suitable for a particular person. By accessing this article, you acknowledge and agree to all of the foregoing and that you bear responsibility for your own research, due diligence and transaction decisions. You also agree that we, our affiliates and our respective directors, officers, employees, consultants, shareholders, members, representatives, advisors and agents will not be liable for any decision made or action taken by you and others based on this article, news, information, opinion, or any other material published, discussed or disseminated by us.
+This article contains forward-looking statements or forward-looking information (referred to collectively as “forward-looking statements”). Forward-looking statements can be identified by words such as: “anticipate”, “intend”, “plan”, “goal”, “seek”, “believe”, “predict”, “project”, “estimate”, “expect”, “strategy”, “future”, “likely”, “may”, “should”, ”would”, “will”, and similar terms and phrases and the negatives of such expressions, including references to assumptions. Examples of forward-looking statements in this article include, among others, statements we make regarding our future plans, expectations and objectives.
+Forward-looking statements are neither historical facts nor assurances of future performance. Instead, they are based only on our current beliefs, expectations and assumptions regarding the future of our business, future plans and strategies, projections, anticipated events and trends, the economy and other future conditions. Because forward-looking statements relate to the future, they are subject to inherent uncertainties, risks and changes in circumstances that are difficult to predict and many of which are outside of our control. Our actual results and financial condition may differ materially from those indicated in the forward-looking statements. Therefore, you should not rely on any of these forward-looking statements. Important factors that could cause our actual results and financial condition to differ materially from those indicated in the forward-looking statements include, among others, the following: reliance on blockchain technology and blockchain technology service providers; digital asset transactions being irrevocable and losses occurring from such transactions; our use and reliance on proprietary data and intellectual property in its business; potential misuses of digital assets and malicious actors in the digital asset industry; digital assets potentially being subject to hold periods; developments and changes in laws and regulations; and disruptions to our technology network including computer systems, software and cloud data, or other disruptions of our operating systems, structures or equipment. Readers are cautioned that the foregoing list is not exhaustive.
+Any forward-looking statement made by us in this article is based only on information currently available to us and speaks only as of the date on which it is made. Except as required by applicable securities laws, we undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.
+Previous
+Privacy Policy
+Last updated 
+4 months ago
+Meridian Money
+All pages
+Powered by GitBook
+1
+ of 
+1
+Loading...
+Weighted Pools
+What are Weighted Pools?
+Meridian's Weighted Pools operate by enforcing a Constant Weighted Product invariant for token swaps. A subset of these, known as liquidity bootstrapping pools, caters to auction-like mechanisms. These pools employ Weighted Math, making them versatile for a wide array of applications, including asset pairings without price correlation (e.g., ETH-USDC). 
+Property
+Weighted
+Max Tokens in Pool
+4
+Default Swap Fee
+0.15%
+Oracle Usage
+None
+Unlike conventional x*y=k pools which are limited to 2 tokens of equivalent weights (50/50) , Meridian's weighted pools offer flexibility in token counts and proportions. Users can create pools with different weightings such as 80/20 or 60/20/20, among others. Available pairs are dictated by the standard combination formula below:
+$nC2 = \frac {n!}{2!(n-2)!}$
+Meridian supports weighted pools with up to 4 total assets. As each asset within a pool can be traded against any other, the number of available swaps grows exponentially - reaching up to * pairs for pools with the maximum number of _ tokens. This proliferation of swap pairs naturally encourages increased trading activity, thereby boosting fee collection and distribution to liquidity providers.
+Impermanent Loss
+Weighted pools offer flexibility in how assets are weighted against each other, allowing liquidity providers to adjust the proportion of each token in the pool. As the token weight increases in favor of one asset, it significantly reduces the unrealized impermanent loss. For example, Impermanent loss decreases in a two-token pool as the asset weight changes, relative to price fluctuations between the tokens.
+However, while weighted pools help minimize impermanent loss, they also introduce trade-offs in terms of price slippage. In pools where one token is heavily weighted, swaps experience higher slippage due to the reduced liquidity of the less weighted asset. To balance the reduction in impermanent loss with adequate liquidity, an 80/20 weighting ratio is commonly recommended. 
+Pool Types | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+Meridian Money
+All pages
+Powered by GitBook
+1
+ of 
+4
+Pool Types
+Loading...
+Loading...
+Loading...
+Weighted Pools
+What are Weighted Pools?
+Meridian's Weighted Pools operate by enforcing a Constant Weighted Product invariant for token swaps. A subset of these, known as liquidity bootstrapping pools, caters to auction-like mechanisms. These pools employ Weighted Math, making them versatile for a wide array of applications, including asset pairings without price correlation (e.g., ETH-USDC). 
+Property
+Weighted
+Max Tokens in Pool
+4
+Default Swap Fee
+0.15%
+Oracle Usage
+None
+Unlike conventional x*y=k pools which are limited to 2 tokens of equivalent weights (50/50) , Meridian's weighted pools offer flexibility in token counts and proportions. Users can create pools with different weightings such as 80/20 or 60/20/20, among others. Available pairs are dictated by the standard combination formula below:
+$nC2 = \frac {n!}{2!(n-2)!}$
+Meridian supports weighted pools with up to 4 total assets. As each asset within a pool can be traded against any other, the number of available swaps grows exponentially - reaching up to * pairs for pools with the maximum number of _ tokens. This proliferation of swap pairs naturally encourages increased trading activity, thereby boosting fee collection and distribution to liquidity providers.
+Impermanent Loss
+Weighted pools offer flexibility in how assets are weighted against each other, allowing liquidity providers to adjust the proportion of each token in the pool. As the token weight increases in favor of one asset, it significantly reduces the unrealized impermanent loss. For example, Impermanent loss decreases in a two-token pool as the asset weight changes, relative to price fluctuations between the tokens.
+However, while weighted pools help minimize impermanent loss, they also introduce trade-offs in terms of price slippage. In pools where one token is heavily weighted, swaps experience higher slippage due to the reduced liquidity of the less weighted asset. To balance the reduction in impermanent loss with adequate liquidity, an 80/20 weighting ratio is commonly recommended. 
+Stable Pools
+Stable Pools are tailored for tokens pegged to specific values, synthetics like liquid-staking derivatives, or assets correlated with others. This category encompasses stablecoins, synthetic or wrapped assets, and staked derivatives (e.g., staked Aptos and Aptos). These pools facilitate low-impact, low-fee exchanges between assets converging on a relative value of "1".
+Property
+Weighted
+Max Tokens in Pool
+2
+Default Swap Fee
+0.05%
+Oracle Usage
+None
+Stable Pool Math
+ 
+To accommodate swaps between similar assets, Stable Pools utilize a distinct equation. Meridian employs a Stable Pool invariant (originally developed by Curve), which is as following: 
+A
+∗
+n
+n
+∗
+∑
+x
+i
++
+D
+=
+A
+∗
+D
+∗
+n
+n
++
+D
+n
++
+1
+n
+n
+∗
+∏
+x
+i
+A*n^n*\sum xᵢ+D=A*D*n^n+ \dfrac{D^{n+1}}{n^n*\prod xᵢ}
+A
+∗
+n
+n
+∗
+∑
+x
+i
+​
++
+D
+=
+A
+∗
+D
+∗
+n
+n
++
+n
+n
+∗
+∏
+x
+i
+​
+D
+n
++
+1
+​
+Amplification Factor
+ 
+Stable pools can be fine-tuned using an "amplification factor" (A), which influences trade price impact. This factor determines how closely the pool's trading curve aligns with either the constant product or constant sum curve. A low amplification factor makes the pool's assets more susceptible to deviating from their peg, while a high factor requires significant trade volumes to shift relative asset values. It's worth noting that maximizing this factor isn't always optimal, as it can affect fee accumulation in the presence of alternative markets for similar assets.
+Low Amplification Factor
+: In a pool with a low amplification factor, even small trades can cause noticeable deviations from the peg, making the pool less stable. Low A-factor is more suited for asset pairs that are less tightly correlated.
+High Amplification Factor
+: A high amplification factor makes the pool more resistant to price deviations. For example, swapping between dollar-pegged stablecoins in a pool with a high amplification factor would result in minimal price impact, even for larger trade sizes. 
+Pool Parameters
+ 
+The pool creator initially sets the amplification factor, which can only be modified subsequently through protocol governance. Any intended changes to this factor over time require the submission of a governance proposal.
+Concentrated Liquidity
+More information coming soon. 
+Meridian | Meridian
+Meridian
+Ask or search
+...
+Ctrl +
+ K
+Meridian
+AMM
+Pool Types
+Weighted Pools
+Stable Pools
+Concentrated Liquidity
+Swap Fees
+Flashloans
+Liquid Staking
+Meridian LST
+PROTOCOL OPERATIONS
+Contracts
+Terms of Service
+Privacy Policy
+Legal Disclaimer
+Powered by GitBook
+On this page
+Export as PDF
+Meridian
+What is Meridian?
+Meridian is building the key financial primitives to power the Movement Labs ecosystem, serving as the central liquidity and yield hub of the Move ecosystem. The protocol's initial products revolve around a composable, capital efficient DEX and a novel LST protocol, natively built on Movement.
+Protocol Links
+All official links to Meridian webpages and social media are linked below:
+Website: 
+https://www.meridian.money/
+
+X: 
+https://x.com/meridian_money
+  
+Discord: 
+https://discord.com/invite/meridian-money
+Next
+Pool Types
+Last updated 
+4 months ago
+Meridian Money
+All pages
+Powered by GitBook
+1
+ of 
+1
+Loading...
+Meridian
+What is Meridian?
+Meridian is building the key financial primitives to power the Movement Labs ecosystem, serving as the central liquidity and yield hub of the Move ecosystem. The protocol's initial products revolve around a composable, capital efficient DEX and a novel LST protocol, natively built on Movement.
+Protocol Links
+All official links to Meridian webpages and social media are linked below:
+Website: 
+https://www.meridian.money/
+
+X: 
+https://x.com/meridian_money
+  
+Discord: 
+https://discord.com/invite/meridian-money

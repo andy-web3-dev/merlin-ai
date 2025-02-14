@@ -1,0 +1,6 @@
+App name: BRKT
+Landing page: https://www.brkt.gg/competitions
+App category: Prediction 
+App insights: 
+
+App documentation: 

@@ -1,0 +1,43 @@
+Frax is Coming to Movement and Bringing its Whole DeFi Stack
+Partnerships
+August 15, 2024
+Movement Labs
+DeFi could change how we use money. But so far DeFi is failing.
+The point of failure? Safety.
+Billions are lost
+to DeFi hacks each year. Many of these hacks
+stem from code vulnerabilities
+, and most would be preventable if developers coded in Move.
+Movement
+DeFi is built on an idea: in order for DeFi to reach its potential, it must be safer. A powerful DeFi ecosystem is forming on Movement, an economy of apps benefitting from Movement’s greater safety – not to mention its modularity, liquidity, interop, and speed.
+Today, recognizing this growth, potential, and focus on security, Frax has announced plans to natively deploy on Movement.
+Critically, Frax is committed to rewriting its entire Solidity codebase in Move.
+Frax is an OG Ethereum DeFi protocol with $600M+ in TVL. It’s a one-stop decentralized bank offering numerous assets and products, including liquidity, lending, and stablecoins. Frax effectively unites these three foundational DeFi services under one digital roof. It’s also a high-powered, battle-tested protocol that has innovated time and again while surviving severe market turbulence. With its coming launch on Movement, the whole Movement DeFi ecosystem benefits.
+How? Frax is bringing our ecosystem new assets, products, and incentives. Movement DeFi apps can use these primitives to develop more complex, efficient offerings.
+Frax will be introducing at least four new assets to Movement:
+Frax (a decentralized stablecoin pegged 1:1 to USD)
+sFrax (a staked version of this stablecoin)
+frxETH (a liquid staking token pegged 1:1 to Eth)
+FXS (the staking and governance token for the Frax ecosystem)
+Frax will also be deploying Fraxlend, Frax CDP, and its staking contract on Movement.
+To jumpstart the partnership, both Frax and Movement offer existing Frax users incentives to bridge to Movement. Frax and movement will work toward providing $10M in protocol liquidity. Frax plans to be live on Movement on Day 1 of Movement mainnet.
+A DeFi powerhouse deploying on Movement (and upgrading to Move and Move’s security) grows the pie massively for both parties.
+For Movement, Frax expands what Movement DeFi protocols and users can do. And Movement levels up Frax in return. When an Etheruem DeFi OG like Frax deploys in Move on Movement, they trade in an old car for a Lamborghini with brakes, fine-tuned for the needs of today.
+Movement is the home for safe, high-performance DeFi, offering greater:
+Speed (the MoveVM with Block-STM parallelization can reach 180K TPS)
+Security (the Move language circumvents 80%+ of common Solidity hacks)
+Liquidity (Movement unites the EVM and Move ecosystems, creating a deep liquidity hub)
+Interoperability (Movement is compatible with most other blockchain networks)
+With the security, throughput, scaling potential, and other next-gen performance features of Movement, DeFi protocols like Frax have the platform they need to thrive. More broadly, DeFi has the home it needs to grow safely and reach its great potential.
+And that’s just the beginning. Frax and Movement have other dishes cooking.
+Details to come! To learn more about Frax now,
+visit its website
+. To keep up with
+Frax
+and
+Movement
+, follow both on social media and get excited for what’s next.
+About Movement Labs
+Co-founders Rushi Manche and Cooper Scanlon, early builders in the Move ecosystem, founded
+Movement Labs
+in 2022 as the first integrated blockchain network, powering the fastest and most secure Layer 2 on Ethereum. Move, a smart contract language originally developed at Facebook to power the Diem (initially known as Libra) blockchain, was designed to be a secure and universal language targeting the unique qualities of smart contract programming. With its enhanced security and parallelization capabilities. Movement Labs is pioneering the Integrated Blockchain approach by bringing the MoveVM to Ethereum through its flagship L2 and connected rollups with the Move Stack, pairing Move's smart contract advantages with EVM's liquidity and user bases. This combination creates the first MEVM (Move + EVM) Zero-Knowledge Layer-2 solution on Ethereum.

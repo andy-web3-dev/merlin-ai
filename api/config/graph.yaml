@@ -1,0 +1,10 @@
+chat_model:
+  model: gpt-4o
+vector_database:
+  type: chroma
+  db_dir: ./db
+  docs_dir: ./data
+  embedding: OpenAI
+  embedding_model: text-embedding-3-small
+tool_utils:
+  coin_list_path: data/coins_list.json

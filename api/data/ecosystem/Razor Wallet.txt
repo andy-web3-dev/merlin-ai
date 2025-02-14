@@ -1,0 +1,10810 @@
+App name: Razor Wallet
+Landing page: https://razorwallet.xyz/
+App category: Wallet
+App insights: 
+
+App documentation: https://kit.razorwallet.xyz/docs/introduction
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Getting Started . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Getting Started
+On this page
+Chevron Right
+Getting Started
+Get started with Razor Kit in just a few lines of code.
+
+
+Razor wallet kit is a wallet aggregator for DApps to interact with all wallets on Movement easily. ð¥³
+
+
+Try out our kit and connect your dapp in just few seconds. ðª
+
+
+â­ï¸ Have fun with our 
+Demo Playground
+
+
+Examples
+
+
+You can learn more about the rationale behind the project in the 
+Why Razor Kit
+ section.
+
+
+ð¨ Setup
+
+
+First of all, let's install the npm package @razorlabs/razorkit to your project.
+
+
+npm
+pnpm
+yarn
+bun
+Terminal
+npm
+npm
+ i
+ @razorlabs/razorkit
+
+
+Then wrap your 
+<App />
+ within one of our context provider, so that our hooks can work nicely inside your dapp.
+
+
+Oh don't forget to import our css to enable default styles ð¨
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ 
+ReactDOM
+ 
+from
+ '
+react
+-
+dom
+/
+client
+'
+;
+
+
+import
+ { 
+WalletProvider
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+import
+ '@
+razorlabs
+/
+razorkit
+/
+style
+.
+css
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ (
+
+
+    <
+div
+>
+
+
+      
+Hello
+ 
+World
+
+
+    </
+div
+>
+
+
+  )
+
+
+}
+
+
+ 
+
+
+// 
+take
+ 
+react
+ 
+project
+ 
+as
+ 
+an
+ 
+example
+
+
+ReactDOM
+.
+createRoot
+(
+document
+.
+getElementById
+(
+'
+root
+'
+)
+!
+).
+render
+(
+
+
+  <
+WalletProvider
+>
+
+
+    <
+App
+ />
+
+
+  </
+WalletProvider
+>
+
+
+);
+
+
+By default, Razor Kit will load all the preset wallets to the listð¡
+
+
+ð¹ Place ConnectButton
+
+
+We recommend to use hooks together with our components. But if you want to use our hooks
+only with your customized UI components, follow the instructions in 
+Use Hooks Only
+
+
+Just import our 
+<ConnectButton />
+ and place it wherever you like, such as Navbar or Header sections.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+ConnectButton
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ (
+
+
+    <>
+
+
+      <
+header
+>
+
+
+        <
+ConnectButton
+/>
+
+
+      </
+header
+>
+
+
+    </>
+
+
+  )
+
+
+};
+
+
+ðª Use Wallet Hooks
+
+
+After your dapp connects to a supported wallet, your dapp is already supercharged and able
+to call wallet capabilities.ð
+
+
+Please explore the docs for further usage information ð¡
+
+
+import
+ 
+React
+, { 
+useEffect
+ } 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+ =
+ () 
+=>
+ {
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+()
+
+
+ 
+
+
+  
+useEffect
+(() 
+=>
+ {
+
+
+    
+if
+ (
+!
+wallet
+.
+connected
+) 
+return
+;
+
+
+    
+console
+.
+log
+(
+'
+connected
+ 
+wallet
+ 
+name
+: '
+, 
+wallet
+.
+name
+)
+
+
+    
+console
+.
+log
+(
+'
+account
+ 
+address
+: '
+, 
+wallet
+.
+account
+?.
+address
+)
+
+
+    
+console
+.
+log
+(
+'
+account
+ 
+publicKey
+: '
+, 
+wallet
+.
+account
+?.
+publicKey
+)
+
+
+  }, [
+wallet
+.
+connected
+])
+
+
+ 
+
+
+  // 
+launch
+ 
+a
+ 
+signMessage
+ 
+call
+ 
+for
+ 
+the
+ 
+connected
+ 
+account
+ 
+via
+ 
+wallet
+
+
+  
+async
+ 
+function
+ 
+handleSignMessage
+() {
+
+
+    
+await
+ 
+wallet
+.
+signMessage
+({
+
+
+      
+message
+: 
+"
+Hello
+ 
+World
+"
+,
+
+
+      
+nonce
+: 
+'
+1
+'
+,
+
+
+    });
+
+
+  }
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+div
+>
+
+
+      <
+button
+ 
+onClick
+=
+{
+handleSignMessage
+}
+>
+Sign
+ 
+Message
+</
+button
+>
+
+
+    </
+div
+>
+
+
+  )
+
+
+};
+
+
+Continue to BUIDL your amazing dapp and join the ongoing Movement!
+
+
+Demo Playground
+
+
+Feel free to play with our 
+Demo Playground
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Compatibility . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Wallet Compatibility
+On this page
+Chevron Right
+Compatibility
+Wallets compatible with Razor Kit
+
+
+Preset Wallets
+
+
+Razor Kit supports all 
+Aptos Wallet Standard
+ compatible wallets.
+However there are preset wallets. These preset wallets will be displayed as 
+Popular
+ on Razor Kit connection
+modal by default.
+
+
+If you are a wallet developer and want to list your wallet below, feel free to contact our team ð¥³ Twitter@RazorDAO
+
+
+Razor Wallet
+Nightly Wallet
+Bitget Wallet
+OKX Wallet
+
+
+For Dapp Developers
+
+
+How to list my wallet on Razor Kit?
+
+
+You can contact our team via Twitter@RazorDAO to list your wallet on Razor Kit.
+
+
+Or submit a PR to our repo, modify the following files:
+
+
+// packages/sdk/src/wallet/preset-wallets.ts
+
+
+export
+ enum
+ PresetWallet
+ {
+
+
+  // ... registered wallet enum
+
+
+  // note that this name should match with your wallet adapter's name
+
+
+  // for auto detection and display purposes
+
+
+  YOUR_WALLET
+ =
+ 'Your Wallet'
+,
+
+
+}
+
+
+ 
+
+
+export
+ const
+ YourWallet
+ =
+ defineWallet
+({
+
+
+  name: PresetWallet.
+YOUR_WALLET
+,
+
+
+  iconUrl:
+
+
+    'base64 encoded image (recommended, optimize the size!!) / external url'
+,
+
+
+  downloadUrl: {
+
+
+    browserExtension: 
+'chrome extension installation url'
+,
+
+
+  },
+
+
+});
+
+
+// packages/sdk/src/wallet/AllDefaultWallets.ts
+
+
+export
+ const
+ AllDefaultWallets
+ =
+ [
+
+
+  ...
+[
+
+
+    // ... registered wallets
+
+
+    presets.YourWallet,
+
+
+  ].
+sort
+((
+a
+, 
+b
+) 
+=>
+ (a.name 
+<
+ b.name 
+?
+ -
+1
+ :
+ 1
+)),
+
+
+];
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ConnectButton . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+ConnectButton
+On this page
+Chevron Right
+ConnectButton
+
+
+Description
+
+
+The 
+<ConnectButton />
+ component is the entry for users to connect their wallet.
+It manages the wallet connection cycle, such as launching the wallet-select modal,
+displaying info of the connected account and showing the disconnect button when connected.
+
+
+We recommend using ConnectButton component to integrate Razor Kit. But you can customize
+your own ConnectButton with our API, check 
+Use Hooks Only
+ for details.
+
+
+Examples
+
+
+Basic Usage
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+ConnectButton
+, 
+WalletProvider
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+return
+ (
+
+
+    <
+WalletProvider
+>
+
+
+      <
+ConnectButton
+>
+Connect
+ 
+Wallet
+</
+ConnectButton
+>
+
+
+    </
+WalletProvider
+>
+
+
+  );
+
+
+}
+
+
+Handle Connection Events
+
+
+Sometimes you may want to hook in the connection events and do something with those.
+For example, provide a friendly error tip when the wallet connection fails. You can do
+it by passing a handle function to the property onConnectError of ConnectButton.
+The full APIs are listed at the bottom section of this page.
+
+
+If you are using hooks only, then simply wrap a try-catch block for the async select method!
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+WalletProvider
+, 
+ConnectButton
+, 
+ErrorCode
+, 
+BaseError
+ } 
+from
+ "@
+razorlabs
+/
+razorkit
+"
+;
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+return
+ (
+
+
+    <
+WalletProvider
+>
+
+
+      <
+ConnectButton
+
+
+        // 
+The
+ 
+BaseError
+ 
+instance
+ 
+has
+ 
+properties
+ 
+like
+ {
+code
+, 
+message
+, 
+details
+}
+
+
+        // 
+for
+ 
+developers
+ 
+to
+ 
+further
+ 
+customize
+ 
+their
+ 
+error
+ 
+handling
+.
+
+
+        
+onConnectError
+=
+{
+(
+err
+:
+ 
+BaseError
+) 
+=>
+ {
+
+
+           
+if
+ (
+err
+.
+code
+ 
+===
+ 
+ErrorCode
+.
+WALLET__CONNECT_ERROR__USER_REJECTED
+) {
+
+
+             
+console
+.
+warn
+(
+'
+user
+ 
+rejected
+ 
+the
+ 
+connection
+ 
+to
+ '
+ +
+ 
+err
+.
+details
+?.
+wallet
+);
+
+
+           } 
+else
+ {
+
+
+             
+console
+.
+warn
+(
+'
+unknown
+ 
+connect
+ 
+error
+: '
+, 
+err
+);
+
+
+           }
+
+
+        }
+}
+
+
+      >
+
+
+        
+Connect
+ 
+Wallet
+
+
+      </
+ConnectButton
+>
+
+
+    </
+WalletProvider
+>
+
+
+  );
+
+
+}
+
+
+The error type is customized by Razor Kit. You may want to check 
+Error Types
+ for details.
+
+
+API
+
+
+Props
+
+
+Properties
+Description
+Type
+Default
+children
+--
+ReactNode
+'Connect Wallet'
+style
+--
+React.CSSProperties
+className
+--
+string
+onConnectSuccess
+Callback for successful connection
+(walletName: string) => void
+onConnectError
+Callback for failed connection
+(error: BaseError) => void
+onDisconnectSuccess
+Callback for successful disconnection
+(walletName: string) => void
+onDisconnectError
+Callback for failed disconnection
+(error: BaseError) => void
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ConnectModal . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+ConnectModal
+On this page
+Chevron Right
+ConnectModal
+
+
+Description
+
+
+<ConnectModal />
+ is a nicely designed wallet-select modal for wallet selection.
+
+
+Usually you won't need to import it because it is already integrated within the
+
+<ConnectButton />
+ component. Unless you want to customize your own 
+<ConnectButton />
+
+along with our connect modal.
+
+
+Examples
+
+
+Here is an example for you to use with your own connect button.
+
+
+import
+ 
+React
+, { 
+useState
+ } 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+, 
+ConnectModal
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+YourComponent
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Your
+ 
+Own
+ 
+Component
+</
+div
+>
+
+
+}
+
+
+ 
+
+
+const
+ 
+YourOwnButton
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+button
+>
+Your
+ 
+Own
+ 
+Button
+</
+button
+>
+
+
+}
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ { 
+connected
+ } 
+=
+ 
+useWallet
+()
+
+
+  
+const
+ [
+showModal
+, 
+setShowModal
+] 
+=
+ 
+useState
+(
+false
+)
+
+
+ 
+
+
+  
+if
+ (
+connected
+) {
+
+
+    
+return
+ <
+YourComponent
+ />
+
+
+  }
+
+
+ 
+
+
+  
+return
+ (
+
+
+    // 
+wrap
+ 
+your
+ 
+own
+ 
+button
+ 
+as
+ 
+the
+ 
+trigger
+ 
+of
+ 
+the
+ 
+modal
+
+
+    <
+ConnectModal
+
+
+      
+open
+=
+{
+showModal
+}
+
+
+      
+onOpenChange
+=
+{
+(
+open
+) 
+=>
+ 
+setShowModal
+(
+open
+)
+}
+
+
+    >
+
+
+      <
+YourOwnButton
+ />
+
+
+    </
+ConnectModal
+>
+
+
+  )
+
+
+}
+
+
+API
+
+
+Props
+
+
+Properties
+Description
+Type
+Default
+children
+trigger element for the modal
+ReactNode
+null
+open
+Indicator for opening the modal
+boolean
+false
+onOpenChange
+visibility change event
+(open: boolean) => void
+--
+onConnectSuccess
+Callback for successful connection
+(walletName: string) => void
+onConnectError
+Callback for failed connection
+(error: BaseError) => void
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WalletProvider . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+WalletProvider
+On this page
+Chevron Right
+WalletProvider
+
+
+Description
+
+
+The 
+WalletProvider
+ context provider provides the essential data and functions for Razor Kit and
+it is the entrypoint for customized configurations. So you need to wrap all the Razor Kit
+hooks and components under  a 
+<WalletProvider />
+ component before you start to use them.
+
+
+We recommend that you place the 
+<WalletProvider />
+ component at the root of your app.
+
+
+Examples
+
+
+Basic Usage
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+
+
+import
+ 
+ReactDOM
+ 
+from
+ '
+react
+-
+dom
+/
+client
+'
+;
+
+
+import
+ { 
+WalletProvider
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ (
+
+
+    <
+div
+>
+
+
+      
+Hello
+ 
+World
+!
+
+
+    </
+div
+>
+
+
+  )
+
+
+}
+
+
+ 
+
+
+ReactDOM
+.
+createRoot
+(
+document
+.
+getElementById
+(
+'
+root
+'
+)
+!
+).
+render
+(
+
+
+  <
+WalletProvider
+>
+
+
+    <
+App
+ />
+
+
+  </
+WalletProvider
+>
+
+
+);
+
+
+Customize your wallet list on modal
+
+
+Check 
+Customize Wallet List
+ for details.
+
+
+Configure supported networks
+
+
+Check 
+Configure supported networks
+ for details.
+
+
+API
+
+
+Props
+
+
+Prop
+Type
+Default
+Description
+defaultWallets
+IDefaultWallet
+[...
+AllPresetWallets
+]
+Configure wallet list for dapp, by default we load all the preset wallets
+chains
+Chain
+[]
+DefaultChains
+Configure supported networks for dapp
+autoConnect
+boolean
+true
+Auto connect to the last connected wallet when launched
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+useAccountBalance . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+useAccountBalance
+On this page
+Chevron Right
+useAccountBalance
+
+
+Introduction
+
+
+You can get the balance of the current connected account under the selected network.
+The useAccountBalance will return the current account's balance, loading status and error object.
+When fetching the balance data, loading will set to true, otherwise false. If fetch failed,
+error will be an Error object instance and shows why fetch failed.
+
+
+If error is not null, it means fetch balance failed. In this case, the balance will set to be 0.
+
+
+API
+
+
+Properties
+Description
+Type
+Default
+error
+error or null
+Error | null
+null
+loading
+fetch status
+boolean
+false
+balance
+the balance of current account, converted from BigInt
+string
+'0'
+
+
+error
+
+
+The 
+error
+ object tells why get balance failed. If error is not null,
+it may mean network error or other problems from your app.
+
+
+loading
+
+
+The 
+loading
+ can be used to add loading when fetching acount balance.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useAccountBalance
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+CustomSpinner
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Loading
+...</
+div
+>
+
+
+}
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ { 
+error
+, 
+loading
+, 
+balance
+ } 
+=
+ 
+useAccountBalance
+();
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <>
+
+
+      <
+div
+>
+
+
+        {
+loading
+ 
+&&
+ <
+CustomSpinner
+ />
+}
+
+
+      </
+div
+>
+
+
+      <
+div
+>
+
+
+        {
+String
+(
+balance
+) 
+??
+ '
+0
+'
+}
+
+
+      </
+div
+>
+
+
+    </>
+
+
+  )
+
+
+}
+
+
+balance
+
+
+The balance's type is the default typescript
+bigint
+.
+You can convert it to number or string(as shown in the example above) depending on your project.
+
+
+In some case, the balance can be bigger than Number.MAX_SAFE_INTEGER(2^53 - 1).
+If your project supports Bigint(
+https://caniuse.com/?search=Bigint
+), you can directly use 
+BigInt
+ method to convert, otherwise, use some lib to work with bigint.
+
+
+Example
+
+
+import
+ 
+React
+, { 
+useEffect
+ } 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useAccountBalance
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+interface
+ 
+AccountBalanceResponse
+ {
+
+
+  
+error
+:
+ 
+Error
+ |
+ 
+null
+;
+
+
+  
+loading
+:
+ 
+boolean
+;
+
+
+  
+balance
+:
+ 
+string
+;
+
+
+}
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ { 
+error
+, 
+loading
+, 
+balance
+ } 
+=
+ 
+useAccountBalance
+();
+
+
+ 
+
+
+  
+useEffect
+(() 
+=>
+ {
+
+
+    
+if
+ (
+Number
+(
+balance
+) 
+>
+ 
+1000000
+) {
+
+
+      
+console
+.
+log
+(
+'
+You
+ 
+are
+ 
+a
+ 
+millionaire
+!'
+);
+
+
+    }
+
+
+  }, [
+balance
+]);
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+div
+>
+
+
+      <
+div
+>
+fetch
+ 
+balance
+ 
+loading
+ 
+status
+: 
+{
+loading
+}
+</
+div
+>
+
+
+      <
+div
+>
+account
+ 
+balance
+: 
+{
+String
+(
+balance
+) 
+??
+ '
+0
+'
+}
+</
+div
+>
+
+
+    </
+div
+>
+
+
+  );
+
+
+}
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+useProvider . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+useProvider
+On this page
+Chevron Right
+useProvider
+
+
+Introduction
+
+
+This hook is used to provide the 
+Aptos
+ client interface in React Hooks style.
+
+
+See 
+@aptos-labs/ts-sdk package on npm
+ for more information.
+
+
+This hook is internally 
+JUST
+ importing the 
+Aptos
+ interface and 
+implementation
+ from 
+@aptos-labs/ts-sdk package
+. What we do is caring about versioning, state management, and other stuffs for you.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useProvider
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+function
+ 
+YourComponent
+() {
+
+
+  
+const
+ 
+rpcUrl
+ =
+ '
+https
+://
+mainnet
+.
+movementnetwork
+.
+xyz
+/
+v1
+'
+;
+
+
+  
+const
+ 
+provider
+ =
+ 
+useProvider
+(
+rpcUrl
+);
+
+
+ 
+
+
+  
+return
+ <>...</>;
+
+
+}
+
+
+You can optionally passing an indexerUrl argument to the 
+useProvider
+ hook if there is
+one available.
+
+
+Using the Aptos interface
+
+
+If you use the 
+Aptos
+ client interface provided by 
+useProvider
+,
+you can call the rpc methods in a more convenient way from your react app:
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+useWallet . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+useWallet
+On this page
+Chevron Right
+useWallet
+
+
+Description
+
+
+useWallet
+ is the most useful React Hook to play with. For more details on React Hooks, check
+the 
+React doc
+.
+
+
+It retrieves all the properties and functions from 
+WalletProvider
+,
+with which you can get properties and call functions from a connected wallet.
+
+
+Make sure it runs in a React component that is wrapped by 
+WalletProvider
+
+
+Examples
+
+
+Basic Usage
+
+
+We start with a simple scenario like getting information from the connected wallet .
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+  
+console
+.
+log
+(
+'
+wallet
+ 
+status
+'
+, 
+wallet
+.
+status
+);
+
+
+  
+console
+.
+log
+(
+'
+connected
+ 
+wallet
+ 
+name
+'
+, 
+wallet
+.
+name
+);
+
+
+  
+console
+.
+log
+(
+'
+connected
+ 
+account
+ 
+info
+'
+, 
+wallet
+.
+account
+);
+
+
+}
+
+
+Sign Transaction
+
+
+You can use the 
+signAndSubmitTransaction
+ function from 
+useWallet
+ to sign and submit
+transactions in a more convenient way.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+import
+ { 
+InputEntryFunctionData
+ } 
+from
+ '@
+aptos
+-
+labs
+/
+ts
+-
+sdk
+'
+;
+
+
+ 
+
+
+const
+ 
+YourComponent
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+const
+ { 
+signAndSubmitTransaction
+ } 
+=
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+const
+ 
+recipient
+ =
+ '
+0xbbe1cd791d6cb491634327215ce71eeddd77c4ea9d59e65aae467e54791b5c5d
+'
+
+
+ 
+
+
+  
+const
+ 
+payload
+:
+ 
+InputEntryFunctionData
+ =
+ {
+
+
+    
+function
+: 
+'
+0x1
+::
+aptos_account
+::
+transfer
+'
+,
+
+
+    
+functionArguments
+: [
+recipient
+, 
+100000000
+],
+
+
+    
+typeArguments
+: [],
+
+
+  };
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+button
+
+
+      
+onClick
+=
+{
+async
+ () 
+=>
+ {
+
+
+        
+const
+ 
+resp
+ =
+ 
+await
+ 
+signAndSubmitTransaction
+({
+
+
+          
+payload
+
+
+        });
+
+
+        // 
+resp
+ 
+is
+ 
+the
+ 
+response
+ 
+from
+ 
+the
+ 
+Client
+, 
+and
+ 
+has
+ 
+detailed
+ 
+typings
+ 
+definition
+
+
+      }
+}
+
+
+    >
+
+
+      
+Sign
+ 
+Transaction
+
+
+    </
+button
+>
+
+
+  );
+
+
+}
+
+
+Sign Message
+
+
+Message signing
+
+is an important action to 
+verify whether an approval is confirmed by the owner of an account
+.
+
+
+Here is an example for signing a simple message "Hello World".
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+async
+ 
+function
+ 
+handleSignMsg
+() {
+
+
+    
+try
+ {
+
+
+      
+const
+ 
+msg
+ =
+ '
+Hello
+ 
+world
+!'
+;
+
+
+ 
+
+
+      
+const
+ 
+result
+ =
+ 
+await
+ 
+wallet
+.
+signMessage
+({
+
+
+        
+message
+: 
+msg
+,
+
+
+        
+nonce
+: 
+'
+1
+'
+
+
+      });
+
+
+      // 
+verify
+ 
+signature
+ 
+with
+ 
+publicKey
+ 
+and
+ 
+SignedMessage
+ (
+params
+ 
+are
+ 
+all
+ 
+included
+ 
+in
+ 
+result
+)
+
+
+      
+if
+ (
+!
+result
+) {
+
+
+        
+console
+.
+log
+(
+
+
+          '
+signMessage
+ 
+succeed
+, 
+but
+ 
+verify
+ 
+signedMessage
+ 
+failed
+'
+
+
+        );
+
+
+      } 
+else
+ {
+
+
+        
+console
+.
+log
+(
+
+
+          '
+signMessage
+ 
+succeed
+, 
+and
+ 
+verify
+ 
+signedMessage
+ 
+succeed
+!'
+
+
+        );
+
+
+      }
+
+
+    } 
+catch
+ (
+e
+) {
+
+
+      
+console
+.
+error
+(
+'
+signMessage
+ 
+failed
+'
+, 
+e
+);
+
+
+    }
+
+
+  }
+
+
+ 
+
+
+  
+return
+ <
+button
+ 
+onClick
+=
+{
+handleSignMsg
+}
+> 
+Sign
+ 
+Message
+ </
+button
+>;
+
+
+}
+
+
+Get the connected network of wallet
+
+
+Since this is not a standard feature, not all the wallet has implemented. Check
+
+Compatibility
+ for further information.
+
+
+Your dapp can get the current connected chain of wallet.
+
+
+import
+ 
+React
+, { 
+useEffect
+ } 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+useEffect
+(() 
+=>
+ {
+
+
+    
+if
+ (
+!
+wallet
+.
+connected
+) 
+return
+;
+
+
+    
+console
+.
+log
+(
+'
+current
+ 
+connected
+ 
+network
+'
+, 
+wallet
+.
+chain
+?.
+name
+); 
+// 
+example
+ 
+
+
+  }, [
+wallet
+.
+connected
+]);
+
+
+}
+
+
+API References
+
+
+name
+
+
+The name of connected wallet.
+
+
+Type
+Default
+string | undefined
+undefined
+
+
+connection status
+
+
+The connection status of wallet.
+
+
+Properties
+Type
+Default
+connecting
+boolean
+false
+connected
+boolean
+false
+status
+'disconnected' | 'connecting' | 'connected'
+'disconnected'
+
+
+const
+ { 
+status
+, 
+connected
+, 
+connecting
+ } 
+=
+ useAptosWallet
+();
+
+
+ 
+
+
+// the assert expressions are equally the same
+
+
+assert
+(status 
+===
+ 'disconnected'
+, 
+!
+connecting 
+&&
+ !
+connected); 
+// not connect to wallet
+
+
+assert
+(status 
+===
+ 'connecting'
+, connecting); 
+// now connecting to the wallet
+
+
+assert
+(status 
+===
+ 'connected'
+, connected); 
+// connected to the wallet
+
+
+account
+
+
+The account info in the connected wallet, including address, publicKey etc.
+
+
+Type
+Default
+WalletAccount
+undefined
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ { 
+connected
+, 
+account
+ } 
+=
+ 
+useWallet
+();
+
+
+ 
+
+
+function
+ 
+printAccountInfo
+() {
+
+
+  
+if
+ (
+!
+connected
+) 
+return
+;
+
+
+  
+console
+.
+log
+(
+account
+?.
+address
+);
+
+
+  
+console
+.
+log
+(
+account
+?.
+publicKey
+);
+
+
+}
+
+
+address
+
+
+Alias for 
+account.address
+
+
+select
+
+
+Type
+Default
+(WalletName: string) => void
+
+
+getAccounts
+
+
+Get all the accessible accounts returned by wallet.
+
+
+Type
+Default
+() => Promise<string[]>
+
+
+The getAccounts will get the current wallet's account address. Now one wallet only have one account.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+function
+ 
+YourComponent
+() {
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+function
+ 
+handleGetAccounts
+() {
+
+
+    
+if
+ (
+!
+wallet
+.
+connected
+) 
+return
+;
+
+
+    
+const
+ 
+accounts
+ =
+ 
+wallet
+.
+getAccounts
+();
+
+
+    
+console
+.
+log
+(
+accounts
+);
+
+
+  }
+
+
+}
+
+
+chains
+
+
+Configuration of supported chains from WalletProvider
+
+
+Type
+Default
+Chain
+[]
+DefaultChains
+
+
+chain
+
+
+Current connected chain of wallet.
+
+
+Might not be synced with the wallet if the wallet doesn't support wallet-standard "change" event.
+
+
+Type
+Default
+string
+the first value of configured 
+chains
+ or 
+UnknownChain
+
+
+adapter
+
+
+The adapter normalized from the raw adapter of the connected wallet. You can call all the properties and functions on
+it, which is a complete implementation of the 
+@aptos-labs/wallet-standard
+
+
+Type
+Default
+IWalletAdapter
+undefined
+
+
+signAndSubmitTransaction
+
+
+The universal function to sign and submit transactions via connected wallet.
+
+
+Type
+Default
+(input: { payload: InputEntryFunctionData }) => Promise<UserResponse<AptosSignAndSubmitTransactionOutput>>
+
+
+signTransaction
+
+
+The universal function to sign transactions via connected wallet.
+
+
+Type
+Default
+(input: { transaction: AnyRawTransaction, asFeePayer: boolean }) => Promise<UserResponse<AptosSignTransactionOutput>>
+
+
+signMessage
+
+
+The function is for message signing.
+
+
+Type
+Default
+(input: { message: string, nonce: string, chainId?: boolean, address?: boolean, application?: boolean }) => Promise<UserResponse<AptosSignMessageOutput>>
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Basic . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Basic
+On this page
+Chevron Right
+Basic
+
+
+BEM Naming Rule
+
+
+The BEM naming rule is used to name CSS classes.
+It is a convention for naming CSS classes in a consistent and predictable way.
+It helps to achieve reusable components and code sharing in front-end development.
+
+
+.wkit-[block]__[element]--[modifier]
+
+
+<
+div
+ className
+=
+{
+'wkit-button'
+}
+>...</
+div
+>
+
+
+Import default CSS
+
+
+You need to import the default CSS file to use the default styles.
+
+
+You may need a proper CSS loader to import CSS files. See 
+Webpack
+ or 
+Vite
+ for more information.
+
+
+For example, import the default css file in the 
+src/index.tsx
+ file:
+
+
+File
+src/index.tsx
+import
+ *
+ 
+as
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ '@
+razorlabs
+/
+razorkit
+/
+style
+.
+css
+'
+; 
+// 
+Add
+ 
+this
+ 
+line
+ 
+to
+ 
+your
+ 
+code
+
+
+ 
+
+
+// 
+Your
+ 
+Application
+ 
+code
+ 
+below
+
+
+function
+ 
+App
+() {
+
+
+  
+return
+ <
+div
+>...</
+div
+>;
+
+
+}
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Customize & Theme . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Customize CSS & Theme
+On this page
+Chevron Right
+CSS Customize & Theme
+
+
+CSS Variables
+
+
+This section describes how to use CSS variables to customize the theme of the components.
+
+
+We use CSS variables to define colors and other styles like below:
+
+
+:root
+ {
+
+
+  --wkit-accent-hs
+: 
+210
+, 
+100
+%
+;
+
+
+  --wkit-on-accent-rgb
+: 
+255
+, 
+255
+, 
+255
+;
+
+
+  --wkit-bg-rgb
+: 
+239
+, 
+241
+, 
+245
+;
+
+
+  --wkit-on-bg-rgb
+: 
+10
+, 
+14
+, 
+34
+;
+
+
+  --wkit-font-family
+: 
+'Satoshi'
+, 
+sans-serif
+;
+
+
+  --wkit-font-family-mono
+: 
+'IBM Plex Mono'
+, 
+monospace
+;
+
+
+  --wkit-font-size-large
+: 
+18
+px
+;
+
+
+  --wkit-font-size-medium
+: 
+16
+px
+;
+
+
+  --wkit-font-size-small
+: 
+14
+px
+;
+
+
+  --wkit-line-height-large
+: 
+22
+px
+;
+
+
+  --wkit-line-height-medium
+: 
+20
+px
+;
+
+
+  --wkit-line-height-small
+: 
+17
+px
+;
+
+
+  --wkit-button-width
+: 
+284
+px
+;
+
+
+  --wkit-border-radius
+: 
+16
+px
+;
+
+
+}
+
+
+Below is a list of all CSS variables that you can use as public API to customize the look of the components.
+
+
+CSS Variables
+Descriptions
+Default Value
+--wkit-accent-hs
+The hue and saturation components of the accent color.
+210, 100%
+--wkit-on-accent-rgb
+The RGB value of the color on the accent color.
+255, 255, 255
+--wkit-bg-rgb
+The RGB value of the background color.
+239, 241, 245
+--wkit-on-bg-rgb
+The RGB value of the color on the background color.
+10, 14, 34
+--wkit-font-family
+The font-family of the components.
+'Basel', sans-serif
+--wkit-font-family-mono
+The font-family of the components (monospace).
+'IBM Plex Mono', monospace
+--wkit-font-size-large
+The font-size of the components (L).
+18px
+--wkit-font-size-medium
+The font-size of the components (M).
+16px
+--wkit-font-size-small
+The font-size of the components (S).
+14px
+--wkit-line-height-large
+The line-height of the components (L).
+22px
+--wkit-line-height-medium
+The line-height of the components (M).
+20px
+--wkit-line-height-small
+The line-height of the components (S).
+17px
+--wkit-button-width
+The width of the button.
+284px
+--wkit-border-radius
+The border radius of the components.
+16px
+
+
+Default Values:
+
+
+After figuring out the CSS variables you want to customize, you can override them in your own CSS file, like below:
+
+
+File
+./razor-kit-custom.css
+:root
+ {
+
+
+  --wkit-accent-hs
+: 
+110
+, 
+100
+%
+; 
+// Redefine the hs (the first two components of hsl) of the accent color
+
+
+ 
+
+
+  ... 
+// other CSS variables
+
+
+}
+
+
+Import the default CSS file and your own CSS file in your application.
+
+
+The CSS variables must be imported / declared 
+AFTER
+ the default CSS file.
+
+
+For example, in the 
+src/index.tsx
+ file:
+
+
+File
+src/index.tsx
+import
+ '@
+razorlabs
+/
+razorkit
+/
+style
+.
+css
+'
+;
+
+
+import
+ './
+razor
+-
+kit
+-
+custom
+.
+css
+'
+; 
+// 
+You
+ 
+CSS
+ 
+file
+ 
+here
+
+
+Override (Not recommended)
+
+
+When CSS variables are not enough, you can customize the styles by importing the CSS file and overriding our default CSS rules.
+
+
+Override our default CSS rules is not recommended because it is not easy to maintain.
+ If you have any questions or feature requests, please contact us.
+
+
+Follow the steps below to customize the styles:
+
+
+First, figure out the CSS class name of the component you want to customize. For example, the CSS class name of the 
+ConnectButton
+ component is 
+wkit-button
+.
+
+
+Then override the styles in your own CSS file.
+
+
+File
+./razor-kit-custom.css
+.wkit-button
+ {
+
+
+  height
+: 
+64
+px
+; 
+// For example, override the height of the button
+
+
+}
+
+
+And last, import the default CSS file and your own CSS file in your application.
+
+
+Your CSS rules must be imported / declared 
+AFTER
+ the default CSS file.
+
+
+For example, in the 
+src/index.tsx
+ file:
+
+
+File
+src/index.tsx
+import
+ '@
+razorlabs
+/
+razorkit
+/
+style
+.
+css
+'
+;
+
+
+import
+ './
+razor
+-
+kit
+-
+custom
+.
+css
+'
+; 
+// 
+You
+ 
+css
+ 
+file
+ 
+here
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dark Mode . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Dark Mode
+On this page
+Chevron Right
+Dark Mode
+
+
+With the help of CSS variables, you can easily customize the theme of the components to support dark mode.
+
+
+You can override color-related CSS variables under the 
+@media (prefers-color-scheme: dark)
+ media query to support dark mode like below:
+
+
+You may also defined dark mode theme under the 
+[data-theme='dark']:root
+ selector, as it is a common practice in the web development community.
+
+
+Rules about dark mode must be imported / declared 
+AFTER
+ the default CSS file.
+
+
+@media
+ (
+prefers-color-scheme
+: 
+dark
+) {
+
+
+  :root
+ {
+
+
+    --wkit-accent-hs
+: 
+166
+, 
+91
+%
+;
+
+
+    --wkit-on-accent-rgb
+: 
+255
+, 
+255
+, 
+255
+;
+
+
+    --wkit-bg-rgb
+: 
+40
+, 
+40
+, 
+40
+;
+
+
+    --wkit-on-bg-rgb
+: 
+241
+, 
+241
+, 
+241
+;
+
+
+  }
+
+
+}
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Configure supported networks . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Configure Network
+On this page
+Chevron Right
+Configure supported networks
+
+
+You can configure the supported networks for your dapp.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ 
+ReactDOM
+ 
+from
+ '
+react
+-
+dom
+/
+client
+'
+;
+
+
+import
+ {
+
+
+  
+WalletProvider
+,
+
+
+  
+Chain
+,
+
+
+  
+MovementMainnetChain
+,
+
+
+  
+MovementPortoTestnetChain
+,
+
+
+  
+MovementBardockTestnetChain
+,
+
+
+  
+DefaultChains
+,
+
+
+} 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+customChain
+:
+ 
+Chain
+ =
+ {
+
+
+  
+id
+: 
+1
+,
+
+
+  
+name
+: 
+''
+,
+
+
+  
+rpcUrl
+: 
+''
+,
+
+
+};
+
+
+ 
+
+
+const
+ 
+SupportedChains
+:
+ 
+Chain
+[] 
+=
+ [
+
+
+  // ...
+DefaultChains
+,
+
+
+  
+MovementMainnetChain
+,
+
+
+  
+MovementPortoTestnetChain
+,
+
+
+  
+MovementBardockTestnetChain
+,
+
+
+  // 
+NOTE
+: 
+you
+ 
+can
+ 
+add
+ 
+custom
+ 
+chain
+ (
+network
+),
+
+
+  // 
+but
+ 
+make
+ 
+sure
+ 
+the
+ 
+connected
+ 
+wallet
+ 
+does
+ 
+support
+ 
+it
+
+
+  // 
+customChain
+,
+
+
+];
+
+
+ 
+
+
+const
+ 
+App
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Hello
+ 
+World
+</
+div
+>;
+
+
+};
+
+
+ 
+
+
+ReactDOM
+.
+createRoot
+(
+document
+.
+getElementById
+(
+'
+root
+'
+) 
+as
+ 
+HTMLElement
+).
+render
+(
+
+
+  <
+React
+.
+StrictMode
+>
+
+
+    <
+WalletProvider
+ 
+chains
+=
+{
+SupportedChains
+}
+>
+
+
+      <
+App
+ />
+
+
+    </
+WalletProvider
+>
+
+
+  </
+React
+.
+StrictMode
+>
+
+
+)
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Connect your DApp with wallets on Movement . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Connect Dapp
+On this page
+Chevron Right
+Connect your DApp with wallets on Movement
+
+
+When do we consider a web application a DApp? It's when the web app leverages smart contracts
+to provide services for users. A Wallet plays an important role in this interaction where it
+connects users with DApps. So before you start to build something amazing, you need to
+connect your dapp with wallets.
+
+
+Razor Kit
+ is an all-in-one wallet connection toolkit for Movement DApps. With out-of-the-box UI components and well-defined utility functions, you can easily empower your dapp with the ability to interact with wallets in an elegant way.
+
+
+In this tutorial, You'll see how easy it is to connect your dapp with all the wallets in the Movement ecosystem using Razor Wallet Kit.
+
+
+Razor Kit only supports React projects for now. However, if you would like to still
+leverage the power of Razor Kit, you can use our 
+Wallet SDK
+. The
+Wallet SDK is framework agnostic, so you can use it with any framework you like.
+
+
+Learning Highlights
+
+
+
+
+Install and configure Razor Kit for a React-based DApp
+
+
+Connect the DApp with all the wallets on Movement
+
+
+Use wallet capabilities (display wallet status and account info, send transactions etc)
+
+
+
+
+Getting started
+
+
+In this section, We will walk you through the installation and configuration for Razor Kit.
+
+
+Installation
+
+
+
+
+For simplicity, we choose npm as the package manager, feel free to change to any alternatives.
+
+
+
+
+npm
+ install
+ @razorlabs/razorkit
+
+
+Setup WalletProvider for the App
+
+
+Next, let's import the 
+WalletProvider
+ and setup for your react project such that your App becomes available to access the states and functions provided by Razor Kit.
+
+
+File
+src/index.tsx
+import
+ 
+React
+, { 
+StrictMode
+ } 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+createRoot
+ } 
+from
+ '
+react
+-
+dom
+/
+client
+'
+;
+
+
+import
+ { 
+WalletProvider
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Hello
+ 
+World
+</
+div
+>;
+
+
+};
+
+
+ 
+
+
+const
+ 
+rootElement
+ =
+ 
+document
+.
+getElementById
+(
+'
+root
+'
+)
+!
+;
+
+
+const
+ 
+root
+ =
+ 
+createRoot
+(
+rootElement
+);
+
+
+ 
+
+
+// 
+wrap
+ 
+your
+ 
+app
+ 
+with
+ 
+WalletProvider
+
+
+root
+.
+render
+(
+
+
+  <
+StrictMode
+>
+
+
+    <
+WalletProvider
+>
+
+
+      <
+App
+ />
+
+
+    </
+WalletProvider
+>
+
+
+  </
+StrictMode
+>
+
+
+);
+
+
+Place ConnectButton
+
+
+In Razor Kit, we provide out-of-the-box UI components with good designs. What you need to do is just import and place the 
+ConnectButton
+ to wherever you like.
+
+
+Connect to all the wallets on Movement
+
+
+After the preparation above, we are ready to connect to wallets. Razor Kit provides a list of
+the most popular wallets in the Movement ecosystem. Users can choose their favorite one as
+they wish.
+
+
+When we click the Connect Button, it would provide a list of preset wallets for users to choose.
+Meanwhile, Razor Kit would automatically detect all the installed wallets that implement the
+wallet standard in the browser. So If the wallet is not installed, the kit would guide users
+to download it from Chrome Extension Store. Take Razor Wallet as an example:
+
+
+Let's move on. Now that the Razor wallet has been installed, the kit would initiate a connection request to the wallet extension.
+Once user approves the request, the connection would be completed, which means we've successfully connected to a wallet!
+
+
+Use wallet hooks
+
+
+It's time to take a look at the most useful hook 
+useWallet
+. It
+retrieves all the properties and functions from 
+WalletProvider
+,
+with which you can make use of the account properties and call functions to a connected wallet.
+
+
+In the following sections, We will show you some basic usages with the hook 
+useWallet
+.
+
+
+Display info of the connected wallet
+
+
+We can get several useful information from the connected wallet via Razor Kit:
+
+
+
+
+The wallet connection status
+
+
+The account info
+
+
+The current chain (network) that the wallet is using
+
+
+
+
+Firstly let's display the connection status for the debugging purpose.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ {
+
+
+  
+ConnectButton
+,
+
+
+  
+useWallet
+,
+
+
+  
+addressEllipsis
+,
+
+
+} 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+export
+ 
+default
+ 
+function
+ 
+App
+() 
+{
+
+
+  // 
+Get
+ 
+access
+ 
+to
+ 
+the
+ 
+connected
+ 
+wallet
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+div
+ 
+className
+=
+"
+App
+"
+>
+
+
+      <
+h1
+ 
+className
+=
+"
+title
+"
+>
+Hello
+, 
+Razor
+ 
+Kit
+</
+h1
+>
+
+
+      <
+ConnectButton
+ />
+
+
+ 
+
+
+      <
+section
+>
+
+
+        <
+p
+>
+
+
+          <
+span
+ 
+className
+=
+"
+gradient
+"
+>
+Wallet
+ 
+status
+:</
+span
+> 
+{
+wallet
+.
+status
+}
+
+
+        </
+p
+>
+
+
+      </
+section
+>
+
+
+    </
+div
+>
+
+
+  );
+
+
+}
+
+
+For account info, we only care about the address of an account (it's like an ID in the
+blockchain world!). With the address of the user account, your users can get started with interactions,
+such as querying user on-chain assets, initiating a transaction request etc. But let's start
+from the simplest thing: displaying the address of the account on the page.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ {
+
+
+  
+useWallet
+,
+
+
+  
+addressEllipsis
+,
+
+
+} 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+export
+ 
+default
+ 
+function
+ 
+App
+() 
+{
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+div
+ 
+className
+=
+"
+App
+"
+>
+
+
+      // ...
+
+
+      {
+wallet
+?.
+account
+ 
+&&
+ (
+
+
+        <
+div
+>
+
+
+          <
+p
+>
+Connected
+ 
+Account
+: 
+{
+addressEllipsis
+(
+wallet
+.
+account
+.
+address
+)
+}
+</
+p
+>
+
+
+        </
+div
+>
+
+
+      )
+}
+
+
+      // ...
+
+
+    </
+div
+>
+
+
+  );
+
+
+}
+
+
+Note that the address of an Movement wallet is a 64-character hex string, but usually we only
+need to display the first and last a few characters, so that is where the util function
+
+addressEllipsis
+ comes to play.
+
+
+Lastly, we need to know which chain the wallet is connected to, that is important if we want to
+make interactions with the correct environment on Movement network. Let's type in these
+codes:
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ {
+
+
+  
+useWallet
+,
+
+
+} 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+export
+ 
+default
+ 
+function
+ 
+App
+() 
+{
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+div
+ 
+className
+=
+"
+App
+"
+>
+
+
+      // ...
+
+
+      <
+p
+>
+
+
+        <
+span
+ 
+className
+=
+"
+gradient
+"
+>
+Current
+ 
+chain
+ 
+of
+ 
+wallet
+: </
+span
+>
+
+
+        {
+wallet
+.
+chain
+?.
+name
+}
+
+
+      </
+p
+>
+
+
+      // ...
+
+
+    </
+div
+>
+
+
+  );
+
+
+}
+
+
+There you go! So far you should be able to play with the all the properties provided by the
+hook 
+useWallet
+.
+
+
+
+
+For more API references, please check out the documentation: 
+https://kit.razorwallet.xyz/docs/hooks/use-wallet#api-references
+.
+
+
+
+
+If you made this far, then congratulations! Your dapp is equipped with the power to interact with wallets and users. Don't hesitate, go and keep on making your dapp more interesting and powerful!
+
+
+What's more
+
+
+In fact, with Razor Kit, connecting to wallets is just a simple step. Here is a list of topics that you might explore more:
+
+
+
+
+Guides
+
+
+
+
+Customize Wallet List
+
+
+Configure supported network (networks)
+
+
+Use Hooks Only (without UI)
+
+
+
+
+
+
+Hooks
+
+
+
+
+useWallet
+
+
+useAccountBalance
+
+
+useProvider
+
+
+
+
+
+
+Styling
+
+
+
+
+Customize CSS and Theme
+
+
+
+
+
+
+Configuration and types
+
+
+
+
+WalletProvider
+
+
+Types
+
+
+
+
+
+
+
+
+The End
+
+
+In this tutorial, we introduce how to install and make use of Razor Kit to empower your DApp
+with the ability to connect to all the wallets on Movement and use wallet's capabilities such
+as fetching user account's info and signing a transaction.
+
+
+If you find any issues or bugs, welcome to submit 
+issues
+
+or 
+PRs
+ to 
+the Github repo
+.
+Let's make Movement and open-source community better together!
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Customize Wallet List . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Customize Wallet List
+On this page
+Chevron Right
+Customize Wallet List
+
+
+You can configure your wallet list on the select modal by passing 
+defaultWallets
+ through 
+<WalletProvider />
+.
+
+
+We've prepared a set of 
+preset wallets
+ that you can import
+directly, also you can customize new wallet items. By default, we include all the preset wallets.
+
+
+Default Usage
+
+
+All the 
+defaultWallets
+ will be listed in the Popular section on the wallet-select modal.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ 
+ReactDOM
+ 
+from
+ '
+react
+-
+dom
+/
+client
+'
+;
+
+
+import
+ {
+
+
+  
+WalletProvider
+,
+
+
+  
+RazorWallet
+,
+
+
+  
+BitgetWallet
+,
+
+
+  
+NightlyWallet
+,
+
+
+  
+OkxWallet
+,
+
+
+  
+IDefaultWallet
+,
+
+
+} 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Hello
+ 
+World
+</
+div
+>;
+
+
+};
+
+
+ 
+
+
+ReactDOM
+.
+createRoot
+(
+document
+.
+getElementById
+(
+'
+root
+'
+) 
+as
+ 
+HTMLElement
+).
+render
+(
+
+
+  <
+React
+.
+StrictMode
+>
+
+
+    <
+WalletProvider
+ 
+defaultWallets
+=
+{
+[
+
+
+      // 
+order
+ 
+defined
+ 
+by
+ 
+you
+
+
+      
+RazorWallet
+,
+
+
+      
+BitgetWallet
+,
+
+
+      
+NightlyWallet
+,
+
+
+      
+OkxWallet
+,
+
+
+      // ...
+
+
+    ]
+}
+>
+
+
+    {
+/* 
+or
+ 
+just
+ 
+leave
+ 
+it
+ 
+as
+ 
+default
+ 
+which
+ 
+contains
+ 
+all
+ 
+preset
+ 
+wallets
+ */
+}
+
+
+    {
+/*<
+WalletProvider
+>*/
+}
+
+
+      <
+App
+ />
+
+
+    </
+WalletProvider
+>
+
+
+  </
+React
+.
+StrictMode
+>
+
+
+)
+
+
+Using Hook Only
+
+
+If you use 
+useWallet
+ hook only and have a customized wallet-select modal, then you can
+access configured wallet list by 
+configuredWallets
+ from 
+useWallet
+. Also we provide
+
+detectedWallets
+ for those wallets which are not pre-configured but detected from user browser.
+
+
+// 
+make
+ 
+sure
+ 
+this
+ 
+code
+ 
+is
+ 
+wrapped
+ 
+in
+ 
+a
+ <
+WalletProvider
+ /> 
+component
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+, 
+IDefaultWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+CustomizedWalletModal
+ =
+ ({ 
+list
+ }
+:
+ { 
+list
+:
+ 
+IDefaultWallet
+[] }) 
+=>
+ {
+
+
+  
+return
+ (
+
+
+    <
+div
+>
+
+
+      {
+list
+.
+map
+((
+wallet
+) 
+=>
+ (
+
+
+        <
+button
+ 
+key
+=
+{
+wallet
+.
+name
+}
+>
+{
+wallet
+.
+name
+}
+</
+button
+>
+
+
+      ))
+}
+
+
+    </
+div
+>
+
+
+  );
+
+
+};
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ { 
+configuredWallets
+, 
+detectedWallets
+ } 
+=
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <>
+
+
+      <
+CustomizedWalletModal
+
+
+        
+list
+=
+{
+[
+...
+configuredWallets
+, 
+...
+detectedWallets
+]
+}
+
+
+      />
+
+
+    </>
+
+
+  );
+
+
+}
+
+
+Define New Wallet
+
+
+If our wallet presets do not cover the wallets you need, you can simply define it using our 
+defineWallet
+ function.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ 
+ReactDOM
+ 
+from
+ '
+react
+-
+dom
+/
+client
+'
+;
+
+
+import
+ {
+
+
+  
+WalletProvider
+,
+
+
+  
+defineWallet
+,
+
+
+} 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+// 
+customized
+ 
+wallet
+ 
+must
+ 
+support
+ @
+mysten
+/
+wallet
+-
+standard
+
+
+const
+ 
+CustomizeWallet
+ =
+ 
+defineWallet
+({
+
+
+  
+name
+: 
+"
+myWallet
+"
+,
+
+
+  
+label
+: 
+"
+My
+ 
+Wallet
+"
+,
+
+
+  
+iconUrl
+: 
+"
+external
+ 
+url
+ 
+or
+ 
+data
+ 
+url
+"
+,
+
+
+  
+downloadUrl
+: {
+
+
+    
+browserExtension
+: 
+'
+download
+ 
+page
+ 
+url
+ 
+of
+ 
+chrome
+ 
+extension
+...'
+
+
+  },
+
+
+})
+
+
+ 
+
+
+const
+ 
+App
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Hello
+ 
+World
+</
+div
+>;
+
+
+};
+
+
+ 
+
+
+ReactDOM
+.
+createRoot
+(
+document
+.
+getElementById
+(
+'
+root
+'
+) 
+as
+ 
+HTMLElement
+).
+render
+(
+
+
+  <
+React
+.
+StrictMode
+>
+
+
+    <
+WalletProvider
+ 
+defaultWallets
+=
+{
+[
+
+
+      
+CustomizeWallet
+,
+
+
+      // ...
+
+
+    ]
+}
+>
+
+
+      <
+App
+ />
+
+
+    </
+WalletProvider
+>
+
+
+  </
+React
+.
+StrictMode
+>
+
+
+)
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Use Hooks Only (without UI) . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Use Hooks Only
+On this page
+Chevron Right
+Use Hooks Only (without UI)
+
+
+This section will introduce how to only use the provided hooks.
+
+
+It could be useful when you want to customize your UI components together with our hooks.
+
+
+Customize your UI components with Razor Kit Hooks
+
+
+Firstly, add 
+WalletProvider
+ to wrap your App. The WalletProvider component provides the context of data and functions.
+
+
+
+
+For customizing the default wallet list, check 
+WalletProvider
+
+
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+WalletProvider
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+const
+ 
+App
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Hello
+ 
+World
+</
+div
+>;
+
+
+};
+
+
+ 
+
+
+function
+ 
+RootComponent
+() {
+
+
+  
+return
+ (
+
+
+    <
+WalletProvider
+>
+
+
+      <
+App
+ />
+
+
+    </
+WalletProvider
+>
+
+
+  );
+
+
+}
+
+
+Next, you should have 
+a connect button for wallet connection
+ and 
+a display area for account info after connection
+.
+
+
+In this case, you can manage these two components by 
+connected
+ status from 
+useWallet
+ hook.
+And get active account address after connected.
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+import
+ 
+React
+, { 
+useState
+, 
+useEffect
+ } 
+from
+ '
+react
+'
+;
+
+
+ 
+
+
+const
+ 
+AccountInfo
+:
+ 
+React
+.
+FC
+<{ 
+address
+?:
+ 
+string
+ }> 
+=
+ ({ 
+address
+ }) 
+=>
+ {
+
+
+  
+return
+ <
+div
+>
+Account
+ 
+Info
+: 
+{
+address
+}
+</
+div
+>;
+
+
+};
+
+
+ 
+
+
+const
+ 
+ConnectButton
+:
+ 
+React
+.
+FC
+ =
+ () 
+=>
+ {
+
+
+  
+return
+ <
+button
+>
+Connect
+</
+button
+>;
+
+
+};
+
+
+ 
+
+
+function
+ 
+App
+() {
+
+
+  
+const
+ 
+wallet
+ =
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+return
+ (
+
+
+    <
+div
+>
+
+
+      {
+wallet
+.
+connected
+ 
+?
+ (
+
+
+        <
+AccountInfo
+ 
+address
+=
+{
+wallet
+?.
+address
+}
+ />
+
+
+      ) 
+:
+ (
+
+
+        <
+ConnectButton
+ />
+
+
+      )
+}
+
+
+    </
+div
+>
+
+
+  );
+
+
+}
+
+
+For your wallet-select modal component, let's just call it WalletSelector.
+
+
+You can use 
+select
+ method from 
+useWallet
+ hook to connect to one of any movement wallets.
+
+
+import
+ 
+React
+ 
+from
+ '
+react
+'
+;
+
+
+import
+ { 
+useWallet
+ } 
+from
+ '@
+razorlabs
+/
+razorkit
+'
+;
+
+
+ 
+
+
+function
+ 
+WalletSelector
+() {
+
+
+  
+const
+ {
+
+
+    
+select
+, 
+// 
+select
+
+
+    
+configuredWallets
+, 
+// 
+default
+ 
+wallets
+
+
+    
+detectedWallets
+, 
+// 
+Movement
+-
+standard
+ 
+wallets
+ 
+detected
+ 
+from
+ 
+browser
+ 
+env
+
+
+    
+allAvailableWallets
+, 
+// 
+all
+ 
+the
+ 
+installed
+ 
+Movement
+-
+standard
+ 
+wallets
+
+
+  } 
+=
+ 
+useWallet
+();
+
+
+ 
+
+
+  
+return
+ [
+...
+configuredWallets
+, 
+...
+detectedWallets
+].
+map
+((
+wallet
+) 
+=>
+ (
+
+
+    <
+button
+
+
+      
+key
+=
+{
+wallet
+.
+name
+}
+
+
+      
+onClick
+=
+{
+() 
+=>
+ {
+
+
+        // 
+check
+ 
+if
+ 
+user
+ 
+installed
+ 
+the
+ 
+wallet
+
+
+        
+if
+ (
+!
+wallet
+.
+installed
+) {
+
+
+          // 
+do
+ 
+something
+ 
+like
+ 
+guiding
+ 
+users
+ 
+to
+ 
+install
+
+
+          
+return
+;
+
+
+        }
+
+
+        
+select
+(
+wallet
+.
+name
+);
+
+
+      }
+}
+
+
+    >
+
+
+      
+Connect
+ 
+to
+ 
+{
+wallet
+.
+name
+}
+
+
+    </
+button
+>
+
+
+  ));
+
+
+}
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Types . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Types
+On this page
+Chevron Right
+Types
+
+
+IDefaultWallet
+
+
+export
+ interface
+ IDefaultWallet
+ {
+
+
+  name
+:
+ string
+; 
+// wallet name
+
+
+  iconUrl
+:
+ string
+; 
+// wallet icon url (external url or data url)
+
+
+  downloadUrl
+:
+ {
+
+
+    browserExtension
+?:
+ string
+; 
+// provide download link if this wallet is not installed
+
+
+  };
+
+
+}
+
+
+example for customized defaultWallet item:
+
+
+import
+ IDefaultWallet 
+from
+ '@razorlabs/razorkit'
+;
+
+
+ 
+
+
+const
+ myWallet
+:
+ IDefaultWallet
+ =
+ {
+
+
+  name: 
+'myWallet'
+,
+
+
+  iconUrl: 
+'external url or data url'
+,
+
+
+  downloadUrl: {
+
+
+    browserExtension: 
+'chrome extension store url...'
+,
+
+
+  },
+
+
+};
+
+
+WalletAccount
+
+
+export
+ interface
+ WalletAccount
+ {
+
+
+  /** Address of the account, corresponding with the public key. */
+
+
+  readonly
+ address
+:
+ string
+;
+
+
+ 
+
+
+  /** Public key of the account, corresponding with the secret key to sign, encrypt, or decrypt using. */
+
+
+  readonly
+ publicKey
+:
+ Uint8Array
+;
+
+
+ 
+
+
+  /** Chains supported by the account. */
+
+
+  readonly
+ chains
+:
+ IdentifierArray
+;
+
+
+ 
+
+
+  /** Features supported by the account. */
+
+
+  readonly
+ features
+:
+ IdentifierArray
+;
+
+
+ 
+
+
+  /** Optional user-friendly descriptive label or name for the account, to be displayed by apps. */
+
+
+  readonly
+ label
+?:
+ string
+;
+
+
+ 
+
+
+  /** Optional user-friendly icon for the account, to be displayed by apps. */
+
+
+  readonly
+ icon
+?:
+ WalletIcon
+;
+
+
+}
+
+
+IWalletAdapter
+
+
+https://github.com/razorlabsorg/razorkit/blob/master/packages/sdk/src/wallet-standard/interfaces/IWalletAdapter.ts
+
+
+Chain
+
+
+Definition of chain's structure (aka Network for Razor Wallet)
+
+
+export
+ type
+ Chain
+ =
+ {
+
+
+  id
+:
+ number
+;
+
+
+  name
+:
+ string
+;
+
+
+  rpcUrl
+:
+ string
+;
+
+
+  indexerUrl
+?:
+ string
+;
+
+
+};
+
+
+Default constants:
+
+
+export
+ const
+ MovementPortoTestnetChain
+:
+ Chain
+ =
+ {
+
+
+  id: 
+177
+,
+
+
+  name: 
+'Movement Porto Testnet'
+,
+
+
+  rpcUrl: 
+'https://aptos.testnet.porto.movementlabs.xyz/v1'
+,
+
+
+  indexerUrl: 
+'https://indexer.testnet.porto.movementnetwork.xyz/v1/graphql'
+,
+
+
+};
+
+
+ 
+
+
+export
+ const
+ MovementBardockTestnetChain
+:
+ Chain
+ =
+ {
+
+
+  id: 
+250
+,
+
+
+  name: 
+'Movement Bardock Testnet'
+,
+
+
+  rpcUrl: 
+'https://aptos.testnet.bardock.movementlabs.xyz/v1'
+,
+
+
+};
+
+
+ 
+
+
+export
+ const
+ MovementMainnetChain
+:
+ Chain
+ =
+ {
+
+
+  id: 
+126
+,
+
+
+  name: 
+'Movement Mainnet'
+,
+
+
+  rpcUrl: 
+'https://mainnet.movementnetwork.xyz/v1'
+,
+
+
+  indexerUrl: 
+'https://rpc.sentio.xyz/movement-indexer/v1/graphql'
+,
+
+
+};
+
+
+ 
+
+
+export
+ const
+ UnknownChain
+:
+ Chain
+ =
+ {
+
+
+  id: 
+0
+,
+
+
+  name: 
+'Unknown Network'
+,
+
+
+  rpcUrl: 
+''
+,
+
+
+};
+
+
+ 
+
+
+export
+ const
+ DefaultChains
+ =
+ [MovementMainnetChain, MovementPortoTestnetChain, MovementBardockTestnetChain];
+
+
+Error Types
+
+
+type
+ BaseError
+ =
+ {
+
+
+  message
+:
+ string
+;
+
+
+  code
+:
+ ErrorCode
+;
+
+
+  details
+?:
+ Record
+<
+String
+, 
+any
+>;
+
+
+};
+
+
+ 
+
+
+type
+ KitError
+ =
+ BaseError
+; 
+// errors from kit internal logics
+
+
+ 
+
+
+type
+ WalletError
+ =
+ BaseError
+; 
+// errors from third-party wallets
+
+
+Error Codes
+
+
+enum
+ ErrorCode
+ {
+
+
+  UNKNOWN_ERROR
+ =
+ 'UNKNOWN_ERROR'
+,
+
+
+  KIT__UNKNOWN_ERROR
+ =
+ 'KIT.UNKNOWN_ERROR'
+,
+
+
+  WALLET__UNKNOWN_ERROR
+ =
+ 'WALLET.UNKNOWN_ERROR'
+,
+
+
+  WALLET__CONNECT_ERROR
+ =
+ 'WALLET.CONNECT_ERROR'
+,
+
+
+  WALLET__DISCONNECT_ERROR
+ =
+ 'WALLET.DISCONNECT_ERROR'
+,
+
+
+  WALLET__SIGN_TX_ERROR
+ =
+ 'WALLET.SIGN_TX_ERROR'
+,
+
+
+  WALLET__SIGN_MSG_ERROR
+ =
+ 'WALLET.SIGN_MSG_ERROR'
+,
+
+
+  WALLET__LISTEN_TO_EVENT_ERROR
+ =
+ 'WALLET.LISTEN_TO_EVENT_ERROR'
+,
+
+
+  WALLET__METHOD_NOT_IMPLEMENTED_ERROR
+ =
+ 'WALLET.METHOD_NOT_IMPLEMENTED_ERROR'
+,
+
+
+}
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Razor Kit Docs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Overview
+On this page
+Chevron Right
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Installation
+On this page
+Chevron Right
+Installation
+
+
+Install Razor Kit using your preferred package manager, a 
+<script>
+ tag, or
+build it from source.
+
+
+Package Manager
+
+
+Install the required packages.
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit
+
+
+CDN
+
+
+If you're not using a package manager, you can also use Razor Kit via an ESM-compatible
+CDN such as 
+esm.sh
+. Simply add a 
+<script type="module">
+ tag to the
+bottom of your HTML file with the following content.
+
+
+<
+script
+ type
+=
+"module"
+>
+
+
+  import
+ { useWallet } 
+from
+ 'https://esm.sh/@razorlabs/razorkit'
+
+
+</
+script
+>
+
+
+Using Unreleased Commits
+
+
+If you can't wait for a new release to test the latest features, you can either install
+from the 
+canary
+ tag (tracks the 
+master
+ branch).
+
+
+pnpm
+npm
+yarn
+bun
+Terminal
+pnpm
+pnpm
+ add
+ @razorlabs/razorkit@canary
+
+
+Or clone the 
+Razor Kit repo
+ to your local machine,
+build, and link it yourself.
+
+
+gh
+ repo
+ clone
+ razorlabsorg/razorkit
+
+
+cd
+ razorkit
+
+
+pnpm
+ install
+
+
+pnpm
+ build
+
+
+pnpm
+ link
+ --global
+
+
+Then go to the project where you are using Razor Kit and run 
+pnpm link --global @razorlabs/razorkit
+
+(or the package manager that you used to link Razor Kit globally).
+
+
+Security
+
+
+Web3 projects are often targeted in attacks to steal users' assets. Make sure you follow security best-practices for your project. Some quick things to get started.
+
+
+
+
+Pin package versions, upgrade mindfully, and inspect lockfile changes to minimize the risk of 
+supply-chain attacks
+.
+
+
+Install the 
+Socket Security
+ 
+GitHub App
+ to help detect and block supply-chain attacks.
+
+
+Add a 
+Content Security Policy
+ to defend against external scripts running in your app.
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Razor Kit? . Razor Kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+Introduction
+Why Razor Kit?
+Installation
+Getting Started
+Wallet Compatibility
+Components
+ConnectButton
+ConnectModal
+WalletProvider
+Hooks
+useAccountBalance
+useProvider
+useWallet
+Styling
+Basic
+Customize CSS & Theme
+Dark Mode
+Guides
+Configure Network
+Connect Dapp
+Customize Wallet List
+Use Hooks Only
+Misc
+Types
+Wallet SDK
+Overview
+Search
+Docs
+Examples
+1.0.2
+GitHub
+Discord
+X
+Sun
+Moon
+Docs
+Examples
+1.0.2
+Docs
+Chevron Down
+GitHub
+Discord
+X
+Menu
+Why Razor Kit?
+On this page
+Chevron Right
+Why Razor Kit?
+
+
+Razor Kit is an all-in-one React library that makes it easy to add wallet interaction to Movement dapps.
+It is easy to use, responsive and customizable.
+
+
+Features
+
+
+Wallet management
+
+
+Out-of-the-box wallet management for your dapp. Aside from handling the connection
+and disconnection of wallets, Razor Kit supports all Movement-compatible wallets,
+provides wallet hooks, displays balance and much more!
+
+
+Customizable
+
+
+You can tweak the Razor Kit UI to match your branding. You can build your own
+connection modals and buttons or customize the default components. For more advanced
+use cases, you can provide in a fully custom theme, render your own button and
+omit certain features.
+
+
+Industry standards
+
+
+For better interoperability with most products, we rely on 
+@aptos-labs/ts-sdk
+
+and 
+@aptos-labs/wallet-standard
+ â the most used libraries for Dapp and Wallet development
+on AptosVM Move chains.
+
+
+Community
+
+
+We're excited to see the community adopt Razor Kit, raise issues, and
+provide feedback. Whether it's a feature request, bug report, or a project
+to showcase, please get involved!
+
+
+
+
+Raise an issue
+
+
+Follow on Twitter
+
+
+Share your feedback
+
+
+ 
+Suggest changes to this page
+
+
+
+
+
+

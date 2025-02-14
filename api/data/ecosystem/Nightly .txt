@@ -1,0 +1,2121 @@
+App name: Nightly 
+Landing page: https://t.co/9jz9FfCDzC
+App category: Wallet
+App insights: 
+
+App documentation: https://docs.nightly.app/docs/
+
+
+
+
+
+
+
+
+
+
+Home | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Home
+On this page
+Home
+Nightly used to manage digital assets and access decentralized applications
+​
+Nightly
+ is a friendly extension, that allows you to manage your tokens and NFTs nicely and easily. It allows to send and swap tokens, and display all NFTs in one single place.
+Nightly is injectable on 
+Solana
+, 
+Near
+, 
+Sui
+, 
+Aptos
+, 
+Polkadot
+, 
+EVM
+ and 
+Movement M1
+.
+New chains are just waiting to be integrated with Nightly.
+Mobile is the future. Therefore, you are now able to install Nightly on your phone which extends the use of our wallet even more.
+Nightly is a secure place, which safely provides access to private assets. We don't collect any sensitive data and all keys are always encrypted.
+This documentation is created for developers who are building applications with Nightly.
+Please go through our docs to get a smooth implementation of Nightly in your application.
+Edit this page
+Next
+Getting started
+Nightly used to manage digital assets and access decentralized applications
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Home
+On this page
+Home
+Nightly used to manage digital assets and access decentralized applications
+​
+Nightly
+ is a friendly extension, that allows you to manage your tokens and NFTs nicely and easily. It allows to send and swap tokens, and display all NFTs in one single place.
+Nightly is injectable on 
+Solana
+, 
+Near
+, 
+Sui
+, 
+Aptos
+, 
+Polkadot
+, 
+EVM
+ and 
+Movement M1
+.
+New chains are just waiting to be integrated with Nightly.
+Mobile is the future. Therefore, you are now able to install Nightly on your phone which extends the use of our wallet even more.
+Nightly is a secure place, which safely provides access to private assets. We don't collect any sensitive data and all keys are always encrypted.
+This documentation is created for developers who are building applications with Nightly.
+Please go through our docs to get a smooth implementation of Nightly in your application.
+Edit this page
+Next
+Getting started
+Nightly used to manage digital assets and access decentralized applications
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Getting started | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Getting started
+Getting started
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Edit this page
+Previous
+Home
+Next
+Detect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Detect Nightly | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+ Solana
+Detect Nightly
+Detect Nightly
+In order to detect Nightly Wallet in your solana app, we recommend you use the 
+@wallet-standard/core
+ package.
+note
+Before fetching detected wallets, install the package by running the following command in your terminal
+# Using NPM
+npm
+ i @wallet-standard/core
+# Using Yarn
+yarn
+ 
+add
+ @wallet-standard/core
+After installing the package use this code to get access to all detected wallets.
+import
+ 
+{
+ getWallets 
+}
+ 
+from
+ 
+'@wallet-standard/core'
+const
+ 
+{
+ get 
+}
+ 
+=
+ 
+getWallets
+(
+)
+const
+ allWallets 
+=
+ 
+get
+(
+)
+Then, to filter out the wallets that aren't compatible with the solana standard.
+import
+ 
+{
+ isWalletAdapterCompatibleStandardWallet 
+}
+ 
+from
+ 
+'@solana/wallet-adapter-base'
+const
+ solanaWallets 
+=
+ allWallets
+.
+filter
+(
+isWalletAdapterCompatibleStandardWallet
+)
+Now, after finding the Nightly wallet in the 
+solanaWallets
+ object, you will have access to all of the functions such as 
+connect
+, which we will talk about in the next section.
+Accessing the nightly object is also possible by finding the 
+nightly.solana
+ object on the window.
+const
+ nightlySolana 
+=
+ 
+window
+.
+nightly
+?.
+solana
+Edit this page
+Previous
+Getting started
+Next
+Connect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Detect Nightly | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Sui
+Detect Nightly
+Detect Nightly
+In order to detect Nightly Wallet in your sui app we recommend you use the 
+@mysten/wallet-standard
+ package, like so.
+note
+Before fetching detected wallets, install the package by running the following command in your terminal
+# Using NPM
+npm
+ i @mysten/wallet-standard
+# Using Yarn
+yarn
+ 
+add
+ @mysten/wallet-standard
+After installing the package use this code to get access to all detected wallets.
+import
+ 
+{
+ getWallets 
+}
+ 
+from
+ 
+'@mysten/wallet-standard'
+const
+ 
+{
+ get 
+}
+ 
+=
+ 
+getWallets
+(
+)
+const
+ allWallets 
+=
+ 
+get
+(
+)
+Then, to filter out the wallets that aren't compatible with the sui standard.
+import
+ 
+{
+ isWalletWithRequiredFeatureSet 
+}
+ 
+from
+ 
+'@mysten/wallet-standard'
+const
+ suiWallets 
+=
+ allWallets
+.
+filter
+(
+isWalletWithRequiredFeatureSet
+)
+Now, after finding the Nightly wallet in the 
+suiWallets
+ object, you will have access to all of the functions such as 
+connect
+, which we will talk about in the next section.
+Accessing the nightly object is also possible by finding the 
+nightly.sui
+ object on the window.
+const
+ nightlySui 
+=
+ 
+window
+.
+nightly
+?.
+sui
+Edit this page
+Previous
+Change the adapter network
+Next
+Connect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Detect Nightly | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Detect Nightly
+Connect Nightly
+Sign Transaction
+Aptos
+Movement M1
+Deeplinks
+Polkadot
+Detect Nightly
+Detect Nightly
+In order to detect Nightly Wallet in your polkadot app we recommend you use the 
+!polkadot/extension-inject/types
+ and, if you are using typescript, 
+@wallet-standard/core
+ packages, like so.
+note
+Before fetching detected wallets, install the packages by running the following command in your terminal
+# Using NPM
+npm
+ i @polkadot/
+[email protected]
+npm
+ i @wallet-standard/core
+# Using Yarn
+yarn
+ 
+add
+ @polkadot/
+[email protected]
+yarn
+ 
+add
+ @wallet-standard/core
+After installing the packages use this code to get access to all detected wallets.
+note
+In case you want to use typescript, you ought to include the following declarations.
+import
+ 
+{
+ 
+Injected
+,
+ 
+InjectedExtension
+ 
+}
+ 
+from
+ 
+'@polkadot/extension-inject/types'
+import
+ 
+{
+ 
+WalletIcon
+ 
+}
+ 
+from
+ 
+'@wallet-standard/core'
+export
+ 
+interface
+ 
+PolkadotWalletInjected
+ 
+{
+  connect
+?
+:
+ 
+(
+origin
+:
+ string
+)
+ 
+=>
+ 
+Promise
+<
+InjectedExtension
+>
+  enable
+?
+:
+ 
+(
+origin
+:
+ string
+)
+ 
+=>
+ 
+Promise
+<
+Injected
+>
+  version
+?
+:
+ string
+  
+name
+:
+ string
+  
+slug
+:
+ string
+  icon
+?
+:
+ 
+WalletIcon
+}
+declare global 
+{
+  
+interface
+ 
+Window
+ 
+{
+    injectedWeb3
+?
+:
+ 
+{
+ 
+[
+key 
+in
+ string
+]
+:
+ 
+PolkadotWalletInjected
+ 
+}
+  
+}
+}
+The function to retrieve and parse injected wallet should look like this.
+export
+ 
+const
+ getPolkadotWallets 
+=
+ 
+(
+)
+:
+ 
+PolkadotWalletInjected
+[
+]
+ 
+=>
+ 
+{
+  
+if
+ 
+(
+window
+ 
+&&
+ 
+window
+.
+injectedWeb3
+)
+ 
+{
+    
+return
+ 
+Object
+.
+entries
+(
+window
+.
+injectedWeb3
+)
+.
+map
+(
+(
+[
+key
+,
+ value
+]
+)
+ 
+=>
+ 
+(
+{
+      
+...
+value
+,
+      
+name
+:
+ value
+.
+name
+ 
+??
+ key
+,
+ 
+// value.name might be undefined
+      
+slug
+:
+ key
+,
+      
+icon
+:
+ value
+.
+icon
+ 
+??
+ 
+"https://registry.nightly.app/networks/polkadot.png"
+,
+    
+}
+)
+)
+;
+  
+}
+ 
+else
+ 
+{
+    
+return
+ 
+[
+]
+;
+  
+}
+}
+;
+Then you can get all polkadot injected wallets like so.
+const
+ polkadotWallets 
+=
+ 
+getPolkadotWallets
+(
+)
+Now, after finding the Nightly wallet in the 
+polkadotWallets
+ object, you will have access to all of the functions such as 
+connect
+, which we will talk about in the next section.
+Accessing the nightly object is also possible by finding the 
+nightly.polkadot
+ object on the window.
+const
+ nightlyPolkadot 
+=
+ 
+window
+.
+nightly
+?.
+polkadot
+Edit this page
+Previous
+Sign Transaction
+Next
+Connect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Detect Nightly | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Movement M1
+Deeplinks
+Aptos
+Detect Nightly
+Detect Nightly
+In order to detect Nightly Wallet in your aptos app we recommend you use the 
+@aptos-labs/wallet-standard
+ package (source code 
+https://github.com/aptos-labs/wallet-standard
+), like so.
+note
+Before fetching detected wallets, install the package by running the following command in your terminal
+# Using NPM
+npm
+ i @aptos-labs/wallet-standard
+# Using Yarn
+yarn
+ 
+add
+ @aptos-labs/wallet-standard
+After installing the package use this code to get access to all detected wallets.
+import
+ 
+{
+ getAptosWallets 
+}
+ 
+from
+ 
+'@aptos-labs/wallet-standard'
+const
+ wallets 
+=
+ 
+getAptosWallets
+(
+)
+const
+ aptosWallets 
+=
+ wallets
+.
+aptosWallets
+Now, after finding the Nightly wallet in the 
+aptosWallets
+ object, you will have access to all of the functions such as 
+connect
+, which we will talk about in the next section.
+Accessing the nightly object is also possible by finding the 
+nightly.aptos
+ object on the window.
+const
+ nightlyAptos 
+=
+ 
+window
+.
+nightly
+?.
+aptos
+Edit this page
+Previous
+Sign Transaction
+Next
+Connect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Detect Nightly | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Deeplinks
+Movement M1
+Detect Nightly
+Detect Nightly
+The process mirrors that of using 
+Aptos
+.
+Edit this page
+Previous
+Change the adapter network
+Next
+Connect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deeplinks | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Deeplinks
+On this page
+Deeplinks
+Nightly supports handling deeplinks to allow for seamless communication with other apps and services available on your mobile device.
+How does it work
+​
+The deeplink which you send from within your website or an app, granted it is structured correctly, instructs the 
+Nightly app
+ on your device, to open the requested url inside the in-app browser, from which you can then connect nightly with your website and perform various operations. Our app is divided into sections, each being a separate network, therefore you should pass a 
+network
+ property inside the deeplink, to open the browser in the network tab of your choice.
+note
+For a deeplink to be compatible with the 
+Nightly app
+, it has to follow some blueprints. The overall structure is explained below.
+Structure
+​
+A Nightly deeplink blueprint enforces the link to look like so.
+1
+nightly://v1
+2
+?network=solana
+3
+&url=https://jup.ag/
+Prefix
+ - tells the device to transfer the request to Nightly
+Network
+ - instructs your 
+Nightly app
+ to open the in-app browser on the specified blockchain
+Website url
+ - opens the requested url inside the in-app browser
+Edit this page
+Previous
+Change the adapter network
+How does it work
+Structure
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Getting started | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Getting started
+Getting started
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Edit this page
+Previous
+Home
+Next
+Detect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Connect Nightly | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+ Solana
+Connect Nightly
+On this page
+Connect Nightly
+info
+This part of documentation assumes you have already completed the detection step and have access to the Nightly wallet object.
+To view the implementation of the 
+connect
+ method, and the ones described in the later chapters, visit our source code.
+Source code: 
+https://github.com/nightly-labs/solana-web3-template/blob/main/app/components/StickyHeader.tsx
+​
+In order to start using Nightly extension, an app needs to establish a connection. Once the connection request is initiated on the application side, it will prompt the user to provide permission to connect to the app with Nightly.
+Connect
+​
+To wrap the 
+Nightly
+ object acquired from the previous step with an adapter to allow seamless interaction, you should use the StandardWalletAdapter class from the 
+@solana/wallet-standard
+ and, if you are using typescript, 
+@solana/wallet-adapter-base
+ to conform with the adapter types.
+We recommend calling 
+connect()
+ function, in order to establish connection with Nightly.
+import
+ 
+{
+ 
+StandardWalletAdapter
+ 
+}
+ 
+from
+ 
+"@solana/wallet-standard"
+;
+import
+ 
+{
+ 
+WalletAdapterCompatibleStandardWallet
+ 
+}
+ 
+from
+ 
+"@solana/wallet-adapter-base"
+;
+const
+ adapter 
+=
+ 
+new
+ 
+StandardWalletAdapter
+(
+{
+  
+// Assuming nightly is the detected Nightly Wallet object
+  
+wallet
+:
+ nightly
+.
+standardWallet
+ 
+as
+ 
+WalletAdapterCompatibleStandardWallet
+,
+}
+)
+;
+await
+ adapter
+.
+connect
+(
+)
+;
+Disconnect
+​
+We recommend calling 
+disconnect()
+ function, in order to break connection with Nightly.
+await
+ adapter
+.
+disconnect
+(
+)
+Edit this page
+Previous
+Detect Nightly
+Next
+Sign message
+Connect
+Disconnect
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sign message | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+ Solana
+Sign message
+Sign message
+To sign a message using the previously created adapter, we recommend you use the function 
+signMessage()
+ from the adapter.
+await
+ adapter
+.
+signMessage
+(
+new
+ 
+TextEncoder
+(
+)
+.
+encode
+(
+"I love Nightly"
+)
+)
+;
+Edit this page
+Previous
+Connect Nightly
+Next
+Sign Transaction
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sign Transaction | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+ Solana
+Sign Transaction
+Sign Transaction
+Using Solana adapter you can sign a transaction and keep it for later sending.
+To sign a transaction using the previously created adapter, we recommend you use the function 
+signTransaction()
+ from the adapter. But first you need to create a transaction object of type Transaction from 
+@solana/web3.js
+.
+You should first create a Solana connection object, like so.
+import
+ 
+{
+ 
+Connection
+ 
+}
+ 
+from
+ 
+"@solana/web3.js"
+;
+// you can use any solana rpc
+const
+ connection 
+=
+ 
+new
+ 
+Connection
+(
+"https://api.devnet.solana.com"
+)
+;
+Then, to create a transaction payload, use the following code.
+import
+ 
+{
+  
+PublicKey
+,
+  
+SystemProgram
+,
+  
+Transaction
+ 
+as
+ 
+SolanaTx
+,
+}
+ 
+from
+ 
+"@solana/web3.js"
+;
+const
+ ix 
+=
+ 
+SystemProgram
+.
+transfer
+(
+{
+  
+fromPubkey
+:
+ publicKey
+,
+ 
+// sender public key
+  
+lamports
+:
+ 
+1e6
+,
+  
+toPubkey
+:
+ 
+new
+ 
+PublicKey
+(
+TO_PUBLIC_KEY
+)
+,
+}
+)
+;
+const
+ tx 
+=
+ 
+new
+ 
+SolanaTx
+(
+)
+.
+add
+(
+ix
+)
+.
+add
+(
+ix
+)
+.
+add
+(
+ix
+)
+.
+add
+(
+ix
+)
+.
+add
+(
+ix
+)
+;
+const
+ a 
+=
+ 
+await
+ connection
+.
+getRecentBlockhash
+(
+)
+;
+tx
+.
+recentBlockhash
+ 
+=
+ a
+.
+blockhash
+;
+tx
+.
+feePayer
+ 
+=
+ publicKey
+;
+Afterwards you can sign the transaction.
+ 
+const
+ signedTx 
+=
+ 
+await
+ adapter
+.
+signTransaction
+!
+(
+tx
+)
+;
+Finally, to send the transaction use the 
+sendRawTransaction()
+ function available on the 
+connection
+ object.
+await
+ connection
+.
+sendRawTransaction
+(
+signedTx
+.
+serialize
+(
+)
+)
+;
+Edit this page
+Previous
+Sign message
+Next
+Change the adapter network
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Change the adapter network | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Detect Nightly
+Connect Nightly
+Sign message
+Sign Transaction
+Change the adapter network
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+ Solana
+Change the adapter network
+Change the adapter network
+In Nightly wallet, on the Solana network, there is an option to change the network adapter-wise. To achieve this, you can use the injected 
+nightly
+ object on the 
+window
+.
+note
+Nightly Extension
+ injects itself into the window object once you enter the website. This behavior allows to call the methods, such as 
+changeNetwork()
+ on the injected object.
+interface
+ 
+INewSolanaNetwork
+{
+    
+genesisHash
+:
+string
+    url
+?
+:
+ string
+}
+const
+ 
+newNetwork
+:
+ 
+INewSolanaNetwork
+ 
+=
+ 
+{
+    
+genesisHash
+:
+ 
+...
+,
+    
+url
+:
+ 
+...
+}
+window
+.
+nightly
+?.
+solana
+?.
+changeNetwork
+(
+newNetwork
+)
+This should open the popup inside your 
+Nightly Extension
+, prompting the user to change the network.
+Edit this page
+Previous
+Sign Transaction
+Next
+Detect Nightly
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deeplinks | Nightly docs
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+Nightly Connect
+Docs
+Getting started
+Networks
+Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Demo
+Solana template
+Sui template
+Polkadot template
+Aptos template
+Movement M1 template
+Twitter
+Discord
+GitHub
+Home
+Getting started
+ Solana
+Sui
+Polkadot
+Aptos
+Movement M1
+Deeplinks
+Deeplinks
+On this page
+Deeplinks
+Nightly supports handling deeplinks to allow for seamless communication with other apps and services available on your mobile device.
+How does it work
+​
+The deeplink which you send from within your website or an app, granted it is structured correctly, instructs the 
+Nightly app
+ on your device, to open the requested url inside the in-app browser, from which you can then connect nightly with your website and perform various operations. Our app is divided into sections, each being a separate network, therefore you should pass a 
+network
+ property inside the deeplink, to open the browser in the network tab of your choice.
+note
+For a deeplink to be compatible with the 
+Nightly app
+, it has to follow some blueprints. The overall structure is explained below.
+Structure
+​
+A Nightly deeplink blueprint enforces the link to look like so.
+1
+nightly://v1
+2
+?network=solana
+3
+&url=https://jup.ag/
+Prefix
+ - tells the device to transfer the request to Nightly
+Network
+ - instructs your 
+Nightly app
+ to open the in-app browser on the specified blockchain
+Website url
+ - opens the requested url inside the in-app browser
+Edit this page
+Previous
+Change the adapter network
+How does it work
+Structure
+Docs
+Home
+Community
+Discord
+Twitter
+More
+GitHub
+Copyright © 2024 Nightly | Built with Docusaurus.
+
+
+
+
+
+
+
+

@@ -1,0 +1,219 @@
+All you need is DAG* (for Sequencing)
+Research
+September 17, 2024
+Andreas Penzkofer
+At Movement Labs we are passionate about decentralization and the promises of distributed blockchain technology.
+The centralized sequencer is a central point of failure and imposes great trust assumptions. Time to replace it.
+A common critique of Ethereum rollups is centralization of architecture and in particular the sequencer, which determines transaction order. Generally, rollups can be decentralized in many ways, such as using randomness as in
+fair sequencing
+. However, we seek to achieve additional properties, such as interoperability, so we have specific requirements for our solution. These can be met by a Byzantine Fault Tolerant (BFT) consensus protocol.
+BFT protocols are designed to ensure consensus within a distributed system, even in the presence of Byzantine (malicious) entities. They allow a set of nodes to agree on a single sequence of actions, ensuring some properties, such as consistency, integrity, and reliability. Although chain-based BFT protocols have greatly improved in recent years, there is the question of whether they can meet high-performance standards for throughput and latency, which are required to match
+Movement's lightning fast execution engine
+.
+This post focuses on the application of DAG-based consensus protocols for the purpose of agreeing on the transaction ordering in a Movement decentralized sequencer. We will explore recent innovations and how these have brought about high-performance, low-latency consensus protocols, in particular Shoal++** and Mysticeti.
+The ability of DAG-BFT protocols to process a high througput of transactions with minimal theoretical delays sets unrivaled benchmarks for blockchain consensus mechanisms and makes them great candidates for the consensus protocol under the hood of the decentralized sequencer of Movement.
+Chain-based BFT Protocols
+First, let's consider chain-based BFT protocols. These are designed around a central node, known as the leader, which is responsible for proposing blocks containing transactions to the network. These protocols typically involve a series of communication phases where the leader's proposals are validated and voted on by other nodes (replicas). To ensure fault tolerance and maintain network integrity, they include mechanisms for a view change, allowing the network to dynamically elect a new leader if the current leader fails or behaves maliciously. The consensus algorithm in these protocols aims to be efficient, with communication complexity growing linearly with the number of nodes, in the best case. It may incorporate optimizations like pipelining, threshold signatures, or optimistic responsiveness to enhance performance and reduce communication complexity. Popular examples of chain-based BFT protocols include
+Tendermint, PBFT and Hotstuff
+.
+DAG-based BFT consensus protocols
+Directed Acyclic Graph (DAG)-based BFT consensus protocols, or short DAG BFTs, are a more recent development rapidly gaining in popularity. These achieve unparalleled throughput with similar or better latency guarantees compared to state-of-the art linear BFT protocols, if rounds are permitted to progress without certification. In contrast to a chain-based BFT protocol, blocks are proposed by multiple nodes concurrently. In this type of protocol, each of the proposed blocks references multiple previous blocks. This results in a DAG data structure, in which blocks and references are represented by vertices and edges, respectively. The DAG then presents a record of the communication pattern in the network, as it contains additional information about the view of each validator.
+Vertices in a DAG are called nodes. Also, block proposers in a network are called nodes. To avoid ambiguity, we refer to a node in the network as a
+validator
+or
+proposer
+, and to nodes in a DAG as
+block
+or
+vertex
+.
+Several DAG BFT protocols have been introduced in the last decade. For instance, Tangle (
+2015
++
+2022
+),
+Hashgraph
+(2018),
+Aleph
+(2019), and
+Narwhal+Tusk
+(2021). Aleph in particular proposed the first randomized round-based DAG protocol that enables optimistic responsiveness. Additional breakthroughs in recent years have resulted in modern high-performance DAG BFTs. Examples – with their affiliated blockchain projects in parenthesis – are
+Mysticeti
+(Sui),
+Shoal++
+(Aptos),
+Sailfish
+(Supra) and
+BBCA
+(Chainlink).
+One key realization: the
+separation
+of
+data dissemination
+and
+consensus
+can unlock significant performance gains. In this model, data dissemination is typically implemented in the form of a reliable broadcast protocol, while the consensus protocol is operated using zero-communication overhead by only locally interpreting the DAG. All Narwhal-based protocols take this approach. In this blog, we focus on consensus rather than broadcast protocol. (For more on the broadcast protocol, see this blog on
+Quorum Store
+, which is an implementation of Narwhal.)
+A Note on Communication Complexity
+In the quest to achieve high performant blockchains, much attention was given to reducing the communication complexity. Various approaches including signature aggregation and optimization of network patterns have led to the desired low complexity, yet throughput falls short.
+A significant advancement originated from the recognition that a major bottleneck lies in data dissemination, which can be greatly enhanced through parallelization of block propositions.
+Narwhal and Tusk
+innovatively address the challenge by separating data dissemination from the core consensus process. In this model, all validators collaborate to broadcast data concurrently, while the consensus mechanism is a deterministic ordering protocol over metadata of transactional data, such as the hashes of blocks. And while DAG BFTs can incur a significant overhead in communication complexity, this would only be over the metadata. This separation allows for improved efficiency, leading to impressive throughput in recent DAG BFTs (see figure below). Lastly, the complexity can be reduced by at least a linear factor through amortization (see
+Cordial Miners
+and
+DAG Rider
+).
+Throughput-Latency graph comparing Mysticeti with state-of-the-art consensus protocols
+[Ref]
+.
+Recent innovations in DAG-BFTs
+Many of the recent improvements in the DAG-BFT protocols aim to improve latency by reducing the number of required message delays. In our blog, we describe several of these breakthroughs that enable the performant DAG-BFTs of today. The explored improvements are
+DAGs with and without certification of blocks
+Leader reputation and removal of timeouts for better responsiveness
+Pipelining of the the protocol
+Multi-Leader
+Multi-DAG
+The following figure provides an overview of a subset of the DAG-BFT protocols and improvements. The concepts discussed in this blog are marked in green and red.
+History of the evolution of Shoal++ and Mysticeti. These two protocols share many properties (red), but also add several distinct approaches (green).
+Certified and Uncertified DAGs
+In a consensus algorithm, the time it takes to achieve progress is measured in
+message delays
+. Message delays are the time it takes for a message to travel from a sender to a receiver across the network. Consensus protocols are also measured in number of rounds it takes to confirm a block, although this metric is less meaningful.
+Many initial approaches for DAG BFTs require the certification of a block. This entails the propagation of a proposed block to all validators in the network, the signed response of at least 2𝑓+1 (>⅔) of validators, and the issuance of a certification which contains the aggregated certificate.
+Examples of this type of protocol are Narwhal&Tusk and Aleph. This process imposes 3 message delays to complete a round, where a message delay is a network interaction step. This is in contrast to an uncertified DAG, where blocks are broadcast and this concludes the round. For comparison, it takes 2 message delays to complete a round in a linear BFT, where the leader collects responses, aggregates them, and then broadcasts the result.
+The certification
+prevents equivocation
+since at most one certified block exists for a given validator. It also provides guarantees on the data availability, as validators would only sign in favor of a block once the transactions referenced within the block are received. Consequently, a certified block can be added to the DAG even if not all transactions in the block are received locally. Whereas in an uncertified DAG, missing transactions must be fetched first.
+To derive a final sequence on the transactions in the DAG, a special role is given to the block issued by a leader, called anchor. To finalize (or commit to) an anchor, 𝑓+1 (>⅓) of referencing certified blocks are required. While
+Shoal++
+in principle is a certified DAG protocol, the above step can be accelerated, as it is sufficient if 2𝑓+1(>⅔) uncertified blocks reference the anchor. All blocks referenced by the committed anchor and including the anchor itself are ordered by some deterministic rule. Blocks referenced by a committed anchor are final.
+Bullshark’s direct commit rule requires f+1 certified vote vertices to commit an anchor, while Shoal++ can also commit with 2f+1 (uncertified) vertices
+[Ref]
+.
+In an uncertified DAG, as is the case with
+Mysticeti
+, blocks are not certified directly. Hence, an anchor strictly requires two consecutive rounds of 2𝑓+1 (>⅔) of references to be committed. (In contrast, in a certified DAG blocks are eventually accompanied by their certificate, and thus require one less round of references.) Since an uncertified DAG permits equivocation on blocks, Mysticeti relies on the concept of patterns to agree on whether to commit or skip a block. If a block obtains support from 2𝑓+1 (>⅔) validators in the subsequent round, it follows the certificate pattern. In contrast, if the block has no support from 2𝑓+1 (>⅔) validators from the next round, it follows the skip pattern and can be safely ignored. Otherwise, an indirect decision in consecutive rounds has to be awaited. A block that obtains 2𝑓+1 (>⅔) support and becomes certified is considered available, and no other block from the verifier can exist at that height. While this approach offers the least message delays (only one message delay per round), it may open the protocol to data fetching on the critical path if package loss occurs, which could increase the number of message delays on average.
+Skip pattern (left) and Certificate pattern (right)
+[Ref]
+.
+Responsiveness, timeouts, and leader reputation
+Similarly to
+Hotstuff
+, DAG-based protocols can operate responsively, i.e. they progress at actual network latency. More specifically, a validator can immediately issue a block for the next round once it has accumulated 2𝑓+1 (>⅔) of referenceable blocks of the current round. During good network conditions – when messages are delivered quickly – such a protocol can reach consensus rapidly. While, during bad network conditions the protocol can become slow but remains safe. Such behavior is called
+optimistic responsive
+. Shoal improves on this by partially eliminating timeouts, achieving
+prevalent responsiveness
+.
+However, we know that due to
+FLP
+deterministic consensus protocols cannot guarantee liveness in asynchrony without timeouts. To ensure that a leader has a chance to contribute–a property falling under the category of fairness–validators should wait up to some
+timeout
+period to receive the round leader block. This would increase chances to reference the anchor and support progress. For rounds where the leader is slow, protocol latency is increased.
+Shoal
+takes a different approach, which challenges the doctrine of fairness toward slow leaders. Instead, the protocol does not await the leader block. The DAG is utilized to extract a function on the performance of the validators, called
+leader reputation
+. This function is applied to determine the sequence of leaders and penalize slow validators by removing them from the leader set. In practice, a fallback to timeouts after a configurable number of skipped anchors is still required to prevent certain attacks.
+Pipelines
+In traditional BFT protocols, the finalization of blocks occurs in waves, where each wave consists of multiple rounds. This also holds true for DAG-BFTs, where the number of rounds depends on the protocol. For Mysticeti it is 3 (
+propose, vote, certify
+), while for Shoal it is 2 (
+propose+certify, commit
+). Since the period of these waves can be quite long, it burdens transactions with large finality times, on average.
+By serializing multiple instances of the consensus protocol–a process called pipelining–the average number of rounds to finality can be reduced. The total order of anchors is established by letting instances add anchors in round-robin fashion.
+Pipelined DAG. The vertices corresponding to the leaders are marked with an anchor. If only one instance of the protocol is active, not every round would have an anchor. By adding protocol instances and rotating the instances in round robin-fashion, anchors are provided every round
+[Ref]
+.
+Multi-Leader
+Pipelining achieves a latency improvement for the anchor itself and blocks referenced by the anchor. However, there are still many blocks proposed in the same round as the anchor, but which would not be finalized at the same time. By making every proposer a leader and ordering the anchors according to a predetermined sequence, this drawback can be removed. But since all validators follow the same deterministic order, an anchor that cannot be directly committed increases the latency for all subsequent anchors. Consequently, fallback mechanisms, such as round timeouts, come into play, which could reduce the benefits of responsiveness. Leader reputation, discussed in a previous section, can remove slow or crashed validators to ensure low latency [
+Ref
+].
+Pipelined Multi-Leader DAG. Each color presents an anchoring round for one of the pipelined protocol instances. For a given round the leaders are ordered by letter
+[Ref]
+.
+Multi-DAG
+Similar to pipelining, where several instances of the protocol are applied in series on the same DAG, one could also apply several instances of DAGs and serialise these. The goal is to improve granularity of the block frequency and reduce latency between transaction arrival and transaction inclusion in a block. However, since DAGs would write to the final sequence in round-robin fashion, these DAGs would interdepend with their latency as progress would depend on the slowest finalization.
+Evaluation and Summary
+The following provides an overview of which of the above presented techniques are employed by Shoal++, Mysticeti, and Hotstuff. Since Hotstuff follows a chain-based approach, some of these concepts are not applicable to it (n/a).
+Property
+Mysticeti
+Shoal++
+Hotstuff
+Responsiveness
+❌
+Prevalent
+Optimistic
+Uncertified DAG
+✅
+❌
+n/a
+Leader reputation
+✅
+✅
+❌
+Pipelining
+✅
+✅
+✅
+Multi-Leader
+✅
+✅
+n/a
+Multi-DAG
+❌
+✅
+n/a
+Next, we evaluate the number of message delays it takes to finalize a message that is sent by a user. (Message delays are introduced in the section on "Certified and Uncertified DAGs".) We also consider queuing, which is the time between arrival of a transaction and the inclusion in a block. The expected delay due to queuing is the mean between max and min of possible queuing time. Mysticeti is advantageous in that respect, as its rounds progress with only 1 message delay, whereas with Shoal++ a round consumes 3 message delays due to certification. However, Shoal++ also introduces the concept of Multi-DAGs which can reduce queuing time dramatically. We note that since rounds in Hotstuff (and Hotstuff2) progress with 2 message delays, queuing also effectively adds 1 message delay in this protocol. We compare with the optimal two-phase BFT Hotstuff2.
+Performance
+Mysticeti
+Shoal++
+Hotstuff [
+*
+]
+Commit delay
+3
+4
+5
+Queuing
+0.5
+0.5
+1
+Total
+3.5
+4.5
+6
+We reference a sample of performance results from
+Mysticeti
+and
+Shoal++
+. Overall the results are impressive, significantly outperforming traditional protocols.
+We also compare the results to Hotstuff.
+Performance
+Mysticeti
+Shoal++
+Hotstuff [*]
+Throughput
+>150k tps
+>150k
+>25k
+Latency at ~50% peak tps
+1 sec
+1 sec
+2 sec
+Lowest achieved latency
+~0.5sec (*)
+~0.8 sec
+~2 sec
+The experimental setup consists of 100 replicas spread across multiple regions around the world to mimic a decentralized network [
+Ref
+]. Apart from (*), where the result is extracted from an experiment with only 50 replicas [
+Ref
+].
+Conclusion
+DAG-based BFT consensus protocols represent a significant advancement in decentralized consensus protocols. They leverage innovations such as data dissemination separation, uncertified blocks, leader reputation mechanisms, and pipelining to enhance performance.
+Mysticeti and Shoal++, two specimen of DAG BFTs, demonstrate unparalleled throughput and latency improvements, even compared to state-of-the art chain-based BFT protocols like Hotstuff. Their ability to process transactions with minimal theoretical delays sets unrivaled benchmarks for blockchain consensus mechanisms and makes them great candidates for the consensus protocol under the hood of the decentralized sequencer of Movement.
+FOOTNOTES
+*DAG-Rider, an asynchronous Byzantine Atomic Broadcast protocol, was introduced in 2021 with this title. It is one of the many novel DAG-based solutions in the space.
+**It has also been announced that [
+Raptr
+] will be the successor of Shoal++. However, as of this writing, no paper, results, or code are yet available.

@@ -1,0 +1,1269 @@
+App name: Mosaic
+Landing page: https://mosaic.ag/
+App category: Dex Aggregator
+App insights: 
+- Mosaic is the ultimate DEX aggregator on Movement, delivering unparalleled trading efficiency, seamless liquidity, and tools to maximize your every move.
+- Other insights
+App documentation: https://docs.mosaic.ag/
+Introduction to Mosaic | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+🟡
+Introduction to Mosaic
+Mosaic envisions a world where anyone can trade their funds freely, reliably, and effortlessly on their own terms. Built natively on Movement and grounded in DeFi principles of open access, Mosaic is a DEX Aggregator and DeFi hub that empowers users with the insights and tools to trade without intermediaries. It offers a fast, secure, and user-friendly platform. No matter your path to financial autonomy, Mosaic has you covered.
+Whether you are a developer looking to integrate with our platform, a trader seeking to understand our features, or a new user curious about decentralized exchange, you’ve come to the right place. This documentation provides comprehensive guides, detailed API references, and all the resources you need to effectively utilize Mosaic.
+Jump right in
+User Guides
+Swap Integration
+Security and License
+Next
+New to Movement? Install your wallet
+Last updated 
+25 days ago
+New to Movement? Install your wallet | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+User Guides
+New to Movement? Install your wallet
+Previous
+Introduction to Mosaic
+Next
+Swap
+Last updated 
+6 months ago
+Currently, Mosaic supports 
+Razor Wallet
+ and 
+Nightly Wallet
+, 2 wallets for Movement Network. All transactions on Mosaic are securely executed through Web3 Wallets, allowing you to fully leverage Mosaic's on-chain features without compromising your privacy.
+Swap | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+User Guides
+Swap
+Previous
+New to Movement? Install your wallet
+Next
+Supported DEXs on Movement
+Last updated 
+6 months ago
+Supported DEXs on Movement | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+User Guides
+Supported DEXs on Movement
+Previous
+Swap
+Next
+API
+API | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+Swap Integration
+API
+This section will walk you through the required steps to get quote and submit a swap using Mosaic Aggregator.
+Previous
+Supported DEXs on Movement
+Next
+Swap Widget
+Last updated 
+1 month ago
+Swagger
+Setup Authentication
+Get quote
+To retrieve the best swap rate, send the following HTTP request to get a quote:
+Copy
+curl 'https://api.mosaic.ag/v1/quote?srcAsset=0x1%3A%3Aaptos_coin%3A%3AAptosCoin&dstAsset=0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f%3A%3Atokens%3A%3AUSDC&amount=1000000000&sender=0x0000000000000000000000000000000000000000000000000000000000000000&slippage=10' \
+
+
+--header 'x-api-key: xxx'
+This will return the best available quote for swapping the source asset (AptosCoin) into the destination asset (USDC) based on current market conditions.
+Here is a detailed guide using Typescript:
+1. Setup Environment
+Import the required libraries and initialize your connection to the Aptos testnet using the 
+AptosConfig
+ and 
+Aptos
+ objects from the 
+@aptos-labs/ts-sdk
+. This sets up your environment for making requests to the Mosaic Aggregator API and interacting with Aptos.
+Copy
+import {
+
+
+  Account,
+
+
+  Aptos,
+
+
+  APTOS_COIN,
+
+
+  AptosConfig,
+
+
+  Ed25519PrivateKey,
+
+
+} from "@aptos-labs/ts-sdk";
+
+
+import axios from "axios";
+
+
+
+
+// Initialize Aptos config to connect to the testnet
+
+
+const aptos = new Aptos(
+
+
+  new AptosConfig({
+
+
+    fullnode: "https://aptos.testnet.suzuka.movementlabs.xyz/v1",
+
+
+  })
+
+
+);
+2. Setup User Account
+Here, you will create an Aptos account using the user's private key. You need to fill in your own private key when initializing the account.
+Copy
+// Create user account from private key
+
+
+const user = Account.fromPrivateKey({
+
+
+  privateKey: new Ed25519PrivateKey(), // TODO: Fill your private key here.
+
+
+});
+3. Define Assets and Amount
+Specify the assets to swap and the amount (in APTOS decimals):
+Copy
+const srcAsset = APTOS_COIN; // Source: APTOS Coin
+
+
+const dstAsset =
+
+
+  "0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDC"; // Destination: USDC
+
+
+const amount = 1_00000000; // Amount: 1 APT (APTOS uses 8 decimals)
+4. Get a Quote from Mosaic Aggregator API
+Retrieve the best swap rate by making a GET request to the Mosaic API.
+Copy
+// Get a quote from Mosaic Aggregator API
+
+
+const mosaicResponse = await axios({
+
+
+  method: "GET",
+
+
+  url: "https://api.mosaic.ag/v1/quote",
+
+
+  params: {
+
+
+    srcAsset,
+
+
+    dstAsset,
+
+
+    amount,
+
+
+    sender: user.accountAddress.toString(),
+
+
+    slippage: 100, // 100 = 1%
+
+
+  },
+
+
+  headers: {
+
+
+    "X-API-KEY": "xxx", // TODO: Fill the API key in here.
+
+
+  },
+
+
+});
+5. Build the transaction
+Once you have the quote, you use the returned data (function, type arguments, and function arguments) to build a transaction that will perform the swap.
+Copy
+// Build the transaction based on the Mosaic response
+
+
+const transaction = await aptos.transaction.build.simple({
+
+
+  sender: user.accountAddress,
+
+
+  data: {
+
+
+    function: mosaicResponse.data.data.tx.function,
+
+
+    typeArguments: mosaicResponse.data.data.tx.typeArguments,
+
+
+    functionArguments: mosaicResponse.data.data.tx.functionArguments,
+
+
+  },
+
+
+});
+6. Sign and submit the transaction
+After building the transaction, you sign it using the user's private key and submit the transaction to the Aptos blockchain. The transaction hash will be logged, which can be used to check the transaction status on the explorer.
+Copy
+// Sign and submit the transaction
+
+
+const pendingTransactionResponse =
+
+
+  await aptos.transaction.signAndSubmitTransaction({
+
+
+    signer: user,
+
+
+    transaction: transaction,
+
+
+  });
+
+
+
+
+// Output transaction URL to the console
+
+
+console.log(
+
+
+  `Tx = https://explorer.movementnetwork.xyz/txn/${pendingTransactionResponse.hash}?network=testnet`
+
+
+);
+By following this guide, you will be able to integrate the Mosaic Aggregator API for performing token swaps on the Aptos network. For further assistance or inquiries, feel free to reach out to the Mosaic support team on
+ 
+Discord
+ 
+or
+ 
+Telegram
+.
+
+\
+All requests to Mosaic’s API must include an 
+X-API-Key
+ header for authentication. The API key is used to track your usage and ensure secure access. To obtain an API key, please contact the Mosaic team via
+ 
+Discord
+ 
+or
+ 
+Telegram
+ 
+or
+ 
+Email
+Get Quote
+Find the best quote to swap with Mosaic Aggregator
+get
+/v1/quote
+Test it
+Query parameters
+srcAsset
+string
+required
+Example:
+ 
+0x1::aptos_coin::AptosCoin
+dstAsset
+string
+required
+Example:
+ 
+0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDC
+amount
+string
+required
+Amount of the token to be swapped
+Example:
+ 
+100000000
+isFeeIn
+boolean
+Whether the fee is in the source asset
+Example:
+ 
+true
+feeInBps
+number
+Fee in basis points
+Example:
+ 
+30
+feeReceiver
+string
+Fee receiver address
+Example:
+ 
+0x0145f3f2a68d9bcf8f5a1ae2ca34760c76a9742c7b22b36a54f706dd587cc26c
+slippage
+string
+Slippage tolerance in basis points
+Example:
+ 
+10
+sender
+string
+Sender address
+Example:
+ 
+0x0145f3f2a68d9bcf8f5a1ae2ca34760c76a9742c7b22b36a54f706dd587cc26c
+receiver
+string
+Receiver address. If not provided, the sender address will be used.
+Example:
+ 
+0x0145f3f2a68d9bcf8f5a1ae2ca34760c76a9742c7b22b36a54f706dd587cc26c
+Header parameters
+X-API-Key
+string
+Responses
+200
+Successfully found quote
+application/json
+cURL
+JavaScript
+Python
+HTTP
+Copy
+curl -L \
+
+
+  --url 'https://api.mosaic.ag/v1/quote?srcAsset=text&dstAsset=text&amount=text'
+200
+Copy
+{
+
+
+  "code": 0,
+
+
+  "message": "successfully",
+
+
+  "requestId": "f4f7aa6b2dec13ae9fe36d7622fa83f4",
+
+
+  "data": {
+
+
+    "srcAsset": "0x1::aptos_coin::AptosCoin",
+
+
+    "dstAsset": "0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDC",
+
+
+    "srcAmount": 100000,
+
+
+    "dstAmount": 2056477,
+
+
+    "feeAmount": 100000,
+
+
+    "isFeeIn": true,
+
+
+    "paths": [
+
+
+      {
+
+
+        "source": "razor_swap",
+
+
+        "srcAsset": "0x1::aptos_coin::AptosCoin",
+
+
+        "dstAsset": "0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDC",
+
+
+        "srcAmount": 100000,
+
+
+        "dstAmount": 2056477
+
+
+      }
+
+
+    ],
+
+
+    "tx": {
+
+
+      "function": "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::swap",
+
+
+      "typeArguments": [
+
+
+        "0x1::aptos_coin::AptosCoin",
+
+
+        "0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDC",
+
+
+        "0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDT",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null",
+
+
+        "0xede23ef215f0594e658b148c2a391b1523335ab01495d8637e076ec510c6ec3c::router::Null"
+
+
+      ],
+
+
+      "functionArguments": [
+
+
+        "0x47652bd91e7cf0ca0476eaff712f360addc1edeadd86352f37586183d0278d08",
+
+
+        [
+
+
+          "1000000000000"
+
+
+        ],
+
+
+        [
+
+
+          "0",
+
+
+          "2",
+
+
+          "1",
+
+
+          "3",
+
+
+          "18446744073709551614",
+
+
+          "0",
+
+
+          "2",
+
+
+          "3",
+
+
+          "4"
+
+
+        ],
+
+
+        [
+
+
+          "0xa"
+
+
+        ],
+
+
+        [
+
+
+          "0x234f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f"
+
+
+        ],
+
+
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+
+
+        "0",
+
+
+        false,
+
+
+        "2000000000000",
+
+
+        "10",
+
+
+        "pid",
+
+
+        "{}"
+
+
+      ]
+
+
+    }
+
+
+  }
+
+
+}
+Successfully found quote
+Swagger
+GET
+Get Quote
+Setup Authentication
+Get quote
+1. Setup Environment
+2. Setup User Account
+3. Define Assets and Amount
+4. Get a Quote from Mosaic Aggregator API
+5. Build the transaction
+6. Sign and submit the transaction
+Swap Widget | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+Installing the Widgets Library
+Adding the Swap Widget to Your App
+Wallet Interaction
+Customize theme
+List of configurations
+Demo & example
+Feature request & Report issue
+Swap Integration
+Swap Widget
+This guide walks you through the steps to embed the swap widget in your website in a few minutes.
+Previous
+API
+Next
+Iframe
+Last updated 
+28 days ago
+The Swap Widget bundles the whole swapping experience into a single React component that developers can easily embed in their app with a few lines of code.
+Here
+ is a live preview of the swap widget.
+Installing the Widgets Library
+Install the widgets library via 
+npm
+ ,
+pnpm
+ or 
+yarn
+.
+Copy
+yarn add @mosaicag/swap-widget
+or
+Copy
+npm i --save @mosaicag/swap-widget
+Adding the Swap Widget to Your App
+Register for an new 
+API key
+ with the Mosaic Team, 
+see here
+Import 
+@mosaicag/swap-widget/style.css
+ in the root component in react, (ex: main.tsx/App.tsx)
+Copy
+import '@mosaicag/swap-widget/style.css' 
+
+
+import SwapWidget from '@mosaicag/swap-widget'
+
+
+
+
+function App() {
+
+
+  <div className="Mosaic">
+
+
+    ...
+
+
+    <SwapWidget wallet={wallet} apiKey='...'/>
+
+
+    ...
+
+
+  </div>
+
+
+}
+Wallet Interaction
+A lot of wallets are coming to Movement. You are free to use any wallet you want.
+The swap widget uses a 
+wallet
+ prop to allow users to sign and submit transactions (
+details here
+)
+Customize theme
+Copy
+<SwapWidget 
+
+
+  wallet={wallet}
+
+
+  apiKey="your api key"
+
+
+  theme={{
+
+
+    background: 'white',
+
+
+    baseContent: 'black',
+
+
+    border: 'gray',
+
+
+    error: '#f6465d',
+
+
+    neutralContent: 'black',
+
+
+    primary: 'rgb(49, 203, 158)',
+
+
+    secondary: 'rgba(49, 203, 158, 0.3)',
+
+
+    secondaryBackground: '#f3f5fa'
+
+
+  }}
+
+
+/>
+
+
+List of configurations
+Demo & example
+Feature request & Report issue
+Feel free to contact us to request new config/report bug if you think it might be helpful.
+Please reach out to us via Discord or email us directly at 
+huy@mosaic.ag
+ for assistance and further details.
+Iframe | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+Url format:
+Parameters
+Adding the iFrame to your site
+Feature request & Report issue
+Swap Integration
+Iframe
+This guide walks you through the steps to embed the Mosaic iframe in your website in a few minutes.
+Previous
+Swap Widget
+Next
+Integration Partners
+Last updated 
+25 days ago
+Mosaic can be used within other sites as an iframe. An iframe shows an exact version of the Mosaic frontend site and can have custom prefilled settings.
+One benefit of an iframe integration is that the your site will automatically keep up with any improvements/additions to the site. After the initital integration is setup no further work is needed to pull in updates as the exchange site is updated over time.
+Url format:
+Copy
+https://app.mosaic.ag/swap/tokenA-tokenB?param1=value1&param2=value2&...
+tokenA, tokenB: fa address (recommended) or coinType, ex: 
+0xe161897670a0ee5a0e3c79c3b894a0c46e4ba54c6d2ca32e285ab4b01eb74b66
+ or 
+0x275f508689de8756169d1ee02d889c777de1cebda3a7bbcce63ba8a27c563c6f::tokens::USDT
+Parameters
+Params
+Required
+Description
+Default Value
+apiKey
+Yes
+Register to get a new one, 
+detail here
+amount
+No
+Default input amount
+1
+isFeeIn
+No
+Charge fee by token in, default is token out
+false
+feeInBps
+No
+Fee amount to be collected. (i.e. feeAmount = 10 then fee = 0.1%)
+feeReceiver
+No
+Fee receiver address
+Adding the iFrame to your site
+Example code:
+Copy
+    <iframe
+
+
+      style={{ margin: 'auto' }}
+
+
+      width="500px"
+
+
+      height="800px"
+
+
+      src="https://app.mosaic.ag/swap/0xa-0xe161897670a0ee5a0e3c79c3b894a0c46e4ba54c6d2ca32e285ab4b01eb74b66?amount=2&isFeeIn=true&feeInBps=30&feeReceiver=0xb9309aedd0dca69145c51003e32d097b9f8795d0045e26d9bc924dd4c199ec92&apiKey=key"
+
+
+    />
+Feature request & Report issue
+Feel free to contact us to request new config/report bug if you think it might be helpful.
+Please reach out to us via Discord or email us directly at 
+huy@mosaic.ag
+ for assistance and further details.
+Integration Partners | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+Swap Integration
+Integration Partners
+For API and Widget Integration inquiries, please contact huy@mosaic.ag for further details.
+Previous
+Iframe
+Next
+Audits
+Last updated 
+1 month ago
+Fee Structure:
+Mosaic operates with no default protocol fees. However, integration partners have the option to charge a fee on swaps facilitated through their integration. If a platform fee is applied, Mosaic retains 
+15% of the platform fee
+ charged by the integrators by default.
+Integration Partner
+Mosaic
+Swap
+85%
+15%
+Limit Order
+TBD
+TBD
+Note: API Key Requirement
+To access Mosaic APIs, integration partners must obtain an API key provided by the Mosaic team. Please reach out to us via Discord or email us directly at 
+huy@mosaic.ag
+ for assistance and further details.
+Fee Claiming Process:
+For partners opting to use the Fee Claimer feature, fees can be claimed through the 
+Mosaic Fee Claim Portal
+. Fees will be credited to the wallet address specified in the API call under the 
+partnerAddress
+ parameter.
+For more information about API parameters setup, please refer to the 
+Mosaic Swap Integration API
+Fee Structure:
+Fee Claiming Process:
+Audits | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+SECURITY AND LICENSE
+Audits
+The contracts on Mosaic have been audited by 
+MoveBit
+. 
+Please find the full audit report 
+here
+.
+Previous
+Integration Partners
+Next
+Terms of Use
+Last updated 
+1 month ago
+Terms of Use | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+Acceptance of Terms 
+Eligibility 
+Use of the Service
+Intellectual Property Rights
+Your Responsibilities
+Changes to the Service 
+Disclaimer of Warranties 
+Limitation of Liability 
+Arbitration and Dispute Resolution 
+Exceptions to Agreement to Arbitrate
+Governing Law 
+Changes to Terms 
+Contact Us 
+SECURITY AND LICENSE
+Terms of Use
+Terms of Use Welcome to Mosaic, your trusted Dex Aggregator on the Movement blockchain platform. These Terms of Use ("Terms") govern your access to and use of our platform, services, and technology (collectively, the "Service"), which are provided by Mosaic Labs ("Mosaic," "we," "us," or "our"). 
+Acceptance of Terms 
+By accessing or using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy, which is incorporated herein by reference. If you are using the Service on behalf of an organization, you represent that you have the authority to bind that organization to these Terms, in which case "you" and "your" will refer to that organization. 
+Eligibility 
+The Service is intended solely for users who are eighteen (18) years of age or older. By using the Service, you represent and warrant that you meet this minimum age requirement. 
+Use of the Service
+You agree to use the Service only for lawful purposes and in accordance with these Terms. Specifically, you agree not to:
+Use the Service in any manner that could disable, overburden, damage, or impair the Service or interfere with any other party's use of the Service, including their ability to engage in real-time activities through the Service.
+Use any robot, spider, or other automatic devices, process, or means to access the Service for any purpose, including monitoring or copying any of the material on the Service.
+Use any manual process to monitor or copy any of the material on the Service or for any other unauthorized purpose without our prior written consent.
+Use any device, software, or routine that interferes with the proper working of the Service.
+Introduce any viruses, trojan horses, worms, logic bombs, or other material that is malicious or technologically harmful. Terms of Use 1
+Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Service, the server on which the Service is stored, or any server, computer, or database connected to the Service.
+Attack the Service via a denial-of-service attack or a distributed denial-of- service attack.
+Take any action that may damage or falsify Mosaic's rating.
+Otherwise attempt to interfere with the proper working of the Service.
+Intellectual Property Rights
+The Service and its original content, features, and functionality are and will remain the exclusive property of Mosaic and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Mosaic. 
+Your Responsibilities
+You are responsible for making all arrangements necessary for you to have access to the Service and ensuring that all persons who access the Service through your internet connection are aware of these Terms and comply with them. 
+Changes to the Service 
+We reserve the right to withdraw or amend the Service, and any service or material we provide via the Service, in our sole discretion without notice. We will not be liable if, for any reason, all or any part of the Service is unavailable at any time or for any period. 
+Disclaimer of Warranties 
+The Service is provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied. Neither Mosaic nor any person associated with Mosaic makes any warranty or representation with respect to the completeness, security, reliability, quality, accuracy, or availability of the Service. 
+Limitation of Liability 
+In no event will Mosaic, its affiliates, or their licensors, service providers, employees, agents, officers, or directors be liable for damages of any kind, under any legal theory, arising out of or in connection with your use, or inability to use, the Service, any websites linked to it, any content on the Service or such other websites, including any direct, indirect, special, incidental, Terms of Use 2 consequential, or punitive damages, including but not limited to, personal injury, pain and suffering, emotional distress, loss of revenue, loss of profits, loss of business or anticipated savings, loss of use, loss of goodwill, loss of data, and whether caused by tort (including negligence), breach of contract, or otherwise, even if foreseeable. The foregoing does not affect any liability that cannot be excluded or limited under applicable law. 
+Arbitration and Dispute Resolution 
+You agree to resolve any disputes arising from these Terms or the Service through final and binding arbitration, except as set forth under Exceptions to Agreement to Arbitrate below. The arbitration will be conducted in the English language in accordance with the Arbitration Rules and Procedures established by London Court of International Arbitration (LCIA) then in effect. 
+Exceptions to Agreement to Arbitrate
+You may assert claims, if they qualify, in small claims court in London. Additionally, we both agree that either party may bring suit in court to enjoin infringement or other misuse of intellectual property rights. 
+Governing Law 
+These Terms shall be governed and construed in accordance with the laws of United States without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. 
+Changes to Terms 
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least [30 days'] notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. 
+Contact Us 
+If you have any questions about these Terms, please contact us at huy@mosaic.ag
+Previous
+Audits
+Next
+Privacy Policy
+Last updated 
+1 month ago
+Privacy Policy | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+Privacy Policy 
+Who We Are 
+Privacy at Mosaic 
+SECURITY AND LICENSE
+Privacy Policy
+Privacy Policy 
+Welcome to Mosaic, the premier Dex Aggregator on the Movement blockchain. Your privacy is critically important to us. This Privacy Policy outlines how we handle your personal information on our platform accessible at mosaic.ag. 
+Who We Are 
+Mosaic is operated by Mosaic Labs. We are responsible for the processing of your personal data as outlined in this policy. Should you have any questions about our privacy practices, please contact us at huy@mosaic.ag
+Privacy at Mosaic 
+Our platform is designed with your privacy in mind. We collect the least amount of personal data necessary for improving our services and providing a seamless user experience.
+Personal Data We Collect:
+Basic Interaction Data: 
+Includes IP addresses, device information, browser type, and logs that help us diagnose problems and optimize your experience. 
+Blockchain Data:
+ We access public blockchain data such as wallet addresses and transactions to understand and improve user interactions with our platform. This data is processed collectively and is never used to identify individuals. 
+Analytics Information: 
+We use tools like Google Analytics to gather data about how you use the platform, which helps us make informed enhancements.
+How We Use Your Data
+To Improve Services: We analyze user interaction to enhance the usability and features of Mosaic.
+For Security: We monitor data to prevent fraud and address security issues. 
+Compliance and Enforcement: We use data to comply with legal obligations and enforce our agreements. Privacy and policy 1
+Cookies and Tracking 
+We use cookies to improve your experience, understand platform usage, and enhance site navigation and security. You can control cookie settings through your browser.
+Data Sharing and Disclosure 
+We only share your data with third parties when necessary for service provision, legal compliance, or with your explicit consent. Our third-party service providers are bound by confidentiality agreements and do not have permission to use your personal data for their own purposes.
+Anti-Money Laundering (AML) Policy 
+Mosaic, as a decentralized platform, is committed to maintaining high standards of compliance with anti-money laundering regulations where feasible. Recognizing the limitations inherent in a decentralized system, we focus on indirect measures to mitigate money laundering risks. 
+AML Measures
+Transaction Monitoring: We deploy algorithmic tools to analyze transaction patterns across the network that may suggest suspicious activity.
+Smart Contract Audits: All smart contracts are rigorously audited by third- party security firms to prevent vulnerabilities that could facilitate illegal activities.
+User Education: We provide guidance to our users on the importance of using Mosaic for legitimate transactions and the legal repercussions of illicit activities.
+Community Reporting: Users are encouraged to report suspicious activities. While Mosaic  cannot freeze transactions or access user wallets, we take such reports seriously and investigate them to the best of our ability. 
+Limitations Acknowledgment 
+Due to the decentralized nature of blockchain, our ability to directly enforce AML protocols is limited. However, we are dedicated to upholding the principles of AML compliance by discouraging and mitigating risks through the measures listed above.
+Data Security 
+Privacy and policy 2 We implement industry-standard security measures to protect your data. However, no system can be entirely secure, and we cannot guarantee absolute security.
+Your Rights 
+You have the right to access, correct, or delete your personal data. Please contact us if you wish to make such a request.
+Changes to This Policy 
+We may update this policy periodically. We will notify you of significant changes and encourage you to review the policy regularly.
+Contact Us 
+For more information about our privacy practices, or if you have questions or concerns, please contact us via email at huy@mosaic.ag
+Previous
+Terms of Use
+Next
+Links
+Last updated 
+1 month ago
+Links | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook
+On this page
+OTHERS
+Links
+Website: 
+https://mosaic.ag/ 
+App: 
+https://app.mosaic.ag/
+Discord: 
+https://discord.gg/mosaicagg
+Twitter: 
+https://x.com/mosaicagg
+Substack: 
+https://mosaicag.substack.com/
+Media Kit
+Previous
+Privacy Policy
+Last updated 
+25 days ago
+New to Movement? Install your wallet | Mosaic
+Mosaic
+Search
+...
+Ctrl +
+ K
+🟡
+Introduction to Mosaic
+User Guides
+New to Movement? Install your wallet
+Swap
+Supported DEXs on Movement
+Swap Integration
+API
+Swap Widget
+Iframe
+Integration Partners
+SECURITY AND LICENSE
+Audits
+Terms of Use
+Privacy Policy
+OTHERS
+Links
+Powered by GitBook

@@ -1,0 +1,55 @@
+Movement's Rising DePIN Apps
+December 20, 2024
+Movement Labs
+DePIN upgrades physical objects with on-chain features. Think hardware like rings, jewelry, phones, or any meatspace object you can dream leveled up with tokens, smart contracts, and other blockchain elements.
+Actually,
+there's need to dream!
+Movement
+is already set to power a cohort of ambitious DePIN (decentralized physical infrastructure network) projects.
+Movement Can Power Better DePIN
+First, let's explore why Movement is prime for DePIN projects.
+Speed
+. With the MoveVM's Block-STM Parallelization and Movement's
+postconfirmations
+, DePIN projects that need high TPS and fast finality can thrive.
+Low fees.
+A ring that tracks biometrics. A shared WiFi hotspot. Certain transaction-intensive DePIN apps may need low fees. Movement has them.
+Modularity.
+Movement offers deep modularity, meaning developers can choose the best tools suited to their project's needs and plug them straight into our stack.
+Scaling.
+Rollups are on the Movement roadmap. DePIN projects will be able to build app-specific rollups with the security of Move, isolating activity away from the main chain and eliminating the possibility of traffic jams caused by third-party apps.
+Security.
+The Move language offers developers an environment with built-in safety features for building robust apps in any vertical.
+1. Stadium.Science
+Decentralized Science (DeSci) project
+Stadium.Science
+is building a competitive sleep app with betting. Think one user's sleep-maxing plan is better than another's? Place a wager! The app raises the stakes for wellness, providing another incentive beyond health. The app's broader goal: jump-start prediction markets for science.
+2. Sentimint
+Sentimint
+is about preserving what makes us human: our memories How? By allowing creators to monetize memories and emotions. The Sentiment app will empower you to capture, store, and relive memories, inscribing them onto physical objects that carry accessible digital representations.
+3. DEAR
+DEAR
+puts AI data on Movement, allowing everyone to participate and potentially share the upside of AI adoption. The focus isn't on general AI data. Instead, DEAR focuses on 3D data. Users will be able to access a vast trove of data on 3D objects, equipping anyone to effortlessly create 3D models.
+4. DeSIM
+DeSIM
+aims to offer decentralized internet access, with users operating nodes and taking advantage of DeSIM's node solutions. The advantages? Internet access doesn't depend on a single authority. Instead, it'll be distributed and inclusive, providing easy access points while allowing node operators to benefit.
+5. Vomeus
+Movement. VaPIN. Each
+Vomeus
+smart vape has a HD touchscreen and customized wallpaper. With Vomeus, vaping becomes a way to flex your crypto identity, bringing on-chain cult(ure) and earn token rewards all in one vape.
+6. Degn
+Airmoney's
+Degn
+, a retro-style device with two buttons and a knob, is actually betting hardware for the crypto age. The handheld piece will offer a robust app store. You can not only bet, but game, trade, meme, and more. Nicely, Degn doesn't store your private keys on the device.
+7. Puffpaw
+A multi-chain vape-to-earn product,
+Puffpaw
+tracks your usage and delivers rewards at day's end. The vape links to the Puffpaw app, and Movement provides the blockchain rails for tokens and more. One of Puffpaw's goals is to help users quite nicotine. Though vapes are currently sold out, you can monitor
+Puffpaw's X account
+to see when they'll be available next.
+The Future of DePIN: Movement
+Some next-level DePIN apps are cooking on Movement. These projects are poised to leverage the speed, security, and interop that Movement unlocks for builders of all kinds. These projects have the platform they need to take the digital and physical worlds by storm.
+If you want to build the next great Movement app, start with our
+dev portal
+.
+We can't wait to build the future with you!

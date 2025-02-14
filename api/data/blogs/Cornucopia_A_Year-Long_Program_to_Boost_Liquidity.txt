@@ -1,0 +1,98 @@
+Cornucopia: A Year-Long Program to Boost Liquidity
+February 3, 2025
+Movement Network Foundation
+The Movement ecosystem recently announced Cornucopia: a year-long program to jumpstart Movement DeFi liquidity. Cornucopia is about abundance, about juicy harvest, about great potential bounty for all who participate. It will feature several phases.
+Phase 1 began last week.
+Today, most Cornucopia vaults have opened:
+Concrete Vaults
+Veda Vaults
+Intro to Cornucopia
+Cornucopia has numerous vaults grouped under 4 categories: BTC, ETH, stablecoin, and MOVE vaults.
+Concrete
+and
+Veda
+manage the vaults. Users can deposit compatible assets to these vaults. After an 8-week lockup period, assets unlock and flow back to users through Movement apps on Movement Public Mainnet Beta (coming soon).
+You can deposit select BTC, ETH, and stablecoin assets into Cornucopia vaults today.
+The MOVE vault will open soon.
+Cornucopia Program Objectives
+Cornucopia Phase 1 aims to open the floodgates. It aims to use these vaults to create deep day-one liquidity for our amazing builders and community. Cornucopia shoots to give Movement DeFi rocket fuel from day one. 
+
+At Movement Network Foundation, we want everyone to experience the speed, security, and ease of Movement DeFI as soon as possible.
+Here's everything you need to know about the vaults:
+BTC Vaults ($300M)
+Lombard
+(by
+Concrete
+)
+DEX Liquidity - wBTC and LBTC ($100m total) - flows to
+Meridian
+Lending Liquidity - LBTC ($20m total) - flows to
+Echelon
+SolvBTC
+(by
+Concrete
+)
+DEX Liquidity - wBTC and solvBTC ($50m total) - flows to
+Canopy
+Lending Liquidity - solvBTC ($40m total) - flows to
+Echelon
+Lorenzo BTC
+(by
+Concrete
+)
+DEX Liquidity - wBTC and stBTC ($50m total) - flows to
+Liquidswap
+Lending Liquidity - stBTC ($40m total) - flows to
+MovePosition
+ETH Vaults ($225m)
+EtherFi
+(by
+Veda
+)
+DEX -wETH and eETH ($125M total) - flows to
+Liquidswap
+100% DEX
+Renzo
+(by
+Concrete
+)
+DEX -wETH and ezETH ($20M total) - flows to
+Meridian
+100% DEX
+Lending Liquidity - ezETH ($40m total) - flows to
+MovePosition
+100% Lending
+Lending Liquidity - wETH ($40m total) - flows to
+MovePosition
+100% Lending
+STABLE Vaults ($190m)
+Ethena Vault
+(by
+Concrete
+)
+($150m total) - flows to
+Meridian
+,
+Movernance
+,
+Thunderhead
+Vault 1 - USDe - $50m
+Vault 2 - sUSDe - $50m
+Vault 3 - USDC - $50m
+USDC-USDT Vault - USDC and USDT
+($40m) - flows to
+Canopy
+Vault 1 - $40m
+MOVE Vaults ($6m)
+Lending Liquidity by
+Concrete
+(flows to
+Canopy
+)
+*Opening SOON.
+Let the Festivities Begin!
+We are very excited for this ecosystem program to start taking deposits today!
+Remember, this crop of vaults is only phase 1 of Cornucopia. Following the launch of Movement Public Mainnet Beta (coming soon), subsequent phases will begin.
+To keep up with all the latest news, f
+ollow us on Twitter.
+THIS IS FOR INFORMATIONAL PURPOSES ONLY AND NOT AN OFFERING TO SELL, THE SOLICITATION OF AN OFFER TO PURCHASE, OR AN ENCOURAGEMENT TO PURCHASE TOKENS. YOU SHOULD NOT RELY ON THE CONTENT HEREIN FOR ADVICE OF ANY KIND, INCLUDING LEGAL, INVESTMENT, FINANCIAL, TAX, OR OTHER PROFESSIONAL ADVICE, AND SUCH CONTENT IS NOT A SUBSTITUTE FOR ADVICE FROM A QUALIFIED PROFESSIONAL OR YOUR OWN RESEARCH. THIS DOCUMENT CONTAINS HYPOTHETICAL, FORWARD-LOOKING, AND/OR PROJECTED FIGURES, WHICH ARE APPROXIMATE, NOT GUARANTEED AND ARE SUBJECT TO CHANGE; ACTUAL NUMBERS MAY VARY. MOVEMENT NETWORK FOUNDATION AND ITS SUBSIDIARIES MAKE NO REPRESENTATION OR WARRANTY, EXPRESS OR IMPLIED, AS TO THE COMPLETENESS, RELIABILITY, VALIDITY, OR ACCURACY OF THIS INFORMATION. ANY INFORMATION CONTAINED HEREIN IS SUBJECT TO CHANGE WITHOUT NOTICE.

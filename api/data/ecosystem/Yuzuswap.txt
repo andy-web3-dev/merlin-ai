@@ -1,0 +1,5160 @@
+App name: Yuzuswap
+Landing page: https://www.yuzudex.xyz/
+App category: Dex
+App insights:
+Trade your favorite tokens on @Movementlabsxyz
+App documentation: https://docs.yuzudex.xyz/
+mation
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Products
+CLMM
+Price Ranges
+How Do Liquidity Price Ranges Work?
+In concentrated liquidity market maker (CLMM) pools, users can define specific price ranges within which they provide liquidity. Liquidity providers (LPs) earn fees based on their share of liquidity at the current market price, creating a strong incentive to actively manage positions to ensure the price remains within their selected range.
+If the market price moves outside an LP's chosen range, their position becomes inactive, ceasing to earn fees. Additionally, LPs may face increased impermanent loss. Similar to standard AMM pools, when the price of a base token rises, traders exchange the quote token for the base token, leaving the pool—and the LP—with more of the quote token and less of the base token.
+In CLMMs, this process is more concentrated within the selected price range, leading to accelerated effects:
+If the price drops below the minimum of the selected range, the LP's position will consist entirely of the base token.
+If the price exceeds the maximum of the range, the LP's position will fully convert to the quote token.
+This dynamic allows LPs to have greater control over their liquidity and the potential for higher returns but requires careful monitoring to minimize the risk of being out of range and missing fee opportunities.
+Previous
+Fee Tiers
+Next
+Active & Inactive Liquidity
+Last updated 
+2 months ago
+Active & Inactive Liquidity | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Products
+CLMM
+Active & Inactive Liquidity
+As an asset's price fluctuates, it may move beyond the price range set by liquidity providers (LPs) for a specific position. When this happens, the liquidity for that position becomes inactive, and the LP stops earning fees until the price reenters the range.
+As the price shifts in one direction, LPs accumulate more of one asset as traders exchange for the other. This continues until the liquidity position consists entirely of one asset. However, unlike traditional models, concentrated liquidity ensures LPs rarely reach extremes (e.g., 0 or ∞) because of the ability to define precise price intervals. When the price reenters a defined range, the liquidity becomes active again, and LPs resume earning fees.
+LPs have the freedom to create multiple positions, each with its own price range. This flexibility allows LPs to strategically distribute their liquidity across ranges, optimizing earnings while keeping their liquidity active as much as possible.
+Concentrated liquidity not only gives LPs granular control over their positions but also lets the market naturally determine an efficient distribution of liquidity. Rational LPs are incentivized to focus their liquidity where it will remain active, maximizing returns and supporting a more efficient trading ecosystem.
+Previous
+Price Ranges
+Next
+LP Position NFTs
+Last updated 
+2 months ago
+LP Position NFTs | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Products
+CLMM
+LP Position NFTs
+Each liquidity position provides an LP Position NFT, giving liquidity providers full control over their position. This NFT holds ownership of the fees and rewards accumulated within the given price range for the specific pool where liquidity is deposited. These NFTs are transferable, allowing holders to transfer ownership of the position or sell it on a secondary NFT marketplace.
+Why is Liquidity Position Ownership Represented by Tokens or NFTs?
+This approach is used because NFTs can store all the unique data associated with a liquidity position, such as the specific price range, the amount of tokens provided, and the fees accrued.
+Previous
+Active & Inactive Liquidity
+Next
+Glossary
+Last updated 
+2 months ago
+Glossary | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Price Tick
+Price Bin
+Liquidity Fees
+Impermanent Loss Mitigation
+Customization and Flexibility
+Deposit and Withdrawal Fees
+Products
+Glossary
+Price Tick
+The price tick refers to the smallest price movement by which a liquidity range can be adjusted. Yuzu allows liquidity providers (LPs) to define their desired price tick, giving them control over the granularity of their price ranges. This flexibility enables LPs to fine-tune their liquidity strategies to suit market conditions.
+Price Bin
+A price bin represents a specific segment within the overall price range. LPs can divide the price range into multiple bins, each corresponding to a distinct portion of their liquidity provision. By allocating liquidity across different price bins, LPs can effectively manage their exposure to varying market conditions, optimizing their strategies.
+Liquidity Fees
+Yuzu incentivizes LPs with liquidity fees, which are generated from trading activity within their specified price ranges. The concentrated liquidity model allows LPs to focus their capital, resulting in the potential for higher fees compared to traditional AMMs. These fees reflect LP contributions to the platform and reward active participation in liquidity provision.
+Impermanent Loss Mitigation
+Concentrated liquidity on Yuzu aims to minimize impermanent loss, a common challenge for LPs. By enabling LPs to focus their liquidity within a chosen price range, the impact of significant price movements outside that range is reduced. This approach provides a more stable and predictable earning potential for LPs.
+Customization and Flexibility
+Yuzu offers LPs extensive customization and flexibility in managing their liquidity positions. LPs can adjust their price ranges, price ticks, and price bins to align with their risk preferences and trading goals. This level of control empowers LPs to optimize their liquidity strategies and maximize their earning potential.
+Through its concentrated liquidity model, Yuzu transforms the decentralized exchange landscape by providing LPs with greater control, advanced customization options, and enhanced earning potential. By leveraging these features, LPs can refine their strategies and actively contribute to the growth of the Yuzu ecosystem.
+Deposit and Withdrawal Fees
+Yuzu does not charge any deposit or withdrawal fees, apart from standard network fees required for transactions.
+Previous
+LP Position NFTs
+Next
+Contacts
+Last updated 
+2 months ago
+Contacts | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Socials
+Contacts
+Support
+If you're experiencing issues:
+Open a support ticket in the official 
+Discord community
+.
+Reach out to us in the official 
+Telegram
+ chat.
+Admins will NEVER send you a direct message. If anybody approaches you directly on e.g. Telegram pretending to represent customer support, please block them and report as spam.
+NEVER, under any situation, should you ever give someone your private key or recovery phrases. Immediately block and report anyone that asks for them.
+Social Accounts & Communities
+Here you'll find a list of Yuzu's official Social media channels and communities.
+Yuzu on X
+Move.Fun on X
+📰 Blog (Medium)
+Discord Community
+💬 Telegram Community
+🌐 English
+Support and Assistance
+Need help? Connect with us on Twitter or Telegram for assistance.
+Previous
+Glossary
+Next
+Brand & Logos
+Last updated 
+16 days ago
+Support
+Social Accounts & Communities
+Yuzu on X
+Move.Fun on X
+📰 Blog (Medium)
+Discord Community
+💬 Telegram Community
+Support and Assistance
+Brand & Logos | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Socials
+Brand & Logos
+Previous
+Contacts
+Next
+Smart Contracts
+Last updated 
+16 days ago
+Below is the official brand kit for Yuzu. The kit will be updated and expanded regularly. 
+2MB
+Yuzu brandkit.zip
+archive
+Smart Contracts | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Previous
+Brand & Logos
+Next
+Yuzu CLMM
+Last updated 
+19 days ago
+Yuzu CLMM
+Yuzu AMM (Testnet)
+Move.Fun
+Yuzu CLMM | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Yuzu CLMM
+Previous
+Smart Contracts
+Next
+Liquidity Pool
+Last updated 
+19 days ago
+Liquidity Pool
+Router
+Scripts
+Liquidity Pool | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Module Info
+Name
+: 
+yuzuswap::liquidity_pool
+Description
+: This module contains the core logic for the liquidity pool of the 
+yuzuswap
+ contract. This module only works with fungible assets. If you want to use coins, please check the 
+router
+ module, which contains functions to work with coins.
+Public Functions
+Swap releated functions
+The 
+liquidity_pool
+ uses the 
+"Hot potato"
+ pattern for swapping feature.
+Swap Functions
+Swaps tokens in the liquidity pool. This function returns a 
+SwapReciept
+ object and requires to pay back in the same transaction to complete (
+"Hot potato"
+ pattern).
+Copy
+public fun swap(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    zero_for_one: bool,
+
+
+    is_exact_in: bool,
+
+
+    specified_amount: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): (FungibleAsset, SwapReciept)
+Function arguments
+Argument
+Type
+Description
+trade
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+zero_for_one
+bool
+Direction of the swap. 
+true
+ for token 0 to token 1, 
+false
+ for token 1 to token 0.
+is_exact_in
+bool
+Whether the specified amount is the exact input amount.
+specified_amount
+u64
+The specified amount for the swap.
+sqrt_price_limit
+u128
+The sqrt price limit for the swap.
+Returns
+Type
+Description
+FungibleAsset
+The swapped fungible asset
+SwapReciept
+The swap receipt.
+SwapReciept
+Copy
+struct SwapReciept {
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_metadata: Object<Metadata>,
+
+
+    amount_in: u64,
+
+
+}
+Field
+Type
+Description
+pool
+Object
+The liquidity pool of the swap.
+token_metadata
+Object
+The metadata of the token in of the swap.
+amount_in
+u64
+The amount of token in needs to be paid for the swap.
+Get swap receipt amount
+Gets the amount from a 
+SwapReciept
+.
+Copy
+public fun get_swap_receipt_amount(swap_receipt: &SwapReciept): u64
+Function arguments
+Argument
+Type
+Description
+swap_receipt
+&SwapReciept
+The swap receipt.
+Returns
+Type
+Description
+u64
+The amount in the receipt.
+Get swap receipt token metadata
+Gets the token metadata from a 
+SwapReciept
+.
+Copy
+public fun get_swap_receipt_token_metadata(swap_receipt: &SwapReciept): Object<Metadata>
+Function arguments
+Argument
+Type
+Description
+swap_receipt
+&SwapReciept
+&SwapReciept
+Returns
+Type
+Description
+Object
+The token metadata in the receipt.
+Pay swap
+Pays the swap using the provided token and receipt.
+Copy
+public fun pay_swap(
+
+
+    token_in: FungibleAsset,
+
+
+    reciept: SwapReciept,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+token_in
+FungibleAsset
+The input fungible asset.
+receipt
+SwapReciept
+The swap receipt.
+Quote swap
+Quotes a swap in the liquidity pool without executing it.
+Copy
+public fun quote_swap(
+
+
+    trader: address,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    zero_for_one: bool,
+
+
+    is_exact_in: bool,
+
+
+    specified_amount: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): (u64, u64, u64)
+Function arguments
+Argument
+Type
+Description
+trader
+address
+The trader’s address.
+pool
+Object
+The liquidity pool.
+zero_for_one
+bool
+Direction of the swap. 
+true
+ for token 0 to token 1, 
+false
+ for token 1 to token 0.
+is_exact_in
+bool
+Whether the specified amount is the exact input amount.
+specified_amount
+u64
+The specified amount for the swap.
+sqrt_price_limit
+u128
+The sqrt price limit for the swap.
+Returns
+Type
+Description
+u64
+The amount of token in.
+u64
+The amount of token out.
+u64
+The fee amount for the swap.
+Previous
+Yuzu CLMM
+Next
+Router
+Last updated 
+16 days ago
+Module Info
+Public Functions
+Swap releated functions
+Swap Functions
+Get swap receipt amount
+Get swap receipt token metadata
+Pay swap
+Quote swap
+Router | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Module info
+Public Functions
+Create Pool
+Create pool with one coin and one fungible asset
+Create pool with two coins
+Add liquidity
+Add liquidity to a pool with two fungible assets
+Remove liquidity from a pool
+Collect fee
+Collect reward
+Swap functions
+Swap exact fungible asset for fungible asset
+Swap exact fungible asset for coin
+Swap exact coin for fungible asset
+Swap exact coin for coin
+Swap fungible asset for exact fungible asset
+Swap fungible asset for exact coin
+Swap coin for exact fungible asset
+Swap coin for exact coin
+Swap exact fungible asset for fungible asset with multiple hops
+Swap exact coin for fungible asset with multiple hops
+Swap fungible asset for exact fungible asset with multiple hops
+Swap coin for exact fungible asset with multiple hops
+Get pool functions
+Get pool
+Get pool with one coin and one fungible asset
+Get pool with two coins
+Technical
+Smart Contracts
+Yuzu CLMM
+Router
+Module info
+Name
+: 
+yuzuswap::router
+Description
+: This module contains public functions for other modules/contracts to call and interact with the 
+yuzuswap
+ contract.
+Public Functions
+Create Pool
+Create pool with two fungible assets
+Creates a new liquidity pool for two fungible assets. Reverts if the pool already exists.
+Copy
+public fun create_pool(
+
+
+    creator: &signer,
+
+
+    token_0: Object<Metadata>,
+
+
+    token_1: Object<Metadata>,
+
+
+    fee: u64,
+
+
+    sqrt_price: u128,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+creator
+&signer
+The creator’s signer
+token_0
+Object
+Fungible asset metadata of token 0
+token_1
+Object
+Fungible asset metadata of token 1
+fee
+u64
+Fee tier of the pool
+sqrt_price
+u128
+Initial sqrt price of the pool
+Create pool with one coin and one fungible asset
+Creates a new liquidity pool with one coin (
+Token0
+) and one fungible asset. Reverts if the pool already exists.
+Copy
+public fun create_pool_one_coin<Token0>(
+
+
+    creator: &signer,
+
+
+    token_1: Object<Metadata>,
+
+
+    fee: u64,
+
+
+    sqrt_price: u128,
+
+
+)
+Function type arguments
+Argument
+Description
+Token0
+The coin’s type.
+Function arguments
+Argument
+Type
+Description
+creator
+&signer
+The creator’s signer
+token_1
+Object
+Fungible asset metadata of token 1
+fee
+u64
+Fee tier of the pool
+sqrt_price
+u128
+Initial sqrt price of the pool
+Create pool with two coins
+Creates a new liquidity pool with two coins 
+Token0
+ and 
+Token1
+. Reverts if the pool already exists.
+Copy
+public fun create_pool_both_coins<Coin0, Coin1>(
+
+
+    creator: &signer,
+
+
+    fee: u64,
+
+
+    sqrt_price: u128,
+
+
+)
+Function type arguments
+Argument
+Description
+Coin0
+The coin’s type of the token 0
+Coin1
+The coin’s type of the token 1
+Function arguments
+Argument
+Type
+Description
+creator
+&signer
+The creator’s signer.
+fee
+u64
+Fee tier of the pool.
+sqrt_price
+u128
+Initial sqrt price of the pool.
+Add liquidity
+Add liquidity to a pool with two fungible assets
+Adds liquidity to a pool with two fungible assets.
+Copy
+public fun add_liquidity(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    tick_lower: u32,
+
+
+    tick_upper: u32,
+
+
+    token_0: FungibleAsset,
+
+
+    token_1: FungibleAsset,
+
+
+    amount_0_min: u64,
+
+
+    amount_1_min: u64,
+
+
+): (FungibleAsset, FungibleAsset)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool to add liquidity to.
+position_id
+u64
+The position ID of the liquidity. Leave it as 0 if you want to create a new position or you don’t have any position yet.
+tick_lower
+u32
+The lower tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+tick_upper
+u32
+The upper tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+token_0
+FungibleAsset
+The amount of token 0 to add to the liquidity.
+token_1
+FungibleAsset
+The amount of token 1 to add to the liquidity.
+amount_0_min
+u64
+The minimum amount of token 0 to add to the liquidity.
+amount_1_min
+u64
+The minimum amount of token 1 to add to the liquidity.
+Returns
+Type
+Description
+(FungibleAsset, FungibleAsset)
+The added fungible assets.
+Remove liquidity from a pool
+Removes liquidity from a pool.
+Copy
+public fun remove_liquidity(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    liquidity: u128,
+
+
+    amount_0_min: u64,
+
+
+    amount_1_min: u64,
+
+
+): (FungibleAsset, FungibleAsset)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool to remove liquidity from.
+position_id
+u64
+The position ID of the liquidity.
+liquidity
+u128
+The amount of liquidity to remove.
+amount_0_min
+u64
+The minimum amount of token 0 to get.
+amount_1_min
+u64
+The minimum amount of token 1 to get.
+Returns
+Type
+Description
+FungibleAsset
+The returned fungible assets of the token 0 after removing liquidity.
+FungibleAsset
+The returned fungible assets of the token 1 after removing liquidity.
+Collect fee
+Collects fee from a position.
+Copy
+public fun collect_fee(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    amount_0_requested: u64,
+
+
+    amount_1_requested: u64,
+
+
+): (FungibleAsset, FungibleAsset)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool.
+position_id
+u64
+The position ID.
+amount_0_requested
+u64
+The amount of token 0 requested.
+amount_1_requested
+u64
+The amount of token 1 requested.
+Returns
+Type
+Description
+FungibleAsset
+The collected fee of the token 0.
+FungibleAsset
+The collected fee of the token 1.
+Collect reward
+Collects reward from a position.
+Copy
+public fun collect_reward(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    reward_index: u64,
+
+
+    amount_requested: u64,
+
+
+): FungibleAsset
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool.
+position_id
+u64
+The position ID.
+reward_index
+u64
+The reward index.
+amount_requested
+u64
+The amount of reward requested.
+Returns
+Type
+Description
+FungibleAsset
+The collected reward.
+Swap functions
+Swap exact fungible asset for fungible asset
+Swaps an exact amount of fungible asset for another fungible asset.
+Copy
+public fun swap_exact_fa_for_fa(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: FungibleAsset,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): FungibleAsset
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+FungibleAsset
+The input token.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+FungibleAsset
+The swapped fungible asset.
+Swap exact fungible asset for coin
+Swaps an exact amount of fungible asset for a coin.
+Copy
+public fun swap_exact_fa_for_coin<CoinType>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: FungibleAsset,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): Coin<CoinType>
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+FungibleAsset
+The input token.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+Coin
+The swapped coin.
+Swap exact coin for fungible asset
+Swaps an exact amount of coin for a fungible asset.
+Copy
+public fun swap_exact_coin_for_fa<CoinType>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: Coin<CoinType>,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): FungibleAsset
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+Coin
+The input coin.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+FungibleAsset
+The swapped fungible asset.
+Swap exact coin for coin
+Swaps an exact amount of coin for another coin.
+Copy
+public fun swap_exact_coin_for_coin<CoinIn, CoinOut>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: Coin<CoinIn>,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): Coin<CoinOut>
+Function type arguments
+Argument
+Description
+CoinIn
+The input coin’s type
+CoinOut
+The output coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+Coin
+The input coin.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+Coin
+The swapped coin.
+Swap fungible asset for exact fungible asset
+Swaps a fungible asset for an exact amount of another fungible asset.
+Copy
+public fun swap_fa_for_exact_fa(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: FungibleAsset,
+
+
+    amount_out_desired: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): (FungibleAsset, FungibleAsset)
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+FungibleAsset
+The input token.
+amount_out_desired
+u64
+The desired amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+FungibleAsset
+The remaining fungible asset of the input token.
+FungibleAsset
+The swapped fungible asset of the output token.
+Swap fungible asset for exact coin
+Swaps a fungible asset for an exact amount of a coin.
+Copy
+public fun swap_fa_for_exact_coin<CoinType>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: FungibleAsset,
+
+
+    amount_out_desired: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): (FungibleAsset, Coin<CoinType>)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+FungibleAsset
+The input token.
+amount_out_desired
+u64
+The desired amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+FungibleAsset
+The remaining fungible asset of the input token.
+Coin
+The swapped coin of the output token.
+Swap coin for exact fungible asset
+Swaps a coin for an exact amount of a fungible asset.
+Copy
+public fun swap_coin_for_exact_fa<CoinType>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: Coin<CoinType>,
+
+
+    amount_out_desired: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): (Coin<CoinType>, FungibleAsset)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+Coin
+The input coin.
+amount_out_desired
+u64
+The desired amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+Coin
+The remaining coin of the input token.
+FungibleAsset
+The swapped fungible asset of the output token.
+Swap coin for exact coin
+Swaps a coin for an exact amount of another coin.
+Copy
+public fun swap_coin_for_exact_coin<CoinIn, CoinOut>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: Coin<CoinIn>,
+
+
+    amount_out_desired: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+): (Coin<CoinIn>, Coin<CoinOut>)
+Function type arguments
+Argument
+Description
+CoinIn
+The input coin’s type
+CoinOut
+The output coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+Coin
+The input coin.
+amount_out_desired
+u64
+The desired amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+Coin
+The remaining coin of the input token.
+Coin
+The swapped coin of the output token.
+Swap exact fungible asset for fungible asset with multiple hops
+Swaps an exact amount of fungible asset for another fungible asset with multiple hops.
+Copy
+public fun swap_exact_fa_for_fa_multi_hops(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    token_in: FungibleAsset,
+
+
+    amount_out_min: u64,
+
+
+): FungibleAsset
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+token_in
+FungibleAsset
+The input token.
+amount_out_min
+u64
+The minimum amount of output token.
+Returns
+Type
+Description
+FungibleAsset
+The swapped fungible asset.
+Swap exact coin for fungible asset with multiple hops
+Swaps an exact amount of coin for a fungible asset with multiple hops.
+Copy
+public fun swap_exact_coin_for_fa_multi_hops<CoinType>(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    token_in: Coin<CoinType>,
+
+
+    amount_out_min: u64,
+
+
+): FungibleAsset
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+token_in
+Coin
+The input coin.
+amount_out_min
+u64
+The minimum amount of output token.
+Returns
+Type
+Description
+FungibleAsset
+The swapped fungible asset.
+Swap fungible asset for exact fungible asset with multiple hops
+Swaps a fungible asset for an exact amount of another fungible asset with multiple hops.
+Copy
+public fun swap_fa_for_exact_fa_multi_hops(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    token_in: FungibleAsset,
+
+
+    amount_out_desired: u64,
+
+
+): (FungibleAsset, FungibleAsset)
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+token_in
+FungibleAsset
+The input token.
+amount_out_desired
+u64
+The desired amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+Returns
+Type
+Description
+FungibleAsset
+The remaining fungible asset of the input token.
+FungibleAsset
+The swapped fungible asset of the output token.
+Swap coin for exact fungible asset with multiple hops
+Swaps a coin for an exact amount of a fungible asset with multiple hops.
+Copy
+public fun swap_coin_for_exact_fa_multi_hops<CoinType>(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    token_in: Coin<CoinType>,
+
+
+    amount_out_desired: u64,
+
+
+): (Coin<CoinType>, FungibleAsset)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+token_in
+Coin
+The input coin.
+amount_out_desired
+u64
+The desired amount of output token.
+Returns
+Type
+Description
+Coin
+The remaining coin of the input token.
+FungibleAsset
+The swapped fungible asset of the output token.
+Get pool functions
+Get pool
+Gets the liquidity pool for two fungible assets.
+Copy
+#[view]
+
+
+public fun get_pool(
+
+
+    token_0: Object<Metadata>,
+
+
+    token_1: Object<Metadata>,
+
+
+    fee: u64,
+
+
+): Object<LiquidityPool>
+Function arguments
+Argument
+Type
+Description
+token_0
+Object
+Fungible asset metadata of token 0
+token_1
+Object
+Fungible asset metadata of token 1
+fee
+u64
+Fee tier of the pool
+Returns
+Type
+Description
+Object
+The liquidity pool.
+Get pool with one coin and one fungible asset
+Gets the liquidity pool for one coin (
+CoinType
+) and one fungible asset.
+Copy
+#[view]
+
+
+public fun get_pool_one_coin<CoinType>(
+
+
+    token_1: Object<Metadata>,
+
+
+    fee: u64,
+
+
+): Object<LiquidityPool>
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+token_1
+Object
+Fungible asset metadata of token 1
+fee
+u64
+Fee tier of the pool
+Returns
+Type
+Description
+Object
+The liquidity pool.
+Get pool with two coins
+Gets the liquidity pool for two coins 
+Coin0
+ and 
+Coin1
+.
+Copy
+#[view]
+
+
+public fun get_pool_both_coins<Coin0, Coin1>(
+
+
+    fee: u64,
+
+
+): Object<LiquidityPool>
+Function type arguments
+Argument
+Description
+Coin0
+The coin’s type of the token 0
+Coin1
+The coin’s type of the token 1
+Function arguments
+Argument
+Type
+Description
+fee
+u64
+Fee tier of the pool
+Returns
+Type
+Description
+Object
+The liquidity pool.
+Previous
+Liquidity Pool
+Next
+Scripts
+Last updated 
+19 days ago
+Scripts | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Yuzu CLMM
+Scripts
+Module info
+Name
+: 
+yuzuswap::scripts
+Description
+: This module contains entry functions for users to call and interact with the 
+yuzuswap
+ contract.
+Public Functions
+Create Pool
+Create pool with two fungible assets
+Creates a new liquidity pool for two fungible assets. Reverts if the pool already exists.
+Copy
+public entry fun create_pool(
+
+
+    creator: &signer,
+
+
+    token_0: Object<Metadata>,
+
+
+    token_1: Object<Metadata>,
+
+
+    fee: u64,
+
+
+    sqrt_price: u128,****
+
+
+)
+Function arguments
+Argument
+Type
+Description
+sender
+&signer
+The sender’s signer
+token_0
+Object
+Fungible asset metadata of token 0
+token_1
+Object
+Fungible asset metadata of token 1
+fee
+u64
+Fee tier of the pool
+sqrt_price
+u128
+Initial sqrt price of the pool
+Create pool with one coin and one fungible asset
+Creates a new liquidity pool with one coin (
+Token0
+) and one fungible asset. Reverts if the pool already exists.
+Copy
+public entry fun create_pool_one_coin<Token0>(
+
+
+    creator: &signer,
+
+
+    token_1: Object<Metadata>,
+
+
+    fee: u64,
+
+
+    sqrt_price: u128,
+
+
+)
+Function type arguments
+Argument
+Description
+Token0
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+sender
+&signer
+The sender’s signer
+token_1
+Object
+Fungible asset metadata of token 1
+fee
+u64
+Fee tier of the pool
+sqrt_price
+u128
+Initial sqrt price of the pool
+Create pool with two coins
+Creates a new liquidity pool with two coins 
+Token0
+ and 
+Token1
+. Reverts if the pool already exists.
+Copy
+public entry fun create_pool_both_coins<Coin0, Coin1>(
+
+
+    creator: &signer,
+
+
+    fee: u64,
+
+
+    sqrt_price: u128,
+
+
+)
+Function type arguments
+Argument
+Description
+Token1
+The coin’s type of the token 0
+Token0
+The coin’s type of the token 1
+Function arguments
+Argument
+Type
+Description
+sender
+&signer
+The sender’s signer
+fee
+u64
+Fee tier of the pool
+sqrt_price
+u128
+Initial sqrt price of the pool
+Add liquidity
+Add liquidity to a pool with two fungible assets
+Adds liquidity to a pool with two fungible assets.
+Copy
+public entry fun add_liquidity(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    tick_lower: u32,
+
+
+    tick_upper: u32,
+
+
+    amount_0: u64,
+
+
+    amount_1: u64,
+
+
+    amount_0_min: u64,
+
+
+    amount_1_min: u64,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool to add liquidity to.
+position_id
+u64
+The position ID of the liquidity. Leave it as 0 if you want to create a new position or you don’t have any position yet.
+tick_lower
+u32
+The lower tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+tick_upper
+u32
+The upper tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+amount_0
+u64
+The amount of token 0 to add to the liquidity.
+amount_1
+u64
+The amount of token 1 to add to the liquidity.
+amount_0_min
+u64
+The minimum amount of token 0 to add to the liquidity.
+amount_1_min
+u64
+The minimum amount of token 1 to add to the liquidity.
+Add liquidity to a pool with one coin and one fungible asset
+Adds liquidity to a pool with one coin and one fungible asset.
+Copy
+public entry fun add_liquidity_one_coin<CoinType>(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    tick_lower: u32,
+
+
+    tick_upper: u32,
+
+
+    amount_0: u64,
+
+
+    amount_1: u64,
+
+
+    amount_0_min: u64,
+
+
+    amount_1_min: u64,
+
+
+)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool to add liquidity to.
+position_id
+u64
+The position ID of the liquidity. Leave it as 0 if you want to create a new position or you don’t have any position yet.
+tick_lower
+u32
+The lower tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+tick_upper
+u32
+The upper tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+amount_0
+u64
+The amount of token 0 to add to the liquidity.
+amount_1
+u64
+The amount of token 1 to add to the liquidity.
+amount_0_min
+u64
+The minimum amount of token 0 to add to the liquidity.
+amount_1_min
+u64
+The minimum amount of token 1 to add to the liquidity.
+Add liquidity to a pool with two coins
+Adds liquidity to a pool with two coins.
+Copy
+public entry fun add_liquidity_both_coins<Coin0, Coin1>(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    tick_lower: u32,
+
+
+    tick_upper: u32,
+
+
+    amount_0: u64,
+
+
+    amount_1: u64,
+
+
+    amount_0_min: u64,
+
+
+    amount_1_min: u64,
+
+
+)
+Function type arguments
+Argument
+Description
+Coin0
+The coin’s type of the token 0
+Coin1
+The coin’s type of the token 1
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool to add liquidity to.
+position_id
+u64
+The position ID of the liquidity. Leave it as 0 if you want to create a new position or you don’t have any position yet.
+tick_lower
+u32
+The lower tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+tick_upper
+u32
+The upper tick of the liquidity. Required in the case of creating a new position. Otherwise, leave it as 0.
+amount_0
+u64
+The amount of token 0 to add to the liquidity.
+amount_1
+u64
+The amount of token 1 to add to the liquidity.
+amount_0_min
+u64
+The minimum amount of token 0 to add to the liquidity.
+amount_1_min
+u64
+The minimum amount of token 1 to add to the liquidity.
+Remove liquidity |
+Remove liquidity from a pool
+Removes liquidity from a pool.
+Copy
+public entry fun remove_liquidity(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    liquidity: u128,
+
+
+    amount_0_min: u64,
+
+
+    amount_1_min: u64,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool to remove liquidity from.
+position_id
+u64
+The position ID of the liquidity.
+liquidity
+u128
+The amount of liquidity to remove.
+amount_0_min
+u64
+The minimum amount of token 0 to get.
+amount_1_min
+u64
+The minimum amount of token 1 to get.
+Burn position
+Burns a position.
+Copy
+public entry fun burn_position(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool.
+position_id
+u64
+The position ID to burn.
+Collect fee
+Collects fee from a position.
+Copy
+public entry fun collect_fee(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    amount_0_requested: u64,
+
+
+    amount_1_requested: u64,
+
+
+    recipient: address,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool.
+position_id
+u64
+The position ID.
+amount_0_requested
+u64
+The amount of token 0 requested.
+amount_1_requested
+u64
+The amount of token 1 requested.
+recipient
+address
+The recipient address.
+Collect reward
+Collects reward from a position.
+Copy
+public entry fun collect_reward(
+
+
+    user: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    position_id: u64,
+
+
+    reward_index: u64,
+
+
+    amount_requested: u64,
+
+
+    recipient: address,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+user
+&signer
+The user’s signer.
+pool
+Object
+The liquidity pool.
+position_id
+u64
+The position ID.
+reward_index
+u64
+The reward index.
+amount_requested
+u64
+The amount of reward requested.
+recipient
+address
+The recipient address.
+Swap functions
+Swap exact fungible asset for fungible asset
+Swaps an exact amount of fungible asset for another fungible asset.
+Copy
+public entry fun swap_exact_fa_for_fa(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: Object<Metadata>,
+
+
+    amount_in: u64,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+    recipient: address,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+Object
+The input token metadata.
+amount_in
+u64
+The amount of input token.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+recipient
+address
+The recipient address.
+Swap exact coin for fungible asset
+Swaps an exact amount of coin for a fungible asset.
+Copy
+public entry fun swap_exact_coin_for_fa<CoinType>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    amount_in: u64,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+    recipient: address,
+
+
+)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+amount_in
+u64
+The amount of input coin.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+recipient
+address
+The recipient address.
+Swap fungible asset for exact fungible asset
+Swaps a fungible asset for an exact amount of another fungible asset.
+Copy
+public entry fun swap_fa_for_exact_fa(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    token_in: Object<Metadata>,
+
+
+    amount_in: u64,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+    recipient: address,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+token_in
+Object
+The input token metadata.
+amount_in
+u64
+The amount of input token.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+recipient
+address
+The recipient address.
+Swap coin for exact fungible asset
+Swaps a coin for an exact amount of a fungible asset.
+Copy
+public entry fun swap_coin_for_exact_fa<CoinType>(
+
+
+    trader: &signer,
+
+
+    pool: Object<LiquidityPool>,
+
+
+    amount_in: u64,
+
+
+    amount_out_min: u64,
+
+
+    sqrt_price_limit: u128,
+
+
+    recipient: address,
+
+
+)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pool
+Object
+The liquidity pool.
+amount_in
+u64
+The amount of input coin.
+amount_out_min
+u64
+The minimum amount of output token.
+sqrt_price_limit
+u128
+The sqrt price limit.
+recipient
+address
+The recipient address.
+Swap exact fungible asset for fungible asset with multiple hops
+Swaps an exact amount of fungible asset for another fungible asset with multiple hops.
+Copy
+public entry fun swap_exact_fa_for_fa_multi_hops(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    token_in: Object<Metadata>,
+
+
+    amount_in: u64,
+
+
+    amount_out_min: u64,
+
+
+    recipient: address,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+token_in
+Object
+The input token metadata.
+amount_in
+u64
+The amount of input token.
+amount_out_min
+u64
+The minimum amount of output token.
+recipient
+address
+The recipient address.
+Swap exact coin for fungible asset with multiple hops
+Swaps an exact amount of coin for a fungible asset with multiple hops.
+Copy
+public entry fun swap_exact_coin_for_fa_multi_hops<CoinType>(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    amount_in: u64,
+
+
+    amount_out_min: u64,
+
+
+    recipient: address,
+
+
+)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+amount_in
+u64
+The amount of input coin.
+amount_out_min
+u64
+The minimum amount of output token.
+recipient
+address
+The recipient address.
+Swap fungible asset for exact fungible asset with multiple hops
+Swaps a fungible asset for an exact amount of another fungible asset with multiple hops.
+Copy
+public entry fun swap_fa_for_exact_fa_multi_hops(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    token_in: Object<Metadata>,
+
+
+    amount_in_max: u64,
+
+
+    amount_out_desired: u64,
+
+
+    recipient: address,
+
+
+)
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+token_in
+Object
+The input token metadata.
+amount_in_max
+u64
+The maximum amount of input token.
+amount_out_desired
+u64
+The desired amount of output token.
+recipient
+address
+The recipient address.
+Swap coin for exact fungible asset with multiple hops
+Swaps a coin for an exact amount of a fungible asset with multiple hops.
+Copy
+public entry fun swap_coin_for_exact_fa_multi_hops<CoinType>(
+
+
+    trader: &signer,
+
+
+    pools: vector<Object<LiquidityPool>>,
+
+
+    amount_in_max: u64,
+
+
+    amount_out_desired: u64,
+
+
+    recipient: address,
+
+
+)
+Function type arguments
+Argument
+Description
+CoinType
+The coin’s type
+Function arguments
+Argument
+Type
+Description
+trader
+&signer
+The trader’s signer.
+pools
+vector<Object>
+The liquidity pools.
+amount_in_max
+u64
+The maximum amount of input coin.
+amount_out_desired
+u64
+The desired amount of output token.
+recipient
+address
+The recipient address.
+Previous
+Router
+Next
+Yuzu AMM (Testnet)
+Last updated 
+19 days ago
+Module info
+Public Functions
+Create Pool
+Create pool with two fungible assets
+Create pool with one coin and one fungible asset
+Create pool with two coins
+Add liquidity
+Add liquidity to a pool with two fungible assets
+Add liquidity to a pool with one coin and one fungible asset
+Add liquidity to a pool with two coins
+Remove liquidity |
+Remove liquidity from a pool
+Burn position
+Collect fee
+Collect reward
+Swap functions
+Swap exact fungible asset for fungible asset
+Swap exact coin for fungible asset
+Swap fungible asset for exact fungible asset
+Swap coin for exact fungible asset
+Swap exact fungible asset for fungible asset with multiple hops
+Swap exact coin for fungible asset with multiple hops
+Swap fungible asset for exact fungible asset with multiple hops
+Swap coin for exact fungible asset with multiple hops
+Yuzu AMM (Testnet) | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Yuzu AMM (Testnet)
+Router
+Swap
+Previous
+Scripts
+Next
+Router
+Router | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Contract Info
+Public Functions
+Technical
+Smart Contracts
+Yuzu AMM (Testnet)
+Router
+Movemement testnet is unstable by the time of writing and using the contracts below are for testing and development purposes only
+Contract Info
+Contract Name
+: 
+yuzu::router
+Contract Address
+: [tba]
+Admin Multi Sig
+: [tba]
+Public Functions
+Create Pair
+Creates a new liquidity pair for tokens X and Y. Reverts if the pair already exists.
+Copy
+public entry fun create_pair<X, Y>(sender: &signer)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+Register Fee On Transfer in Pair
+Adds fee-on-transfer functionality to a token pair (only callable by token owners).
+Copy
+public entry fun register_fee_on_transfer_in_a_pair<CoinType, X, Y>(sender: &signer)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+Stake Tokens in Pool
+Deposit tokens into the staking pool for a liquidity pair.
+Copy
+public entry fun stake_tokens_in_pool<X, Y>(sender: &signer, amount: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+amount
+u64
+The amount of tokens to stake.
+Unstake Tokens from Pool
+Withdraw tokens from the staking pool for a liquidity pair.
+Copy
+public entry fun unstake_tokens_from_pool<X, Y>(sender: &signer, amount: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+amount
+u64
+The amount of tokens to withdraw.
+Claim Rewards from Pool
+Claim staking rewards from the rewards pool.
+Copy
+public entry fun claim_rewards_from_pool<X, Y>(sender: &signer)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+Add Liquidity
+Add liquidity to a pair or create the pair if it doesn't exist.
+Copy
+public entry fun add_liquidity<X, Y>(sender: &signer, amount_x_desired: u64, amount_y_desired: u64, amount_x_min: u64, amount_y_min: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+amount_x_desired
+u64
+The amount of token X desired.
+amount_y_desired
+u64
+The amount of token Y desired.
+amount_x_min
+u64
+The minimum amount of token X to add.
+amount_y_min
+u64
+The minimum amount of token Y to add.
+Remove Liquidity
+Remove liquidity from a pair.
+Copy
+public entry fun remove_liquidity<X, Y>(sender: &signer, liquidity: u64, amount_x_min: u64, amount_y_min: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+liquidity
+u64
+The amount of liquidity to remove.
+amount_x_min
+u64
+The minimum amount of token X to receive.
+amount_y_min
+u64
+The minimum amount of token Y to receive.
+Swap Exact Input
+Swap an exact input amount of token X for the maximum possible amount of token Y.
+Copy
+public entry fun swap_exact_input<X, Y>(sender: &signer, x_in: u64, y_min_out: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+x_in
+u64
+The exact amount of token X to swap.
+y_min_out
+u64
+The minimum amount of token Y to receive.
+Swap Exact Output
+Swap the minimum possible amount of token X to receive an exact output amount of token Y.
+Copy
+public entry fun swap_exact_output<X, Y>(sender: &signer, y_out: u64, x_max_in: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+y_out
+u64
+The exact amount of token Y to receive.
+x_max_in
+u64
+The maximum amount of token X to swap.
+Multi-Hop Exact Input
+Swap token X for token Y through an intermediate token Z.
+Copy
+public entry fun swap_exact_input_with_one_intermediate_coin<X, Y, Z>(sender: &signer, x_in: u64, y_min_out: u64)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+x_in
+u64
+The exact amount of token X to swap.
+y_min_out
+u64
+The minimum amount of token Y to receive.
+Register LP
+Register the LP token for a pair to the sender's account.
+Copy
+public entry fun register_lp<X, Y>(sender: &signer)
+Input Values
+Type
+Description
+sender
+signer
+The sender's signer.
+Update Fee Tier
+Update the fee tier for a liquidity pair.
+Copy
+public entry fun update_fee_tier<Tier, X, Y>(signer_ref: &signer)
+Input Values
+Type
+Description
+signer_ref
+signer
+The sender's signer.
+Previous
+Yuzu AMM (Testnet)
+Next
+Aggregator Integration
+Last updated 
+3 months ago
+Aggregator Integration | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+To integrate YuzuSwap with your aggregator, use the following public functions for swap calculations.
+Get Amount In
+router::get_amount_in
+Description
+This function calculates the required input amount of token 
+X
+ to receive a specific output amount of token 
+Y
+.
+Usage
+Checks
+: Ensures that a pair exists between token 
+X
+ and token 
+Y
+ before proceeding.
+Returns
+: The amount of token 
+X
+ required for the swap.
+Parameters
+Input Value
+Type
+Description
+y_out_amount
+u64
+The desired output amount of token 
+Y
+.
+Code
+Copy
+public fun get_amount_in<X, Y>(y_out_amount: u64): u64 {
+
+
+    assert!(swap::is_pair_created<X, Y>(), errors::pair_not_created());
+
+
+    let is_x_to_y = swap_utils::sort_token_type<X, Y>();
+
+
+    get_amount_in_internal<X, Y>(is_x_to_y, y_out_amount)
+
+
+}
+Get Amount Out
+router::get_amount_out
+Description
+This function calculates the output amount of token 
+Y
+ given an input amount of token 
+X
+.
+Usage
+Checks
+: Ensures that a pair exists between token 
+X
+ and token 
+Y
+ before proceeding.
+Returns
+: The amount of token 
+Y
+ that will be received for the swap.
+Parameters
+Input Value
+Type
+Description
+x_in_amount
+u64
+The input amount of token 
+X
+.
+Code
+Copy
+public fun get_amount_out<X, Y>(x_in_amount: u64): u64 {
+
+
+    assert!(swap::is_pair_created<X, Y>(), errors::pair_not_created());
+
+
+    let is_x_to_y = swap_utils::sort_token_type<X, Y>();
+
+
+    get_amount_out_internal<X, Y>(is_x_to_y, x_in_amount)
+
+
+} 
+Previous
+Router
+Next
+Swap
+Last updated 
+3 months ago
+Get Amount In
+Get Amount Out
+Swap | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Contract Info
+Types
+Resources
+Public Functions
+Technical
+Smart Contracts
+Yuzu AMM (Testnet)
+Swap
+Movemement testnet is unstable by the time of writing and using the contracts below are for testing and development purposes only
+Contract Info
+Contract Name
+: 
+yuzu::swap
+Contract Address
+: [tba]
+Admin Multi Sig
+: [tba]
+Types
+Name
+Type
+Description
+X
+type address
+The coin type address of token X in the pair.
+Y
+type address
+The coin type address of token Y in the pair.
+Resources
+LPToken
+The liquidity token corresponds to each pool XY.
+Copy
+struct LPToken<phantom X, phantom Y> has key {}
+TokenPairMetadata
+Metadata related to the token pair and liquidity pool.
+Copy
+struct TokenPairMetadata<phantom X, phantom Y> has key {
+
+
+    creator: address,
+
+
+    fee_on_transfer_x: Option<FeeOnTransferInfo<X>>,
+
+
+    fee_on_transfer_y: Option<FeeOnTransferInfo<Y>>,
+
+
+    k_last: u128,
+
+
+    liquidity_fee: u128,
+
+
+    rewards_fee: u128,
+
+
+    team_fee: u128,
+
+
+    treasury_fee: u128,
+
+
+    balance_x: coin::Coin<X>,
+
+
+    balance_y: coin::Coin<Y>,
+
+
+    mint_cap: coin::MintCapability<LPToken<X, Y>>,
+
+
+    burn_cap: coin::BurnCapability<LPToken<X, Y>>,
+
+
+    freeze_cap: coin::FreezeCapability<LPToken<X, Y>>,
+
+
+}
+Name
+Type
+Description
+creator
+address
+The creator address of the pool.
+k_last
+u128
+The last recorded reserve product (reserve_x * reserve_y).
+balance_x
+coin::Coin
+The total amount of token X in the pool.
+balance_y
+coin::Coin
+The total amount of token Y in the pool.
+mint_cap
+coin::MintCapability
+Capability to mint LP tokens.
+burn_cap
+coin::BurnCapability
+Capability to burn LP tokens.
+treasury_fee
+u128
+The fee collected by the treasury.
+TokenPairReserve
+Reserve balances and metadata related to liquidity reserves.
+Copy
+struct TokenPairReserve<phantom X, phantom Y> has key {
+
+
+    reserve_x: u64,
+
+
+    reserve_y: u64,
+
+
+    block_timestamp_last: u64
+
+
+}
+Name
+Type
+Description
+reserve_x
+u64
+The total amount of token X in the pool.
+reserve_y
+u64
+The total amount of token Y in the pool.
+block_timestamp_last
+u64
+The last time the reserves were updated.
+Public Functions
+Register LP
+Register the LP token to the account.
+Copy
+public fun register_lp<X, Y>(sender: &signer)
+Is Pair Created
+Check if the pool XY is created or not.
+Copy
+public fun is_pair_created<X, Y>(): bool
+LP Balance
+Check the LP balance of a user.
+Copy
+public fun lp_balance<X, Y>(addr: address): u64
+Total LP Supply
+Retrieve the total amount of LP tokens in the pool.
+Copy
+public fun total_lp_supply<X, Y>(): u128
+Token Reserves
+Retrieve the reserves of the token pair XY.
+Copy
+public fun token_reserves<X, Y>(): (u64, u64, u64)
+Token Balance
+Retrieve the token balances in the pool XY.
+Copy
+public fun token_balances<X, Y>(): (u64, u64)
+Previous
+Aggregator Integration
+Next
+Move.Fun
+Last updated 
+3 months ago
+Move.Fun | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Move.Fun
+Coin (AMM)
+Previous
+Swap
+Next
+Coin (AMM)
+Coin (AMM) | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Previous
+Move.Fun
+Next
+Bonding Curve
+Bonding Curve | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Contract Info
+Resources
+Public Functions
+View Functions
+Technical
+Smart Contracts
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Contract Info
+Contract Name
+: 
+move_fun::bonding_curve
+Contract Address
+: [tba]
+Resources
+BondingCurve
+Represents a bonding curve for a token.
+Copy
+struct BondingCurve has key, drop {
+
+
+    initial_price_numerator: u128,
+
+
+    initial_price_denominator: u128,
+
+
+    growth_constant: u128
+
+
+}
+Name
+Type
+Description
+initial_price_numerator
+u128
+Initial price numerator for the token.
+initial_price_denominator
+u128
+Initial price denominator for the token.
+growth_constant
+u128
+Growth constant (k) that determines how the price scales with supply.
+Public Functions
+Initialize
+Initializes the bonding curve with initial price and growth constant.
+Copy
+public(friend) fun initialize(
+
+
+    signer_ref: &signer,
+
+
+    initial_price_numerator: u128,
+
+
+    initial_price_denominator: u128,
+
+
+    growth_constant: u128
+
+
+)
+Input Values
+Type
+Description
+signer_ref
+signer
+The signer's reference.
+initial_price_numerator
+u128
+The initial numerator for the token price.
+initial_price_denominator
+u128
+The initial denominator for the token price.
+growth_constant
+u128
+The growth constant (k) for the bonding curve.
+Calculate Growth Constant
+Calculates the growth constant ( k ) based on the bonding curve parameters.
+Copy
+public(friend) fun calculate_k(
+
+
+    initial_price_numerator: u128,
+
+
+    initial_price_denominator: u128,
+
+
+    target_price_numerator: u128,
+
+
+    target_supply: u128,
+
+
+    max_supply: u128
+
+
+): u128
+Input Values
+Type
+Description
+initial_price_numerator
+u128
+Initial price numerator.
+initial_price_denominator
+u128
+Initial price denominator.
+target_price_numerator
+u128
+Target price numerator.
+target_supply
+u128
+Target supply amount.
+max_supply
+u128
+Maximum supply amount.
+Calculate Price
+Calculates the token price based on the supply and bonding curve parameters.
+Copy
+public(friend) fun calculate_price(
+
+
+    curve: &BondingCurve,
+
+
+    max_supply: u128,
+
+
+    decimals: u128,
+
+
+    new_supply_base_value: u128,
+
+
+    new_supply_exponent_value: u128
+
+
+): u128
+Input Values
+Type
+Description
+curve
+&BondingCurve
+The bonding curve reference.
+max_supply
+u128
+Maximum supply of the token.
+decimals
+u128
+Number of decimals to use for precision.
+new_supply_base_value
+u128
+The new supply base value.
+new_supply_exponent_value
+u128
+The new supply exponent value.
+Set Market Cap Goal
+Adjusts the bonding curve based on a new target market cap.
+Copy
+public(friend) fun set_market_cap_goal(
+
+
+    coin_addr: address, 
+
+
+    initial_price_numerator: u128,
+
+
+    initial_price_denominator: u128,
+
+
+    target_price_numerator: u128,
+
+
+    target_supply: u128,
+
+
+    max_supply: u128
+
+
+): u128 acquires BondingCurve
+Input Values
+Type
+Description
+coin_addr
+address
+Address of the token.
+initial_price_numerator
+u128
+Initial price numerator.
+initial_price_denominator
+u128
+Initial price denominator.
+target_price_numerator
+u128
+Target price numerator.
+target_supply
+u128
+Target supply amount.
+max_supply
+u128
+Maximum supply amount.
+View Functions
+Initial Price
+Returns the initial price of the bonding curve for a token.
+Copy
+public fun initial_price<CoinType>(): (u128, u128) acquires BondingCurve
+Return Values
+Type
+Description
+initial_price_numerator
+u128
+Initial price numerator of the token.
+initial_price_denominator
+u128
+Initial price denominator of the token.
+Growth Constant
+Returns the growth constant ( k ) for the bonding curve of a token.
+Copy
+public fun growth_constant<CoinType>(): u128 acquires BondingCurve
+Return Values
+Type
+Description
+growth_constant
+u128
+Growth constant ( k ) of the bonding curve.
+Previous
+Coin (AMM)
+Next
+Core
+Last updated 
+3 months ago
+Core | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Smart Contracts
+Move.Fun
+Coin (AMM)
+Core
+Contract Info
+Contract Name
+: 
+move_fun::legacy_coin
+Contract Address
+: [tba]
+Resources
+Info
+Represents the global storage for managing the legacy coin supply and details.
+Copy
+struct Info<phantom BuyCoinType, phantom SellCoinType> has key {
+
+
+    total_bound_supply: u64,
+
+
+    liquidity_supply: Coin<BuyCoinType>,
+
+
+    target_price_numerator: u64,
+
+
+    target_price_denominator: u64,
+
+
+    buy_coin_store: Coin<BuyCoinType>,
+
+
+    sell_coin_store: Coin<SellCoinType>,
+
+
+    virtual_balance_store: smart_table::SmartTable<address, Coin<BuyCoinType>>,
+
+
+    max_wallet_balance: Option<u64>,
+
+
+}
+Name
+Type
+Description
+total_bound_supply
+u64
+Total supply bound to the bonding curve.
+liquidity_supply
+Coin
+Supply allocated for liquidity.
+target_price_numerator
+u64
+Target price numerator for the buy coin.
+target_price_denominator
+u64
+Target price denominator for the buy coin.
+buy_coin_store
+Coin
+Coin supply available for selling.
+sell_coin_store
+Coin
+Coin supply held for selling.
+virtual_balance_store
+smart_table::SmartTable<address, Coin>
+Virtual balance for storing coins during buy/sell.
+max_wallet_balance
+Option
+Maximum allowed balance per wallet (optional).
+CoinMetadata
+Stores metadata for the legacy coin.
+Copy
+struct CoinMetadata<phantom CoinType> has key, store {
+
+
+    name: String,
+
+
+    symbol: String,
+
+
+    decimals: u8,
+
+
+    max_supply: u64,
+
+
+    logo: String,
+
+
+    banner: String,
+
+
+    description: String,
+
+
+    links: vector<String>
+
+
+}
+Name
+Type
+Description
+name
+String
+Name of the coin.
+symbol
+String
+Symbol of the coin.
+decimals
+u8
+Number of decimal places for the coin.
+max_supply
+u64
+Maximum supply of the coin.
+logo
+String
+URL to the coin's logo.
+banner
+String
+URL to the coin's banner.
+description
+String
+Description of the coin.
+links
+vector
+List of links related to the coin.
+Events
+CoinDeployed
+Emitted when the coin is deployed.
+Copy
+#[event]
+
+
+struct CoinDeployed has drop, store {
+
+
+    coin_address: String,
+
+
+    name: String,
+
+
+    symbol: String,
+
+
+    decimals: u8,
+
+
+    max_supply: u64,
+
+
+    logo: String,
+
+
+    banner: String,
+
+
+    description: String,
+
+
+    links: vector<String>
+
+
+}
+CoinBought
+Emitted when coins are bought.
+Copy
+#[event]
+
+
+struct CoinBought has drop, store {
+
+
+    buyer: address,
+
+
+    coin: String,
+
+
+    amount_base_value: u64,
+
+
+    amount_exponent_value: u64,
+
+
+    at_price_numerator: u64,
+
+
+    at_price_denominator: u64,
+
+
+    paid: u64,
+
+
+    paid_coin: String,
+
+
+    accumulated_sell_supply: u64,
+
+
+    remaining_supply: u64,
+
+
+}
+CoinSold
+Emitted when coins are sold.
+Copy
+#[event]
+
+
+struct CoinSold has drop, store {
+
+
+    seller: address,
+
+
+    coin: String,
+
+
+    amount_base_value: u64,
+
+
+    amount_exponent_value: u64,
+
+
+    at_price_numerator: u64,
+
+
+    at_price_denominator: u64,
+
+
+    received: u64,
+
+
+    received_coin: String,
+
+
+    accumulated_sell_supply: u64,
+
+
+    remaining_supply: u64,
+
+
+}
+Public Functions
+Initialize Legacy Coin
+Initializes the legacy coin with bonding curve parameters and metadata.
+Copy
+public(friend) fun initialize<BuyCoinType, SellCoinType>(
+
+
+    signer_ref: &signer,
+
+
+    max_supply: u64,
+
+
+    initial_price_numerator: u64,
+
+
+    initial_price_denominator: u64,
+
+
+    target_price_numerator: u64,
+
+
+    target_price_denominator: u64,
+
+
+    bound_supply_percentage: u8,
+
+
+    logo: String,
+
+
+    banner: String,
+
+
+    description: String,
+
+
+    links: vector<String>,
+
+
+    max_wallet_balance: Option<u64>
+
+
+)
+Input Values
+Type
+Description
+signer_ref
+signer
+The signer's reference.
+max_supply
+u64
+Maximum supply of the coin.
+initial_price_numerator
+u64
+Initial price numerator for the coin.
+initial_price_denominator
+u64
+Initial price denominator for the coin.
+target_price_numerator
+u64
+Target price numerator for the coin.
+target_price_denominator
+u64
+Target price denominator for the coin.
+bound_supply_percentage
+u8
+Percentage of the total supply bound to the bonding curve.
+logo
+String
+URL to the coin's logo.
+banner
+String
+URL to the coin's banner.
+description
+String
+Description of the coin.
+links
+vector
+List of links related to the coin.
+max_wallet_balance
+Option
+Optional max wallet balance.
+Buy Legacy Coin
+Allows users to buy coins based on the bonding curve.
+Copy
+public(friend) fun buy<BuyCoinType, SellCoinType>(
+
+
+    buyer: &signer,
+
+
+    amount_base_value: u64,
+
+
+    amount_exponent_value: u64
+
+
+) acquires Info
+Input Values
+Type
+Description
+buyer
+signer
+The buyer's reference.
+amount_base_value
+u64
+Base value of the amount to buy.
+amount_exponent_value
+u64
+Exponent value of the amount to buy.
+Sell Legacy Coin
+Allows users to sell coins back into the bonding curve.
+Copy
+public(friend) fun sell<BuyCoinType, SellCoinType>(
+
+
+    seller: &signer,
+
+
+    amount_base_value: u64,
+
+
+    amount_exponent_value: u64
+
+
+) acquires Info
+Input Values
+Type
+Description
+seller
+signer
+The seller's reference.
+amount_base_value
+u64
+Base value of the amount to sell.
+amount_exponent_value
+u64
+Exponent value of the amount to sell.
+View Functions
+Get Metadata
+Retrieves the metadata for the legacy coin.
+Copy
+#[view]
+
+
+public fun metadata<CoinType>(): (String, String, u8, u64, String, String, String, vector<String>) acquires CoinMetadata
+Return Values
+Type
+Description
+name
+String
+Name of the coin.
+symbol
+String
+Symbol of the coin.
+decimals
+u8
+Number of decimal places for the coin.
+max_supply
+u64
+Maximum supply of the coin.
+logo
+String
+URL to the coin's logo.
+banner
+String
+URL to the coin's banner.
+description
+String
+Description of the coin.
+links
+vector
+List of links related to the coin.
+Previous
+Bonding Curve
+Next
+Router
+Last updated 
+3 months ago
+Contract Info
+Resources
+Events
+Public Functions
+View Functions
+Router | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Contract Info
+Resources
+Entry Functions
+View Functions
+Technical
+Smart Contracts
+Move.Fun
+Coin (AMM)
+Router
+Contract Info
+Contract Name
+: 
+move_fun::legacy_coin_router
+Contract Address
+: [tba]
+Resources
+Info
+Represents the global storage for managing the bonding curve metadata, and only admins can modify it.
+Copy
+struct Info<phantom BuyCoinType, phantom SellCoinType> has key {
+
+
+    initial_price_numerator: u64,
+
+
+    initial_price_denominator: u64,
+
+
+    bonding_curve_goal: u64,
+
+
+    dex: TypeInfo,
+
+
+}
+Name
+Type
+Description
+initial_price_numerator
+u64
+Initial price numerator of the bonding curve.
+initial_price_denominator
+u64
+Initial price denominator of the bonding curve.
+bonding_curve_goal
+u64
+Total sales goal after which the liquidity pool is created.
+dex
+TypeInfo
+The DEX where the liquidity pool will be created.
+Entry Functions
+Create Legacy Coin with Bonding Curve
+Initializes a new bonding curve for a legacy coin. Only callable by the owner of the buy coin.
+Copy
+public(friend) entry fun create<BuyCoinType, DEX>(
+
+
+    deployer: &signer,
+
+
+    name: String,
+
+
+    symbol: String,
+
+
+    logo: String,
+
+
+    banner: String,
+
+
+    description: String,
+
+
+    links: vector<String>,
+
+
+    max_wallet_balance: Option<u64>,
+
+
+    bundled_launch_amount_base_value: Option<u64>,
+
+
+    bundled_launch_amount_exponent_value: Option<u64>
+
+
+) acquires Info
+Input Values
+Type
+Description
+deployer
+signer
+The deployer's signer reference.
+name
+String
+Name of the legacy coin.
+symbol
+String
+Symbol of the legacy coin.
+logo
+String
+URL to the logo of the coin.
+banner
+String
+URL to the banner of the coin.
+description
+String
+Description of the coin.
+links
+vector
+List of links related to the coin.
+max_wallet_balance
+Option
+Optional maximum wallet balance limit.
+bundled_launch_amount_base_value
+Option
+Optional base value for bundled launch.
+bundled_launch_amount_exponent_value
+Option
+Optional exponent value for bundled launch.
+Buy Legacy Coin
+Allows users to buy legacy coins based on the bonding curve.
+Copy
+public(friend) entry fun buy<BuyCoinType>(
+
+
+    buyer: &signer,
+
+
+    amount_base_value: u64,
+
+
+    amount_exponent_value: u64
+
+
+) acquires Info
+Input Values
+Type
+Description
+buyer
+signer
+The buyer's signer reference.
+amount_base_value
+u64
+Base value of the amount to buy.
+amount_exponent_value
+u64
+Exponent value of the amount to buy.
+Sell Legacy Coin
+Allows users to sell legacy coins back into the bonding curve.
+Copy
+public(friend) entry fun sell<BuyCoinType>(
+
+
+    seller: &signer,
+
+
+    amount_base_value: u64,
+
+
+    amount_exponent_value: u64
+
+
+) acquires Info
+Input Values
+Type
+Description
+seller
+signer
+The seller's signer reference.
+amount_base_value
+u64
+Base value of the amount to sell.
+amount_exponent_value
+u64
+Exponent value of the amount to sell.
+View Functions
+Get Bonding Curve Goal
+Returns the bonding curve goal for the given coin.
+Copy
+#[view]
+
+
+public fun bonding_curve_goal<BuyCoinType>(): u64 acquires Info
+Return Values
+Type
+Description
+bonding_curve_goal
+u64
+The bonding curve goal.
+Get Initial Price
+Returns the initial price of the bonding curve.
+Copy
+#[view]
+
+
+public fun initial_price<BuyCoinType>(): (u64, u64) acquires Info
+Return Values
+Type
+Description
+initial_price_numerator
+u64
+The initial price numerator.
+initial_price_denominator
+u64
+The initial price denominator.
+Get DEX
+Returns the DEX where the liquidity pool will be created.
+Copy
+#[view]
+
+
+public fun dex<BuyCoinType>(): TypeInfo acquires Info
+Return Values
+Type
+Description
+dex
+TypeInfo
+The DEX where the liquidity pool will be created.
+Previous
+Core
+Next
+Ecosystem Participants of Yuzu
+Last updated 
+3 months ago
+Ecosystem Participants of Yuzu | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Technical
+Ecosystem Participants of Yuzu
+Introduction
+The Yuzu ecosystem is a dynamic and diverse environment, hosting a variety of participants including liquidity providers, traders, developers, and the Yuzu community. Each group plays a crucial role in sustaining and advancing the ecosystem.
+Liquidity Providers (LPs)
+Types of LPs
+Passive LPs
+: Token holders seeking to invest their assets to earn trading fees.
+Professional LPs
+: Market makers utilizing custom tools to manage liquidity positions across DeFi projects.
+Token Projects as LPs
+: Projects that supply liquidity to create a more accessible market for their tokens, enhancing interoperability with other DeFi projects.
+Innovative LPs
+: Pioneers experimenting with incentivized liquidity, using liquidity as collateral, and other novel strategies.
+Traders
+Categories of Traders
+Speculators
+: Individuals leveraging community-built tools to swap tokens through Yuzu’s liquidity.
+Arbitrage Bots
+: Automated systems that balance prices across different markets, contributing to market fairness.
+DAPP Users
+: Users acquiring tokens on Yuzu for application usage on the Movement network.
+Smart Contract Trades
+: Automated trades executed by smart contracts, from DEX aggregators to custom scripts.
+Trading Dynamics
+All trades incur a fixed fee, which is crucial for maintaining price accuracy and incentivizing liquidity.
+Developers and Projects
+Utilization of Yuzu
+User Experience Experiments
+: Various front-ends and interfaces built to access Yuzu's functionalities, contributing to major DeFi dashboard projects.
+Wallet Integrations
+: Incorporation of swapping and liquidity provision as key features in crypto wallets.
+DEX Aggregators
+: Utilization of Yuzu’s liquidity in combination with other protocols to offer optimal trading prices.
+Smart Contract Innovation
+: Developers creating new DeFi tools and experimental projects using Yuzu's functionalities.
+Yuzu Team and Community
+Collaborative Development
+The Yuzu team, in collaboration with the broader community, spearheads the development and continuous enhancement of the protocol and its ecosystem.
+Conclusion
+The synergy between these various participants creates a vibrant and efficient ecosystem, continually evolving and expanding the digital economy on the Movement Network through Yuzu.
+Previous
+Router
+Next
+Terms of Use
+Last updated 
+7 months ago
+Introduction
+Liquidity Providers (LPs)
+Types of LPs
+Traders
+Categories of Traders
+Trading Dynamics
+Developers and Projects
+Utilization of Yuzu
+Yuzu Team and Community
+Collaborative Development
+Conclusion
+Terms of Use | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Legal
+Terms of Use
+Welcome, and thank you for your interest in YuzuSwap (“Yuzu LLC, “our” “we,” or “us”) and our website at https://YuzuDEX.xyz (the “Site”). These Terms of Use are a legally binding contract between you and Yuzu LLC regarding your use of the Site. Please read the following terms carefully before using the Site. By using the Site, you acknowledge that you have read, understood, and agree to be bound by the following terms and conditions
+Eligibility
+You must be at least 18 years of age to use the Site. By agreeing to these Terms, you represent and warrant to us that: (a) you are at least 18 years of age; and (b) your use of the Site is in compliance with any and all applicable laws and regulations. If you are an entity, organization, or company, the individual accepting these Terms on your behalf represents and warrants that they have authority to bind you to these Terms and you agree to be bound by these Terms.
+Purchases
+Payment: Purchases of any merchandise are facilitated through a third-party service provider. We may provide such service provider with information regarding your credit card or other payment instrument. You represent and warrant that such information is true and that you are authorized to use the payment instrument. You will be responsible for all taxes associated with your purchase of merchandise through the Service.
+Loss and Cancellation: Title and risk of loss for all merchandise ordered by you will pass to you on delivery to the shipping carrier. We reserve the right to cancel any order for any merchandise for any reason.
+Returns: You acknowledge and agree that goods produced for you are bespoke, custom-made goods. Other than where goods are faulty, you have no right to cancel any order or return any goods and all orders are final.
+Waiver: Your purchase of an item constitutes a waiver of any and all intellectual property, proprietary, personal, and privacy claims relating to that purchase.
+Changes to the Terms
+We may periodically make changes to these Terms. When we do, we will update the “Last Updated” date above. It is your responsibility to review the most recent version of these Terms and remain informed of any changes. You agree that your continued use of the Site after the effective date of any changes will constitute your acceptance of the changed Terms for your continued use. Disputes arising under these Terms will be resolved in accordance with the version of these Terms that was in effect at the time the dispute arose.
+Changes to the Site
+We reserve the right to modify or discontinue, temporarily or permanently, all or a part of the Site without notice. We will not be liable to you or to any third party for any modification, suspension, or discontinuance of the Site.
+Privacy
+When you use the Interface, the only information we collect from you is your blockchain wallet address, completed transaction hashes, and the token names, symbols. We do not collect any personal information from you (e.g., your name or other identifiers that can be linked to you). We do, however, use third-party service providers which may receive or independently obtain your personal information from publicly-available sources. We do not control how these third parties handle your data and you should review their privacy policies to understand how they collect, use, and share your personal information. By accessing and using the Interface, you understand and consent to our data practices and our service providers' treatment of your information. 
+We use the information we collect to detect, prevent, and mitigate financial crime and other illicit or harmful activities on the Interface. For these purposes, we may share the information we collect with blockchain analytics providers. We share information with these service providers only so that they can help us promote the safety, security, and integrity of the Interface.
+Please note that when you use the Interface, you are interacting with Aptos or another public blockchain, which by nature may provide transparency into your transactions. Yuzuswap does not control and is not responsible for any information you make public on blockchains by taking actions through the Interface. 
+Limited License
+Subject to these Terms, Yuzuswap grants you a limited, revocable license to access and use the Site solely for non-commercial purposes to learn more about Yuzu LLC products and services. No other use of the Site is authorized.
+Restrictions
+You must comply with all applicable laws when using the Site. Except as may be expressly permitted by applicable law or expressly permitted by us in writing, you will not, and will not permit anyone else to: (a) store, copy, modify, distribute, or resell any information or material available on the Site (“Site Content”) or compile or collect any Site Content as part of a database or other work; (b) use any automated tool (e.g., robots, spiders) to use the Site or store, copy, modify, distribute, or resell any Site Content; (c) rent, lease, or sublicense your access to the Site; (d) use the Site or Site Content for any purpose except for your own personal use; (e) circumvent or disable any digital rights management, usage rules, or other security features of the Site; (f) reproduce, modify, translate, enhance, decompile, disassemble, reverse engineer, or create derivative works of the Site; (g) use the Site in a manner that threatens the integrity, performance, or availability of the Site; or (h) remove, alter, or obscure any proprietary notices (including copyright notices) on any portion of the Site or Site Content.
+Ownership
+The Site is owned and operated by Yuzuswap. We retain all right, title, and interest in and to the Site and Site Content and any logos, or service marks displayed on the Site or in Site Content (“Marks”). Except as expressly authorized by Yuzuswap you may not make use of the Site, Site Content, and Marks.
+Links and Third Party Content
+The Site may contain links to third party products, services, and websites. We exercise no control over the third party products, services, and websites and we are not responsible for their performance, do not endorse them, and are not responsible or liable for any content, advertising, or other materials available through the third party products, services, and websites. We are not responsible or liable, directly or indirectly, for any damage or loss caused to you by your use of or reliance on any goods or services available through the third party products, services, and websites.
+Additionally, if you follow a link or otherwise navigate away from the Site, please be aware that these Terms will no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any third party websites to which you navigate to from the Site.
+Disclaimer of Warranties
+YOUR USE OF THE SITE AND SITE CONTENT IS AT YOUR SOLE RISK. THE SITE AND SITE CONTENT ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. YUZU LLC EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT GUARANTEE THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SITE OR SITE CONTENT, AND YOU RELY ON THE SITE AND SITE CONTENT AT YOUR OWN RISK. ANY MATERIAL OBTAINED THROUGH THE SITE IS DONE AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY MATERIAL THROUGH THE SITE. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM YUZU LLC OR THROUGH OR FROM THE SITE WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THIS AGREEMENT. HOWEVER, YUZU LLC DOES NOT DISCLAIM ANY WARRANTY OR OTHER RIGHT THAT YUZU LLC IS PROHIBITED FROM DISCLAIMING UNDER APPLICABLE LAW.
+Limitation of Liability
+YUZUSWAP WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA OR OTHER INTANGIBLE LOSSES (EVEN IF YUZU LLC HAS BEEN ADVISED OF THE POSSIBILITY OF THESE DAMAGES), RESULTING FROM YOUR USE OF THE SITE AND SITE CONTENT. UNDER NO CIRCUMSTANCES WILL YUZU LLC's TOTAL LIABILITY OF ALL KINDS ARISING OUT OF OR RELATED TO YOUR USE OF THE SITE OR SITE CONTENT (INCLUDING BUT NOT LIMITED TO WARRANTY CLAIMS), REGARDLESS OF THE FORUM AND REGARDLESS OF WHETHER ANY ACTION OR CLAIM IS BASED ON CONTRACT, TORT, OR OTHERWISE, EXCEED $50. BECAUSE SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
+EACH PROVISION OF THESE TERMS THAT PROVIDES FOR A LIMITATION OF LIABILITY, DISCLAIMER OF WARRANTIES, OR EXCLUSION OF DAMAGES IS INTENDED TO AND DOES ALLOCATE THE RISKS BETWEEN THE PARTIES UNDER THESE TERMS. THIS ALLOCATION IS AN ESSENTIAL ELEMENT OF THE BASIS OF THE BARGAIN BETWEEN THE PARTIES. EACH OF THESE PROVISIONS IS SEVERABLE AND INDEPENDENT OF ALL OTHER PROVISIONS OF THESE TERMS. THE LIMITATIONS IN THIS SECTION WILL APPLY EVEN IF ANY LIMITED REMEDY FAILS OF ITS ESSENTIAL PURPOSE.
+Indemnity
+You will indemnify and hold Yuzuswap and its partners, service providers, affiliates, officers, agents, and employees, harmless from any costs, damages, expenses, and liability caused by your use of the Site or Site Content, your violation of these Terms, or your violation of any rights of a third party through use of the Site or Site Content. We and our licensors reserve the right, at our own expense, to assume the exclusive defence and control of any matter otherwise subject to indemnification by you (without limiting your indemnification obligations with respect to that matter), and in that case, you agree to cooperate with our defence of those claims.
+Release
+If you have a dispute with the Site, Site Content, or any products purchased through the Site, you hereby release us and our partners and service providers (and each party’s respective officers, directors, agents, subsidiaries, joint ventures and employees) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with such disputes. If you are a California resident, you waive California Civil Code §1542, which states: “A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favour at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.”
+General Terms
+These Terms, together with any other agreements expressly incorporated by reference into these Terms, are the entire and exclusive understanding and agreement between you and Yuzuswap regarding your use of the Site. You may not assign or transfer these Terms or your rights under these Terms, in whole or in part, by operation of law or otherwise, without our prior written consent. We may assign these Terms at any time without notice or consent. The failure to require performance of any provision will not affect our right to require performance at any other time after that, nor will a waiver by us of any breach or default of these Terms, or any provision of these Terms, be a waiver of any subsequent breach or default or a waiver of the provision itself. Use of section headers in these Terms is for convenience only and will not have any impact on the interpretation of any provision. Throughout these Terms the use of the word “including” means “including but not limited to”. If any part of these Terms is held to be invalid or unenforceable, the unenforceable part will be given effect to the greatest extent possible, and the remaining parts will remain in full force and effect.
+Legal Notices
+These Terms are governed by the laws of the state of without regard to conflict of law principles. The exclusive jurisdiction and venue for any claims arising out of or related to these Terms or your use of the Site will lie in the state and federal courts located in undefined, undefined, and you irrevocably agree to submit to the jurisdiction of such courts. The failure of Yuzuswap to enforce any right or provision in these Terms will not constitute a waiver of such right or provision unless acknowledged and agreed to by Yuzuswap in writing. In the event that a court of competent jurisdiction finds any provision of these Terms to be illegal, invalid or unenforceable, the remaining provisions will remain in full force and effect.
+For questions or more details, contact support@YuzuDEX.xyz
+Previous
+Ecosystem Participants of Yuzu
+Next
+Legal Disclaimer
+Last updated 
+16 days ago
+Eligibility
+Purchases
+Changes to the Terms
+Changes to the Site
+Privacy
+Limited License
+Restrictions
+Ownership
+Links and Third Party Content
+Disclaimer of Warranties
+Limitation of Liability
+Indemnity
+Release
+General Terms
+Legal Notices
+Legal Disclaimer | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Legal
+Legal Disclaimer
+This article by Yuzu LLC and/or its affiliates (“we”, “us” and “our”) is for information purposes only. We do not provide tax, legal, insurance or investment advice, and nothing in this article should be construed as an offer to sell, a solicitation of an offer to buy, sell or issue or subscribe for, or a recommendation for any security, investment, cryptocurrency, token or other services, product or commodity by us or any third party. You alone are solely responsible for determining whether any purchase, sale, investment, security or strategy, or any other product or service, is appropriate or suitable for you based on your personal objectives and personal and financial situation and for evaluating the merits and risks associated with the use of the information in this article before making any decisions based on such information or other content. You should consult a lawyer and/or tax professional regarding your specific legal and/or tax situation. Past performance is no guarantee of future results. Therefore, you should not assume that the future performance of any specific investment, cryptocurrency, token, commodity or strategy will be profitable or equal to corresponding past performance levels. Inherent in any such transaction is the potential for loss. No recommendation or advice is being given as to whether any transaction is suitable for a particular person. By accessing this article, you acknowledge and agree to all of the foregoing and that you bear responsibility for your own research, due diligence and transaction decisions. You also agree that we, our affiliates and our respective directors, officers, employees, consultants, shareholders, members, representatives, advisors and agents will not be liable for any decision made or action taken by you and others based on this article, news, information, opinion, or any other material published, discussed or disseminated by us.
+This article contains forward-looking statements or forward-looking information (referred to collectively as “forward-looking statements”). Forward-looking statements can be identified by words such as: “anticipate”, “intend”, “plan”, “goal”, “seek”, “believe”, “predict”, “project”, “estimate”, “expect”, “strategy”, “future”, “likely”, “may”, “should”, ”would”, “will”, and similar terms and phrases and the negatives of such expressions, including references to assumptions. Examples of forward-looking statements in this article include, among others, statements we make regarding our future plans, expectations and objectives.
+Forward-looking statements are neither historical facts nor assurances of future performance. Instead, they are based only on our current beliefs, expectations and assumptions regarding the future of our business, future plans and strategies, projections, anticipated events and trends, the economy and other future conditions. Because forward-looking statements relate to the future, they are subject to inherent uncertainties, risks and changes in circumstances that are difficult to predict and many of which are outside of our control. Our actual results and financial condition may differ materially from those indicated in the forward-looking statements. Therefore, you should not rely on any of these forward-looking statements. Important factors that could cause our actual results and financial condition to differ materially from those indicated in the forward-looking statements include, among others, the following: reliance on blockchain technology and blockchain technology service providers; digital asset transactions being irrevocable and losses occurring from such transactions; our use and reliance on proprietary data and intellectual property in its business; potential misuses of digital assets and malicious actors in the digital asset industry; digital assets potentially being subject to hold periods; developments and changes in laws and regulations; and disruptions to our technology network including computer systems, software and cloud data, or other disruptions of our operating systems, structures or equipment. Readers are cautioned that the foregoing list is not exhaustive.
+Any forward-looking statement made by us in this article is based only on information currently available to us and speaks only as of the date on which it is made. Except as required by applicable securities laws, we undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.
+Previous
+Terms of Use
+Last updated 
+16 days ago
+CLMM | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+Fee Tiers | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Products
+CLMM
+Fee Tiers
+At Yuzu, we've redefined the concentrated liquidity AMM to prioritize user-friendliness and cost-efficiency, offering a superior alternative to traditional DEXs and CEXs.
+For Liquidity Providers (LPs):
+Yuzu features a flexible fee tier structure tailored to different token pair characteristics. This system empowers LPs to optimize their strategies based on the correlation and price volatility of the tokens they provide liquidity for:
+Fee Tier
+Description
+0.01%
+ – Historically Proven Stable Pairs
+Designed for pairs, with a proven history of being very stable.
+0.05%
+ – Stable Pairs
+Designed for highly correlated pairs, such as stablecoins (e.g., USDT-USDC). These pairs involve minimal price risk, and the low fee suits traders seeking cost-effective swaps.
+0.3%
+ – Most Pairs
+Ideal for token pairs with moderate correlation and occasional price swings (e.g., MOVE-USDC). The higher fee compensates LPs for the increased price risk compared to stablecoin pairs.
+1%
+ – Exotic Pairs
+Best suited for pairs with minimal correlation and significant price volatility (e.g., exotic token pairs). This elevated fee rewards LPs for bearing higher price risk.
+By aligning fees with token behavior, Yuzu provides a balanced approach that benefits both traders and liquidity providers, fostering a sustainable and profitable ecosystem for all participants.
+Previous
+CLMM
+Next
+Price Ranges
+Last updated 
+2 months ago
+CLMM | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+Products
+CLMM
+Yuzu's concentrated liquidity DEX enables users to provide liquidity within targeted price ranges, optimizing capital efficiency and minimizing impermanent loss for liquidity providers. This approach ensures a more sustainable and rewarding trading experience.
+About Concentrated Liquidity
+Automated Market Making (AMM):
+Yuzu operates as an innovative automated market-making platform, facilitating efficient token swaps and liquidity provision.
+The Movement Network’s non-custodial framework, which eliminates intermediaries and ensures low transaction costs, aligns perfectly with Yuzu’s vision of providing a seamless and cost-effective trading experience. By distributing minimal trading fees entirely to liquidity providers (LPs), Yuzu incentivizes deep liquidity and competitive pricing for all users.
+Concentrated Liquidity:
+Yuzu redefines liquidity provision with its concentrated liquidity model, enabling LPs to focus their capital within specific price ranges. This results in higher returns on investment and reduces unnecessary risk exposure.
+This approach ensures ultra-low slippage for trades, often outperforming traditional DEXs and centralized exchanges. It also allows LPs to optimize their positions, offering greater exposure to preferred assets while simultaneously mitigating downside risk, making the platform an ideal choice for both experienced traders and investors.
+Additionally, LPs can use concentrated liquidity to mimic fee-earning limit orders by adding liquidity entirely above or below the current market price. This feature enhances flexibility, enabling strategic trading and maximizing earning potential while maintaining a smooth, intuitive user experience.
+Yuzu combines innovation and user-centric design to deliver a highly efficient and profitable platform for all participants in the decentralized finance ecosystem.
+Previous
+Get MOVE Coins
+Next
+Fee Tiers
+Last updated 
+2 months ago
+About Concentrated Liquidity
+Automated Market Making (AMM):
+Concentrated Liquidity:
+Introduction | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+Get MOVE Coins | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+General Information
+Get MOVE Coins
+The native token of Movement is 
+$MOVE
+.
+To do most things on Movement, you will need to pay gas, which comes in the form of $MOVE. 
+Testnet
+For testnet you can aquire $MOVE through the 
+faucet
+.
+Mainnet (COMING SOON)
+You will also need $MOVE if you plan to trade or stake on the Movement mainnet. The simplest way to acquire $MOVE is by purchasing it on a supported centralized exchange (CEX). Alternatively, you can transfer your assets to the Movement mainnet using decentralized bridges. Here are the ones we recommend:
+Bridge 1
+Previous
+Introduction
+Next
+CLMM
+Last updated 
+16 days ago
+Introduction | Yuzu Documentation
+Yuzu Documentation
+Search
+...
+Ctrl +
+ K
+General Information
+Introduction
+Get MOVE Coins
+Products
+CLMM
+Fee Tiers
+Price Ranges
+Active & Inactive Liquidity
+LP Position NFTs
+Glossary
+Socials
+Contacts
+Brand & Logos
+Technical
+Smart Contracts
+Yuzu CLMM
+Liquidity Pool
+Router
+Scripts
+Yuzu AMM (Testnet)
+Router
+Aggregator Integration
+Swap
+Move.Fun
+Coin (AMM)
+Bonding Curve
+Core
+Router
+Ecosystem Participants of Yuzu
+Legal
+Terms of Use
+Legal Disclaimer
+Powered by GitBook
+On this page
+General Information
+Introduction
+A decentralized trading platform redefining DeFi on the Movement Network
+Next
+Get MOVE Coins
+Last updated 
+16 days ago
+About Yuzu
+Yuzu is a non-custodial, highly efficient Concentrated Liquidity Market Maker DEX (CLMM) built on the Movement Network. By leveraging the innovative architecture of Movement, Yuzu offers unparalleled scalability, seamless user experiences, and secure trading to empower the next generation of decentralized finance (DeFi).
+Founded in 2024, Yuzu is supported by pioneers in DeFi and blockchain development and is committed to accelerating the Movement Network ecosystem, with the mission to make DeFi accessible to everyone while serving as a critical bridge between Movement-based projects and the broader market.
+Building for the Movement Ecosystem
+Yuzu is dedicated to advancing the Movement's ecosystem with scalable infrastructure and robust liquidity solutions, ensuring long-term sustainability and growth.
+Unlocking Capital Efficiency
+With an innovative concentrated liquidity model, Yuzu optimizes capital usage by focusing liquidity where it’s most effective. This approach eliminates unused collateral and enhances returns for liquidity providers.
+Empowering Liquidity Providers
+The platform provides tools for liquidity providers to manage their assets dynamically. Customize trading price ranges in real time to adapt to ever-changing market conditions and maximize profitability.
+Streamlined Trading for All
+Yuzu is designed with simplicity and functionality at its core. Whether you’re a seasoned trader or new to DeFi, the intuitive interface and efficient workflows ensures a smooth trading experience.
+About Yuzu
+Building for the Movement Ecosystem
+Unlocking Capital Efficiency
+Empowering Liquidity Providers
+Streamlined Trading for All

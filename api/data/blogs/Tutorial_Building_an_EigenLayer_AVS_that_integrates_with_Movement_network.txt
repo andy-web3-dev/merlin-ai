@@ -1,0 +1,327 @@
+Tutorial: Building an EigenLayer AVS that integrates with Movement network
+Tutorials
+June 6, 2024
+In this guide, you’ll build an Actively Validated Service (AVS) that interacts with both EigenLayer’s validator system and Movement network.
+Here’s the modified repository
+.
+If you inspect
+operator.go
+you’ll see how we modified EigenLayer’s Incredible Squaring AVS to build an AVS that queries Movement network to generate a random number.
+We’ll do this in three parts:
+Intro: Understanding AVSs and getting set up
+Implementing a simple AVS (Infinite Squaring, created by EigenLayer team)
+Modifying an AVS to interact with Movement network
+Part 1: Understanding AVSs
+Let’s dive in. First of all:
+What’s an AVS?
+From the EigenLayer docs:
+An AVS is any system that requires its own distributed validation semantics for verification, such as sidechains, data availability layers, new virtual machines, keeper networks, oracle networks, bridges, threshold cryptography schemes, trusted execution environments and more.
+https://docs.eigenlayer.xyz/eigenlayer/avs-guides/avs-developer-guide
+It might seem complicated at first, but by the end of this guide, you’ll know how to build and customize your own AVS!
+A fundamental thing to understand is that an AVS requires an off-chain layer for executing some operations. That’s why the parties who sign off on an AVS’ off-chain work are called “operators.”
+If you look at the diagram from EigenLayer’s docs, you’ll see some key components of an AVS:
+“Each AVS has its own set of contracts that hold state relevant to the service’s functionality, such as what operators are running the service and how much stake is securing the service.” – EigenLayer docs
+The EigenLayer contracts that an AVS uses are:
+StrategyManager
+:  where stakers deposit assets to stake
+DelegationManager:
+lets stakers choose which operators to delegate to. AVS operators register and deregister via
+DelegationManager
+AVSDirectory
+: directory of all registered AVSs
+ServiceManager
+: is the entry point for each AVS. It must implement the interface expected by the EigenLayer protocol.
+They do an awesome job explaining everything in full detail, so please feel free to take a deep dive into EigenLayer’s resources as needed, and come back when you’re ready to build.
+How does the Incredible Squaring AVS work?
+We’ll follow
+EigenLayer’s guide to build our own simple AVS
+before creating a custom version.
+Their example AVS simply squares a number. But it’s still incredible, in that operators (who have staked digital assets via EigenLayer contracts) sign to attest the execution of the squaring operation, and then a record of the execution is stored on-chain.
+Here’s how it works:
+Prerequisites:
+Operators register with the EigenLayer
+DelegationManager
+contract.
+Incredible Squaring AVS is deployed and registered to an implementation of the
+AVSDirectory c
+ontract.
+Operators register with the AVS through its
+RegistryCoordinator
+.
+The Task Generator entity sends the number to be squared to the AVS contract (
+IncredibleSquaringTaskManager.sol
+).
+AVS contract emits a
+NewTaskCreated
+event to represent the new number to be squared.
+Operators listen to the AVS contract for the event, square the number, sign the result with a BLS signature, and send their signature to the
+Aggregator
+entity.
+The
+Aggregator
+combines each into a single aggregated signature using BLS signature aggregation. Once the quorum threshold is met the
+Aggregator
+sends the aggregated signature back to the AVS contract.
+AVS contract verifies that the quorum thresholds were met and that the aggregated signature is valid. If so, the squared number is accepted.
+For the Incredible Squaring AVS, each request to square a number goes through this lifecycle flow:
+Note:
+some aspects of the above lifecycle flow, such as the BLS signature type, are not required for all AVSs.
+Part 2: Set up your local environment and run the Incredible Squaring AVS demo
+You can follow the setup steps in the
+Incredible Squaring GitHub repo
+. The main steps are:
+Install
+foundry
+and
+zap-pretty
+Install Docker and build the AVS contracts
+Start an anvil chain locally
+Start the aggregator
+Register the operator with eigenlayer and incredible-squaring, and then start the process
+Below is the
+make
+terminal for the aggregator, which sends tasks to operators and aggregates task responses:
+The three terminals running are:
+The anvil chain (
+make start-anvil-chain-with-el-and-avs-deployed )
+The aggregator (
+make start-aggregator )
+The operator (
+make start-operator
+)
+Follow the steps in
+the repo
+and you’ll be up and running.
+The repo also features a great diagram showing the Incredible Squaring AVS architecture:
+Source:
+https://github.com/Layr-Labs/incredible-squaring-avs
+In that repository, EigenLayer breaks down the architecture in even more detail.
+Here’s a video
+by Samuel Laferriere showing how to run the Infinite Squaring AVS locally.
+Next, we’ll modify this AVS to query the Movement network instead of squaring a number.
+Part 3: Modifying an AVS to interact with Movement network
+Now, the fun part.
+Instead of squaring a number, we’ll query the Movement network for the last digit of a block hash.
+This could be useful as a random number generator.
+Your own AVS for generating randomness
+Suppose you have a game where Gorillas are racing. And you want to have some randomness for how fast each Gorilla goes during a given race. The winner gets a barrel of bananas.
+All the contestants line up, commit to the race, and then a random number is generated from the last digit of a block hash for a block determined by the
+TaskGenerator
+entity based on the current timestamp. Contestants with higher randomly generated numbers run faster and win the race.
+Essential aspects of the design:
+The block is chosen after the contestants all commit to the race.
+TaskGenerator
+must act as an automaton selecting the block without influencing which block is selected.
+Next we’ll look at the parts of the AVS contracts that deal specifically with the task. And we’ll make some small but important changes.
+Inspect the AVS code to see what you’ll need to modify
+If you look at
+IncredibleSquaringTaskManager.sol
+you’ll see the squaring math as part of the challenge process:
+// logic for checking whether challenge is valid or not
+uint256 actualSquaredOutput = numberToBeSquared * numberToBeSquared;
+bool isResponseCorrect = (actualSquaredOutput ==
+    taskResponse.numberSquared);
+
+// if response was correct, no slashing happens so we return
+if (isResponseCorrect == true) {
+    emit TaskChallengedUnsuccessfully(referenceTaskIndex, msg.sender);
+    return;
+}
+Instead of checking whether a number was squared, we want to check whether the block hash of a specific Movement network block ended with the same number as in
+taskResponse
+.
+operator.go
+has some number squaring in the
+ProcessNewTaskCreatedLog
+function:
+// Takes a NewTaskCreatedLog struct as input and returns a TaskResponseHeader struct.
+// The TaskResponseHeader struct is the struct that is signed and sent to the contract as a task response.
+func (o *Operator) ProcessNewTaskCreatedLog(newTaskCreatedLog *cstaskmanager.ContractIncredibleSquaringTaskManagerNewTaskCreated) *cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse {
+	o.logger.Debug("Received new task", "task", newTaskCreatedLog)
+	o.logger.Info("Received new task",
+		"numberToBeSquared", newTaskCreatedLog.Task.NumberToBeSquared,
+		"taskIndex", newTaskCreatedLog.TaskIndex,
+		"taskCreatedBlock", newTaskCreatedLog.Task.TaskCreatedBlock,
+		"quorumNumbers", newTaskCreatedLog.Task.QuorumNumbers,
+		"QuorumThresholdPercentage", newTaskCreatedLog.Task.QuorumThresholdPercentage,
+	)
+	numberSquared := big.NewInt(0).Exp(newTaskCreatedLog.Task.NumberToBeSquared, big.NewInt(2), nil)
+	taskResponse := &cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse{
+		ReferenceTaskIndex: newTaskCreatedLog.TaskIndex,
+		NumberSquared:      numberSquared,
+	}
+	return taskResponse
+}
+I’m not sure how I feel about this
+IIncredibleSquaringTaskManagerTaskResponse
+with two “I”s. We should probably dig deeper into the architecture of this AVS. However, if all we need to do is change the functionality of the above Solidity and Go code, then that would be very convenient.
+The Go code to square the number is:
+numberSquared := big.NewInt(0).Exp(newTaskCreatedLog.Task.NumberToBeSquared, big.NewInt(2), nil)
+Every 10 seconds, the
+aggregator
+sends a new task out to operators and increments
+taskNum
+:
+func (agg *Aggregator) Start(ctx context.Context) error {
+	agg.logger.Infof("Starting aggregator.")
+	agg.logger.Infof("Starting aggregator rpc server.")
+	go agg.startServer(ctx)
+
+	// TODO(soubhik): refactor task generation/sending into a separate function that we can run as goroutine
+	ticker := time.NewTicker(10 * time.Second)
+	agg.logger.Infof("Aggregator set to send new task every 10 seconds...")
+	defer ticker.Stop()
+	taskNum := int64(0)
+	// ticker doesn't tick immediately, so we send the first task here
+	// see https://github.com/golang/go/issues/17601
+	_ = agg.sendNewTask(big.NewInt(taskNum))
+	taskNum++
+	...
+To get a deeper understanding, study the
+sendNewTask
+function.
+For now, let’s modify the code to do something more interesting than squaring a number.
+Customize your AVS to query the Movement network
+Because the aggregator starts off with
+taskNum
+equal to 0, then increments by 1, one simple way to generate a “random” number is to iterate through blocks with height 0, 1, 2, etc, and take the last digit of the block hash.
+You can use the
+Aptos REST API spec
+to query the Movement network M1 RPC endpoint (
+https://aptos.devnet.m1.movementlabs.xyz/
+). See
+Movement docs
+for a list of all endpoints.
+So in
+operator.go
+, instead of
+numberSquared := big.NewInt(0).Exp(newTaskCreatedLog.Task.NumberToBeSquared, big.NewInt(2), nil)
+we’ll do something like
+randomNumber := // code to get the last digit of the number
+and modify
+taskResponse
+to include
+randomNumber
+.
+
+I’m not going to change the name of
+NumberToBeSquared
+because it seems like it could open up a can of worms that would require deeper changes to the code. We’re doing a “quick and dirty” modification here.
+
+For a production dApp you’d want to go through all of the code and make sure everything is named properly and makes sense as a cohesive unit. In this case, we just want to get a random number back.
+Why could this work for generating randomness in a game?
+
+If all players line up for a race, and the random number determines, say, which player is the fastest, there’s no way for players to know in advance which block will be selected.
+Could players somehow find a way to cheat? Probably, in particular, if they could coordinate with the
+TaskGenerator
+.
+However, the block height selected as the input will be publicly visible, so it will be easy to verify that the last digit of the hash is correct.
+To find any security flaws, you’ll want to get an audit of your implementation if you build a real game or dApp.
+Implementing our AVS modification’s code
+The Movement M1 endpoint for getting blocks by height is:
+https://aptos.devnet.m1.movementlabs.xyz/blocks/by_height/{block_height}
+taskResponse‘s value is of the type
+&cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse
+which is defined in a
+binding.go
+file. Modify the struct to include an integer
+LastDigitOfBlockHash
+:
+// IIncredibleSquaringTaskManagerTaskResponse is an auto generated low-level Go binding around an user-defined struct.
+type IIncredibleSquaringTaskManagerTaskResponse struct {
+	ReferenceTaskIndex uint32
+	NumberSquared      *big.Int
+	LastDigitOfBlockHash int
+}
+Back in
+operator.go
+, you’ll need more imports for our RPC calls and handling the response data:
+import (
+    "encoding/json"
+    "fmt"
+    "io/ioutil"
+    "net/http"
+    "strconv"
+    "log"
+
+    // Assuming the rest of your imports stay the same
+)
+Finally define a
+Block
+struct to help handle block data, and modify the
+ProcessNewTaskCreatedLog
+function so it queries Movement network for a block hash and takes the last digit:
+// Block struct to unmarshal the JSON response from the Movement API
+type Block struct {
+    BlockHeight     string `json:"block_height"`
+    BlockHash       string `json:"block_hash"`
+    BlockTimestamp  string `json:"block_timestamp"`
+    FirstVersion    string `json:"first_version"`
+    LastVersion     string `json:"last_version"`
+}
+
+// Takes a NewTaskCreatedLog struct as input and returns a TaskResponseHeader struct.
+// The TaskResponseHeader struct is the struct that is signed and sent to the contract as a task response.
+func (o *Operator) ProcessNewTaskCreatedLog(newTaskCreatedLog *cstaskmanager.ContractIncredibleSquaringTaskManagerNewTaskCreated) *cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse {
+    o.logger.Debug("Received new task", "task", newTaskCreatedLog)
+    o.logger.Info("Received new task",
+        "numberToBeSquared", newTaskCreatedLog.Task.NumberToBeSquared,
+        "taskIndex", newTaskCreatedLog.TaskIndex,
+        "taskCreatedBlock", newTaskCreatedLog.Task.TaskCreatedBlock,
+        "quorumNumbers", newTaskCreatedLog.Task.QuorumNumbers,
+        "QuorumThresholdPercentage", newTaskCreatedLog.Task.QuorumThresholdPercentage,
+    )
+    
+    // Convert NumberToBeSquared to int and use it as the block height
+    blockHeight := newTaskCreatedLog.Task.NumberToBeSquared.Int64()
+    
+    // Fetch the last digit of the block hash for the given block height
+    lastDigitOfBlockHash := getLastDigitOfMovementBlockHash(int(blockHeight))
+    
+    // Compute the square of the number to be squared
+    numberSquared := big.NewInt(0).Exp(newTaskCreatedLog.Task.NumberToBeSquared, big.NewInt(2), nil)
+    
+    // Update the task response to include the last digit of the block hash
+    taskResponse := &cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse{
+        ReferenceTaskIndex: newTaskCreatedLog.TaskIndex,
+        NumberSquared:      numberSquared,
+        LastDigitOfBlockHash: lastDigitOfBlockHash, // Include the last digit of the block hash
+    }
+    
+    return taskResponse
+}
+
+// getLastDigitOfMovementBlockHash fetches the last digit of the block hash for a given block height using the Movement API
+func getLastDigitOfMovementBlockHash(blockHeight int) int {
+    // Make an HTTP GET request to the Aptos API to fetch the block hash by height
+    resp, err := http.Get(fmt.Sprintf("https://aptos.devnet.m1.movementlabs.xyz/blocks/by_height/%d", blockHeight))
+    if err!= nil {
+        log.Fatalf("Error fetching block: %v", err)
+    }
+    defer resp.Body.Close()
+
+    body, err := ioutil.ReadAll(resp.Body)
+    if err!= nil {
+        log.Fatalf("Error reading response body: %v", err)
+    }
+
+    var block Block
+    json.Unmarshal(body, &block)
+
+	// Extract the last hex digit of the block hash (will be values from 0 to 15)
+	lastDigit, err := strconv.ParseInt(string([]byte(block.BlockHash)[len(block.BlockHash)-1]), 16, 8)
+	if err!= nil {
+		log.Fatalf("Error parsing last digit of block hash: %v", err)
+	}
+	return int(lastDigit)
+}
+If you restart your anvil chain, aggregator, and operator, you should now begin seeing the aggregator log last digits of block hashes:
+I’m not sure why each response is logged twice. Ah, the mysteries of AVS.
+All done! Right? What other steps would we need to take, for our “random” number generator to be a proper AVS?
+Well, there is the issue of the challenged contract. But you only need to allow challenges if you’ll have slashing. So I’ll leave that consideration to you.
+In a real dApp, you’d want the task generator to do something like take the last digit of a timestamp when generating a task, instead of going in a predictable order like 0, 1, 2, etc.
+You might want to build a more interesting example, like for example something involving deploying EigenLayer contracts on MEVM with Fractal.
+The sky’s the limit! I can’t wait to see what you build.
+Join the Movement developer community on
+Discord
+and never miss the next Move.

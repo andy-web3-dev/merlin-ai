@@ -1,0 +1,33 @@
+Movement Network Mainnet Beta Is Now Live
+December 5, 2024
+Movement Network Foundation
+Today, the Movement Network Foundation is proud to announce that Movement Network Mainnet Beta has launched. This means that the first phase in the Movement Network launch plan is now live.
+Now, infrastructure providers can begin to support Movement.
+Movement Network Mainnet Beta
+At 16:00 UTC on November 30, 2024, the Movement Network successfully launched with Mainnet Beta. In the current release of Mainnet Beta, infrastructure providers will be able to run
+follower nodes
+, which are the equivalent of full nodes on other chains. Network operators will run a series of exercises to ensure states sync across the network and operational security.
+Today, Mainnet Beta can support:
+Follower nodes
+RPC nodes
+Indexers
+Permissioned Smart Contracts
+Block explorer
+Genesis NFTs
+The Movement Network features a unique design. To further explore the Network's
+high-level
+and
+node-level
+architectures, please
+visit our docs
+.
+As $MOVE goes live, users will be able to deposit $MOVE on Ethereum via LST partners to contribute to the security of the Movement Network. By building up $MOVE security, the network will be able to initiate postconfirmations for fast finality execution.
+If you are interested in participating as a node operator or, in the future, as a validator, reach out
+via this form
+.
+For more on $MOVE, please visit our
+$MOVE revea
+l and
+MoveDrop
+posts.
+THIS IS FOR INFORMATIONAL PURPOSES ONLY AND NOT AN OFFERING TO SELL, THE SOLICITATION OF AN OFFER TO PURCHASE, OR AN ENCOURAGEMENT TO PURCHASE TOKENS. YOU SHOULD NOT RELY ON THE CONTENT HEREIN FOR ADVICE OF ANY KIND, INCLUDING LEGAL, INVESTMENT, FINANCIAL, TAX, OR OTHER PROFESSIONAL ADVICE, AND SUCH CONTENT IS NOT A SUBSTITUTE FOR ADVICE FROM A QUALIFIED PROFESSIONAL OR YOUR OWN RESEARCH. THIS DOCUMENT CONTAINS HYPOTHETICAL, FORWARD-LOOKING, AND/OR PROJECTED FIGURES, WHICH ARE APPROXIMATE, NOT GUARANTEED AND ARE SUBJECT TO CHANGE; ACTUAL NUMBERS MAY VARY. MOVEMENT NETWORK FOUNDATION AND ITS SUBSIDIARIES MAKE NO REPRESENTATION OR WARRANTY, EXPRESS OR IMPLIED, AS TO THE COMPLETENESS, RELIABILITY, VALIDITY, OR ACCURACY OF THIS INFORMATION. ANY INFORMATION CONTAINED HEREIN IS SUBJECT TO CHANGE WITHOUT NOTICE.
