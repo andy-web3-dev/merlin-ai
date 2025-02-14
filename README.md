@@ -1,6 +1,7 @@
 # merlin-ai
 Merlin AI is your all-in-one AI agent designed to supercharge your journey through the Movement ecosystem. Whether you're a developer searching for the best Move modules or a degen ready to ape into the latest DeFi protocols, Merlin is here to assist you every step of the way.
 
+
 ### 🔮 What Can Merlin Do for You?
 
 - **Answer Anything About Movement:** Get instant insights into the Movement network, ecosystem, and its evolving landscape.
@@ -9,5 +10,11 @@ Merlin AI is your all-in-one AI agent designed to supercharge your journey throu
 
 With Merlin AI, navigating the Movement ecosystem has never been easier. Whether you're coding, trading, or just exploring—Merlin’s got your back. 🚀
 
+### Terminal version
+![domo_terminal.png](demo_terminal.png)
 
-![domo.png](demo.png)
+
+### Web version
+[Clik here](https://merlin-ai-interface.vercel.app/)
+
+![domo_web.png](demo_web.png)
