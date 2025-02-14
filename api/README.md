@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ## 3. Crawl dapps data
 - Ensure your GOOGLE_SHEET_API_KEY is set (see https://support.google.com/googleapi/answer/6158862?hl=en for more details).
 
-- Run the embedding script:
+- Run the craw_data script:
 
 ```bash
 python crawl_data.py
